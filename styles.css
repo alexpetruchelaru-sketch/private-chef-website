@@ -370,3 +370,61 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
   .hero-media { transform: none !important; }
   .scrollcue span { transform: scaleX(1); }
 }
+
+/* ============================================================
+   Small screens: larger, calmer reading sizes.
+   Most of the page is read on a phone, in a villa, one-handed.
+   ============================================================ */
+@media (max-width: 640px) {
+  body { font-size: 17.5px; line-height: 1.68; }
+
+  .hero-sub { font-size: 17.5px; }
+  .sec-head p { font-size: 17.5px; }
+  .sec-head { margin-bottom: 38px; }
+
+  .eyebrow { font-size: 12px; }
+  .menu-meta { font-size: 12.5px; letter-spacing: .06em; }
+
+  .strip dd { font-size: 16.5px; }
+  .menu-blurb { font-size: 17px; }
+
+  /* the menus are the reason people are here, so they get the most room */
+  .course-es { font-size: 20.5px; line-height: 1.32; }
+  .course-en { font-size: 15px; }
+  .course-note { font-size: 16.5px; line-height: 1.62; opacity: .92; }
+  .courses { gap: 26px; }
+  .course { padding-left: 16px; }
+
+  .aside p { font-size: 17px; }
+  .step p { font-size: 16px; }
+  .step { padding: 26px 22px 28px; }
+  .fact dd { font-size: 16.5px; }
+  .fact { padding: 20px 0; }
+  table { font-size: 15.5px; }
+  th, td { padding: 12px 15px; }
+
+  .direct dd { font-size: 17px; }
+  .formnote { font-size: 15px; }
+  .status { font-size: 16px; }
+  .foot { font-size: 15px; }
+
+  /* comfortable tap targets */
+  .cta-date { padding: 16px 26px; font-size: 14.5px; }
+  .cta-read { font-size: 14.5px; padding-block: 8px; }
+  .cta-menu { font-size: 13.5px; padding-block: 6px; }
+  .cta-wa { padding: 15px 22px; font-size: 14.5px; }
+}
+
+/* iOS Safari zooms the whole page when you focus an input smaller than 16px.
+   Never let these drop below it. */
+.field input, .field select, .field textarea { font-size: 16px; }
+@media (min-width: 641px) {
+  .field input, .field select, .field textarea { font-size: 15.5px; }
+}
+
+/* Inline contact links are the ones people actually tap. Give them real height. */
+@media (max-width: 640px) {
+  .foot a, .direct a.plain { display: inline-block; padding-block: 7px; }
+  .foot-in { gap: 4px 24px; }
+  .direct dl { gap: 14px; }
+}
