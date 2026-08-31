@@ -428,3 +428,16 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
   .foot-in { gap: 4px 24px; }
   .direct dl { gap: 14px; }
 }
+
+/* On a phone the menu photograph was taking a full screen of height before the
+   dishes started. Shrink it to a plate-sized thumbnail so the menu itself,
+   which is what people came to read, begins almost immediately. */
+@media (max-width: 640px) {
+  .menu-fig { max-width: 210px; }
+  .menu-fig img { aspect-ratio: 4/5; }
+  .menu-fig figcaption { margin-top: 8px; font-size: 12px; }
+  .menu { padding-top: 28px; gap: 22px; }
+}
+@media (max-width: 380px) {
+  .menu-fig { max-width: 170px; }
+}
