@@ -441,3 +441,45 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
 @media (max-width: 380px) {
   .menu-fig { max-width: 170px; }
 }
+
+/* ============================================================
+   Logo. Both marks ship as alpha masks and take their colour
+   from the surrounding text, so the same file reads correctly
+   on the dark hero and again on the pale scrolled nav.
+   ============================================================ */
+.mark { gap: 12px; }
+.mark-name { display: flex; align-items: baseline; gap: 9px; }
+.mark-logo {
+  width: 40px; height: 40px; flex: none;
+  background-color: currentColor;
+  -webkit-mask: url(/img/logo-ac.png) center / contain no-repeat;
+          mask: url(/img/logo-ac.png) center / contain no-repeat;
+}
+.foot-logo {
+  display: block; width: 116px; height: 118px;
+  background-color: var(--linen); opacity: .85;
+  -webkit-mask: url(/img/logo-full.png) center / contain no-repeat;
+          mask: url(/img/logo-full.png) center / contain no-repeat;
+}
+.foot-in { align-items: center; }
+@media (max-width: 640px) {
+  .mark-logo { width: 34px; height: 34px; }
+  .foot-logo { width: 96px; height: 98px; margin-bottom: 4px; }
+}
+
+/* The new hero is a dusk photograph and already dark, so the scrim that was
+   built to fight a bright white tablecloth can step back and let it show. */
+.hero-veil {
+  background:
+    linear-gradient(100deg,
+      color-mix(in srgb, var(--ground) 82%, transparent) 0%,
+      color-mix(in srgb, var(--ground) 62%, transparent) 42%,
+      color-mix(in srgb, var(--ground) 26%, transparent) 74%,
+      color-mix(in srgb, var(--ground) 18%, transparent) 100%),
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--ground) 62%, transparent) 0%,
+      transparent 34%,
+      color-mix(in srgb, var(--ground) 66%, transparent) 100%);
+}
+.hero-media img { object-position: 50% 55%; }
+@media (max-width: 700px) { .hero-media img { object-position: 50% 45%; } }

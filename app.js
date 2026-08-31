@@ -4,7 +4,7 @@
 (function () {
   "use strict";
 
-  var EMAIL = "alexpetruchelaru@outlook.com";
+  var EMAIL = "alexpetruchelaru@gmail.com";
   var WHATSAPP = "34641275731";
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
