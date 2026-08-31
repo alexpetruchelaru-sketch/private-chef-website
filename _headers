@@ -1,14 +1,24 @@
-/img/*
-  Cache-Control: public, max-age=31536000, immutable
-
-/styles.css
-  Cache-Control: public, max-age=86400
-
-/app.js
-  Cache-Control: public, max-age=86400
+# Cloudflare Pages header rules.
+#
+# Caching note, learned the hard way: this site's filenames never change, so an
+# aggressive "immutable" cache is wrong here. It also gets applied to 404s,
+# which means a browser that asks for a file before it exists can cache the
+# failure and refuse to look again for as long as the rule says. Everything
+# below therefore revalidates quickly. The cost is a tiny 304 request; the
+# benefit is that an edit is visible immediately instead of days later.
 
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Cache-Control: public, max-age=0, must-revalidate
+
+/img/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/styles.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/app.js
+  Cache-Control: public, max-age=0, must-revalidate
