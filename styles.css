@@ -97,7 +97,7 @@ p { margin: 0; text-wrap: pretty; }
 
 .navright { display: flex; align-items: center; gap: 26px; }
 .navlinks { display: none; gap: 26px; align-items: center; }
-@media (min-width: 900px) { .navlinks { display: flex; } }
+@media (min-width: 1024px) { .navlinks { display: flex; } }
 
 .navlink {
   position: relative; font-size: 13.5px; letter-spacing: .04em;
@@ -675,3 +675,122 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
 .recipe-grid { grid-auto-rows: 1fr; }
 .recipe-card { grid-template-rows: auto 1fr; }
 .recipe-card img, .recipe-card-noimg { align-self: start; }
+
+/* ============================================================
+   Motion.
+
+   Reveals are gated behind html.js, set by a tiny inline script
+   in the head. If JavaScript never runs, nothing is ever hidden,
+   so the page degrades to the static version rather than to a
+   blank screen. Everything animates transform and opacity only,
+   and everything stops under prefers-reduced-motion.
+   ============================================================ */
+
+/* scroll progress: a hairline that fills as you move down the page */
+.progress {
+  position: fixed; inset: 0 0 auto 0; height: 2px; z-index: 60;
+  background: var(--verde); transform: scaleX(0); transform-origin: 0 50%;
+  will-change: transform; pointer-events: none;
+}
+
+/* reveal on enter */
+.js .reveal {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+}
+.js .reveal.in {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity .72s cubic-bezier(.22,.68,.32,1) var(--d, 0ms),
+    transform .82s cubic-bezier(.22,.68,.32,1) var(--d, 0ms);
+}
+/* images and figures come up a touch slower and with a hint of scale */
+.js .reveal-fig { opacity: 0; transform: translate3d(0, 26px, 0) scale(1.012); }
+.js .reveal-fig.in {
+  opacity: 1; transform: none;
+  transition:
+    opacity .9s cubic-bezier(.22,.68,.32,1) var(--d, 0ms),
+    transform 1.05s cubic-bezier(.22,.68,.32,1) var(--d, 0ms);
+}
+
+/* menu index cards lift slightly under the cursor */
+.menu-index a { transition: border-color .25s ease, background-color .25s ease, transform .3s cubic-bezier(.2,.7,.3,1); }
+.menu-index a:hover { transform: translateY(-2px); }
+
+/* gallery: the image drifts a few pixels against the cursor inside its frame */
+.gal figure { position: relative; }
+.gal img { will-change: transform; }
+@media (hover: hover) and (pointer: fine) {
+  .gal img { transition: transform .5s cubic-bezier(.2,.7,.3,1); }
+  .gal figure:hover img { transform: scale(1.055) translate3d(var(--px, 0px), var(--py, 0px), 0); }
+}
+
+/* menu photograph warms slightly as its card is read */
+.menu-fig img { transition: transform .8s cubic-bezier(.2,.7,.3,1); }
+@media (hover: hover) and (pointer: fine) {
+  .menu:hover .menu-fig img { transform: scale(1.03); }
+}
+
+/* magnetic CTA: JS nudges it toward the pointer, CSS springs it back */
+.cta-date { will-change: transform; }
+@media (hover: hover) and (pointer: fine) {
+  .cta-date { transition: background-color .25s ease, transform .35s cubic-bezier(.22,.68,.32,1); }
+  .cta-date[data-magnetic="on"] { transition: background-color .25s ease, transform .1s linear; }
+}
+
+/* the scroll cue fades out once you have taken the hint */
+.scrollcue { transition: opacity .5s ease; }
+
+/* language switch: always visible, including on a phone */
+.lang-switch {
+  display: inline-flex; align-items: center;
+  font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--bone); text-decoration: none;
+  padding: 9px 12px; border: 1px solid color-mix(in srgb, var(--linen) 34%, transparent);
+  transition: color .3s ease, border-color .25s ease, background-color .25s ease;
+}
+.lang-switch:hover { border-color: var(--verde); background: color-mix(in srgb, var(--verde) 14%, transparent); }
+.nav[data-solid="true"] .lang-switch { color: var(--ink); border-color: var(--linen-2); }
+.navright { gap: 18px; }
+@media (min-width: 900px) { .navright { gap: 24px; } }
+/* ---- nav fitting ----
+   The bar carries logo, name, language and the booking button, and on a
+   narrow screen that is more than fits. Nothing is allowed to wrap: the
+   pieces shed weight as the screen narrows instead. Full links only appear
+   once there is genuinely room for them. */
+.mark-name, .mark small, .cta-nav, .lang-switch { white-space: nowrap; }
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .navlinks { gap: 19px; }
+  .navlink { font-size: 12.75px; }
+  .mark small { display: none; }
+  .navright { gap: 18px; }
+  .cta-nav { padding: 10px 15px; font-size: 12px; }
+}
+@media (max-width: 760px) { .mark small { display: none; } }
+
+/* On a phone the bar has to hold logo, name, language and the booking
+   button on one line. Below 560px the two buttons drop to short labels
+   (ES / Dates) so nothing wraps and the name stays on a single line. */
+.lbl-short { display: none; }
+@media (max-width: 560px) {
+  .lbl-full { display: none; }
+  .lbl-short { display: inline; }
+  .lang-switch { padding: 8px 10px; font-size: 11px; letter-spacing: .1em; }
+  .navright { gap: 9px; }
+  .nav { padding: 11px var(--gut); gap: 10px; }
+  .mark { font-size: 16px; gap: 9px; }
+  .mark-name { white-space: nowrap; }
+  .cta-nav { padding: 10px 13px; letter-spacing: .04em; white-space: nowrap; }
+}
+@media (max-width: 360px) {
+  .mark { font-size: 15px; }
+  .mark-logo { width: 30px; height: 30px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal, .js .reveal-fig,
+  .js .reveal.in, .js .reveal-fig.in { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .progress { display: none; }
+  .gal figure:hover img, .menu:hover .menu-fig img { transform: none; }
+}

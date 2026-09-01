@@ -45,7 +45,7 @@ function head(opts) {
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">\n<script>document.documentElement.classList.add("js");</script>
 <title>${esc(opts.title)}</title>
 <meta name="description" content="${esc(opts.description)}">
 <link rel="canonical" href="${esc(opts.url)}">
@@ -60,7 +60,7 @@ ${opts.image ? `<meta property="og:image" content="${esc(SITE + opts.image)}">` 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Karla:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="/styles.css?v=5">
+<link rel="stylesheet" href="/styles.css?v=7">
 <script type="application/ld+json">
 ${JSON.stringify(opts.schema, null, 2)}
 </script>
@@ -76,7 +76,8 @@ ${JSON.stringify(opts.schema, null, 2)}
       <a class="navlink" href="/recipes/">Recipes</a>
       <a class="navlink" href="/#faq">FAQ</a>
     </div>
-    <a class="cta-date cta-nav" href="/#enquire">Check a date
+    <a class="lang-switch" href="/es/" hreflang="es" lang="es" aria-label="Ver el sitio en español"><span class="lbl-full">Español</span><span class="lbl-short" aria-hidden="true">ES</span></a>
+    <a class="cta-date cta-nav" href="/#enquire" aria-label="Check a date"><span class="lbl-full">Check a date</span><span class="lbl-short" aria-hidden="true">Dates</span>
       <svg width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true"><path d="M0 5h13M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg>
     </a>
   </div>
@@ -95,6 +96,7 @@ const foot = `</main>
     </p>
   </div>
 </footer>
+<script src="/app.js?v=7" defer></script>
 </body>
 </html>
 `;
