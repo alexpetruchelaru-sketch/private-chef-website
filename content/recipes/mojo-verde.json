@@ -1,0 +1,34 @@
+{
+  "title": "Mojo verde",
+  "subtitle": "Green mojo with coriander and green chilli",
+  "summary": "The green sauce that goes on almost everything in the Canaries. Coriander, green chilli, garlic and cumin, loosened with local olive oil and sharpened with vinegar. It takes four minutes and it keeps a week.",
+  "intro": "Every island kitchen has a version of this and no two agree. Mine leans hard on coriander and keeps the garlic raw, because it is going next to fish and needs to cut rather than soothe. Make it the morning you need it and let it sit an hour before you judge the salt.",
+  "yield": "About 300 ml, enough for six",
+  "prepMinutes": 10,
+  "cookMinutes": 0,
+  "category": "Sauce",
+  "cuisine": "Canarian",
+  "keywords": "mojo verde, canarian green mojo, coriander sauce, mojo recipe, gran canaria",
+  "image": "",
+  "imageAlt": "",
+  "ingredients": [
+    "1 large bunch coriander, about 60 g, stalks and all",
+    "1 green chilli, seeds left in",
+    "3 cloves garlic",
+    "1 tsp cumin seeds, toasted",
+    "150 ml mild olive oil",
+    "2 tbsp white wine vinegar",
+    "1 tsp coarse salt",
+    "2 tbsp cold water"
+  ],
+  "steps": [
+    "Toast the cumin seeds in a dry pan until they smell of themselves, about 40 seconds. Do not walk away.",
+    "Crush the garlic, salt and cumin in a mortar to a rough paste. A blender does this too, but the mortar gives you a sauce with texture rather than a smoothie.",
+    "Add the coriander and chilli a handful at a time, working each one down before the next.",
+    "Loosen with the vinegar, then pour the oil in slowly while you keep working. It will not emulsify like a mayonnaise and it is not meant to.",
+    "Slacken with the water until it pours off a spoon in a thick ribbon. Taste for salt, then leave it an hour before you decide."
+  ],
+  "chefNote": "It darkens after a day. That is oxidation, not spoilage, and the flavour is arguably better on day two. Keep it under a film of oil in the fridge and it will hold a week.",
+  "servesWith": "Cherne, vieja, papas arrugadas, or anything off the grill.",
+  "date": "2026-09-01"
+}

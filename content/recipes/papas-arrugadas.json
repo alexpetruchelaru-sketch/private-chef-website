@@ -1,0 +1,29 @@
+{
+  "title": "Papas arrugadas",
+  "subtitle": "Salt-wrinkled Canarian potatoes",
+  "summary": "Small potatoes boiled in heavily salted water until the water goes and the skins wrinkle and dust over with salt. Three ingredients, one pan, and the most Canarian thing on any table.",
+  "intro": "The traditional version used sea water, which tells you how much salt is involved. The trick people miss is the end: once the water has gone you keep the pan on the heat and shake it, drying the skins until they crackle and turn matt. Stop too early and you have boiled potatoes.",
+  "yield": "Six as a side",
+  "prepMinutes": 5,
+  "cookMinutes": 30,
+  "category": "Side",
+  "cuisine": "Canarian",
+  "keywords": "papas arrugadas, canarian wrinkled potatoes, salt potatoes, papas antiguas, gran canaria recipe",
+  "image": "",
+  "imageAlt": "",
+  "ingredients": [
+    "1 kg small potatoes, papas antiguas if you can get them, unpeeled and roughly equal in size",
+    "150 g coarse sea salt",
+    "Water to barely cover"
+  ],
+  "steps": [
+    "Wash the potatoes but do not peel them. The skin is the whole point.",
+    "Put them in a wide pan in a single layer, add water until it just covers, and add all the salt. It will look like far too much. It is not.",
+    "Boil hard for about 20 minutes, until a knife goes through without resistance.",
+    "Pour off almost all the water, leaving a shallow film. Return to a medium heat.",
+    "Shake the pan every 30 seconds until the water is gone and the skins wrinkle and go chalky white with salt, about 5 minutes. Cover with a cloth and leave 5 minutes before serving."
+  ],
+  "chefNote": "Size matters more than variety. Pick potatoes you could hold three of in one hand, and get them within a few grams of each other, or half will collapse while the rest are still raw.",
+  "servesWith": "Mojo verde on fish nights, mojo picón on meat nights, and both if the table is arguing.",
+  "date": "2026-09-01"
+}
