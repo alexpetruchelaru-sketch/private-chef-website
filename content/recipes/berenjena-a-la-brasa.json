@@ -1,0 +1,75 @@
+{
+  "slug": "berenjena-a-la-brasa",
+  "order": 3,
+  "date": "2026-09-01",
+  "prepMinutes": 20,
+  "cookMinutes": 45,
+  "image": "",
+  "imageAlt": "",
+  "en": {
+    "title": "Charred aubergine, onion, bread",
+    "subtitle": "Berenjena a la brasa, cebolla, pan",
+    "menu": "Huerta",
+    "summary": "A whole aubergine burnt black over flame until it collapses, the smoky flesh dressed and spooned over grilled bread with slow onions. The dish that opens the Huerta menu, and the one people ask about most.",
+    "intro": "The mistake is being frightened of the fire. The skin has to go completely black and split, and the aubergine has to feel like a deflated balloon before you take it off. Anything less and you have cooked aubergine rather than smoke.",
+    "yield": "Six as a starter",
+    "category": "Starter",
+    "cuisine": "Canarian",
+    "keywords": "charred aubergine, burnt aubergine, smoked aubergine starter, berenjena a la brasa, canarian starter",
+    "ingredients": [
+      "3 large aubergines",
+      "2 large onions, sliced thin",
+      "3 tbsp olive oil, plus more to finish",
+      "1 tbsp sherry vinegar",
+      "1 clove garlic, grated",
+      "1 tsp cumin seeds, toasted and crushed",
+      "6 thick slices sourdough or country bread",
+      "Flaked salt and black pepper",
+      "A handful of flat parsley, chopped"
+    ],
+    "steps": [
+      "Put the aubergines directly on the flame, on a grill or on a gas ring. Turn them every few minutes for 20 to 25 minutes until the skin is black all over and they have collapsed on themselves.",
+      "Move them to a bowl, cover, and leave 15 minutes. The steam finishes the cooking and loosens the skin.",
+      "Meanwhile cook the onions in the olive oil over a low heat with a good pinch of salt, stirring now and then, for 30 to 40 minutes until sweet, soft and the colour of weak tea. Do not rush this with high heat.",
+      "Peel the aubergines and pull the flesh into strands with your fingers rather than chopping it. Discard any bitter black bits and the very seedy core.",
+      "Dress the flesh with the vinegar, garlic, cumin, a good glug of olive oil, salt and pepper. Taste. It should be smoky first and sour second.",
+      "Grill the bread hard on both sides. Spoon the onions on, then the aubergine, then more oil, salt and parsley."
+    ],
+    "chefNote": "Drain the peeled aubergine in a sieve for ten minutes before you dress it. The liquid it gives up is bitter and it will water down everything you add.",
+    "servesWith": "A cold dry white and nothing else. It is a first course and it should stay light.",
+    "seoTitle": "Charred aubergine, onion, bread"
+  },
+  "es": {
+    "title": "Berenjena a la brasa, cebolla, pan",
+    "subtitle": "Berenjena quemada a la llama con cebolla confitada",
+    "menu": "Huerta",
+    "summary": "Una berenjena entera quemada a la llama hasta que se derrumba, la carne ahumada aliñada y servida sobre pan a la brasa con cebolla lenta. El plato que abre el menú Huerta y por el que más me preguntan.",
+    "intro": "El error es tenerle miedo al fuego. La piel tiene que quedar completamente negra y abierta, y la berenjena tiene que parecer un globo desinflado antes de retirarla. Si te quedas corto, tienes berenjena cocinada, no humo.",
+    "yield": "Seis, como entrante",
+    "category": "Entrante",
+    "cuisine": "Canaria",
+    "keywords": "berenjena a la brasa, berenjena ahumada, entrante canario, berenjena quemada, receta a la brasa",
+    "ingredients": [
+      "3 berenjenas grandes",
+      "2 cebollas grandes, en juliana fina",
+      "3 cucharadas de aceite de oliva, y más para terminar",
+      "1 cucharada de vinagre de Jerez",
+      "1 diente de ajo rallado",
+      "1 cucharadita de comino tostado y majado",
+      "6 rebanadas gruesas de pan de masa madre o pan de pueblo",
+      "Sal en escamas y pimienta negra",
+      "Un puñado de perejil picado"
+    ],
+    "steps": [
+      "Pon las berenjenas directamente sobre la llama, en la parrilla o en el fuego de gas. Dales la vuelta cada pocos minutos durante 20 o 25 minutos, hasta que la piel esté negra por todos lados y se hayan venido abajo.",
+      "Pásalas a un bol, tápalas y déjalas 15 minutos. El vapor termina la cocción y despega la piel.",
+      "Mientras, pocha las cebollas en el aceite a fuego suave con una buena pizca de sal, removiendo de vez en cuando, entre 30 y 40 minutos, hasta que estén dulces, blandas y del color del té flojo. No lo aceleres subiendo el fuego.",
+      "Pela las berenjenas y deshilacha la carne con los dedos en lugar de picarla. Descarta las partes negras amargas y el corazón con más pepitas.",
+      "Aliña la carne con el vinagre, el ajo, el comino, un buen chorro de aceite, sal y pimienta. Prueba: primero tiene que saber a humo y después a ácido.",
+      "Tuesta el pan fuerte por las dos caras. Pon encima la cebolla, luego la berenjena, y termina con más aceite, sal y perejil."
+    ],
+    "chefNote": "Escurre la berenjena pelada en un colador diez minutos antes de aliñarla. El líquido que suelta es amargo y aguará todo lo que añadas después.",
+    "servesWith": "Un blanco seco muy frío y nada más. Es un primero y tiene que quedarse ligero.",
+    "seoTitle": "Berenjena a la brasa"
+  }
+}

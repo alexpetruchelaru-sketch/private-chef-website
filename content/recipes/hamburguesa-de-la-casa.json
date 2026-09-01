@@ -1,0 +1,73 @@
+{
+  "slug": "hamburguesa-de-la-casa",
+  "order": 19,
+  "date": "2026-09-01",
+  "prepMinutes": 30,
+  "cookMinutes": 8,
+  "image": "",
+  "imageAlt": "",
+  "en": {
+    "title": "Homemade burger patty",
+    "subtitle": "Hamburguesa de la casa",
+    "menu": "Brasa",
+    "summary": "Chuck and short rib ground coarse, formed loosely, seasoned only on the outside and cooked over fierce heat. No egg, no breadcrumbs, no onion in the mix.",
+    "intro": "A burger is a steak that has been through a grinder, and it should be treated like one. Everything people add to the mix, the egg, the crumbs, the grated onion, is there to hold together meat that was handled too much in the first place. Get the fat right, touch it as little as you can, and it holds itself.",
+    "yield": "Six",
+    "category": "Main",
+    "cuisine": "American",
+    "keywords": "homemade burger, burger patty recipe, chuck short rib burger, smash burger, bbq burger",
+    "ingredients": [
+      "800 g beef chuck",
+      "400 g short rib or brisket, well marbled",
+      "Flaked salt and coarse black pepper",
+      "6 brioche buns",
+      "6 slices of a good melting cheese",
+      "Butter for the buns",
+      "Whatever you like on it: pickles, onion, lettuce, tomato"
+    ],
+    "steps": [
+      "Chill the meat until it is very cold, almost freezing, then grind it once on a coarse plate. If you are buying it minced, ask for coarse mince with 20 to 25 per cent fat and buy it the same day.",
+      "Weigh into 200 g portions and form them into pucks with the lightest possible hand, just enough to hold. Do not compress or roll them. Press a shallow dimple into the middle of each so it stays flat instead of doming.",
+      "Refrigerate at least 30 minutes. Salt only in the last minute before cooking, and only on the outside; salt worked into the mix cures the meat and turns the texture springy and sausage-like.",
+      "Get the grill or a cast-iron plate properly hot. The patties should sizzle loudly the moment they land.",
+      "Cook three to four minutes on the first side without pressing or moving. Turn once, add the cheese immediately, and cook another three minutes for medium.",
+      "Toast the buns in butter, cut side down, while the burgers finish.",
+      "Rest two minutes, build, and eat standing up."
+    ],
+    "chefNote": "Never press a burger with a spatula. Every drop of juice you push into the fire is juice that is not in the burger, and it does nothing to speed the cooking.",
+    "servesWith": "Grilled corn, and the sauces off the salad table.",
+    "seoTitle": "Homemade burger patty"
+  },
+  "es": {
+    "title": "Hamburguesa de la casa",
+    "subtitle": "Aguja y costilla picadas gruesas, sin nada más",
+    "menu": "Brasa",
+    "summary": "Aguja y costilla picadas gruesas, formadas sin apretar, saladas solo por fuera y hechas a fuego fuerte. Sin huevo, sin pan rallado y sin cebolla en la mezcla.",
+    "intro": "Una hamburguesa es un filete que ha pasado por una picadora y hay que tratarla como tal. Todo lo que la gente le añade —el huevo, el pan rallado, la cebolla rallada— está ahí para sujetar una carne que se manipuló demasiado desde el principio. Acierta con la grasa, tócala lo mínimo, y se sujeta sola.",
+    "yield": "Seis",
+    "category": "Principal",
+    "cuisine": "Americana",
+    "keywords": "hamburguesa casera, receta de hamburguesa, aguja de ternera, hamburguesa a la brasa, barbacoa",
+    "ingredients": [
+      "800 g de aguja de ternera",
+      "400 g de costilla o falda, bien veteada",
+      "Sal en escamas y pimienta negra gruesa",
+      "6 panes de brioche",
+      "6 lonchas de un queso que funda bien",
+      "Mantequilla para el pan",
+      "Lo que te guste encima: pepinillo, cebolla, lechuga, tomate"
+    ],
+    "steps": [
+      "Enfría la carne hasta que esté muy fría, casi congelada, y pícala una sola vez con disco grueso. Si la compras picada, pide picado grueso con un 20 o 25 % de grasa y úsala el mismo día.",
+      "Pesa porciones de 200 g y fórmalas con la mano lo más suelta posible, solo lo justo para que aguanten. No las aprietes ni las bolees. Hunde un poco el centro con el pulgar para que no se abomben.",
+      "Nevera al menos 30 minutos. Sala solo en el último minuto antes de cocinar y solo por fuera; la sal mezclada en la carne la cura y deja una textura elástica, de salchicha.",
+      "Calienta bien la parrilla o una plancha de hierro. Las hamburguesas tienen que chisporrotear con fuerza en cuanto tocan.",
+      "Hazlas de tres a cuatro minutos por la primera cara sin apretar ni mover. Dales la vuelta una sola vez, pon el queso enseguida y dales otros tres minutos para un punto medio.",
+      "Tuesta los panes en mantequilla, por la cara cortada, mientras terminan las hamburguesas.",
+      "Reposa dos minutos, monta y cómetela de pie."
+    ],
+    "chefNote": "No aplastes nunca una hamburguesa con la espátula. Cada gota de jugo que empujas al fuego es jugo que no está en la hamburguesa, y encima no acelera la cocción.",
+    "servesWith": "Maíz a la brasa y las salsas de la mesa de ensaladas.",
+    "seoTitle": "Hamburguesa de la casa"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "slug": "souvlaki-de-pollo",
+  "order": 16,
+  "date": "2026-09-01",
+  "prepMinutes": 25,
+  "cookMinutes": 15,
+  "image": "",
+  "imageAlt": "",
+  "en": {
+    "title": "Marinated chicken souvlaki",
+    "subtitle": "Souvlaki de pollo, limón, orégano",
+    "menu": "Brasa",
+    "summary": "Thigh meat marinated overnight in lemon, oregano and garlic, threaded tight on skewers and cooked fast over charcoal. The most-eaten thing on the Brasa menu, by a distance.",
+    "intro": "Thigh, never breast. Breast on a grill has about ninety seconds between raw and ruined, and at a party nobody is watching that closely. Thigh forgives you, and the fat dripping into the coals is what makes the whole terrace smell right.",
+    "yield": "Six to eight",
+    "category": "Main",
+    "cuisine": "Mediterranean",
+    "keywords": "chicken souvlaki, souvlaki marinade, greek chicken skewers, charcoal chicken, bbq chicken skewers",
+    "ingredients": [
+      "1.5 kg boneless chicken thighs, skin off, cut into 4 cm pieces",
+      "Juice and zest of 2 lemons",
+      "6 tbsp olive oil",
+      "4 cloves garlic, grated",
+      "2 tbsp dried oregano",
+      "1 tbsp red wine vinegar",
+      "1 tsp smoked paprika",
+      "2 tsp fine salt, plenty of black pepper",
+      "Flatbreads, lemon wedges and yoghurt to serve"
+    ],
+    "steps": [
+      "Mix everything except the chicken into a marinade and taste it. It should be aggressively lemony and salty; it is about to be diluted by a kilo and a half of meat.",
+      "Add the chicken, work it with your hands until every piece is coated, cover and refrigerate for at least four hours, ideally overnight. Do not go past 24 hours or the lemon starts breaking the texture down.",
+      "Take it out of the fridge 40 minutes before cooking. Cold meat on a grill cooks unevenly.",
+      "Thread the pieces tightly onto skewers, five or six per skewer, pressed against each other. Loose pieces dry out; tight ones steam each other and stay juicy.",
+      "Get the charcoal to a medium-high, even heat with no flames. Cook the skewers 12 to 15 minutes, turning every three minutes, until charred in places and firm.",
+      "Rest them five minutes on a warm plate. Squeeze lemon over while they are resting, not before.",
+      "Serve on warmed flatbreads with yoghurt, or straight off the skewer with a bowl of lemon wedges."
+    ],
+    "chefNote": "Soak wooden skewers for an hour, or better, use flat metal ones. Round skewers let the meat spin every time you try to turn it, and you will end up cooking one side four times.",
+    "servesWith": "Grilled corn, the salad table, and cold beer.",
+    "seoTitle": "Marinated chicken souvlaki"
+  },
+  "es": {
+    "title": "Souvlaki de pollo, limón, orégano",
+    "subtitle": "Muslo de pollo marinado y hecho a la brasa",
+    "menu": "Brasa",
+    "summary": "Carne de muslo marinada toda la noche en limón, orégano y ajo, ensartada apretada y hecha rápido sobre carbón. Lo más comido del menú Brasa, con diferencia.",
+    "intro": "Muslo, nunca pechuga. La pechuga en la parrilla tiene unos noventa segundos entre cruda y arruinada, y en una fiesta nadie está tan pendiente. El muslo perdona, y la grasa que cae sobre las brasas es lo que hace que la terraza huela como tiene que oler.",
+    "yield": "Seis u ocho",
+    "category": "Principal",
+    "cuisine": "Mediterránea",
+    "keywords": "souvlaki de pollo, marinada de souvlaki, brochetas de pollo, pollo a la brasa, pollo a la barbacoa",
+    "ingredients": [
+      "1,5 kg de muslo de pollo deshuesado y sin piel, en trozos de 4 cm",
+      "Zumo y ralladura de 2 limones",
+      "6 cucharadas de aceite de oliva",
+      "4 dientes de ajo rallados",
+      "2 cucharadas de orégano seco",
+      "1 cucharada de vinagre de vino tinto",
+      "1 cucharadita de pimentón ahumado",
+      "2 cucharaditas de sal fina y bastante pimienta negra",
+      "Pan plano, gajos de limón y yogur para servir"
+    ],
+    "steps": [
+      "Mezcla todo menos el pollo y prueba la marinada. Tiene que estar agresivamente ácida y salada; está a punto de diluirse en kilo y medio de carne.",
+      "Añade el pollo, trabájalo con las manos hasta que todo esté cubierto, tapa y deja en la nevera al menos cuatro horas, mejor toda la noche. No pases de 24 horas o el limón empieza a deshacer la textura.",
+      "Sácalo de la nevera 40 minutos antes de cocinar. La carne fría en la parrilla se hace de forma desigual.",
+      "Ensarta los trozos bien apretados, cinco o seis por brocheta, pegados entre sí. Los trozos sueltos se secan; los apretados se cuecen unos a otros y quedan jugosos.",
+      "Deja el carbón en un calor medio-alto y uniforme, sin llama. Haz las brochetas de 12 a 15 minutos, girándolas cada tres, hasta que estén marcadas a trozos y firmes.",
+      "Déjalas reposar cinco minutos en un plato templado. Exprime el limón durante el reposo, no antes.",
+      "Sirve sobre pan plano templado con yogur, o directamente de la brocheta con un bol de gajos de limón."
+    ],
+    "chefNote": "Remoja las brochetas de madera una hora o, mejor, usa brochetas planas de metal. Las redondas dejan que la carne gire cada vez que intentas darle la vuelta y acabas haciendo la misma cara cuatro veces.",
+    "servesWith": "Maíz a la brasa, la mesa de ensaladas y cerveza fría.",
+    "seoTitle": "Souvlaki de pollo"
+  }
+}

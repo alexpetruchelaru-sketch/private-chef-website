@@ -14,25 +14,421 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/"/>
     <lastmod>2026-09-01</lastmod>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://alexchelaru.com/recipes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/"/>
     <lastmod>2026-09-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexchelaru.com/recipes/torrija-de-platano/</loc>
+    <loc>https://alexchelaru.com/es/recetas/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/mojo-verde/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/mojo-verde/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/mojo-verde/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/mojo-verde/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/mojo-verde/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/mojo-verde/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/mojo-verde/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/mojo-verde/"/>
     <lastmod>2026-09-01</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alexchelaru.com/recipes/papas-arrugadas/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/papas-arrugadas/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/papas-arrugadas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/papas-arrugadas/"/>
     <lastmod>2026-09-01</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alexchelaru.com/recipes/mojo-verde/</loc>
+    <loc>https://alexchelaru.com/es/recetas/papas-arrugadas/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/papas-arrugadas/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/papas-arrugadas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/papas-arrugadas/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/berenjena-a-la-brasa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/berenjena-a-la-brasa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/berenjena-a-la-brasa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/berenjena-a-la-brasa/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/berenjena-a-la-brasa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/berenjena-a-la-brasa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/berenjena-a-la-brasa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/berenjena-a-la-brasa/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/atun-ponzu-aguacate/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/atun-ponzu-aguacate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/atun-ponzu-aguacate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/atun-ponzu-aguacate/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/atun-ponzu-aguacate/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/atun-ponzu-aguacate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/atun-ponzu-aguacate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/atun-ponzu-aguacate/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/panceta-de-cerdo-negro-canario/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/panceta-de-cerdo-negro-canario/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/panceta-de-cerdo-negro-canario/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/panceta-de-cerdo-negro-canario/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/panceta-de-cerdo-negro-canario/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/panceta-de-cerdo-negro-canario/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/panceta-de-cerdo-negro-canario/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/panceta-de-cerdo-negro-canario/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/cherne-mojo-verde-papa-antigua/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/cherne-mojo-verde-papa-antigua/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/cherne-mojo-verde-papa-antigua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/cherne-mojo-verde-papa-antigua/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/cherne-mojo-verde-papa-antigua/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/cherne-mojo-verde-papa-antigua/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/cherne-mojo-verde-papa-antigua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/cherne-mojo-verde-papa-antigua/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/torrija-de-platano/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/torrija-de-platano/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/torrija-de-platano/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/torrija-de-platano/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/torrija-de-platano/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/torrija-de-platano/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/torrija-de-platano/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/torrija-de-platano/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/vieja-curada-dashi-de-tomate/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/vieja-curada-dashi-de-tomate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/vieja-curada-dashi-de-tomate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/vieja-curada-dashi-de-tomate/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/vieja-curada-dashi-de-tomate/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/vieja-curada-dashi-de-tomate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/vieja-curada-dashi-de-tomate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/vieja-curada-dashi-de-tomate/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/vieira-coliflor-miso/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/vieira-coliflor-miso/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/vieira-coliflor-miso/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/vieira-coliflor-miso/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/vieira-coliflor-miso/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/vieira-coliflor-miso/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/vieira-coliflor-miso/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/vieira-coliflor-miso/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/baifo-miel-de-palma/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/baifo-miel-de-palma/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/baifo-miel-de-palma/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/baifo-miel-de-palma/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/baifo-miel-de-palma/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/baifo-miel-de-palma/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/baifo-miel-de-palma/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/baifo-miel-de-palma/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/tarta-de-queso-de-guia/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/tarta-de-queso-de-guia/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/tarta-de-queso-de-guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/tarta-de-queso-de-guia/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/tarta-de-queso-de-guia/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/tarta-de-queso-de-guia/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/tarta-de-queso-de-guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/tarta-de-queso-de-guia/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/gamba-focaccia-ajo-negro/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/gamba-focaccia-ajo-negro/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/gamba-focaccia-ajo-negro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/gamba-focaccia-ajo-negro/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/gamba-focaccia-ajo-negro/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/gamba-focaccia-ajo-negro/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/gamba-focaccia-ajo-negro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/gamba-focaccia-ajo-negro/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/tartar-de-ternera-yema-curada/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/tartar-de-ternera-yema-curada/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/tartar-de-ternera-yema-curada/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/tartar-de-ternera-yema-curada/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/tartar-de-ternera-yema-curada/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/tartar-de-ternera-yema-curada/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/tartar-de-ternera-yema-curada/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/tartar-de-ternera-yema-curada/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/cochinillo-confitado/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/cochinillo-confitado/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/cochinillo-confitado/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/cochinillo-confitado/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/cochinillo-confitado/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/cochinillo-confitado/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/cochinillo-confitado/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/cochinillo-confitado/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/solomillo-wellington/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/solomillo-wellington/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/solomillo-wellington/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/solomillo-wellington/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/solomillo-wellington/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/solomillo-wellington/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/solomillo-wellington/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/solomillo-wellington/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/souvlaki-de-pollo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/souvlaki-de-pollo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/souvlaki-de-pollo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/souvlaki-de-pollo/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/souvlaki-de-pollo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/souvlaki-de-pollo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/souvlaki-de-pollo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/souvlaki-de-pollo/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/kofta-de-cordero-y-ternera/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/kofta-de-cordero-y-ternera/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/kofta-de-cordero-y-ternera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/kofta-de-cordero-y-ternera/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/kofta-de-cordero-y-ternera/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/kofta-de-cordero-y-ternera/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/kofta-de-cordero-y-ternera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/kofta-de-cordero-y-ternera/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/costillar-de-cerdo-gochujang/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/costillar-de-cerdo-gochujang/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/costillar-de-cerdo-gochujang/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/costillar-de-cerdo-gochujang/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/costillar-de-cerdo-gochujang/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/costillar-de-cerdo-gochujang/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/costillar-de-cerdo-gochujang/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/costillar-de-cerdo-gochujang/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/hamburguesa-de-la-casa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/hamburguesa-de-la-casa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/hamburguesa-de-la-casa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/hamburguesa-de-la-casa/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/hamburguesa-de-la-casa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/hamburguesa-de-la-casa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/hamburguesa-de-la-casa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/hamburguesa-de-la-casa/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/maiz-a-la-brasa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/maiz-a-la-brasa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/maiz-a-la-brasa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/maiz-a-la-brasa/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/maiz-a-la-brasa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/maiz-a-la-brasa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/maiz-a-la-brasa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/maiz-a-la-brasa/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/huevos-turcos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/huevos-turcos/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/huevos-turcos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/huevos-turcos/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/huevos-turcos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/huevos-turcos/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/huevos-turcos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/huevos-turcos/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/aguacate-huevo-escalfado/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/aguacate-huevo-escalfado/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/aguacate-huevo-escalfado/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/aguacate-huevo-escalfado/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/aguacate-huevo-escalfado/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/aguacate-huevo-escalfado/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/aguacate-huevo-escalfado/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/aguacate-huevo-escalfado/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/huevos-benedictinos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/huevos-benedictinos/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/huevos-benedictinos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/huevos-benedictinos/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/huevos-benedictinos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/huevos-benedictinos/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/huevos-benedictinos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/huevos-benedictinos/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/torrija-de-brunch/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/torrija-de-brunch/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/torrija-de-brunch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/torrija-de-brunch/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/torrija-de-brunch/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/torrija-de-brunch/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/torrija-de-brunch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/torrija-de-brunch/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/recipes/tortitas-de-suero/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/tortitas-de-suero/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/tortitas-de-suero/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/tortitas-de-suero/"/>
+    <lastmod>2026-09-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexchelaru.com/es/recetas/tortitas-de-suero/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexchelaru.com/recipes/tortitas-de-suero/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/recetas/tortitas-de-suero/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexchelaru.com/recipes/tortitas-de-suero/"/>
     <lastmod>2026-09-01</lastmod>
     <priority>0.7</priority>
   </url>

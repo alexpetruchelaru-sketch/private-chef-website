@@ -1,0 +1,73 @@
+{
+  "slug": "cherne-mojo-verde-papa-antigua",
+  "order": 6,
+  "date": "2026-09-01",
+  "prepMinutes": 20,
+  "cookMinutes": 20,
+  "image": "",
+  "imageAlt": "",
+  "en": {
+    "title": "Stone bass, green mojo, heritage potato",
+    "subtitle": "Cherne, mojo verde, papa antigua",
+    "menu": "Huerta",
+    "summary": "The most Canarian plate I cook. Cherne with the skin crisped hard and dry, green mojo underneath, and heritage potatoes crushed rather than mashed. Three elements, no sauce reduction, nothing hiding the fish.",
+    "intro": "Cherne is the island's fish and it is firm enough to take a proper sear. Everything here depends on the skin, and the skin depends on it being dry: leave the fillets uncovered in the fridge for a few hours before service and you will get a crust that stays crisp all the way to the table.",
+    "yield": "Six",
+    "category": "Main",
+    "cuisine": "Canarian",
+    "keywords": "cherne, stone bass recipe, mojo verde fish, papas antiguas, canarian fish recipe, gran canaria",
+    "ingredients": [
+      "6 cherne (stone bass) fillets, about 160 g each, skin on and scaled",
+      "800 g papas antiguas or small waxy potatoes",
+      "300 ml mojo verde (see the separate recipe)",
+      "4 tbsp olive oil",
+      "30 g butter",
+      "1 lemon",
+      "Coarse salt, flaked salt, white pepper"
+    ],
+    "steps": [
+      "Several hours ahead, set the fillets skin up on a rack in the fridge, uncovered, so the skin dries out. This is the whole secret.",
+      "Boil the potatoes in well salted water until tender, drain, and crush them roughly with a fork with a little olive oil and salt. Leave them coarse. Keep warm.",
+      "Score the skin of each fillet twice, lightly, and salt the skin only, right before cooking.",
+      "Get a heavy pan hot with the olive oil. Lay the fillets in skin side down away from you and press each one flat with a fish slice for the first 20 seconds so it does not curl.",
+      "Cook on the skin for about four fifths of the total time, four to five minutes, until you can see the flesh turning opaque up the side. Do not move them.",
+      "Add the butter, turn the fish, take the pan off the heat and let the residual heat finish it, 45 seconds. Squeeze a little lemon into the butter and spoon it over the flesh, never the skin.",
+      "Spoon mojo verde onto warm plates, the crushed potato beside it, and the fish on top skin up. Flaked salt on the skin at the last second."
+    ],
+    "chefNote": "If cherne is not available, any firm white fish with a good skin works: wreckfish, corvina, or a thick fillet of sea bass. Do not use anything thin, it will overcook before the skin is ready.",
+    "servesWith": "Nothing else. The mojo is the sauce and the potato is the starch, and a third element makes it a mess.",
+    "seoTitle": "Stone bass with green mojo"
+  },
+  "es": {
+    "title": "Cherne, mojo verde, papa antigua",
+    "subtitle": "Cherne con la piel crujiente sobre mojo verde",
+    "menu": "Huerta",
+    "summary": "El plato más canario que cocino. Cherne con la piel bien crujiente, mojo verde debajo y papas antiguas machacadas, no en puré. Tres elementos, ninguna reducción, nada que tape el pescado.",
+    "intro": "El cherne es el pescado de la isla y tiene la carne firme para aguantar un buen marcado. Aquí todo depende de la piel, y la piel depende de que esté seca: deja los lomos destapados en la nevera unas horas antes del servicio y tendrás una costra que llega crujiente a la mesa.",
+    "yield": "Seis",
+    "category": "Principal",
+    "cuisine": "Canaria",
+    "keywords": "cherne, receta de cherne, mojo verde con pescado, papas antiguas, pescado canario, gran canaria",
+    "ingredients": [
+      "6 lomos de cherne de unos 160 g, con piel y bien escamados",
+      "800 g de papas antiguas o papas pequeñas de carne firme",
+      "300 ml de mojo verde (ver la receta aparte)",
+      "4 cucharadas de aceite de oliva",
+      "30 g de mantequilla",
+      "1 limón",
+      "Sal gruesa, sal en escamas y pimienta blanca"
+    ],
+    "steps": [
+      "Unas horas antes, coloca los lomos con la piel hacia arriba sobre una rejilla en la nevera, destapados, para que la piel se seque. Ese es todo el secreto.",
+      "Cuece las papas en agua bien salada hasta que estén tiernas, escúrrelas y machácalas de forma basta con un tenedor, con un poco de aceite y sal. Que queden con trozos. Mantenlas calientes.",
+      "Marca la piel de cada lomo con dos cortes ligeros y sala solo la piel, justo antes de cocinar.",
+      "Calienta bien una sartén gruesa con el aceite. Coloca los lomos con la piel hacia abajo, hacia fuera de ti, y presiona cada uno con una espátula los primeros 20 segundos para que no se curve.",
+      "Cocina sobre la piel unas cuatro quintas partes del tiempo total, cuatro o cinco minutos, hasta ver que la carne se vuelve opaca por el lateral. No los muevas.",
+      "Añade la mantequilla, da la vuelta al pescado, retira la sartén del fuego y deja que el calor residual lo termine, 45 segundos. Exprime un poco de limón en la mantequilla y salsea la carne, nunca la piel.",
+      "Pon el mojo verde en platos calientes, la papa machacada al lado y el pescado encima con la piel hacia arriba. Sal en escamas sobre la piel en el último segundo."
+    ],
+    "chefNote": "Si no hay cherne, sirve cualquier pescado blanco firme con buena piel: corvina, mero o un lomo grueso de lubina. No uses nada fino, se pasará antes de que la piel esté lista.",
+    "servesWith": "Nada más. El mojo es la salsa y la papa es el almidón; un tercer elemento solo lo ensucia.",
+    "seoTitle": "Cherne con mojo verde"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "slug": "tartar-de-ternera-yema-curada",
+  "order": 13,
+  "date": "2026-09-01",
+  "prepMinutes": 40,
+  "cookMinutes": 0,
+  "image": "",
+  "imageAlt": "",
+  "en": {
+    "title": "Beef tartare, cured yolk",
+    "subtitle": "Tartar de ternera, yema curada",
+    "menu": "Sobremesa",
+    "summary": "Fillet chopped by hand, dressed sharp, with an egg yolk cured for two days in salt and sugar until it grates like a hard cheese. No raw yolk on top, which is the version most people have had.",
+    "intro": "Two rules. Chop it, never mince it, because a mincer crushes the fibres and the texture goes to paste. And dress it in the last minute before it leaves the kitchen, because acid on raw beef starts cooking it and after ten minutes the colour has gone brown at the edges.",
+    "yield": "Six as a starter",
+    "category": "Starter",
+    "cuisine": "European",
+    "keywords": "beef tartare, tartar de ternera, cured egg yolk, hand chopped tartare, steak tartare recipe",
+    "ingredients": [
+      "600 g beef fillet tail, very cold, all sinew removed",
+      "6 egg yolks for curing, plus 300 g each of salt and sugar",
+      "2 shallots, very finely diced",
+      "2 tbsp capers, chopped",
+      "4 cornichons, finely chopped",
+      "1 tbsp Dijon mustard",
+      "1 tsp Worcestershire sauce",
+      "2 tbsp good olive oil",
+      "Tabasco, flaked salt, black pepper",
+      "Chives, and toast or crisps to serve"
+    ],
+    "steps": [
+      "Two days ahead, mix the salt and sugar. Spread half in a small tray, make six dips with a spoon, sit a yolk in each, and cover completely with the rest. Refrigerate 48 hours.",
+      "Lift the yolks out, brush off the cure, rinse very briefly and pat dry. They should be firm and translucent, like amber. Air-dry them on a rack in the fridge for a few hours.",
+      "Chill the beef until it is almost frozen at the edges. Slice it thin, then into strips, then into small dice with a very sharp knife. Keep the pieces distinct, about 3 mm.",
+      "Keep the diced beef on ice, covered, until the moment of service.",
+      "Mix the shallot, capers, cornichons, mustard, Worcestershire and oil in a separate bowl.",
+      "One minute before serving, fold the dressing through the beef with a fork. Season with salt, pepper and one drop of Tabasco. Taste and adjust; it should be sharper than feels right on its own, because it is going onto toast.",
+      "Shape lightly on cold plates, grate the cured yolk over the top like parmesan, add chives and serve with hot toast."
+    ],
+    "chefNote": "The yolks keep two weeks wrapped in the fridge and they make almost anything better. Cure a dozen while you are at it.",
+    "servesWith": "Thin, very hot toast, and cold beer rather than wine.",
+    "seoTitle": "Beef tartare, cured yolk"
+  },
+  "es": {
+    "title": "Tartar de ternera, yema curada",
+    "subtitle": "Solomillo picado a cuchillo con yema curada rallada",
+    "menu": "Sobremesa",
+    "summary": "Solomillo picado a cuchillo, aliñado con punto ácido, y una yema curada dos días en sal y azúcar hasta que se ralla como un queso duro. Sin yema cruda encima, que es la versión que casi todo el mundo conoce.",
+    "intro": "Dos reglas. Se pica a cuchillo, nunca en máquina, porque la picadora aplasta la fibra y la textura se vuelve pasta. Y se aliña en el último minuto antes de salir, porque el ácido sobre la carne cruda empieza a cocinarla y a los diez minutos los bordes ya están marrones.",
+    "yield": "Seis, como entrante",
+    "category": "Entrante",
+    "cuisine": "Europea",
+    "keywords": "tartar de ternera, steak tartar, yema curada, tartar a cuchillo, receta de tartar",
+    "ingredients": [
+      "600 g de punta de solomillo, muy fría y sin nervios",
+      "6 yemas para curar, más 300 g de sal y 300 g de azúcar",
+      "2 chalotas en dados muy finos",
+      "2 cucharadas de alcaparras picadas",
+      "4 pepinillos picados finos",
+      "1 cucharada de mostaza de Dijon",
+      "1 cucharadita de salsa Worcestershire",
+      "2 cucharadas de aceite de oliva bueno",
+      "Tabasco, sal en escamas y pimienta negra",
+      "Cebollino y tostadas para servir"
+    ],
+    "steps": [
+      "Dos días antes, mezcla la sal y el azúcar. Extiende la mitad en una bandeja pequeña, haz seis huecos con una cuchara, coloca una yema en cada uno y cúbrelas del todo con el resto. Nevera, 48 horas.",
+      "Saca las yemas, retira la cura, enjuágalas muy rápido y sécalas. Deben quedar firmes y translúcidas, como ámbar. Déjalas secar unas horas sobre una rejilla en la nevera.",
+      "Enfría la carne hasta que esté casi congelada por fuera. Córtala en láminas finas, luego en tiras y luego en dados pequeños con un cuchillo muy afilado. Que los dados se distingan, de unos 3 mm.",
+      "Mantén la carne picada sobre hielo y tapada hasta el momento de servir.",
+      "Mezcla en un bol aparte la chalota, las alcaparras, los pepinillos, la mostaza, la Worcestershire y el aceite.",
+      "Un minuto antes de servir, integra el aliño con la carne usando un tenedor. Sazona con sal, pimienta y una gota de Tabasco. Prueba y corrige: tiene que quedar más ácido de lo que parece correcto solo, porque va sobre pan tostado.",
+      "Moldea sin apretar en platos fríos, ralla la yema curada por encima como si fuera parmesano, añade cebollino y sirve con tostada caliente."
+    ],
+    "chefNote": "Las yemas aguantan dos semanas envueltas en la nevera y mejoran casi cualquier cosa. Cura una docena ya que te pones.",
+    "servesWith": "Tostada fina y muy caliente, y cerveza fría mejor que vino.",
+    "seoTitle": "Tartar de ternera"
+  }
+}

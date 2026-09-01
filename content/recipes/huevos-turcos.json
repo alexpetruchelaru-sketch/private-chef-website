@@ -1,0 +1,79 @@
+{
+  "slug": "huevos-turcos",
+  "order": 21,
+  "date": "2026-09-01",
+  "prepMinutes": 15,
+  "cookMinutes": 10,
+  "image": "",
+  "imageAlt": "",
+  "en": {
+    "title": "Turkish eggs, warm harissa oil, artisan bread",
+    "subtitle": "Huevos turcos, aceite de harissa, pan artesano",
+    "menu": "Media Mañana",
+    "summary": "Poached eggs on garlic yoghurt at room temperature, with harissa butter poured over hot so it runs red into the white. Twelve minutes from a standing start.",
+    "intro": "Two temperatures make this dish: the yoghurt has to be room temperature, not fridge cold, and the butter has to be poured genuinely hot. Cold yoghurt under a hot egg is unpleasant and it is the single most common way people get this wrong at home.",
+    "yield": "Six",
+    "category": "Breakfast",
+    "cuisine": "Turkish",
+    "keywords": "turkish eggs, cilbir, harissa butter eggs, poached eggs yoghurt, brunch eggs recipe",
+    "ingredients": [
+      "500 g thick Greek yoghurt, out of the fridge an hour beforehand",
+      "2 cloves garlic, grated to a paste with salt",
+      "Juice of half a lemon",
+      "12 very fresh eggs",
+      "2 tbsp white wine vinegar for the water",
+      "120 g butter",
+      "2 tbsp harissa",
+      "1 tsp Aleppo pepper or mild chilli flakes",
+      "Dill and mint, chopped",
+      "Good bread, thickly sliced and toasted"
+    ],
+    "steps": [
+      "Beat the yoghurt with the garlic, lemon and a good pinch of salt until smooth and loose. Leave it out; it must not be cold when it goes on the plate.",
+      "Bring a wide pan of water to a bare simmer, so bubbles rise occasionally rather than constantly, and add the vinegar.",
+      "Crack each egg into a small sieve first and let the loose white drain away. This is what gives you a neat egg instead of a cloud.",
+      "Slide them in and poach three minutes for a set white and a completely liquid yolk. Lift them onto kitchen paper.",
+      "Melt the butter and let it foam and just begin to brown, then take it off the heat and stir in the harissa and Aleppo pepper. It should be loose and vividly red.",
+      "Spread the yoghurt across warm, not hot, plates. Sit two eggs on each, pour the harissa butter over so it bleeds into the yoghurt, then herbs and salt.",
+      "Serve with the toast immediately, while the butter is still moving."
+    ],
+    "chefNote": "Warm the plates but do not heat them. A hot plate turns the yoghurt grainy within a minute and it never comes back.",
+    "servesWith": "Strong coffee and nothing sweet until after.",
+    "seoTitle": "Turkish eggs with harissa oil"
+  },
+  "es": {
+    "title": "Huevos turcos, aceite de harissa, pan artesano",
+    "subtitle": "Huevos escalfados sobre yogur con ajo y mantequilla de harissa",
+    "menu": "Media Mañana",
+    "summary": "Huevos escalfados sobre yogur con ajo a temperatura ambiente, con mantequilla de harissa vertida caliente para que corra roja sobre la clara. Doce minutos desde cero.",
+    "intro": "Este plato lo hacen dos temperaturas: el yogur tiene que estar a temperatura ambiente, no frío de nevera, y la mantequilla tiene que caer realmente caliente. Yogur frío bajo un huevo caliente es desagradable, y es el fallo más común cuando se hace en casa.",
+    "yield": "Seis",
+    "category": "Desayuno",
+    "cuisine": "Turca",
+    "keywords": "huevos turcos, cilbir, huevos con yogur, mantequilla de harissa, brunch de huevos",
+    "ingredients": [
+      "500 g de yogur griego espeso, fuera de la nevera una hora antes",
+      "2 dientes de ajo majados con sal hasta pasta",
+      "Zumo de medio limón",
+      "12 huevos muy frescos",
+      "2 cucharadas de vinagre de vino blanco para el agua",
+      "120 g de mantequilla",
+      "2 cucharadas de harissa",
+      "1 cucharadita de pimienta de Alepo o guindilla suave en copos",
+      "Eneldo y menta picados",
+      "Pan bueno en rebanadas gruesas, tostado"
+    ],
+    "steps": [
+      "Bate el yogur con el ajo, el limón y una buena pizca de sal hasta que quede liso y suelto. Déjalo fuera; no puede estar frío al llegar al plato.",
+      "Pon una olla ancha con agua a fuego muy suave, de forma que suba alguna burbuja de vez en cuando, y añade el vinagre.",
+      "Casca cada huevo primero sobre un colador pequeño y deja escurrir la clara más líquida. Eso es lo que te da un huevo limpio en lugar de una nube.",
+      "Deslízalos dentro y escáldalos tres minutos, para clara cuajada y yema completamente líquida. Sácalos sobre papel de cocina.",
+      "Funde la mantequilla y deja que espume y empiece justo a dorarse; retírala del fuego e incorpora la harissa y la pimienta de Alepo. Debe quedar fluida y de un rojo intenso.",
+      "Extiende el yogur en platos templados, no calientes. Coloca dos huevos en cada uno, vierte la mantequilla de harissa para que sangre sobre el yogur y termina con las hierbas y sal.",
+      "Sirve con la tostada enseguida, mientras la mantequilla todavía se mueve."
+    ],
+    "chefNote": "Templa los platos, no los calientes. Un plato caliente vuelve el yogur granuloso en un minuto y ya no hay marcha atrás.",
+    "servesWith": "Café fuerte y nada dulce hasta después.",
+    "seoTitle": "Huevos turcos"
+  }
+}

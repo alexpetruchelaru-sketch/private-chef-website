@@ -1,0 +1,73 @@
+{
+  "slug": "huevos-benedictinos",
+  "order": 23,
+  "date": "2026-09-01",
+  "prepMinutes": 25,
+  "cookMinutes": 10,
+  "image": "",
+  "imageAlt": "",
+  "en": {
+    "title": "Eggs benedict, smoked salmon, pancetta or spinach",
+    "subtitle": "Huevos benedictinos, salmón, panceta o espinacas",
+    "menu": "Media Mañana",
+    "summary": "Muffins, poached eggs and a hollandaise made by hand over water, with three toppings so nobody at the table is left out. The dish the brunch menu was built around.",
+    "intro": "Hollandaise is not difficult, it is just unforgiving of heat. Too hot and the yolks scramble; too cool and it never thickens. Made over barely simmering water in a bowl that does not touch it, whisked constantly, it takes about six minutes and holds for an hour in a warm place. Make it first, not last.",
+    "yield": "Six",
+    "category": "Breakfast",
+    "cuisine": "European",
+    "keywords": "eggs benedict, hollandaise recipe, eggs royale, smoked salmon eggs, brunch benedict",
+    "ingredients": [
+      "6 English muffins, split",
+      "12 very fresh eggs for poaching",
+      "2 tbsp white wine vinegar for the water",
+      "For the hollandaise: 3 egg yolks, 1 tbsp water, 1 tbsp lemon juice, 250 g butter melted and warm, cayenne, salt",
+      "300 g smoked salmon",
+      "12 slices pancetta or streaky bacon",
+      "400 g spinach and a knob of butter",
+      "Chives"
+    ],
+    "steps": [
+      "Set a bowl over a pan of barely simmering water without letting it touch the water. Whisk the yolks, water and lemon juice until pale and doubled, about three minutes; the whisk should leave a trail.",
+      "Take the bowl off the heat and pour the warm melted butter in very slowly, whisking without stopping, until thick and glossy. Season with salt and a small pinch of cayenne. Keep it somewhere warm, covered, not over heat.",
+      "Grill the pancetta until crisp. Wilt the spinach in butter, then squeeze it dry hard; wet spinach ruins the muffin underneath.",
+      "Toast the muffin halves and butter them.",
+      "Poach the eggs three minutes in barely simmering water with the vinegar, straining the loose white off each egg first.",
+      "Build fast: muffin, topping, drained egg, a generous spoon of hollandaise, chives. Serve immediately, all plates at once."
+    ],
+    "chefNote": "If the hollandaise splits, whisk a fresh yolk with a teaspoon of water in a clean warm bowl and add the split sauce to it drop by drop. It comes back every time, and it is quicker than starting over.",
+    "servesWith": "The avocado and poached egg, and a jug of something cold.",
+    "seoTitle": "Eggs benedict, three ways"
+  },
+  "es": {
+    "title": "Huevos benedictinos, salmón, panceta o espinacas",
+    "subtitle": "Huevos escalfados con holandesa hecha a mano",
+    "menu": "Media Mañana",
+    "summary": "Muffins, huevos escalfados y una holandesa montada a mano al baño María, con tres coberturas para que nadie en la mesa se quede fuera. El plato alrededor del que se construyó el menú de brunch.",
+    "intro": "La holandesa no es difícil, simplemente no perdona el calor. Demasiado caliente y las yemas se cuajan; demasiado fría y no espesa nunca. Montada sobre agua que apenas hierve, en un bol que no la toca y batiendo sin parar, salen unos seis minutos y aguanta una hora en un sitio templado. Hazla la primera, no la última.",
+    "yield": "Seis",
+    "category": "Desayuno",
+    "cuisine": "Europea",
+    "keywords": "huevos benedictinos, salsa holandesa, huevos royale, salmón ahumado, brunch",
+    "ingredients": [
+      "6 muffins ingleses, abiertos",
+      "12 huevos muy frescos para escalfar",
+      "2 cucharadas de vinagre de vino blanco para el agua",
+      "Para la holandesa: 3 yemas, 1 cucharada de agua, 1 de zumo de limón, 250 g de mantequilla fundida y templada, cayena y sal",
+      "300 g de salmón ahumado",
+      "12 lonchas de panceta o bacon",
+      "400 g de espinacas y una nuez de mantequilla",
+      "Cebollino"
+    ],
+    "steps": [
+      "Coloca un bol sobre una olla con agua que apenas hierva, sin que llegue a tocarla. Bate las yemas, el agua y el limón hasta que blanqueen y doblen su volumen, unos tres minutos; la varilla debe dejar marca.",
+      "Retira el bol del fuego y añade la mantequilla templada muy despacio, batiendo sin parar, hasta que espese y brille. Sazona con sal y una pizca pequeña de cayena. Guárdala templada y tapada, nunca sobre el fuego.",
+      "Tuesta la panceta hasta que esté crujiente. Saltea las espinacas en mantequilla y escúrrelas apretando bien; las espinacas mojadas arruinan el muffin de abajo.",
+      "Tuesta las mitades de muffin y úntalas con mantequilla.",
+      "Escalfa los huevos tres minutos en agua que apenas hierva con el vinagre, escurriendo antes la clara más líquida de cada uno.",
+      "Monta rápido: muffin, cobertura, huevo escurrido, una cucharada generosa de holandesa y cebollino. Sirve enseguida y todos los platos a la vez."
+    ],
+    "chefNote": "Si la holandesa se corta, bate una yema nueva con una cucharadita de agua en un bol limpio y templado y añade la salsa cortada gota a gota. Se recupera siempre, y es más rápido que empezar de cero.",
+    "servesWith": "El aguacate con huevo escalfado y una jarra de algo frío.",
+    "seoTitle": "Huevos benedictinos"
+  }
+}

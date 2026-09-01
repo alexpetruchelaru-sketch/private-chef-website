@@ -1,34 +1,71 @@
 {
-  "title": "Mojo verde",
-  "subtitle": "Green mojo with coriander and green chilli",
-  "summary": "The green sauce that goes on almost everything in the Canaries. Coriander, green chilli, garlic and cumin, loosened with local olive oil and sharpened with vinegar. It takes four minutes and it keeps a week.",
-  "intro": "Every island kitchen has a version of this and no two agree. Mine leans hard on coriander and keeps the garlic raw, because it is going next to fish and needs to cut rather than soothe. Make it the morning you need it and let it sit an hour before you judge the salt.",
-  "yield": "About 300 ml, enough for six",
+  "slug": "mojo-verde",
+  "order": 1,
+  "date": "2026-09-01",
   "prepMinutes": 10,
   "cookMinutes": 0,
-  "category": "Sauce",
-  "cuisine": "Canarian",
-  "keywords": "mojo verde, canarian green mojo, coriander sauce, mojo recipe, gran canaria",
   "image": "",
   "imageAlt": "",
-  "ingredients": [
-    "1 large bunch coriander, about 60 g, stalks and all",
-    "1 green chilli, seeds left in",
-    "3 cloves garlic",
-    "1 tsp cumin seeds, toasted",
-    "150 ml mild olive oil",
-    "2 tbsp white wine vinegar",
-    "1 tsp coarse salt",
-    "2 tbsp cold water"
-  ],
-  "steps": [
-    "Toast the cumin seeds in a dry pan until they smell of themselves, about 40 seconds. Do not walk away.",
-    "Crush the garlic, salt and cumin in a mortar to a rough paste. A blender does this too, but the mortar gives you a sauce with texture rather than a smoothie.",
-    "Add the coriander and chilli a handful at a time, working each one down before the next.",
-    "Loosen with the vinegar, then pour the oil in slowly while you keep working. It will not emulsify like a mayonnaise and it is not meant to.",
-    "Slacken with the water until it pours off a spoon in a thick ribbon. Taste for salt, then leave it an hour before you decide."
-  ],
-  "chefNote": "It darkens after a day. That is oxidation, not spoilage, and the flavour is arguably better on day two. Keep it under a film of oil in the fridge and it will hold a week.",
-  "servesWith": "Cherne, vieja, papas arrugadas, or anything off the grill.",
-  "date": "2026-09-01"
+  "en": {
+    "title": "Mojo verde",
+    "subtitle": "Green mojo with coriander and green chilli",
+    "menu": "The basics",
+    "summary": "The green sauce that goes on almost everything in the Canaries. Coriander, green chilli, garlic and cumin, loosened with local olive oil and sharpened with vinegar. It takes four minutes and it keeps a week.",
+    "intro": "Every island kitchen has a version of this and no two agree. Mine leans hard on coriander and keeps the garlic raw, because it is going next to fish and needs to cut rather than soothe. Make it the morning you need it and let it sit an hour before you judge the salt.",
+    "yield": "About 300 ml, enough for six",
+    "category": "Sauce",
+    "cuisine": "Canarian",
+    "keywords": "mojo verde, canarian green mojo, coriander sauce, mojo recipe, gran canaria",
+    "ingredients": [
+      "1 large bunch coriander, about 60 g, stalks and all",
+      "1 green chilli, seeds left in",
+      "3 cloves garlic",
+      "1 tsp cumin seeds, toasted",
+      "150 ml mild olive oil",
+      "2 tbsp white wine vinegar",
+      "1 tsp coarse salt",
+      "2 tbsp cold water"
+    ],
+    "steps": [
+      "Toast the cumin seeds in a dry pan until they smell of themselves, about 40 seconds. Do not walk away.",
+      "Crush the garlic, salt and cumin in a mortar to a rough paste. A blender does this too, but the mortar gives you a sauce with texture rather than a smoothie.",
+      "Add the coriander and chilli a handful at a time, working each one down before the next.",
+      "Loosen with the vinegar, then pour the oil in slowly while you keep working. It will not emulsify like a mayonnaise and it is not meant to.",
+      "Slacken with the water until it pours off a spoon in a thick ribbon. Taste for salt, then leave it an hour before you decide."
+    ],
+    "chefNote": "It darkens after a day. That is oxidation, not spoilage, and the flavour is arguably better on day two. Keep it under a film of oil in the fridge and it will hold a week.",
+    "servesWith": "Cherne, vieja, papas arrugadas, or anything off the grill.",
+    "seoTitle": "Mojo verde"
+  },
+  "es": {
+    "title": "Mojo verde",
+    "subtitle": "Mojo verde de cilantro y pimienta verde",
+    "menu": "Los básicos",
+    "summary": "La salsa verde que acompaña casi todo en Canarias. Cilantro, pimienta verde, ajo y comino, aligerada con aceite de oliva y afilada con vinagre. Cuatro minutos de trabajo y aguanta una semana.",
+    "intro": "Cada cocina de la isla tiene su versión y no hay dos iguales. La mía carga el cilantro y deja el ajo crudo, porque va junto al pescado y tiene que cortar, no suavizar. Hazlo la mañana que lo necesites y déjalo reposar una hora antes de juzgar la sal.",
+    "yield": "Unos 300 ml, para seis",
+    "category": "Salsa",
+    "cuisine": "Canaria",
+    "keywords": "mojo verde, mojo verde canario, salsa de cilantro, receta de mojo, gran canaria",
+    "ingredients": [
+      "1 manojo grande de cilantro, unos 60 g, con los tallos",
+      "1 pimienta verde, con las pepitas",
+      "3 dientes de ajo",
+      "1 cucharadita de comino en grano, tostado",
+      "150 ml de aceite de oliva suave",
+      "2 cucharadas de vinagre de vino blanco",
+      "1 cucharadita de sal gruesa",
+      "2 cucharadas de agua fría"
+    ],
+    "steps": [
+      "Tuesta el comino en una sartén seca hasta que huela a comino, unos 40 segundos. No te alejes.",
+      "Maja el ajo, la sal y el comino en el mortero hasta obtener una pasta basta. La batidora también lo hace, pero el mortero deja una salsa con textura en lugar de un batido.",
+      "Añade el cilantro y la pimienta a puñados, trabajando cada uno antes de meter el siguiente.",
+      "Aflójalo con el vinagre y añade el aceite en hilo sin dejar de majar. No va a emulsionar como una mayonesa, ni debe.",
+      "Termina con el agua hasta que caiga de la cuchara en una cinta espesa. Prueba de sal y déjalo una hora antes de decidir."
+    ],
+    "chefNote": "Al día siguiente se oscurece. Es oxidación, no está malo, y el sabor probablemente esté mejor. Guárdalo en la nevera bajo una capa de aceite y aguanta una semana.",
+    "servesWith": "Cherne, vieja, papas arrugadas o cualquier cosa de la brasa.",
+    "seoTitle": "Mojo verde"
+  }
 }

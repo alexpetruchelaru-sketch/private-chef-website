@@ -1,0 +1,83 @@
+{
+  "slug": "cochinillo-confitado",
+  "order": 14,
+  "date": "2026-09-01",
+  "prepMinutes": 30,
+  "cookMinutes": 420,
+  "image": "",
+  "imageAlt": "",
+  "en": {
+    "title": "Confit suckling pig, heritage potato, apple, thyme",
+    "subtitle": "Cochinillo confitado, papa antigua, manzana, tomillo",
+    "menu": "Sobremesa",
+    "summary": "Suckling pig shoulder cooked seven hours in fat at a very low temperature, pressed, then blasted skin side down so the crackling shatters. The centrepiece of the Sobremesa menu.",
+    "intro": "Roasting a whole suckling pig in a villa kitchen is a gamble on somebody else's oven. Confit is not. The meat cooks gently in fat overnight, which is forgiving, and the only fast, risky part happens in a pan minutes before service where I can watch it.",
+    "yield": "Six",
+    "category": "Main",
+    "cuisine": "Spanish",
+    "keywords": "cochinillo confitado, confit suckling pig, crackling, pressed pork, spanish suckling pig recipe",
+    "ingredients": [
+      "1 suckling pig shoulder and belly, about 2.5 kg, skin on",
+      "2 tbsp coarse salt",
+      "1 head garlic, halved",
+      "6 sprigs thyme, 2 bay leaves",
+      "1 tsp black peppercorns",
+      "1.5 kg pork fat or mild olive oil, enough to submerge",
+      "800 g papas antiguas",
+      "3 firm apples",
+      "1 tbsp cider vinegar",
+      "50 g butter",
+      "Sea salt"
+    ],
+    "steps": [
+      "Rub the meat with the salt and leave it in the fridge for six hours. Rinse and dry it very well.",
+      "Sit it in a deep dish with the garlic, thyme, bay and peppercorns, and cover completely with melted fat or oil.",
+      "Cook at 120C for six and a half to seven hours. It is done when the bones lift out clean with no pull.",
+      "Lift it out while warm, remove all bones and cartilage, then lay it flat between two trays, skin side up, with weight on top. Refrigerate overnight.",
+      "Reserve the fat: strain it and keep it, it is better than what you started with.",
+      "Peel and chop two apples, cook them down with the vinegar and a splash of water, then blend with the butter and a pinch of salt. Boil the potatoes and crush them coarsely with some of the reserved pork fat.",
+      "Cut the pressed pig into six portions. Put them skin side down in a dry, very hot pan and leave them without moving for four to six minutes. The skin will bubble, spit and go glassy. Turn briefly, then rest two minutes.",
+      "Serve on the apple purée and crushed potato, with matchsticks of the third apple raw, thyme leaves and sea salt on the crackling."
+    ],
+    "chefNote": "Dry the skin obsessively before it hits the pan. Any moisture at all and it will steam and go leathery instead of shattering, and that is the whole dish gone.",
+    "servesWith": "Something acidic to cut it. A cold, sharp cider, or a red with no oak.",
+    "seoTitle": "Confit suckling pig"
+  },
+  "es": {
+    "title": "Cochinillo confitado, papa antigua, manzana, tomillo",
+    "subtitle": "Cochinillo confitado siete horas y prensado",
+    "menu": "Sobremesa",
+    "summary": "Paletilla de cochinillo confitada siete horas en grasa a muy baja temperatura, prensada y luego marcada a fuego fuerte por la piel para que la corteza estalle. El plato central del menú Sobremesa.",
+    "intro": "Asar un cochinillo entero en la cocina de una villa es apostar por el horno de otro. El confitado no. La carne se cocina despacio en grasa, que perdona mucho, y la única parte rápida y arriesgada ocurre en una sartén, minutos antes de servir, donde puedo vigilarla.",
+    "yield": "Seis",
+    "category": "Principal",
+    "cuisine": "Española",
+    "keywords": "cochinillo confitado, cochinillo, corteza crujiente, cerdo prensado, receta de cochinillo",
+    "ingredients": [
+      "1 paletilla y panceta de cochinillo, unos 2,5 kg, con piel",
+      "2 cucharadas de sal gruesa",
+      "1 cabeza de ajos partida",
+      "6 ramas de tomillo y 2 hojas de laurel",
+      "1 cucharadita de pimienta negra en grano",
+      "1,5 kg de manteca de cerdo o aceite de oliva suave, la necesaria para cubrir",
+      "800 g de papas antiguas",
+      "3 manzanas firmes",
+      "1 cucharada de vinagre de sidra",
+      "50 g de mantequilla",
+      "Sal marina"
+    ],
+    "steps": [
+      "Frota la carne con la sal y déjala seis horas en la nevera. Enjuágala y sécala muy bien.",
+      "Colócala en una fuente honda con el ajo, el tomillo, el laurel y la pimienta, y cúbrela por completo con la grasa fundida o el aceite.",
+      "Cocina a 120 ºC entre seis horas y media y siete. Está lista cuando los huesos salen limpios sin tirar.",
+      "Sácala en templado, retira todos los huesos y cartílagos, ponla plana entre dos bandejas con la piel hacia arriba y peso encima. Nevera toda la noche.",
+      "Guarda la grasa: cuélala y consérvala, está mejor que cuando empezaste.",
+      "Pela y trocea dos manzanas, cocínalas con el vinagre y un poco de agua y tritúralas con la mantequilla y una pizca de sal. Cuece las papas y machácalas de forma basta con algo de la grasa reservada.",
+      "Corta el cochinillo prensado en seis raciones. Ponlas con la piel hacia abajo en una sartén seca muy caliente y no las muevas durante cuatro a seis minutos. La piel burbujeará, saltará y se volverá vidriosa. Dales la vuelta un momento y deja reposar dos minutos.",
+      "Sirve sobre el puré de manzana y la papa machacada, con bastones de la tercera manzana en crudo, hojas de tomillo y sal marina sobre la corteza."
+    ],
+    "chefNote": "Seca la piel de forma obsesiva antes de que toque la sartén. Con cualquier resto de humedad se cuece y queda correosa en lugar de crujiente, y ahí se pierde el plato entero.",
+    "servesWith": "Algo ácido que corte. Una sidra fría y seca, o un tinto sin madera.",
+    "seoTitle": "Cochinillo confitado"
+  }
+}

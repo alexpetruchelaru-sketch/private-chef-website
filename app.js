@@ -80,6 +80,7 @@
       [".recipe-fig", 0, "fig"],
       [".recipe-meta div", 60],
       [".recipe-intro, .recipe-body section, .chef-note, .serves-with, .recipe-cta", 80],
+      [".recipe-group-h", 0],
       [".recipe-card", 60, "fig"]
     ];
 
@@ -107,8 +108,11 @@
       for (var i = waiting.length - 1; i >= 0; i--) {
         var el = waiting[i];
         if (el.classList.contains("in")) { waiting.splice(i, 1); continue; }
-        var r = el.getBoundingClientRect();
-        if (r.top < h * 0.94 && r.bottom > 0) { show(el); waiting.splice(i, 1); }
+        /* Anything whose top has crossed the fold counts, including things
+           already scrolled past. Requiring it to still be on screen meant a
+           fast scroll, or an anchor jump, could leave an element hidden for
+           good once it had gone by. */
+        if (el.getBoundingClientRect().top < h * 0.94) { show(el); waiting.splice(i, 1); }
       }
     }
     var sraf = 0;

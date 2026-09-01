@@ -1,0 +1,81 @@
+{
+  "slug": "baifo-miel-de-palma",
+  "order": 10,
+  "date": "2026-09-01",
+  "prepMinutes": 30,
+  "cookMinutes": 210,
+  "image": "",
+  "imageAlt": "",
+  "en": {
+    "title": "Kid goat, palm honey, star anise, heritage potato",
+    "subtitle": "Baifo, miel de palma, anís estrellado, papa antigua",
+    "menu": "Travesía",
+    "summary": "Shoulder of baifo braised for three hours with star anise, finished with palm honey from La Gomera and served over crushed heritage potato. The most island-specific thing I cook.",
+    "intro": "Baifo is young goat and it is on every serious Canarian table, usually fried. Braised instead, it goes silky, and miel de palma at the end is what makes it local rather than generically Mediterranean. Palm honey is not honey, it is reduced palm sap, and it is smoky and slightly bitter. Do not swap it for cane syrup and expect the same dish.",
+    "yield": "Six",
+    "category": "Main",
+    "cuisine": "Canarian",
+    "keywords": "baifo, kid goat recipe, miel de palma, palm honey, canarian goat, braised goat",
+    "ingredients": [
+      "2 kg kid goat shoulder, on the bone, cut into large pieces",
+      "2 onions, 2 carrots, 3 sticks celery, all roughly chopped",
+      "1 head garlic, halved across",
+      "2 star anise",
+      "1 tsp black peppercorns",
+      "2 bay leaves",
+      "300 ml dry white wine",
+      "1 litre chicken or light meat stock",
+      "3 tbsp miel de palma, plus more to finish",
+      "800 g papas antiguas",
+      "Olive oil, salt, butter"
+    ],
+    "steps": [
+      "Season the goat well and brown it hard in olive oil in batches, in a heavy casserole. Take your time and do not crowd the pan. Set the meat aside.",
+      "In the same fat, cook the vegetables until they take real colour, 10 to 12 minutes. Add the garlic, star anise, peppercorns and bay.",
+      "Deglaze with the wine and reduce it by half, scraping everything off the base.",
+      "Return the meat, add stock to come three quarters of the way up, bring to a bare simmer, cover and cook at 150C for two and a half to three hours, until the meat pulls away from the bone but still holds together.",
+      "Lift the meat out. Strain the liquid, skim the fat, and reduce it hard until it coats a spoon. Whisk in the palm honey and check the seasoning: it wants to be just on the edge of too sweet, then pulled back with salt.",
+      "Boil the potatoes, drain and crush them with butter and salt, leaving them coarse.",
+      "Warm the meat through in the sauce. Serve over the potato with a last thread of palm honey and a little of the sauce, not a pool of it."
+    ],
+    "chefNote": "Two star anise for two kilos, no more. Goat and anise is a real pairing, but a third one takes over the whole pot and you cannot take it back out.",
+    "servesWith": "A robust island red, something with listán negro in it.",
+    "seoTitle": "Kid goat with palm honey"
+  },
+  "es": {
+    "title": "Baifo, miel de palma, anís estrellado, papa antigua",
+    "subtitle": "Paletilla de baifo guisada tres horas",
+    "menu": "Travesía",
+    "summary": "Paletilla de baifo guisada tres horas con anís estrellado, terminada con miel de palma gomera y servida sobre papa antigua machacada. Lo más de esta tierra que cocino.",
+    "intro": "El baifo está en toda mesa canaria seria, casi siempre frito. Guisado se vuelve sedoso, y la miel de palma al final es lo que lo hace de aquí y no simplemente mediterráneo. La miel de palma no es miel, es savia de palmera reducida, ahumada y con un punto amargo. No la cambies por sirope de caña esperando el mismo plato.",
+    "yield": "Seis",
+    "category": "Principal",
+    "cuisine": "Canaria",
+    "keywords": "baifo, receta de baifo, miel de palma, cabrito guisado, carne canaria, gran canaria",
+    "ingredients": [
+      "2 kg de paletilla de baifo con hueso, en trozos grandes",
+      "2 cebollas, 2 zanahorias y 3 ramas de apio, en trozos bastos",
+      "1 cabeza de ajos partida por la mitad",
+      "2 estrellas de anís",
+      "1 cucharadita de pimienta negra en grano",
+      "2 hojas de laurel",
+      "300 ml de vino blanco seco",
+      "1 litro de caldo de pollo o de carne suave",
+      "3 cucharadas de miel de palma, y más para terminar",
+      "800 g de papas antiguas",
+      "Aceite de oliva, sal y mantequilla"
+    ],
+    "steps": [
+      "Salpimenta bien el baifo y dóralo fuerte en aceite, por tandas, en una cazuela gruesa. Tómate tu tiempo y no llenes la cazuela. Reserva la carne.",
+      "En la misma grasa, cocina las verduras hasta que cojan color de verdad, 10 o 12 minutos. Añade el ajo, el anís, la pimienta y el laurel.",
+      "Desglasa con el vino y redúcelo a la mitad, rascando bien el fondo.",
+      "Devuelve la carne, cubre tres cuartas partes con el caldo, lleva a hervor muy suave, tapa y cocina a 150 ºC entre dos horas y media y tres, hasta que la carne se separe del hueso pero siga entera.",
+      "Saca la carne. Cuela el líquido, desgrasa y redúcelo fuerte hasta que nape la cuchara. Monta la miel de palma y corrige de sal: tiene que quedar justo al borde de lo demasiado dulce y volver atrás con la sal.",
+      "Cuece las papas, escúrrelas y machácalas con mantequilla y sal, dejándolas bastas.",
+      "Calienta la carne en la salsa. Sírvela sobre la papa con un último hilo de miel de palma y algo de salsa, no un charco."
+    ],
+    "chefNote": "Dos estrellas de anís para dos kilos, no más. El baifo con anís funciona, pero una tercera se adueña de la cazuela y ya no la sacas.",
+    "servesWith": "Un tinto de la isla con cuerpo, algo con listán negro.",
+    "seoTitle": "Baifo con miel de palma"
+  }
+}

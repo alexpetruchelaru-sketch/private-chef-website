@@ -1,6 +1,13 @@
 # Pages CMS configuration (pagescms.org).
 # Sign in at app.pagescms.org with GitHub, pick this repository, and the
 # fields below become a form. Saving commits the JSON and Cloudflare rebuilds.
+#
+# Each recipe holds the facts that do not change with language at the top
+# (photo, times, web address), then one block per language. Fill in the
+# English block and you get an English page. Fill in the Spanish block too
+# and you also get /es/recetas/<address>/, linked to the English one.
+# Leave the Spanish block empty and nothing breaks; there is simply no
+# Spanish page for that recipe.
 media:
   input: img/recipes
   output: /img/recipes
@@ -9,32 +16,63 @@ content:
     label: Recipes
     type: collection
     path: content/recipes
-    filename: '{fields.title}.json'
+    filename: '{fields.slug}.json'
     format: json
     view:
-      fields: [title, subtitle, date]
-      primary: title
+      fields: [slug, order, date]
+      primary: slug
     fields:
-      - { name: title, label: Recipe name, type: string, required: true }
-      - { name: subtitle, label: One-line subtitle, type: string }
-      - { name: summary, label: Summary, type: text, required: true,
-          description: Two or three sentences. This is what Google shows in search results. }
-      - { name: intro, label: Introduction, type: text,
-          description: The bit before the recipe. Why you cook it this way. }
+      - { name: slug, label: Web address, type: string, required: true, pattern: '^[a-z0-9-]+$',
+          description: "Lower case, words joined by hyphens, no accents. This becomes the address: mojo-verde gives alexchelaru.com/recipes/mojo-verde/. Do not change it once the page is live." }
+      - { name: order, label: Position in the list, type: number,
+          description: Lower numbers come first on the recipes page. Leave blank and it goes to the end. }
+      - { name: date, label: Date published, type: date, required: true }
       - { name: image, label: Photo, type: image,
-          description: The finished dish. Google will not show a recipe as a rich result without one. }
+          description: The finished dish. Google will not show a recipe as a rich result without one. The same photo is used on both languages. }
       - { name: imageAlt, label: Photo description, type: string,
           description: What is in the photo, for search and for screen readers. }
-      - { name: ingredients, label: Ingredients, type: string, list: true, required: true }
-      - { name: steps, label: Method, type: text, list: true, required: true }
-      - { name: chefNote, label: Chef's note, type: text }
-      - { name: servesWith, label: Serve it with, type: string }
-      - { name: yield, label: Serves, type: string }
       - { name: prepMinutes, label: Prep time in minutes, type: number }
       - { name: cookMinutes, label: Cook time in minutes, type: number }
-      - { name: category, label: Course, type: select,
-          options: { values: [Starter, Main, Side, Dessert, Sauce, Breakfast, Snack] } }
-      - { name: cuisine, label: Cuisine, type: string, default: Canarian }
-      - { name: keywords, label: Search keywords, type: string,
-          description: Comma separated. What someone would type into Google to find this. }
-      - { name: date, label: Date published, type: date, required: true }
+
+      - name: en
+        label: English
+        type: object
+        fields:
+          - { name: title, label: Recipe name, type: string, required: true }
+          - { name: subtitle, label: One-line subtitle, type: string }
+          - { name: menu, label: Which menu it comes from, type: string,
+              description: "Huerta, Travesia, Sobremesa, Brasa, Media Manana, or leave blank." }
+          - { name: summary, label: Summary, type: text, required: true,
+              description: Two or three sentences. This is what Google shows in search results. }
+          - { name: intro, label: Introduction, type: text,
+              description: The bit before the recipe. Why you cook it this way. }
+          - { name: ingredients, label: Ingredients, type: string, list: true, required: true }
+          - { name: steps, label: Method, type: text, list: true, required: true }
+          - { name: chefNote, label: Chef's note, type: text }
+          - { name: servesWith, label: Serve it with, type: string }
+          - { name: yield, label: Serves, type: string }
+          - { name: category, label: Course, type: select,
+              options: { values: [Starter, Main, Side, Dessert, Sauce, Breakfast, Snack] } }
+          - { name: cuisine, label: Cuisine, type: string, default: Canarian }
+          - { name: keywords, label: Search keywords, type: string,
+              description: Comma separated. What someone would type into Google to find this. }
+
+      - name: es
+        label: Espanol
+        type: object
+        fields:
+          - { name: title, label: Nombre de la receta, type: string }
+          - { name: subtitle, label: Subtitulo de una linea, type: string }
+          - { name: menu, label: De que menu es, type: string }
+          - { name: summary, label: Resumen, type: text,
+              description: Dos o tres frases. Es lo que Google muestra en los resultados. }
+          - { name: intro, label: Introduccion, type: text }
+          - { name: ingredients, label: Ingredientes, type: string, list: true }
+          - { name: steps, label: Elaboracion, type: text, list: true }
+          - { name: chefNote, label: Nota del chef, type: text }
+          - { name: servesWith, label: Acompanalo con, type: string }
+          - { name: yield, label: Para cuantos, type: string }
+          - { name: category, label: Tipo de plato, type: select,
+              options: { values: [Entrante, Principal, "Guarnicion", Postre, Salsa, Desayuno, Aperitivo] } }
+          - { name: cuisine, label: Cocina, type: string, default: Canaria }
+          - { name: keywords, label: Palabras clave, type: string }

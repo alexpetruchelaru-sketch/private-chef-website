@@ -1,0 +1,77 @@
+{
+  "slug": "kofta-de-cordero-y-ternera",
+  "order": 17,
+  "date": "2026-09-01",
+  "prepMinutes": 30,
+  "cookMinutes": 12,
+  "image": "",
+  "imageAlt": "",
+  "en": {
+    "title": "Spiced lamb and beef kofta",
+    "subtitle": "Kofta de cordero y ternera, comino, menta",
+    "menu": "Brasa",
+    "summary": "Half lamb, half beef, worked until the mixture turns sticky, spiced with cumin and mint and shaped around flat skewers. The one thing on the grill that children and grandparents both finish.",
+    "intro": "Kofta falls off the skewer for one reason: the mix has not been worked enough. Kneading develops the protein until it goes tacky and holds itself together, and that takes a solid five minutes. Then it has to rest cold, and it has to go on a hot grill. Skip any of the three and you will be picking meat out of the coals.",
+    "yield": "Six to eight",
+    "category": "Main",
+    "cuisine": "Middle Eastern",
+    "keywords": "kofta recipe, lamb kofta, kofta kebab, minced lamb skewers, bbq kofta",
+    "ingredients": [
+      "500 g minced lamb, 20% fat",
+      "500 g minced beef, 20% fat",
+      "1 onion, grated and squeezed dry in a cloth",
+      "3 cloves garlic, grated",
+      "2 tsp ground cumin",
+      "1 tsp ground coriander",
+      "1 tsp sweet paprika",
+      "Half tsp cinnamon",
+      "A large handful each of flat parsley and mint, chopped fine",
+      "2 tsp fine salt, 1 tsp black pepper"
+    ],
+    "steps": [
+      "Squeeze the grated onion in a cloth until it is genuinely dry. The water it holds is the second reason kofta falls apart.",
+      "Put everything in a bowl and knead it hard, like bread dough, for a full five minutes. It will change under your hands from loose mince to a sticky mass that pulls away from the bowl in one piece. That is the moment to stop.",
+      "Fry a teaspoon of it in a pan and taste for salt and spice. Adjust. This is the only chance you get.",
+      "Wet your hands and shape the mix around flat metal skewers into sausages about 15 cm long and 3 cm thick, squeezing to grip the skewer. Refrigerate at least an hour, uncovered.",
+      "Cook over hot, even charcoal with no flames, 10 to 12 minutes total, turning only every three minutes. Do not fiddle with them; they need to set a crust before they will release.",
+      "Rest three minutes and serve with flatbread, yoghurt and lemon."
+    ],
+    "chefNote": "Twenty per cent fat, both meats. Lean mince makes a dry, crumbly kofta and no amount of technique will save it.",
+    "servesWith": "Yoghurt with garlic and lemon, and the salad table.",
+    "seoTitle": "Spiced lamb and beef kofta"
+  },
+  "es": {
+    "title": "Kofta de cordero y ternera, comino, menta",
+    "subtitle": "Kofta trabajada a mano sobre brochetas planas",
+    "menu": "Brasa",
+    "summary": "Mitad cordero, mitad ternera, amasada hasta que la mezcla se vuelve pegajosa, especiada con comino y menta y moldeada sobre brochetas planas. Lo único de la parrilla que se terminan igual los niños y los abuelos.",
+    "intro": "La kofta se cae de la brocheta por una sola razón: la mezcla no se ha trabajado lo suficiente. Amasar desarrolla la proteína hasta que se pone pegajosa y se sostiene sola, y eso son cinco minutos largos. Después tiene que reposar en frío y entrar en una parrilla caliente. Sáltate uno de los tres pasos y estarás recogiendo carne de las brasas.",
+    "yield": "Seis u ocho",
+    "category": "Principal",
+    "cuisine": "Oriente Medio",
+    "keywords": "kofta, kofta de cordero, kebab de kofta, brochetas de carne picada, barbacoa",
+    "ingredients": [
+      "500 g de cordero picado, 20 % de grasa",
+      "500 g de ternera picada, 20 % de grasa",
+      "1 cebolla rallada y escurrida en un paño",
+      "3 dientes de ajo rallados",
+      "2 cucharaditas de comino molido",
+      "1 cucharadita de cilantro molido",
+      "1 cucharadita de pimentón dulce",
+      "Media cucharadita de canela",
+      "Un buen puñado de perejil y otro de menta, muy picados",
+      "2 cucharaditas de sal fina y 1 de pimienta negra"
+    ],
+    "steps": [
+      "Escurre la cebolla rallada en un paño hasta que esté realmente seca. El agua que guarda es la segunda razón por la que la kofta se deshace.",
+      "Pon todo en un bol y amásalo con fuerza, como si fuera pan, durante cinco minutos completos. Bajo las manos pasará de carne picada suelta a una masa pegajosa que se despega del bol en una sola pieza. Ahí paras.",
+      "Fríe una cucharadita en una sartén y prueba de sal y especia. Corrige. Es la única oportunidad que tendrás.",
+      "Con las manos mojadas, moldea la mezcla alrededor de brochetas planas de metal en cilindros de unos 15 cm de largo y 3 de grueso, apretando para que agarren. Nevera al menos una hora, destapadas.",
+      "Cocina sobre carbón caliente y uniforme, sin llama, de 10 a 12 minutos en total, girando solo cada tres minutos. No las toquetees: necesitan hacer costra antes de despegarse.",
+      "Reposa tres minutos y sirve con pan plano, yogur y limón."
+    ],
+    "chefNote": "Veinte por ciento de grasa en las dos carnes. La carne magra da una kofta seca y quebradiza y no hay técnica que lo arregle.",
+    "servesWith": "Yogur con ajo y limón, y la mesa de ensaladas.",
+    "seoTitle": "Kofta de cordero y ternera"
+  }
+}

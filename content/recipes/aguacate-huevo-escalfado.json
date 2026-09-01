@@ -1,0 +1,75 @@
+{
+  "slug": "aguacate-huevo-escalfado",
+  "order": 22,
+  "date": "2026-09-01",
+  "prepMinutes": 15,
+  "cookMinutes": 5,
+  "image": "",
+  "imageAlt": "",
+  "en": {
+    "title": "Avocado, poached egg, seeds, virgin olive oil",
+    "subtitle": "Aguacate, huevo escalfado, semillas, aceite virgen",
+    "menu": "Media Mañana",
+    "summary": "Avocado crushed with lime and salt on toasted sourdough, a poached egg on top, and a seed mix toasted with cumin. The plainest thing on the brunch menu and the one that has to be perfect.",
+    "intro": "There is nothing to it, which is exactly why it goes wrong. Avocado crushed too far is baby food, seeds bought pre-toasted are stale, and an egg poached ahead is rubber. The whole dish is four ingredients with nowhere to hide, so treat each one seriously.",
+    "yield": "Six",
+    "category": "Breakfast",
+    "cuisine": "Modern",
+    "keywords": "avocado toast poached egg, smashed avocado recipe, brunch avocado, toasted seeds, avocado egg",
+    "ingredients": [
+      "4 ripe avocados",
+      "2 limes",
+      "6 very fresh eggs",
+      "6 thick slices sourdough",
+      "2 tbsp pumpkin seeds, 2 tbsp sunflower seeds, 1 tbsp sesame seeds",
+      "1 tsp cumin seeds",
+      "Half tsp chilli flakes",
+      "Best olive oil you have, flaked salt, black pepper",
+      "Coriander or dill"
+    ],
+    "steps": [
+      "Toast all the seeds together in a dry pan over a medium heat with the cumin, shaking often, for three to four minutes until they pop and smell nutty. Tip out immediately, salt them and add the chilli. Cool.",
+      "Halve the avocados and crush them roughly in a bowl with lime juice, salt and pepper. Leave real lumps; if it is smooth you have gone too far.",
+      "Toast the bread hard so it stays rigid under everything that goes on it.",
+      "Poach the eggs three minutes in barely simmering water with a splash of vinegar, straining off the loose white first.",
+      "Pile the avocado on the toast, sit the egg on top, and season the egg itself with salt and pepper.",
+      "Scatter the seeds, pour over a real amount of good olive oil, and finish with herbs. Serve at once."
+    ],
+    "chefNote": "Crush the avocado to order, not in advance. Lime slows the browning but it does not stop it, and after 20 minutes the surface has gone grey no matter what you do.",
+    "servesWith": "It sits well next to the eggs benedict on a shared brunch table.",
+    "seoTitle": "Avocado and poached egg"
+  },
+  "es": {
+    "title": "Aguacate, huevo escalfado, semillas, aceite virgen",
+    "subtitle": "Aguacate machacado sobre masa madre con semillas tostadas",
+    "menu": "Media Mañana",
+    "summary": "Aguacate machacado con lima y sal sobre pan de masa madre tostado, un huevo escalfado encima y una mezcla de semillas tostadas con comino. Lo más sencillo del menú de brunch y lo que tiene que salir perfecto.",
+    "intro": "No tiene nada, y justo por eso sale mal. El aguacate demasiado triturado es papilla, las semillas compradas ya tostadas están rancias y un huevo escalfado con antelación es goma. Son cuatro ingredientes sin dónde esconderse: trata a cada uno en serio.",
+    "yield": "Seis",
+    "category": "Desayuno",
+    "cuisine": "Actual",
+    "keywords": "tostada de aguacate con huevo, aguacate machacado, brunch de aguacate, semillas tostadas, huevo escalfado",
+    "ingredients": [
+      "4 aguacates maduros",
+      "2 limas",
+      "6 huevos muy frescos",
+      "6 rebanadas gruesas de masa madre",
+      "2 cucharadas de pipas de calabaza, 2 de girasol y 1 de sésamo",
+      "1 cucharadita de comino en grano",
+      "Media cucharadita de guindilla en copos",
+      "El mejor aceite de oliva que tengas, sal en escamas y pimienta negra",
+      "Cilantro o eneldo"
+    ],
+    "steps": [
+      "Tuesta todas las semillas juntas en una sartén seca a fuego medio con el comino, moviendo a menudo, de tres a cuatro minutos, hasta que salten y huelan a fruto seco. Vuélcalas enseguida, sálalas y añade la guindilla. Deja enfriar.",
+      "Parte los aguacates y machácalos de forma basta en un bol con zumo de lima, sal y pimienta. Que queden trozos de verdad; si está liso, te has pasado.",
+      "Tuesta el pan bien fuerte para que aguante rígido bajo todo lo que va encima.",
+      "Escalfa los huevos tres minutos en agua que apenas hierva con un chorro de vinagre, escurriendo antes la clara más líquida.",
+      "Reparte el aguacate sobre la tostada, coloca el huevo encima y sazona el huevo con sal y pimienta.",
+      "Esparce las semillas, riega con una cantidad generosa de buen aceite y termina con las hierbas. Sirve al momento."
+    ],
+    "chefNote": "Machaca el aguacate al momento, no antes. La lima retrasa la oxidación pero no la evita, y a los 20 minutos la superficie está gris hagas lo que hagas.",
+    "servesWith": "Funciona bien al lado de los huevos benedictinos en una mesa de brunch compartida.",
+    "seoTitle": "Aguacate con huevo escalfado"
+  }
+}

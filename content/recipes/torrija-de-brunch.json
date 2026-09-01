@@ -1,0 +1,79 @@
+{
+  "slug": "torrija-de-brunch",
+  "order": 24,
+  "date": "2026-09-01",
+  "prepMinutes": 20,
+  "cookMinutes": 10,
+  "image": "",
+  "imageAlt": "",
+  "en": {
+    "title": "French toast, caramelised plantain, mascarpone, maple",
+    "subtitle": "Torrija, plátano caramelizado, mascarpone, sirope de arce",
+    "menu": "Media Mañana",
+    "summary": "The brunch cousin of the Huerta dessert. Same soaked bread, but no plantain in the custard and no blowtorch: the plantain is caramelised in the pan, and whipped mascarpone goes on cold.",
+    "intro": "This is deliberately not the dessert version. That one is dense, brûléed and eaten with a spoon at the end of a long dinner. This is lighter, soaked for one hour rather than overnight, and the contrast is between hot bread, hot caramel and cold cream. Serve it the moment it comes out of the pan.",
+    "yield": "Six",
+    "category": "Breakfast",
+    "cuisine": "Canarian",
+    "keywords": "french toast recipe, torrija brunch, caramelised plantain, mascarpone maple, brunch french toast",
+    "ingredients": [
+      "6 thick slices brioche, day-old, cut 3 cm thick",
+      "300 ml whole milk",
+      "150 ml double cream",
+      "3 eggs plus 1 yolk",
+      "40 g caster sugar",
+      "1 tsp vanilla paste, quarter tsp cinnamon",
+      "250 g mascarpone",
+      "150 ml double cream for whipping, plus 1 tbsp icing sugar",
+      "4 ripe plantains",
+      "60 g butter and 40 g brown sugar for the caramel",
+      "Maple syrup, flaked salt"
+    ],
+    "steps": [
+      "Whisk the milk, cream, eggs, yolk, sugar, vanilla and cinnamon and strain into a shallow dish.",
+      "Lay the brioche in and leave it one hour, turning once. It should be soaked through but still liftable in one piece.",
+      "Whip the mascarpone with the cream and icing sugar to soft peaks. Do not overwhip; mascarpone goes grainy fast. Refrigerate.",
+      "Halve the plantains lengthways. Melt the butter in a wide pan, add the brown sugar, and cook the plantain cut side down four to five minutes until deeply caramelised. Keep them warm.",
+      "Wipe the pan, add fresh butter, and fry the soaked brioche two to three minutes a side over a medium heat until dark gold and set through. Medium, not high; too hot and the outside burns while the middle stays raw custard.",
+      "Plate the toast, the plantain and its caramel, a spoon of cold mascarpone, maple syrup poured at the table and a few flakes of salt over the top."
+    ],
+    "chefNote": "The salt at the end is not a garnish. Without it the plate is three kinds of sweet and it becomes hard work after four mouthfuls.",
+    "servesWith": "It closes a brunch. Put it out after the eggs, not alongside them.",
+    "seoTitle": "French toast with plantain"
+  },
+  "es": {
+    "title": "Torrija, plátano caramelizado, mascarpone, sirope de arce",
+    "subtitle": "La versión de brunch, más ligera y sin quemar",
+    "menu": "Media Mañana",
+    "summary": "La prima de brunch del postre del menú Huerta. El mismo pan empapado, pero sin plátano en la crema y sin soplete: el plátano se carameliza en la sartén y el mascarpone montado se pone frío.",
+    "intro": "No es la versión de postre, y es a propósito. Aquella es densa, quemada y se come con cuchara al final de una cena larga. Esta es más ligera, con una hora de remojo en lugar de toda la noche, y el contraste está entre el pan caliente, el caramelo caliente y la crema fría. Sírvela en cuanto salga de la sartén.",
+    "yield": "Seis",
+    "category": "Desayuno",
+    "cuisine": "Canaria",
+    "keywords": "torrija de brunch, tostada francesa, plátano caramelizado, mascarpone, sirope de arce",
+    "ingredients": [
+      "6 rebanadas gruesas de brioche del día anterior, de 3 cm",
+      "300 ml de leche entera",
+      "150 ml de nata para montar",
+      "3 huevos y 1 yema",
+      "40 g de azúcar",
+      "1 cucharadita de pasta de vainilla y un cuarto de cucharadita de canela",
+      "250 g de mascarpone",
+      "150 ml de nata para montar y 1 cucharada de azúcar glas",
+      "4 plátanos maduros",
+      "60 g de mantequilla y 40 g de azúcar moreno para el caramelo",
+      "Sirope de arce y sal en escamas"
+    ],
+    "steps": [
+      "Bate la leche, la nata, los huevos, la yema, el azúcar, la vainilla y la canela y cuélalo en una fuente baja.",
+      "Coloca el brioche dentro y déjalo una hora, dándole la vuelta una vez. Tiene que quedar empapado pero todavía se debe poder levantar de una pieza.",
+      "Monta el mascarpone con la nata y el azúcar glas a picos suaves. No lo montes de más; el mascarpone se vuelve granuloso enseguida. A la nevera.",
+      "Parte los plátanos a lo largo. Funde la mantequilla en una sartén ancha, añade el azúcar moreno y cocina el plátano por la cara cortada de cuatro a cinco minutos hasta que caramelice bien. Mantenlos calientes.",
+      "Limpia la sartén, pon mantequilla nueva y fríe el brioche empapado de dos a tres minutos por cara a fuego medio, hasta que esté dorado oscuro y cuajado por dentro. Medio, no fuerte: con mucho fuego el exterior se quema y el centro se queda crudo.",
+      "Monta la tostada, el plátano con su caramelo, una cucharada de mascarpone frío, el sirope de arce vertido en la mesa y unas escamas de sal por encima."
+    ],
+    "chefNote": "La sal del final no es decoración. Sin ella el plato es dulce por tres lados y a los cuatro bocados se hace cuesta arriba.",
+    "servesWith": "Cierra un brunch. Sácalo después de los huevos, no a la vez.",
+    "seoTitle": "Torrija con plátano caramelizado"
+  }
+}

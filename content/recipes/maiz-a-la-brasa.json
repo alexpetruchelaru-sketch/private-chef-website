@@ -1,0 +1,71 @@
+{
+  "slug": "maiz-a-la-brasa",
+  "order": 20,
+  "date": "2026-09-01",
+  "prepMinutes": 15,
+  "cookMinutes": 15,
+  "image": "",
+  "imageAlt": "",
+  "en": {
+    "title": "Grilled corn, chilli and lime",
+    "subtitle": "Maíz a la brasa, guindilla, lima",
+    "menu": "Brasa",
+    "summary": "Corn charred directly on the coals, rolled in chilli-lime butter and finished with salty cheese. The cheapest thing on the Brasa menu and usually the first to go.",
+    "intro": "Boiling corn before grilling is a habit worth dropping. Straight on the coals, the sugars caramelise and some kernels blacken, and that bitterness against the lime is the entire point. Buy the freshest corn you can find, because the sugar starts turning to starch the day it is picked.",
+    "yield": "Six",
+    "category": "Side",
+    "cuisine": "Mexican",
+    "keywords": "grilled corn, elote, corn on the cob bbq, chilli lime butter, charred corn",
+    "ingredients": [
+      "6 corn cobs, husks removed",
+      "150 g soft butter",
+      "1 tsp chilli flakes and 1 tsp smoked paprika",
+      "Zest of 2 limes, plus wedges to serve",
+      "1 clove garlic, grated",
+      "80 g hard salty cheese, grated: queso majorero, manchego or feta",
+      "Coriander, flaked salt"
+    ],
+    "steps": [
+      "Beat the butter with the chilli, paprika, lime zest, garlic and a good pinch of salt. Leave it somewhere warm enough to stay soft.",
+      "Get the coals to a medium heat with no flames. Flames will blacken the outside while the inside is still hard.",
+      "Put the cobs straight on the bars and cook 12 to 15 minutes, turning every two or three minutes, until the kernels are golden with properly black patches in places.",
+      "While they are still too hot to hold, roll each one in the flavoured butter until coated.",
+      "Scatter the grated cheese over so it sticks to the butter, then coriander and flaked salt.",
+      "Serve with lime wedges and something to hold them with, because nobody waits for them to cool."
+    ],
+    "chefNote": "If you are cooking for a crowd, char the corn an hour ahead and hold it wrapped in foil somewhere warm. Butter and cheese it to order; it is just as good and it takes the pressure off the grill.",
+    "servesWith": "Everything else on the Brasa menu.",
+    "seoTitle": "Grilled corn, chilli and lime"
+  },
+  "es": {
+    "title": "Maíz a la brasa, guindilla, lima",
+    "subtitle": "Mazorcas tostadas con mantequilla de guindilla y lima",
+    "menu": "Brasa",
+    "summary": "Maíz tostado directamente sobre las brasas, envuelto en mantequilla de guindilla y lima y terminado con queso salado. Lo más barato del menú Brasa y casi siempre lo primero que desaparece.",
+    "intro": "Cocer el maíz antes de asarlo es una costumbre que conviene dejar. Directo a la brasa, los azúcares caramelizan y algunos granos se ennegrecen, y ese amargor contra la lima es todo el asunto. Compra el maíz más fresco que encuentres, porque el azúcar empieza a convertirse en almidón el mismo día que se recoge.",
+    "yield": "Seis",
+    "category": "Guarnición",
+    "cuisine": "Mexicana",
+    "keywords": "maíz a la brasa, elote, mazorca a la barbacoa, mantequilla de lima y guindilla, maíz asado",
+    "ingredients": [
+      "6 mazorcas de maíz, sin las hojas",
+      "150 g de mantequilla pomada",
+      "1 cucharadita de guindilla en copos y 1 de pimentón ahumado",
+      "Ralladura de 2 limas, y gajos para servir",
+      "1 diente de ajo rallado",
+      "80 g de queso curado y salado rallado: majorero, manchego o feta",
+      "Cilantro y sal en escamas"
+    ],
+    "steps": [
+      "Bate la mantequilla con la guindilla, el pimentón, la ralladura de lima, el ajo y una buena pizca de sal. Déjala en un sitio templado para que siga blanda.",
+      "Deja las brasas a fuego medio, sin llama. La llama ennegrece el exterior mientras el interior sigue duro.",
+      "Pon las mazorcas directamente sobre la parrilla y cocínalas de 12 a 15 minutos, girándolas cada dos o tres, hasta que los granos estén dorados con manchas bien negras.",
+      "Mientras aún queman demasiado para cogerlas, rueda cada una en la mantequilla hasta cubrirla.",
+      "Reparte el queso rallado por encima para que se pegue a la mantequilla, y después el cilantro y la sal en escamas.",
+      "Sirve con gajos de lima y algo para sujetarlas, porque nadie espera a que se enfríen."
+    ],
+    "chefNote": "Si cocinas para mucha gente, tuesta el maíz una hora antes y guárdalo envuelto en aluminio en un sitio templado. La mantequilla y el queso, al momento; queda igual de bien y le quita presión a la parrilla.",
+    "servesWith": "Todo lo demás del menú Brasa.",
+    "seoTitle": "Maíz a la brasa"
+  }
+}

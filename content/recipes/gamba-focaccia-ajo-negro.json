@@ -1,0 +1,73 @@
+{
+  "slug": "gamba-focaccia-ajo-negro",
+  "order": 12,
+  "date": "2026-09-01",
+  "prepMinutes": 30,
+  "cookMinutes": 25,
+  "image": "",
+  "imageAlt": "",
+  "en": {
+    "title": "Prawn on focaccia, black garlic, chilli",
+    "subtitle": "Gamba sobre focaccia, ajo negro, guindilla",
+    "menu": "Sobremesa",
+    "summary": "A single large prawn, cooked hard and fast, on a square of hot focaccia with black garlic butter and chilli. Eaten with the fingers, which is the point of the Sobremesa menu.",
+    "intro": "This is a canapé that behaves like a first course. Everything can be prepped hours ahead except the prawn, which takes ninety seconds and cannot be done in advance. Black garlic gives the sweetness and depth that would otherwise need a reduction, and it comes out of a jar, which on a busy service matters.",
+    "yield": "Six",
+    "category": "Starter",
+    "cuisine": "European",
+    "keywords": "prawn focaccia, black garlic butter, gamba recipe, prawn canape, black garlic chilli",
+    "ingredients": [
+      "6 large raw prawns, shell on, heads on if you can get them",
+      "6 squares of good focaccia, about 7 cm",
+      "8 cloves black garlic",
+      "120 g soft butter",
+      "1 red chilli, half finely chopped, half sliced",
+      "1 lemon",
+      "1 tbsp olive oil",
+      "Flat parsley, flaked salt"
+    ],
+    "steps": [
+      "Mash the black garlic to a paste with a fork and beat it into the soft butter with the chopped chilli, a squeeze of lemon and a good pinch of salt. Roll it in paper and chill.",
+      "Peel the prawns, leaving the last tail segment on. Run a knife down the back and lift out the dark vein. Pat them dry.",
+      "Split the focaccia squares horizontally, brush the cut faces with olive oil and toast them cut side down in a dry pan until crisp and hot.",
+      "Get a pan very hot with the olive oil. Cook the prawns 45 seconds on the first side without moving them, turn, and give them 30 to 40 seconds more. They are ready the moment the flesh turns from grey to white.",
+      "Take the pan off the heat, add a thick slice of the black garlic butter and roll the prawns in it as it melts.",
+      "Sit each prawn on a square of focaccia, spoon the pan butter over, and finish with sliced chilli, parsley and flaked salt. Serve immediately, on a board, no cutlery."
+    ],
+    "chefNote": "If you can get heads on, cook them separately for a minute and put them on the board too. Half the flavour of a prawn is in the head and most people are pleased to be given permission.",
+    "servesWith": "It is the opening bite of the Sobremesa menu. Cold fino or cava, standing up.",
+    "seoTitle": "Prawn on focaccia, black garlic"
+  },
+  "es": {
+    "title": "Gamba sobre focaccia, ajo negro, guindilla",
+    "subtitle": "Gamba a la plancha con mantequilla de ajo negro",
+    "menu": "Sobremesa",
+    "summary": "Una gamba grande, hecha fuerte y rápida, sobre un cuadrado de focaccia caliente con mantequilla de ajo negro y guindilla. Se come con las manos, que es de lo que va el menú Sobremesa.",
+    "intro": "Es un aperitivo que se comporta como un primero. Todo se puede tener listo horas antes menos la gamba, que son noventa segundos y no admite adelanto. El ajo negro aporta el dulzor y la profundidad que si no exigirían una reducción, y viene de un bote, lo que en un servicio con prisa importa.",
+    "yield": "Seis",
+    "category": "Entrante",
+    "cuisine": "Europea",
+    "keywords": "gamba focaccia, mantequilla de ajo negro, receta de gambas, aperitivo de gamba, ajo negro",
+    "ingredients": [
+      "6 gambas grandes crudas, con cáscara y con cabeza si es posible",
+      "6 cuadrados de focaccia buena, de unos 7 cm",
+      "8 dientes de ajo negro",
+      "120 g de mantequilla pomada",
+      "1 guindilla roja, la mitad picada y la mitad en rodajas",
+      "1 limón",
+      "1 cucharada de aceite de oliva",
+      "Perejil y sal en escamas"
+    ],
+    "steps": [
+      "Machaca el ajo negro con un tenedor hasta hacer una pasta e incorpóralo a la mantequilla pomada con la guindilla picada, unas gotas de limón y una buena pizca de sal. Enróllala en papel y enfría.",
+      "Pela las gambas dejando el último tramo de la cola. Haz un corte a lo largo del lomo y retira el intestino. Sécalas.",
+      "Abre los cuadrados de focaccia por la mitad, pinta las caras cortadas con aceite y tuéstalas boca abajo en una sartén seca hasta que estén crujientes y calientes.",
+      "Calienta mucho una sartén con el aceite. Haz las gambas 45 segundos por la primera cara sin moverlas, dales la vuelta y déjalas otros 30 o 40 segundos. Están listas en cuanto la carne pasa de gris a blanca.",
+      "Retira la sartén del fuego, añade una rodaja gruesa de la mantequilla de ajo negro y rueda las gambas mientras se funde.",
+      "Coloca cada gamba sobre un cuadrado de focaccia, salsea con la mantequilla de la sartén y termina con la guindilla en rodajas, perejil y sal en escamas. Sirve enseguida, en tabla y sin cubiertos."
+    ],
+    "chefNote": "Si las consigues con cabeza, hazlas aparte un minuto y ponlas también en la tabla. La mitad del sabor de una gamba está en la cabeza y casi todo el mundo agradece el permiso.",
+    "servesWith": "Es el primer bocado del menú Sobremesa. Fino frío o cava, de pie.",
+    "seoTitle": "Gamba sobre focaccia"
+  }
+}

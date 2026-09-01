@@ -656,7 +656,12 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
 .recipe-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
 .recipe-card { display: grid; text-decoration: none; color: var(--ink); border: 1px solid var(--linen-2); background: var(--surface, transparent); transition: border-color .25s ease, transform .25s ease; }
 .recipe-card:hover { border-color: var(--verde); transform: translateY(-2px); }
-.recipe-card img, .recipe-card-noimg { width: 100%; aspect-ratio: 4/3; object-fit: cover; background: var(--linen); display: block; }
+.recipe-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; background: var(--linen); display: block; }
+/* No photograph yet: a card without one should not carry an empty grey
+   rectangle where the picture would be. A hairline in the house green marks
+   the top of the card instead, so a list of photo-less recipes still reads
+   as a set and gains nothing to apologise for. */
+.recipe-card-noimg { display: block; height: 3px; background: var(--verde); opacity: .75; }
 .recipe-card-body { display: grid; gap: 6px; padding: 20px 22px 24px; }
 .recipe-card b { font-family: var(--serif); font-weight: 400; font-size: 25px; }
 .recipe-card i { font-style: normal; font-size: 12.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--verde); }
@@ -675,6 +680,15 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
 .recipe-grid { grid-auto-rows: 1fr; }
 .recipe-card { grid-template-rows: auto 1fr; }
 .recipe-card img, .recipe-card-noimg { align-self: start; }
+
+/* The recipes are grouped by the menu they come from. */
+.recipe-group + .recipe-group { margin-top: 46px; }
+.recipe-group-h {
+  font-family: var(--sans); font-size: 12px; font-weight: 700;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--sea);
+  margin: 0 0 16px; padding-bottom: 10px;
+  border-bottom: 1px solid var(--linen-2);
+}
 
 /* ============================================================
    Motion.
@@ -787,6 +801,19 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
   .mark { font-size: 15px; }
   .mark-logo { width: 30px; height: 30px; }
 }
+
+/* A quiet second door out of each menu: the same courses, written
+   out in full. It sits beside the enquiry link, deliberately
+   lighter than it, so it never competes with the booking. */
+.menu-recipes {
+  font-size: 13.5px; letter-spacing: .02em;
+  color: var(--sea); text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--sea) 40%, transparent);
+  padding-bottom: 2px;
+  transition: color .25s ease, border-color .25s ease;
+}
+.menu-recipes:hover { color: var(--verde); border-bottom-color: var(--verde); }
+@media (max-width: 520px) { .menu-recipes { font-size: 13px; } }
 
 /* ============================================================
    Photographs at full size.
