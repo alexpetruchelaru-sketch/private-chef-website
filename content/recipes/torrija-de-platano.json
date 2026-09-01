@@ -3,14 +3,7 @@
   "subtitle": "Plantain custard French toast with honey rum",
   "summary": "Brioche soaked overnight in a custard made from island plantain, fried in butter, then brûléed so the top cracks under the spoon. The dessert that closes the Huerta menu.",
   "intro": "A torrija is Spanish French toast, usually milk and cinnamon. This one replaces most of the milk with plantain blitzed into the custard, which does two things: it sweetens without sugar, and it makes the inside set almost like a bread pudding. The overnight soak is not optional.",
-  "yield": "Six",
-  "prepMinutes": 25,
-  "cookMinutes": 15,
-  "category": "Dessert",
-  "cuisine": "Canarian",
-  "keywords": "torrija, plantain dessert, canarian french toast, platano, honey rum, ron miel",
-  "image": "",
-  "imageAlt": "",
+  "image": "/img/recipes/french toast.jpg",
   "ingredients": [
     "6 thick slices brioche or good white bread, crusts on, cut 3 cm thick",
     "3 very ripe plantains or bananas, black-skinned",
@@ -32,5 +25,11 @@
   ],
   "chefNote": "Day-old bread only. Fresh bread turns to soup in the custard and there is no rescuing it.",
   "servesWith": "Nothing. It does not need cream and it does not need ice cream.",
+  "yield": "Six",
+  "prepMinutes": 25,
+  "cookMinutes": 15,
+  "category": "Dessert",
+  "cuisine": "Canarian",
+  "keywords": "torrija, plantain dessert, canarian french toast, platano, honey rum, ron miel",
   "date": "2026-09-01"
 }
