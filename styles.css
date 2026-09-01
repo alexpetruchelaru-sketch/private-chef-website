@@ -788,9 +788,83 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
   .mark-logo { width: 30px; height: 30px; }
 }
 
+/* ============================================================
+   Photographs at full size.
+   The grid thumbnails are small on purpose so the menus stay
+   readable; this is where a guest actually looks at the food.
+   ============================================================ */
+.zoomable { cursor: zoom-in; }
+.zoomable:focus-visible { outline: 2px solid var(--verde); outline-offset: 3px; }
+
+html.lb-open { overflow: hidden; }
+html.lb-open body { position: fixed; left: 0; right: 0; width: 100%; }
+
+.lb {
+  position: fixed; inset: 0; z-index: 200;
+  display: grid; grid-template-rows: 1fr auto;
+  align-items: center; justify-items: center;
+  padding: 64px 16px 24px;
+  background: color-mix(in srgb, var(--ground) 94%, transparent);
+  -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px);
+  animation: lb-in .26s ease both;
+}
+.lb[hidden] { display: none; }
+@keyframes lb-in { from { opacity: 0; } to { opacity: 1; } }
+
+.lb-stage {
+  margin: 0; min-height: 0;
+  display: flex; flex-direction: column; align-items: center; gap: 13px;
+}
+.lb-stage img {
+  display: block; width: auto; height: auto;
+  max-width: min(94vw, 1180px);
+  max-height: calc(100vh - 168px);
+  max-height: calc(100dvh - 168px);
+  object-fit: contain;
+  box-shadow: 0 26px 70px rgba(0, 0, 0, .48);
+  animation: lb-pop .3s cubic-bezier(.2, .7, .3, 1) both;
+  -webkit-user-drag: none; user-select: none; -webkit-user-select: none;
+  touch-action: pan-y;
+}
+@keyframes lb-pop { from { opacity: 0; transform: scale(.975); } to { opacity: 1; transform: none; } }
+
+.lb-stage figcaption {
+  color: var(--linen); opacity: .82; font-size: 13.5px; line-height: 1.5;
+  text-align: center; max-width: 58ch; text-wrap: pretty;
+}
+.lb-count {
+  margin: 0; color: var(--linen); opacity: .5;
+  font-size: 11.5px; letter-spacing: .16em; text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+.lb-btn {
+  position: absolute; z-index: 2;
+  width: 46px; height: 46px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: color-mix(in srgb, var(--bone) 9%, transparent);
+  border: 1px solid color-mix(in srgb, var(--linen) 26%, transparent);
+  color: var(--bone); cursor: pointer;
+  transition: background-color .2s ease, border-color .2s ease;
+}
+.lb-btn:hover { background: color-mix(in srgb, var(--bone) 19%, transparent); border-color: var(--linen); }
+.lb-btn[hidden] { display: none; }
+.lb-close { top: 16px; right: 16px; }
+.lb-prev { left: 14px; top: 50%; transform: translateY(-50%); }
+.lb-next { right: 14px; top: 50%; transform: translateY(-50%) rotate(180deg); }
+
+@media (max-width: 620px) {
+  .lb { padding: 58px 10px 76px; }
+  .lb-stage img { max-height: calc(100dvh - 210px); }
+  .lb-btn { width: 44px; height: 44px; }
+  .lb-prev { left: 18px; top: auto; bottom: 18px; transform: none; }
+  .lb-next { right: 18px; top: auto; bottom: 18px; transform: rotate(180deg); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .js .reveal, .js .reveal-fig,
   .js .reveal.in, .js .reveal-fig.in { opacity: 1 !important; transform: none !important; transition: none !important; }
   .progress { display: none; }
   .gal figure:hover img, .menu:hover .menu-fig img { transform: none; }
+  .lb, .lb-stage img { animation: none; }
 }
