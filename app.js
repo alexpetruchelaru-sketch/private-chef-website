@@ -31,6 +31,30 @@
   var form = document.getElementById("enquiry");
   if (!form) return;
 
+  /* Five clear days before the earliest bookable date. The fish, the heritage
+     potatoes and the island cheeses come from suppliers, not a supermarket, so
+     the window has to be real. Recomputed on every load, so it always moves
+     with today's date rather than being fixed at build time. */
+  var LEAD_DAYS = 5;
+  var dateField = document.getElementById("f-date");
+  var earliest = null;
+  if (dateField) {
+    var d = new Date();
+    d.setHours(0, 0, 0, 0);
+    d.setDate(d.getDate() + LEAD_DAYS);
+    earliest = d;
+    var iso = d.getFullYear() + "-" +
+              String(d.getMonth() + 1).padStart(2, "0") + "-" +
+              String(d.getDate()).padStart(2, "0");
+    dateField.min = iso;
+    var hint = document.getElementById("date-hint");
+    if (hint) {
+      hint.textContent = "Earliest date I can cook is " +
+        d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }) +
+        ". I need five days to source properly.";
+    }
+  }
+
   var status = document.getElementById("status");
   var waSame = document.getElementById("waSame");
 
@@ -60,8 +84,16 @@
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setError("email", "That address does not look complete. Please check it."); problems.push("email"); }
     else setError("email", "");
 
-    setError("date", date ? "" : "Give me a date, even an approximate one.");
-    if (!date) problems.push("date");
+    if (!date) {
+      setError("date", "Give me a date, even an approximate one.");
+      problems.push("date");
+    } else if (earliest && new Date(date + "T00:00:00") < earliest) {
+      setError("date", "I need five days to shop and prepare. The earliest I can cook is " +
+        earliest.toLocaleDateString("en-GB", { day: "numeric", month: "long" }) + ".");
+      problems.push("date");
+    } else {
+      setError("date", "");
+    }
 
     setError("guests", guests ? "" : "How many will be at the table?");
     if (!guests) problems.push("guests");

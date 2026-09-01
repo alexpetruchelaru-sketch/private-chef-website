@@ -557,3 +557,43 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
 /* The logo and the name were baseline-aligned, which sat the mark
    about thirteen pixels high against the middle of the text. */
 .mark { align-items: center; }
+
+/* ------------------------------------------------------------
+   FAQ. Each question is a real heading and each answer a real
+   paragraph, so parsers and AI search can pair them without
+   guessing. Matched word for word to the FAQPage schema.
+   ------------------------------------------------------------ */
+.faq { display: grid; gap: 0; border-top: 1px solid var(--linen-2); }
+@media (min-width: 900px) { .faq { grid-template-columns: 1fr 1fr; column-gap: 56px; } }
+.faq-item { border-bottom: 1px solid var(--linen-2); padding: 24px 0; display: grid; gap: 9px; }
+.faq-item h3 { font-size: 20px; max-width: 34ch; }
+.faq-item p { font-size: 16px; color: var(--sea); max-width: 60ch; }
+@media (max-width: 640px) {
+  .faq-item { padding: 22px 0; }
+  .faq-item h3 { font-size: 19.5px; }
+  .faq-item p { font-size: 16.5px; }
+}
+
+.hint { font-size: 13px; color: var(--sea-soft); }
+.hint:empty { display: none; }
+
+/* ------------------------------------------------------------
+   Gallery. The old mosaic used mixed row and column spans, which
+   left holes and ragged rows at every width tested from 320 to
+   1920. A uniform auto-fill grid cannot misalign: every tile is
+   the same shape and the column count follows the viewport.
+   ------------------------------------------------------------ */
+.gal {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 12px;
+}
+.gal figure { margin: 0; overflow: clip; background: var(--linen); }
+.gal img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover;
+           transition: transform .7s cubic-bezier(.2,.7,.3,1); }
+.gal figure:hover img { transform: scale(1.045); }
+/* the span classes are retired; neutralise them so old markup cannot re-break the grid */
+.gal .tall, .gal .sq, .gal .wide { grid-row: auto; grid-column: auto; }
+.gal .tall img, .gal .sq img, .gal .wide img { aspect-ratio: 1 / 1; }
+@media (max-width: 700px) { .gal { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
+@media (max-width: 360px) { .gal { grid-template-columns: repeat(2, 1fr); gap: 8px; } }
