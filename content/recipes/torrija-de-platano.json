@@ -4,7 +4,7 @@
   "date": "2026-09-01",
   "prepMinutes": 25,
   "cookMinutes": 15,
-  "image": "",
+  "image": "/img/recipes/french toast.jpg",
   "imageAlt": "",
   "en": {
     "title": "Torrija de plátano",
@@ -72,4 +72,4 @@
     "servesWith": "Nada. No necesita nata y no necesita helado.",
     "seoTitle": "Torrija de plátano"
   }
-}
+
