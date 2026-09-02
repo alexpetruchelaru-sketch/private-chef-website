@@ -3,37 +3,38 @@
   "order": 16,
   "date": "2026-09-01",
   "prepMinutes": 25,
-  "cookMinutes": 15,
+  "cookMinutes": 12,
   "image": "",
   "imageAlt": "",
   "en": {
     "title": "Marinated chicken souvlaki",
     "subtitle": "Souvlaki de pollo, limón, orégano",
     "menu": "Brasa",
-    "summary": "Thigh meat marinated overnight in lemon, oregano and garlic, threaded tight on skewers and cooked fast over charcoal. The most-eaten thing on the Brasa menu, by a distance.",
-    "intro": "Thigh, never breast. Breast on a grill has about ninety seconds between raw and ruined, and at a party nobody is watching that closely. Thigh forgives you, and the fat dripping into the coals is what makes the whole terrace smell right.",
+    "summary": "Thigh meat marinated in lemon, oregano and garlic, threaded tight on skewers and cooked over charcoal. The most-eaten thing on the Brasa menu, by a distance.",
+    "intro": "One honest note. I use thigh, and none of the published souvlaki recipes I read argues for it — two specify breast and one says either without giving a reason. I use it because the fat keeps it alive on a grill at a party where nobody is watching the clock, and I would rather tell you that is my preference than pretend it is Greek orthodoxy. The other thing I changed is the marinating time: I had said overnight, and the recipes that give a maximum cap it at four hours, with eight as the outer limit. Past that the lemon starts breaking the texture down.",
     "yield": "Six to eight",
     "category": "Main",
     "cuisine": "Mediterranean",
     "keywords": "chicken souvlaki, souvlaki marinade, greek chicken skewers, charcoal chicken, bbq chicken skewers",
     "ingredients": [
       "1.5 kg boneless chicken thighs, skin off, cut into 4 cm pieces",
-      "Juice and zest of 2 lemons",
-      "6 tbsp olive oil",
-      "4 cloves garlic, grated",
-      "2 tbsp dried oregano",
-      "1 tbsp red wine vinegar",
-      "1 tsp smoked paprika",
-      "2 tsp fine salt, plenty of black pepper",
+      "130 ml olive oil",
+      "Juice and zest of 2 large lemons",
+      "4 tbsp garlic, minced",
+      "3 tbsp dried Greek oregano",
+      "2 tsp sea salt",
+      "1 tsp paprika, optional",
+      "Black pepper",
       "Flatbreads, lemon wedges and yoghurt to serve"
     ],
     "steps": [
-      "Mix everything except the chicken into a marinade and taste it. It should be aggressively lemony and salty; it is about to be diluted by a kilo and a half of meat.",
-      "Add the chicken, work it with your hands until every piece is coated, cover and refrigerate for at least four hours, ideally overnight. Do not go past 24 hours or the lemon starts breaking the texture down.",
-      "Take it out of the fridge 40 minutes before cooking. Cold meat on a grill cooks unevenly.",
+      "Mix everything except the chicken and taste it. It should be aggressively lemony and salty; it is about to be diluted by a kilo and a half of meat.",
+      "Add the chicken, work it with your hands until every piece is coated, cover and refrigerate for at least thirty minutes and no more than four hours. Eight is the outer limit anyone publishes.",
+      "Take it out of the fridge forty minutes before cooking. Cold meat on a grill cooks unevenly.",
       "Thread the pieces tightly onto skewers, five or six per skewer, pressed against each other. Loose pieces dry out; tight ones steam each other and stay juicy.",
-      "Get the charcoal to a medium-high, even heat with no flames. Cook the skewers 12 to 15 minutes, turning every three minutes, until charred in places and firm.",
-      "Rest them five minutes on a warm plate. Squeeze lemon over while they are resting, not before.",
+      "Get the charcoal to a medium, even heat with no flames, banked to one side so you have somewhere to move things to.",
+      "Cook the skewers for ten to twelve minutes, turning every few minutes, until charred in places and firm.",
+      "Rest them three to five minutes on a warm plate, loosely covered. Squeeze lemon over while they are resting, not before.",
       "Serve on warmed flatbreads with yoghurt, or straight off the skewer with a bowl of lemon wedges."
     ],
     "chefNote": "Soak wooden skewers for an hour, or better, use flat metal ones. Round skewers let the meat spin every time you try to turn it, and you will end up cooking one side four times.",
@@ -44,30 +45,31 @@
     "title": "Souvlaki de pollo, limón, orégano",
     "subtitle": "Muslo de pollo marinado y hecho a la brasa",
     "menu": "Brasa",
-    "summary": "Carne de muslo marinada toda la noche en limón, orégano y ajo, ensartada apretada y hecha rápido sobre carbón. Lo más comido del menú Brasa, con diferencia.",
-    "intro": "Muslo, nunca pechuga. La pechuga en la parrilla tiene unos noventa segundos entre cruda y arruinada, y en una fiesta nadie está tan pendiente. El muslo perdona, y la grasa que cae sobre las brasas es lo que hace que la terraza huela como tiene que oler.",
+    "summary": "Muslo de pollo marinado en limón, orégano y ajo, ensartado apretado y hecho sobre carbón. Lo más comido del menú Brasa, con diferencia.",
+    "intro": "Un apunte honesto. Yo uso muslo, y ninguna de las recetas de souvlaki publicadas que leí lo defiende: dos especifican pechuga y una dice cualquiera de las dos sin dar razones. Lo uso porque la grasa lo mantiene vivo en una parrilla de fiesta donde nadie mira el reloj, y prefiero decirte que es una preferencia mía antes que hacerla pasar por ortodoxia griega. Lo otro que he cambiado es el tiempo de marinado: decía toda la noche, y las recetas que dan un máximo lo dejan en cuatro horas, con ocho como límite. Pasado eso el limón empieza a deshacer la textura.",
     "yield": "Seis u ocho",
     "category": "Principal",
     "cuisine": "Mediterránea",
     "keywords": "souvlaki de pollo, marinada de souvlaki, brochetas de pollo, pollo a la brasa, pollo a la barbacoa",
     "ingredients": [
       "1,5 kg de muslo de pollo deshuesado y sin piel, en trozos de 4 cm",
-      "Zumo y ralladura de 2 limones",
-      "6 cucharadas de aceite de oliva",
-      "4 dientes de ajo rallados",
-      "2 cucharadas de orégano seco",
-      "1 cucharada de vinagre de vino tinto",
-      "1 cucharadita de pimentón ahumado",
-      "2 cucharaditas de sal fina y bastante pimienta negra",
+      "130 ml de aceite de oliva",
+      "Zumo y ralladura de 2 limones grandes",
+      "4 cucharadas de ajo picado",
+      "3 cucharadas de orégano griego seco",
+      "2 cucharaditas de sal marina",
+      "1 cucharadita de pimentón, opcional",
+      "Pimienta negra",
       "Pan plano, gajos de limón y yogur para servir"
     ],
     "steps": [
       "Mezcla todo menos el pollo y prueba la marinada. Tiene que estar agresivamente ácida y salada; está a punto de diluirse en kilo y medio de carne.",
-      "Añade el pollo, trabájalo con las manos hasta que todo esté cubierto, tapa y deja en la nevera al menos cuatro horas, mejor toda la noche. No pases de 24 horas o el limón empieza a deshacer la textura.",
-      "Sácalo de la nevera 40 minutos antes de cocinar. La carne fría en la parrilla se hace de forma desigual.",
+      "Añade el pollo, trabájalo con las manos hasta cubrirlo todo, tapa y deja en la nevera al menos treinta minutos y no más de cuatro horas. Ocho es el límite máximo que alguien publica.",
+      "Sácalo de la nevera cuarenta minutos antes de cocinar. La carne fría en la parrilla se hace de forma desigual.",
       "Ensarta los trozos bien apretados, cinco o seis por brocheta, pegados entre sí. Los trozos sueltos se secan; los apretados se cuecen unos a otros y quedan jugosos.",
-      "Deja el carbón en un calor medio-alto y uniforme, sin llama. Haz las brochetas de 12 a 15 minutos, girándolas cada tres, hasta que estén marcadas a trozos y firmes.",
-      "Déjalas reposar cinco minutos en un plato templado. Exprime el limón durante el reposo, no antes.",
+      "Deja el carbón en un calor medio y uniforme, sin llama, agrupado a un lado para tener dónde mover las brochetas.",
+      "Haz las brochetas de diez a doce minutos, girándolas cada pocos minutos, hasta que estén marcadas a trozos y firmes.",
+      "Déjalas reposar de tres a cinco minutos en un plato templado, tapadas sin apretar. Exprime el limón durante el reposo, no antes.",
       "Sirve sobre pan plano templado con yogur, o directamente de la brocheta con un bol de gajos de limón."
     ],
     "chefNote": "Remoja las brochetas de madera una hora o, mejor, usa brochetas planas de metal. Las redondas dejan que la carne gire cada vez que intentas darle la vuelta y acabas haciendo la misma cara cuatro veces.",
@@ -77,5 +79,23 @@
   "related": [
     "maiz-a-la-brasa"
   ],
-  "updated": "2026-09-01"
+  "updated": "2026-09-02",
+  "sources": [
+    {
+      "title": "Greek lemon chicken skewers — Diane Kochilas",
+      "url": "https://www.dianekochilas.com/greek-lemon-chicken-skewers/"
+    },
+    {
+      "title": "Grilled Greek yogurt chicken souvlaki — Diane Kochilas",
+      "url": "https://www.dianekochilas.com/grilled-greek-yogurt-chicken-souvlaki-with-spicy-avocado-tzatziki/"
+    },
+    {
+      "title": "Grilled chicken souvlaki — Cook's Illustrated",
+      "url": "https://www.americastestkitchen.com/cooksillustrated/recipes/7979-grilled-chicken-souvlaki-for-two"
+    },
+    {
+      "title": "Greek chicken souvlaki — Suzy Karadsheh, The Mediterranean Dish",
+      "url": "https://www.themediterraneandish.com/greek-chicken-souvlaki-recipe-tzatziki/"
+    }
+  ]
 }

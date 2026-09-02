@@ -2,34 +2,37 @@
   "slug": "costillar-de-cerdo-gochujang",
   "order": 18,
   "date": "2026-09-01",
-  "prepMinutes": 20,
-  "cookMinutes": 200,
+  "prepMinutes": 30,
+  "cookMinutes": 360,
   "image": "",
   "imageAlt": "",
   "en": {
     "title": "Korean-marinated pork ribs",
     "subtitle": "Costillar de cerdo, gochujang",
     "menu": "Brasa",
-    "summary": "Racks cooked low and slow wrapped in foil until the meat gives, then glazed with gochujang and finished over live coals so the edges catch. Sticky, hot, faintly sweet.",
-    "intro": "Ribs are a two-stage job and people try to do them in one. The long, gentle cook is where tenderness comes from; the fire at the end is only for colour and char. Glaze too early and the sugar in the gochujang burns black before the meat is anywhere near ready.",
+    "summary": "Racks cooked low and slow until the meat gives, then glazed with gochujang and finished over live coals so the edges catch. Sticky, hot, faintly sweet.",
+    "intro": "I had these at 140 degrees for three hours. Both American sources put them at 107 for five to six, and that is the version I have moved to: lower and much longer, which is what actually renders the connective tissue rather than merely cooking it. The glaze still goes on at the very end, because gochujang is loaded with sugar and it will be black long before the meat is ready.",
     "yield": "Six",
     "category": "Main",
     "cuisine": "Korean",
     "keywords": "gochujang ribs, korean pork ribs, bbq ribs recipe, sticky pork ribs, charcoal ribs",
     "ingredients": [
       "2 racks of pork ribs, about 1.2 kg each, membrane removed",
-      "For the rub: 2 tbsp brown sugar, 1 tbsp salt, 1 tbsp smoked paprika, 1 tsp black pepper, 1 tsp garlic powder",
-      "For the glaze: 4 tbsp gochujang, 3 tbsp honey, 3 tbsp soy sauce, 2 tbsp rice vinegar, 1 tbsp toasted sesame oil, 4 cloves garlic grated, 20 g ginger grated",
+      "2⅔ tsp coarse kosher salt for the dry brine",
+      "For the rub: 135 g light brown sugar, 2 tbsp gochugaru, 2 tsp garlic powder, 1 tsp ground ginger",
+      "For the glaze: 240 ml ketchup, 160 ml gochujang, 120 ml rice vinegar, 80 ml Korean rice syrup, 80 g light brown sugar, 3 tbsp soy sauce, 1 tbsp gochugaru, 1 tbsp toasted sesame oil, garlic and ginger",
       "Spring onion and toasted sesame seeds to finish"
     ],
     "steps": [
-      "Pull the silvery membrane off the back of each rack with a paper towel for grip. It never softens and it stops everything else getting in.",
-      "Mix the rub and cover both racks with it. Leave two hours at room temperature, or overnight in the fridge.",
-      "Wrap each rack tightly in a double layer of foil with a splash of water inside, and cook at 140C for two and a half to three hours. They are ready when you can push a skewer through the meat between the bones with no resistance.",
-      "Whisk the glaze ingredients together and warm gently until it just loosens. Do not boil it.",
-      "Open the foil, drain off the liquid, and let the racks cool slightly. They will be fragile; handle them with two hands or a tray.",
-      "Brush with glaze and cook over medium coals, five to eight minutes total, glazing again each time you turn. Let some edges properly char.",
-      "Rest five minutes, cut between the bones, then toss the cut ribs in whatever glaze is left in the pan. Spring onion and sesame over the top."
+      "Pull the silvery membrane off the back of each rack. Get under it with a butter knife, grip it with a paper towel and take it off in one. It never softens and it blocks everything else.",
+      "Dry-brine: salt the racks and refrigerate about twelve hours. Salt separately from the rub, which carries no salt of its own.",
+      "Apply the rub and let it sit while the fire comes up.",
+      "Cook at 107 °C for five to six hours. If you want to speed the middle stretch, wrap in foil with a splash of water for no more than an hour.",
+      "Test by bending: lift a rack from one end and the surface should crack across the top. A thin probe reads around 93 °C.",
+      "Whisk the glaze ingredients together and warm them gently until loosened. Do not boil it.",
+      "Brush the glaze on for the last thirty minutes of the low cook.",
+      "Move the racks over the hottest part of the fire for ten to fifteen minutes, glazing again each time you turn, and let some edges properly char.",
+      "Rest five minutes, cut between the bones, then toss the cut ribs in whatever glaze is left. Spring onion and sesame over the top."
     ],
     "chefNote": "Cut them after glazing, not before. Cut first and the exposed meat dries out over the coals; cut last and every surface stays sticky.",
     "servesWith": "[[maiz-a-la-brasa|Grilled corn]], and something sharp and crunchy: pickled cucumber or a raw cabbage salad.",
@@ -39,26 +42,29 @@
     "title": "Costillar de cerdo, gochujang",
     "subtitle": "Costillas lentas y glaseadas a la brasa",
     "menu": "Brasa",
-    "summary": "Costillares cocinados bajos y lentos envueltos en papel de aluminio hasta que la carne cede, luego glaseados con gochujang y terminados sobre brasa viva para que los bordes se quemen un poco. Pegajosas, picantes, con un fondo dulce.",
-    "intro": "Las costillas son un trabajo en dos fases y la gente intenta hacerlo en una. La cocción larga y suave es de donde sale la ternura; el fuego del final es solo color y tostado. Si glaseas antes de tiempo, el azúcar del gochujang se quema mucho antes de que la carne esté lista.",
+    "summary": "Costillares cocinados bajos y lentos hasta que la carne cede, luego glaseados con gochujang y terminados sobre brasa viva para que los bordes se tuesten. Pegajosas, picantes, con un fondo dulce.",
+    "intro": "Las tenía a 140 grados durante tres horas. Las dos fuentes americanas las ponen a 107 durante cinco o seis, y esa es la versión a la que me he pasado: más baja y mucho más larga, que es lo que de verdad funde el colágeno en lugar de solo cocinar la carne. El glaseado sigue entrando al final, porque el gochujang va cargado de azúcar y estará negro mucho antes de que la carne esté lista.",
     "yield": "Seis",
     "category": "Principal",
     "cuisine": "Coreana",
     "keywords": "costillas gochujang, costillas coreanas, costillas a la barbacoa, costillas de cerdo, brasa",
     "ingredients": [
-      "2 costillares de cerdo de 1,2 kg cada uno, sin la telilla",
-      "Para el rub: 2 cucharadas de azúcar moreno, 1 de sal, 1 de pimentón ahumado, 1 cucharadita de pimienta negra y 1 de ajo en polvo",
-      "Para el glaseado: 4 cucharadas de gochujang, 3 de miel, 3 de salsa de soja, 2 de vinagre de arroz, 1 de aceite de sésamo tostado, 4 dientes de ajo rallados y 20 g de jengibre rallado",
+      "2 costillares de cerdo de unos 1,2 kg cada uno, sin la telilla",
+      "2⅔ cucharaditas de sal gruesa para la salmuera seca",
+      "Para el rub: 135 g de azúcar moreno claro, 2 cucharadas de gochugaru, 2 cucharaditas de ajo en polvo y 1 de jengibre molido",
+      "Para el glaseado: 240 ml de ketchup, 160 ml de gochujang, 120 ml de vinagre de arroz, 80 ml de sirope de arroz coreano, 80 g de azúcar moreno claro, 3 cucharadas de soja, 1 de gochugaru, 1 de aceite de sésamo tostado, ajo y jengibre",
       "Cebolleta y sésamo tostado para terminar"
     ],
     "steps": [
-      "Retira la telilla plateada de la parte de atrás de cada costillar ayudándote con papel de cocina para agarrar. No se ablanda nunca y bloquea todo lo demás.",
-      "Mezcla el rub y cubre los dos costillares. Déjalos dos horas a temperatura ambiente o toda la noche en la nevera.",
-      "Envuelve cada costillar bien apretado en doble capa de aluminio con un chorro de agua dentro y cocina a 140 ºC entre dos horas y media y tres. Están listos cuando una brocheta atraviesa la carne entre los huesos sin resistencia.",
-      "Bate los ingredientes del glaseado y caliéntalo suave hasta que se afloje. No lo hiervas.",
-      "Abre el papel, escurre el líquido y deja templar los costillares. Estarán frágiles: muévelos con las dos manos o con una bandeja.",
-      "Pinta con el glaseado y cocina sobre brasa media, de cinco a ocho minutos en total, glaseando cada vez que les das la vuelta. Deja que algunos bordes se tuesten de verdad.",
-      "Reposa cinco minutos, corta entre los huesos y rebózalas en el glaseado que quede en la bandeja. Cebolleta y sésamo por encima."
+      "Retira la telilla plateada de la parte de atrás de cada costillar. Métete debajo con un cuchillo sin filo, agárrala con papel de cocina y sácala de una pieza. No se ablanda nunca y bloquea todo lo demás.",
+      "Salmuera seca: sala los costillares y déjalos unas doce horas en la nevera. La sal va aparte del rub, que no lleva sal propia.",
+      "Aplica el rub y déjalo actuar mientras coge temperatura el fuego.",
+      "Cocina a 107 ºC durante cinco o seis horas. Si quieres acelerar el tramo central, envuélvelos en aluminio con un chorro de agua no más de una hora.",
+      "Comprueba doblando: levanta un costillar por un extremo y la superficie debe agrietarse por arriba. Una sonda fina marca alrededor de 93 ºC.",
+      "Bate los ingredientes del glaseado y caliéntalos suave hasta que se aflojen. No los hiervas.",
+      "Pinta el glaseado en los últimos treinta minutos de la cocción baja.",
+      "Pasa los costillares a la parte más caliente del fuego de diez a quince minutos, glaseando cada vez que les des la vuelta, y deja que algunos bordes se tuesten de verdad.",
+      "Reposa cinco minutos, corta entre los huesos y rebózalas en el glaseado que quede. Cebolleta y sésamo por encima."
     ],
     "chefNote": "Córtalas después de glasear, no antes. Si cortas primero, la carne expuesta se seca sobre las brasas; si cortas al final, todas las caras quedan pegajosas.",
     "servesWith": "[[maiz-a-la-brasa|Maíz a la brasa]] y algo ácido y crujiente: pepino encurtido o ensalada de col cruda.",
@@ -67,5 +73,23 @@
   "related": [
     "maiz-a-la-brasa"
   ],
-  "updated": "2026-09-01"
+  "updated": "2026-09-02",
+  "sources": [
+    {
+      "title": "Last meal ribs — Meathead Goldwyn, AmazingRibs",
+      "url": "https://amazingribs.com/best-barbecue-ribs-recipe/"
+    },
+    {
+      "title": "Memphis Dust rub — Meathead Goldwyn, AmazingRibs",
+      "url": "https://amazingribs.com/tested-recipes/spice-rubs-and-pastes/meatheads-memphis-dust-rub-recipe/"
+    },
+    {
+      "title": "Smoked gochujang pork ribs — Joshua Bousel, The Meatwave",
+      "url": "https://meatwave.com/recipes/smoked-gochujang-pork-ribs-recipe"
+    },
+    {
+      "title": "Barbecued gochujang pork ribs — Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/recipes/barbecued-gochujang-pork-ribs-recipe"
+    }
+  ]
 }

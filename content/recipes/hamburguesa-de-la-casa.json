@@ -3,7 +3,7 @@
   "order": 19,
   "date": "2026-09-01",
   "prepMinutes": 30,
-  "cookMinutes": 8,
+  "cookMinutes": 10,
   "image": "",
   "imageAlt": "",
   "en": {
@@ -11,14 +11,14 @@
     "subtitle": "Hamburguesa de la casa",
     "menu": "Brasa",
     "summary": "Chuck and short rib ground coarse, formed loosely, seasoned only on the outside and cooked over fierce heat. No egg, no breadcrumbs, no onion in the mix.",
-    "intro": "A burger is a steak that has been through a grinder, and it should be treated like one. Everything people add to the mix, the egg, the crumbs, the grated onion, is there to hold together meat that was handled too much in the first place. Get the fat right, touch it as little as you can, and it holds itself.",
+    "intro": "I have taken the dimple out. It is one of those things everybody does, and the one source that examines it rejects it outright. What that source does insist on, and I already had right, is that salt goes on the surface and never into the mix: worked into the meat it activates the protein and you get a dense, springy patty that eats like a sausage. Worth saying that the chuck-to-short-rib ratio below is mine — nobody publishes one.",
     "yield": "Six",
     "category": "Main",
     "cuisine": "American",
     "keywords": "homemade burger, burger patty recipe, chuck short rib burger, smash burger, bbq burger",
     "ingredients": [
       "800 g beef chuck",
-      "400 g short rib or brisket, well marbled",
+      "400 g short rib or brisket, well marbled, for 20 to 25 per cent fat overall",
       "Flaked salt and coarse black pepper",
       "6 brioche buns",
       "6 slices of a good melting cheese",
@@ -26,11 +26,13 @@
       "Whatever you like on it: pickles, onion, lettuce, tomato"
     ],
     "steps": [
-      "Chill the meat until it is very cold, almost freezing, then grind it once on a coarse plate. If you are buying it minced, ask for coarse mince with 20 to 25 per cent fat and buy it the same day.",
-      "Weigh into 200 g portions and form them into pucks with the lightest possible hand, just enough to hold. Do not compress or roll them. Press a shallow dimple into the middle of each so it stays flat instead of doming.",
-      "Refrigerate at least 30 minutes. Salt only in the last minute before cooking, and only on the outside; salt worked into the mix cures the meat and turns the texture springy and sausage-like.",
+      "Cut the meat into 2.5 cm cubes and put them in the freezer for no more than thirty minutes, until firm at the edges but not frozen.",
+      "Grind once on a coarse plate, or pulse in a food processor for about a second at a time, fifteen to twenty pulses. Coarser than anything you can buy, and never grind it twice.",
+      "Weigh into 200 g portions and form them into pucks with the lightest possible hand, about 2 cm thick. Do not compress or roll them, and do not press a dimple into the middle.",
+      "Refrigerate at least thirty minutes.",
+      "Salt the outside of the patties only, in the last minute before cooking. Salt in the mix makes the texture springy and there is no undoing it.",
       "Get the grill or a cast-iron plate properly hot. The patties should sizzle loudly the moment they land.",
-      "Cook three to four minutes on the first side without pressing or moving. Turn once, add the cheese immediately, and cook another three minutes for medium.",
+      "Cook without pressing or moving. Turn once, add the cheese immediately, and use a probe rather than the clock.",
       "Toast the buns in butter, cut side down, while the burgers finish.",
       "Rest two minutes, build, and eat standing up."
     ],
@@ -43,14 +45,14 @@
     "subtitle": "Aguja y costilla picadas gruesas, sin nada más",
     "menu": "Brasa",
     "summary": "Aguja y costilla picadas gruesas, formadas sin apretar, saladas solo por fuera y hechas a fuego fuerte. Sin huevo, sin pan rallado y sin cebolla en la mezcla.",
-    "intro": "Una hamburguesa es un filete que ha pasado por una picadora y hay que tratarla como tal. Todo lo que la gente le añade —el huevo, el pan rallado, la cebolla rallada— está ahí para sujetar una carne que se manipuló demasiado desde el principio. Acierta con la grasa, tócala lo mínimo, y se sujeta sola.",
+    "intro": "He quitado el hoyuelo. Es una de esas cosas que hace todo el mundo, y la única fuente que lo examina lo rechaza sin más. Lo que esa fuente sí defiende, y yo ya tenía bien, es que la sal va por fuera y nunca en la mezcla: trabajada dentro de la carne activa la proteína y te deja una hamburguesa densa y elástica que se come como una salchicha. Conviene decir que la proporción de aguja y costilla de abajo es mía: nadie publica una.",
     "yield": "Seis",
     "category": "Principal",
     "cuisine": "Americana",
     "keywords": "hamburguesa casera, receta de hamburguesa, aguja de ternera, hamburguesa a la brasa, barbacoa",
     "ingredients": [
       "800 g de aguja de ternera",
-      "400 g de costilla o falda, bien veteada",
+      "400 g de costilla o falda, bien veteada, para un 20-25 % de grasa en total",
       "Sal en escamas y pimienta negra gruesa",
       "6 panes de brioche",
       "6 lonchas de un queso que funda bien",
@@ -58,11 +60,13 @@
       "Lo que te guste encima: pepinillo, cebolla, lechuga, tomate"
     ],
     "steps": [
-      "Enfría la carne hasta que esté muy fría, casi congelada, y pícala una sola vez con disco grueso. Si la compras picada, pide picado grueso con un 20 o 25 % de grasa y úsala el mismo día.",
-      "Pesa porciones de 200 g y fórmalas con la mano lo más suelta posible, solo lo justo para que aguanten. No las aprietes ni las bolees. Hunde un poco el centro con el pulgar para que no se abomben.",
-      "Nevera al menos 30 minutos. Sala solo en el último minuto antes de cocinar y solo por fuera; la sal mezclada en la carne la cura y deja una textura elástica, de salchicha.",
-      "Calienta bien la parrilla o una plancha de hierro. Las hamburguesas tienen que chisporrotear con fuerza en cuanto tocan.",
-      "Hazlas de tres a cuatro minutos por la primera cara sin apretar ni mover. Dales la vuelta una sola vez, pon el queso enseguida y dales otros tres minutos para un punto medio.",
+      "Corta la carne en dados de 2,5 cm y métela en el congelador no más de treinta minutos, hasta que esté firme por fuera pero sin congelarse.",
+      "Pícala una sola vez con disco grueso, o dale pulsos de un segundo en el robot, entre quince y veinte. Más gruesa que cualquier picada que puedas comprar, y nunca la piques dos veces.",
+      "Pesa porciones de 200 g y formalas con la mano lo más suelta posible, de unos 2 cm de grosor. No las aprietes ni las bolees, y no hundas el centro con el pulgar.",
+      "Nevera al menos treinta minutos.",
+      "Sala solo la superficie de las hamburguesas, en el último minuto antes de cocinar. La sal en la mezcla deja una textura elástica y eso no se deshace.",
+      "Calienta bien la parrilla o una plancha de hierro. Tienen que chisporrotear con fuerza en cuanto tocan.",
+      "Cocínalas sin apretar ni moverlas. Dales la vuelta una sola vez, pon el queso enseguida y usa termómetro en lugar del reloj.",
       "Tuesta los panes en mantequilla, por la cara cortada, mientras terminan las hamburguesas.",
       "Reposa dos minutos, monta y cómetela de pie."
     ],
@@ -73,5 +77,15 @@
   "related": [
     "maiz-a-la-brasa"
   ],
-  "updated": "2026-09-01"
+  "updated": "2026-09-02",
+  "sources": [
+    {
+      "title": "Grinding your own hamburgers — Meathead Goldwyn, AmazingRibs",
+      "url": "https://amazingribs.com/tested-recipes/burger-hot-dog-and-sandwich-recipes/grinding-your-own-hamburgers/"
+    },
+    {
+      "title": "Zen and the art of hamburgers — Meathead Goldwyn, AmazingRibs",
+      "url": "https://amazingribs.com/tested-recipes/burger-hot-dog-and-sandwich-recipes/zen-master-hamburger-secrets/"
+    }
+  ]
 }

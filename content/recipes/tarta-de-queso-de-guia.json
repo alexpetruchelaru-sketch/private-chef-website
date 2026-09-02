@@ -3,15 +3,15 @@
   "order": 11,
   "date": "2026-09-01",
   "prepMinutes": 25,
-  "cookMinutes": 45,
+  "cookMinutes": 40,
   "image": "",
   "imageAlt": "",
   "en": {
     "title": "Flor de Guía cheesecake, fig, honey",
     "subtitle": "Queso de Guía, higo, miel",
     "menu": "Travesía",
-    "summary": "A baked cheesecake made with queso de Flor de Guía, the sheep's cheese curdled with thistle flower that only comes from the north of this island. Figs roasted alongside, honey at the end.",
-    "intro": "Flor de Guía is curdled with cardoon flower rather than animal rennet, which gives it a faint bitterness that stops a cheesecake being cloying. It is the one dessert on my menus that could not be made anywhere else. Use the tierno or semicurado, not the aged one, and cut the quantity with cream cheese so it sets.",
+    "summary": "A burnt cheesecake built on queso de Flor de Guía, the sheep's cheese curdled with cardoon flower that only comes from the north of this island. Figs roasted alongside, honey at the end.",
+    "intro": "One thing I have to be straight about. Nobody has published this cheese baked at burnt-cheesecake heat. The only Flor de Guía dessert in print, written for the island's own tourist board, takes it the other way entirely: a bain-marie at 90 degrees for two hours. A cardoon-curdled sheep cheese behaves differently from cream cheese, and the aged-cheese cheesecakes that exist bake lower and turn markedly denser. So cut the Flor de Guía with cream cheese as below, and make it once before you put it in front of anyone.",
     "yield": "Eight to ten",
     "category": "Dessert",
     "cuisine": "Canarian",
@@ -19,9 +19,9 @@
     "ingredients": [
       "350 g queso de Flor de Guía, tierno or semicurado, rind off",
       "400 g full-fat cream cheese, at room temperature",
-      "200 g caster sugar",
+      "275 g caster sugar",
       "5 eggs",
-      "250 ml double cream",
+      "375 ml double cream, 35% fat",
       "20 g plain flour",
       "A pinch of salt",
       "8 ripe figs",
@@ -29,25 +29,25 @@
       "A thread of olive oil"
     ],
     "steps": [
-      "Heat the oven to 210C. Line a 22 cm springform tin with two crossed sheets of baking paper, crumpled first, letting them stand well above the rim.",
-      "Grate or crumble the Flor de Guía and beat it with the cream cheese and sugar until there are no lumps at all. This takes longer than you think.",
-      "Add the eggs one at a time, beating just enough to combine each. Do not whip air into it.",
-      "Fold in the cream, then the flour and salt, sieved over. Pour into the tin.",
-      "Bake 40 to 45 minutes. The top should be deeply browned, almost burnt at the edges, and the middle should still wobble like a set custard when you shake the tin.",
-      "Cool at room temperature for at least three hours. It will sink in the centre. That is correct.",
-      "Halve the figs, sit them cut side up in a small tray with the honey and a thread of olive oil and roast 10 minutes at 200C until they slump and the juices catch.",
-      "Serve the cheesecake at room temperature, never fridge cold, with the warm figs and their syrup."
+      "Heat the oven to 210 °C. Line a 22 cm springform tin with two crossed sheets of baking paper, crumpled first, standing well above the rim.",
+      "Grate or crumble the Flor de Guía and beat it with the cream cheese and sugar until there is not a lump left. This takes longer than you think.",
+      "Add the eggs one at a time, beating only enough to combine each. Do not whip air into it.",
+      "Fold in the cream, then the flour and salt, sieved over. The flour is not optional: every published version uses it.",
+      "Pour into the tin and bake 40 minutes. The top should be deeply browned, almost burnt at the edges, and the centre should still wobble freely when you shake the tin.",
+      "Turn the oven off, open the door a crack, and leave the cake in it for four to five hours. It will sink in the middle. That is correct and it is what sets the texture.",
+      "Halve the figs, sit them cut side up in a small tray with the honey and a thread of olive oil, and roast 10 minutes at 200 °C until they slump and the juices catch.",
+      "Serve at room temperature, never fridge-cold, with the warm figs and their syrup."
     ],
-    "chefNote": "Do not bake it low and slow like a New York cheesecake. The hot oven and the burnt top are the point: the caramelised surface is what balances the salt in the cheese.",
-    "servesWith": "A small glass of malvasía, sweet, cold.",
+    "chefNote": "Flor de Guía is a protected cheese from Santa María de Guía, Gáldar and Moya only, at least 60 per cent Canarian sheep's milk, curdled with the flower of a wild cardoon picked in April and May rather than with animal rennet. The faint bitterness that comes off that vegetable coagulant is the whole reason this works as a dessert, and it is why no other cheese substitutes for it.",
+    "servesWith": "A small glass of malvasía, sweet and cold.",
     "seoTitle": "Flor de Guía cheesecake"
   },
   "es": {
     "title": "Queso de Guía, higo, miel",
     "subtitle": "Tarta de queso de Flor de Guía con higos asados",
     "menu": "Travesía",
-    "summary": "Tarta de queso horneada con queso de Flor de Guía, el queso de oveja cuajado con flor de cardo que solo sale del norte de esta isla. Higos asados al lado y miel al final.",
-    "intro": "El Flor de Guía se cuaja con flor de cardo en lugar de cuajo animal, y eso le deja un amargor muy leve que evita que la tarta empalague. Es el único postre de mis menús que no podría hacerse en otro sitio. Usa el tierno o el semicurado, no el curado, y baja la proporción con queso crema para que cuaje.",
+    "summary": "Tarta de queso quemada hecha con queso de Flor de Guía, el queso de oveja cuajado con flor de cardo que solo sale del norte de esta isla. Higos asados al lado y miel al final.",
+    "intro": "Una cosa que tengo que decir clara. Nadie ha publicado este queso horneado a temperatura de tarta quemada. El único postre de Flor de Guía que existe impreso, escrito para el patronato de turismo de la isla, va justo al revés: baño maría a 90 grados durante dos horas. Un queso de oveja cuajado con cardo se comporta distinto al queso crema, y las tartas de queso curado que existen hornean más bajo y quedan bastante más densas. Así que rebaja el Flor de Guía con queso crema como indico abajo, y hazla una vez antes de ponérsela a nadie delante.",
     "yield": "Ocho o diez",
     "category": "Postre",
     "cuisine": "Canaria",
@@ -55,9 +55,9 @@
     "ingredients": [
       "350 g de queso de Flor de Guía, tierno o semicurado, sin corteza",
       "400 g de queso crema entero, a temperatura ambiente",
-      "200 g de azúcar",
+      "275 g de azúcar",
       "5 huevos",
-      "250 ml de nata para montar",
+      "375 ml de nata para montar, 35 % de materia grasa",
       "20 g de harina",
       "Una pizca de sal",
       "8 higos maduros",
@@ -66,20 +66,46 @@
     ],
     "steps": [
       "Calienta el horno a 210 ºC. Forra un molde desmontable de 22 cm con dos hojas de papel de horno cruzadas, arrugadas antes, que sobresalgan bastante del borde.",
-      "Ralla o desmenuza el Flor de Guía y bátelo con el queso crema y el azúcar hasta que no quede ningún grumo. Lleva más tiempo del que parece.",
-      "Añade los huevos de uno en uno, batiendo lo justo para integrar cada uno. No montes aire.",
-      "Incorpora la nata y después la harina y la sal tamizadas. Vierte en el molde.",
-      "Hornea de 40 a 45 minutos. La superficie tiene que quedar muy dorada, casi quemada en los bordes, y el centro debe temblar como una crema cuajada al mover el molde.",
-      "Deja enfriar a temperatura ambiente al menos tres horas. Se hundirá por el centro. Es lo correcto.",
+      "Ralla o desmenuza el Flor de Guía y bátelo con el queso crema y el azúcar hasta que no quede ni un grumo. Lleva más tiempo del que parece.",
+      "Añade los huevos de uno en uno, batiendo solo lo justo para integrar cada uno. No montes aire.",
+      "Incorpora la nata y después la harina y la sal tamizadas. La harina no es opcional: todas las versiones publicadas la llevan.",
+      "Vierte en el molde y hornea 40 minutos. La superficie tiene que quedar muy dorada, casi quemada en los bordes, y el centro debe temblar con libertad al mover el molde.",
+      "Apaga el horno, deja la puerta entreabierta y mantén la tarta dentro de cuatro a cinco horas. Se hundirá por el centro. Es lo correcto y es lo que fija la textura.",
       "Parte los higos por la mitad, colócalos con el corte hacia arriba en una bandeja pequeña con la miel y un hilo de aceite y ásalos 10 minutos a 200 ºC hasta que se venzan y el jugo caramelice.",
-      "Sirve la tarta a temperatura ambiente, nunca fría de nevera, con los higos templados y su jarabe."
+      "Sirve a temperatura ambiente, nunca frío de nevera, con los higos templados y su jarabe."
     ],
-    "chefNote": "No la hornees baja y lenta como una tarta de queso de Nueva York. El horno fuerte y la superficie quemada son el objetivo: ese caramelo es lo que equilibra la sal del queso.",
+    "chefNote": "El Flor de Guía es un queso protegido de Santa María de Guía, Gáldar y Moya solamente, con un mínimo del 60 % de leche de oveja canaria, cuajado con la flor de un cardo silvestre recogida en abril y mayo en lugar de con cuajo animal. El amargor leve que deja ese coagulante vegetal es justo lo que hace que funcione como postre, y por eso ningún otro queso lo sustituye.",
     "servesWith": "Una copa pequeña de malvasía dulce, bien fría.",
     "seoTitle": "Tarta de queso de Flor de Guía"
   },
   "related": [
     "torrija-de-platano"
   ],
-  "updated": "2026-09-01"
+  "updated": "2026-09-02",
+  "sources": [
+    {
+      "title": "Tarta de queso La Viña — Santiago Rivera, vía ¡Hola!",
+      "url": "https://www.hola.com/cocina/recetas/"
+    },
+    {
+      "title": "Tarta de queso al horno — Paula Caeiro, Bon Viveur",
+      "url": "https://bonviveur.com/es/recetas/tarta-de-queso-al-horno"
+    },
+    {
+      "title": "Basque Burnt Cheesecake — Marti Buckley, NYT Cooking",
+      "url": "https://cooking.nytimes.com/recipes/1020972-basque-cheesecake"
+    },
+    {
+      "title": "Basque cheesecake — Cassie Best, BBC Good Food Middle East",
+      "url": "https://bbcgoodfoodme.com/recipes/basque-cheesecake/"
+    },
+    {
+      "title": "Tarta de queso de flor de Guía — Dara Bello O'Shanahan, Gran Canaria",
+      "url": "https://www.grancanaria.com/"
+    },
+    {
+      "title": "Queso de Flor de Guía DOP — Gobierno de Canarias",
+      "url": "https://www.gobiernodecanarias.org/agricultura/calidad_agroalimentaria/dop/queso_flor_guia/"
+    }
+  ]
 }

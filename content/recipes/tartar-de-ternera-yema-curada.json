@@ -2,7 +2,7 @@
   "slug": "tartar-de-ternera-yema-curada",
   "order": 13,
   "date": "2026-09-01",
-  "prepMinutes": 40,
+  "prepMinutes": 45,
   "cookMinutes": 0,
   "image": "",
   "imageAlt": "",
@@ -10,74 +10,106 @@
     "title": "Beef tartare, cured yolk",
     "subtitle": "Tartar de ternera, yema curada",
     "menu": "Sobremesa",
-    "summary": "Fillet chopped by hand, dressed sharp, with an egg yolk cured for two days in salt and sugar until it grates like a hard cheese. No raw yolk on top, which is the version most people have had.",
-    "intro": "Two rules. Chop it, never mince it, because a mincer crushes the fibres and the texture goes to paste. And dress it in the last minute before it leaves the kitchen, because acid on raw beef starts cooking it and after ten minutes the colour has gone brown at the edges.",
+    "summary": "Fillet chopped by hand, dressed sharp, with an egg yolk cured in salt and sugar until it grates like a hard cheese. No raw yolk on top, which is the version most people have had.",
+    "intro": "I had the cure badly wrong and I am glad I checked. I was giving the yolks forty-eight hours; every published cure runs four to seven days, and the ones with a proper method attached sit at six or seven. Two days gives you a yolk that looks cured and behaves like a raw one. The other thing worth stealing is the freezer trick: forty-five minutes in the freezer before you cut, and the fillet slices cleanly instead of dragging.",
     "yield": "Six as a starter",
     "category": "Starter",
     "cuisine": "European",
     "keywords": "beef tartare, tartar de ternera, cured egg yolk, hand chopped tartare, steak tartare recipe",
     "ingredients": [
-      "600 g beef fillet tail, very cold, all sinew removed",
-      "6 egg yolks for curing, plus 300 g each of salt and sugar",
-      "2 shallots, very finely diced",
-      "2 tbsp capers, chopped",
-      "4 cornichons, finely chopped",
-      "1 tbsp Dijon mustard",
-      "1 tsp Worcestershire sauce",
-      "2 tbsp good olive oil",
-      "Tabasco, flaked salt, black pepper",
-      "Chives, and toast or crisps to serve"
+      "600 g beef fillet tail, all sinew removed",
+      "6 egg yolks for curing, plus 300 g each of fine salt and caster sugar",
+      "1 small onion, very finely diced",
+      "60 g capers, chopped",
+      "60 g cornichons, finely chopped",
+      "30 g Dijon mustard",
+      "4 anchovy fillets, mashed",
+      "1 egg yolk for the dressing",
+      "60 ml olive oil",
+      "30 ml Cognac",
+      "Worcestershire sauce, Tabasco, flaked salt, black pepper",
+      "Chives, and hot toast to serve"
     ],
     "steps": [
-      "Two days ahead, mix the salt and sugar. Spread half in a small tray, make six dips with a spoon, sit a yolk in each, and cover completely with the rest. Refrigerate 48 hours.",
-      "Lift the yolks out, brush off the cure, rinse very briefly and pat dry. They should be firm and translucent, like amber. Air-dry them on a rack in the fridge for a few hours.",
-      "Chill the beef until it is almost frozen at the edges. Slice it thin, then into strips, then into small dice with a very sharp knife. Keep the pieces distinct, about 3 mm.",
-      "Keep the diced beef on ice, covered, until the moment of service.",
-      "Mix the shallot, capers, cornichons, mustard, Worcestershire and oil in a separate bowl.",
-      "One minute before serving, fold the dressing through the beef with a fork. Season with salt, pepper and one drop of Tabasco. Taste and adjust; it should be sharper than feels right on its own, because it is going onto toast.",
+      "Six to seven days ahead, mix the salt and sugar in equal weight. Spread half in a small tray, make six dips with a spoon, sit a yolk in each, and cover completely with the rest. Refrigerate at 4 °C or below.",
+      "Lift the yolks out, rinse them gently in cool water and pat dry. Dry them at 60 °C for two hours in a low oven or a dehydrator if you want them firm enough to shave, or 93 °C for thirty to forty minutes if you want them firmer faster. They keep two weeks, wrapped, in the fridge.",
+      "On the day: put the trimmed fillet in the freezer for 45 minutes. It should be firm at the edges but not frozen through.",
+      "Slice it thin, then into strips, then chop it to about 3 mm dice with a very sharp knife. Never a processor: the blades crush the fibres and the texture goes to paste.",
+      "Keep the chopped beef on ice, covered, until the moment of service.",
+      "Build the dressing separately: work the raw yolk with the mustard and the mashed anchovy, whisk in the oil and the Cognac, then fold through the onion, capers and cornichons. Season with Worcestershire and a drop of Tabasco.",
+      "Fold the dressing through the beef with a fork and serve immediately. None of the chefs publishes a holding time for dressed tartare, and the reason is that they all send it the moment it is mixed.",
       "Shape lightly on cold plates, grate the cured yolk over the top like parmesan, add chives and serve with hot toast."
     ],
-    "chefNote": "The yolks keep two weeks wrapped in the fridge and they make almost anything better. Cure a dozen while you are at it.",
-    "servesWith": "Thin, very hot toast, and cold beer rather than wine.",
+    "chefNote": "A hundred grams a head is the middle of the published range, which runs from fifty to nearly a hundred and forty. At fifty it is a canapé and at a hundred and forty it is a main course.",
+    "servesWith": "Thin, very hot toast, and cold beer rather than wine. The [[solomillo-wellington|Wellington]] uses the other end of the same fillet.",
     "seoTitle": "Beef tartare, cured yolk"
   },
   "es": {
     "title": "Tartar de ternera, yema curada",
     "subtitle": "Solomillo picado a cuchillo con yema curada rallada",
     "menu": "Sobremesa",
-    "summary": "Solomillo picado a cuchillo, aliñado con punto ácido, y una yema curada dos días en sal y azúcar hasta que se ralla como un queso duro. Sin yema cruda encima, que es la versión que casi todo el mundo conoce.",
-    "intro": "Dos reglas. Se pica a cuchillo, nunca en máquina, porque la picadora aplasta la fibra y la textura se vuelve pasta. Y se aliña en el último minuto antes de salir, porque el ácido sobre la carne cruda empieza a cocinarla y a los diez minutos los bordes ya están marrones.",
+    "summary": "Solomillo picado a cuchillo, aliñado con punto ácido, y una yema curada en sal y azúcar hasta que se ralla como un queso duro. Sin yema cruda encima, que es la versión que casi todo el mundo conoce.",
+    "intro": "Tenía la curación bastante mal y me alegro de haberlo comprobado. Les daba cuarenta y ocho horas a las yemas; todas las curaciones publicadas van de cuatro a siete días, y las que traen un método serio detrás se quedan en seis o siete. Dos días te dan una yema que parece curada y se comporta como cruda. La otra cosa que merece la pena copiar es el truco del congelador: cuarenta y cinco minutos antes de cortar y el solomillo se corta limpio en lugar de arrastrarse.",
     "yield": "Seis, como entrante",
     "category": "Entrante",
     "cuisine": "Europea",
     "keywords": "tartar de ternera, steak tartar, yema curada, tartar a cuchillo, receta de tartar",
     "ingredients": [
-      "600 g de punta de solomillo, muy fría y sin nervios",
-      "6 yemas para curar, más 300 g de sal y 300 g de azúcar",
-      "2 chalotas en dados muy finos",
-      "2 cucharadas de alcaparras picadas",
-      "4 pepinillos picados finos",
-      "1 cucharada de mostaza de Dijon",
-      "1 cucharadita de salsa Worcestershire",
-      "2 cucharadas de aceite de oliva bueno",
-      "Tabasco, sal en escamas y pimienta negra",
-      "Cebollino y tostadas para servir"
+      "600 g de punta de solomillo, sin nervios",
+      "6 yemas para curar, más 300 g de sal fina y 300 g de azúcar",
+      "1 cebolla pequeña en dados muy finos",
+      "60 g de alcaparras picadas",
+      "60 g de pepinillos picados finos",
+      "30 g de mostaza de Dijon",
+      "4 filetes de anchoa machacados",
+      "1 yema de huevo para el aliño",
+      "60 ml de aceite de oliva",
+      "30 ml de coñac",
+      "Salsa Worcestershire, Tabasco, sal en escamas y pimienta negra",
+      "Cebollino y tostada caliente para servir"
     ],
     "steps": [
-      "Dos días antes, mezcla la sal y el azúcar. Extiende la mitad en una bandeja pequeña, haz seis huecos con una cuchara, coloca una yema en cada uno y cúbrelas del todo con el resto. Nevera, 48 horas.",
-      "Saca las yemas, retira la cura, enjuágalas muy rápido y sécalas. Deben quedar firmes y translúcidas, como ámbar. Déjalas secar unas horas sobre una rejilla en la nevera.",
-      "Enfría la carne hasta que esté casi congelada por fuera. Córtala en láminas finas, luego en tiras y luego en dados pequeños con un cuchillo muy afilado. Que los dados se distingan, de unos 3 mm.",
+      "Seis o siete días antes, mezcla la sal y el azúcar a partes iguales en peso. Extiende la mitad en una bandeja pequeña, haz seis huecos con una cuchara, coloca una yema en cada uno y cúbrelas del todo con el resto. Nevera a 4 ºC o menos.",
+      "Saca las yemas, enjuágalas con cuidado en agua fría y sécalas. Sécalas a 60 ºC durante dos horas en el horno bajo o en deshidratadora si las quieres firmes para lascar, o a 93 ºC durante treinta o cuarenta minutos si las quieres firmes antes. Aguantan dos semanas envueltas en la nevera.",
+      "El mismo día: mete el solomillo limpio en el congelador 45 minutos. Tiene que quedar firme por fuera pero no congelado por dentro.",
+      "Córtalo en láminas finas, luego en tiras y después en dados de unos 3 mm con un cuchillo muy afilado. Nunca en máquina: las cuchillas aplastan la fibra y la textura se vuelve pasta.",
       "Mantén la carne picada sobre hielo y tapada hasta el momento de servir.",
-      "Mezcla en un bol aparte la chalota, las alcaparras, los pepinillos, la mostaza, la Worcestershire y el aceite.",
-      "Un minuto antes de servir, integra el aliño con la carne usando un tenedor. Sazona con sal, pimienta y una gota de Tabasco. Prueba y corrige: tiene que quedar más ácido de lo que parece correcto solo, porque va sobre pan tostado.",
+      "Monta el aliño aparte: trabaja la yema cruda con la mostaza y la anchoa machacada, incorpora el aceite y el coñac, y añade la cebolla, las alcaparras y los pepinillos. Sazona con Worcestershire y una gota de Tabasco.",
+      "Integra el aliño con la carne usando un tenedor y sirve al momento. Ninguno de estos cocineros publica un tiempo de espera para el tartar aliñado, y la razón es que todos lo sacan en cuanto lo mezclan.",
       "Moldea sin apretar en platos fríos, ralla la yema curada por encima como si fuera parmesano, añade cebollino y sirve con tostada caliente."
     ],
-    "chefNote": "Las yemas aguantan dos semanas envueltas en la nevera y mejoran casi cualquier cosa. Cura una docena ya que te pones.",
-    "servesWith": "Tostada fina y muy caliente, y cerveza fría mejor que vino.",
+    "chefNote": "Cien gramos por persona es el punto medio del rango publicado, que va de cincuenta a casi ciento cuarenta. A cincuenta es un aperitivo y a ciento cuarenta es un plato principal.",
+    "servesWith": "Tostada fina y muy caliente, y cerveza fría mejor que vino. El [[solomillo-wellington|Wellington]] usa el otro extremo del mismo solomillo.",
     "seoTitle": "Tartar de ternera"
   },
   "related": [
     "solomillo-wellington"
   ],
-  "updated": "2026-09-01"
+  "updated": "2026-09-02",
+  "sources": [
+    {
+      "title": "Steak tartare — Tom Aikens, Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/recipes/steak-tartare-recipe"
+    },
+    {
+      "title": "Tartare de filet de boeuf — Saveur",
+      "url": "https://www.saveur.com/article/recipes/Tartare-de-Filet-de-Boeuf-Steak-Tartare"
+    },
+    {
+      "title": "Steak tartare — Anthony Bourdain, Les Halles Cookbook",
+      "url": "https://app.ckbk.com/recipe/lesh98672c05s001ss001r006/steak-tartare"
+    },
+    {
+      "title": "Salt-cured egg yolks — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/9589-salt-cured-egg-yolks"
+    },
+    {
+      "title": "Cured egg yolks — Harold Moore, Saveur",
+      "url": "https://www.saveur.com/article/recipes/cured-egg-yolks/"
+    },
+    {
+      "title": "Cured egg yolks — Joshua Weissman",
+      "url": "https://www.joshuaweissman.com/recipes/best-easy-cured-egg-yolks-recipe"
+    }
+  ]
 }

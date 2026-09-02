@@ -11,7 +11,7 @@
     "subtitle": "Aguacate, huevo escalfado, semillas, aceite virgen",
     "menu": "Media Mañana",
     "summary": "Avocado crushed with lime and salt on toasted sourdough, a poached egg on top, and a seed mix toasted with cumin. The plainest thing on the brunch menu and the one that has to be perfect.",
-    "intro": "There is nothing to it, which is exactly why it goes wrong. Avocado crushed too far is baby food, seeds bought pre-toasted are stale, and an egg poached ahead is rubber. The whole dish is four ingredients with nowhere to hide, so treat each one seriously.",
+    "intro": "There is nothing to it, which is exactly why it goes wrong. Avocado crushed too far is baby food, seeds bought pre-toasted are stale, and an egg poached ahead is rubber. Four ingredients with nowhere to hide, so treat each one seriously.",
     "yield": "Six",
     "category": "Breakfast",
     "cuisine": "Modern",
@@ -20,6 +20,7 @@
       "4 ripe avocados",
       "2 limes",
       "6 very fresh eggs",
+      "1 tbsp white wine vinegar for the water",
       "6 thick slices sourdough",
       "2 tbsp pumpkin seeds, 2 tbsp sunflower seeds, 1 tbsp sesame seeds",
       "1 tsp cumin seeds",
@@ -29,13 +30,14 @@
     ],
     "steps": [
       "Toast all the seeds together in a dry pan over a medium heat with the cumin, shaking often, for three to four minutes until they pop and smell nutty. Tip out immediately, salt them and add the chilli. Cool.",
-      "Halve the avocados and crush them roughly in a bowl with lime juice, salt and pepper. Leave real lumps; if it is smooth you have gone too far.",
       "Toast the bread hard so it stays rigid under everything that goes on it.",
-      "Poach the eggs three minutes in barely simmering water with a splash of vinegar, straining off the loose white first.",
+      "Bring a wide pan of water to the boil with the vinegar, take it off the heat and cover it.",
+      "Slide the eggs in and poach three to four minutes for a set white and a liquid yolk. Lift onto kitchen paper.",
+      "Halve the avocados and crush them roughly in a bowl with lime juice, salt and pepper, at the last moment. Leave real lumps; if it is smooth you have gone too far.",
       "Pile the avocado on the toast, sit the egg on top, and season the egg itself with salt and pepper.",
       "Scatter the seeds, pour over a real amount of good olive oil, and finish with herbs. Serve at once."
     ],
-    "chefNote": "Crush the avocado to order, not in advance. Lime slows the browning but it does not stop it, and after 20 minutes the surface has gone grey no matter what you do.",
+    "chefNote": "Crush the avocado to order, not in advance. Lime slows the browning but it does not stop it, and after twenty minutes the surface has gone grey no matter what you do.",
     "servesWith": "It sits well next to the [[huevos-benedictinos|eggs benedict]] on a shared brunch table.",
     "seoTitle": "Avocado and poached egg"
   },
@@ -44,7 +46,7 @@
     "subtitle": "Aguacate machacado sobre masa madre con semillas tostadas",
     "menu": "Media Mañana",
     "summary": "Aguacate machacado con lima y sal sobre pan de masa madre tostado, un huevo escalfado encima y una mezcla de semillas tostadas con comino. Lo más sencillo del menú de brunch y lo que tiene que salir perfecto.",
-    "intro": "No tiene nada, y justo por eso sale mal. El aguacate demasiado triturado es papilla, las semillas compradas ya tostadas están rancias y un huevo escalfado con antelación es goma. Son cuatro ingredientes sin dónde esconderse: trata a cada uno en serio.",
+    "intro": "No tiene nada, y justo por eso sale mal. El aguacate demasiado triturado es papilla, las semillas compradas ya tostadas están rancias y un huevo escalfado con antelación es goma. Cuatro ingredientes sin dónde esconderse: trata a cada uno en serio.",
     "yield": "Seis",
     "category": "Desayuno",
     "cuisine": "Actual",
@@ -53,6 +55,7 @@
       "4 aguacates maduros",
       "2 limas",
       "6 huevos muy frescos",
+      "1 cucharada de vinagre de vino blanco para el agua",
       "6 rebanadas gruesas de masa madre",
       "2 cucharadas de pipas de calabaza, 2 de girasol y 1 de sésamo",
       "1 cucharadita de comino en grano",
@@ -62,13 +65,14 @@
     ],
     "steps": [
       "Tuesta todas las semillas juntas en una sartén seca a fuego medio con el comino, moviendo a menudo, de tres a cuatro minutos, hasta que salten y huelan a fruto seco. Vuélcalas enseguida, sálalas y añade la guindilla. Deja enfriar.",
-      "Parte los aguacates y machácalos de forma basta en un bol con zumo de lima, sal y pimienta. Que queden trozos de verdad; si está liso, te has pasado.",
       "Tuesta el pan bien fuerte para que aguante rígido bajo todo lo que va encima.",
-      "Escalfa los huevos tres minutos en agua que apenas hierva con un chorro de vinagre, escurriendo antes la clara más líquida.",
+      "Lleva a hervor una olla ancha con agua y el vinagre, retírala del fuego y tápala.",
+      "Desliza los huevos y escáldalos de tres a cuatro minutos, para clara cuajada y yema líquida. Sácalos sobre papel de cocina.",
+      "Parte los aguacates y machácalos de forma basta en un bol con zumo de lima, sal y pimienta, en el último momento. Que queden trozos de verdad; si está liso, te has pasado.",
       "Reparte el aguacate sobre la tostada, coloca el huevo encima y sazona el huevo con sal y pimienta.",
       "Esparce las semillas, riega con una cantidad generosa de buen aceite y termina con las hierbas. Sirve al momento."
     ],
-    "chefNote": "Machaca el aguacate al momento, no antes. La lima retrasa la oxidación pero no la evita, y a los 20 minutos la superficie está gris hagas lo que hagas.",
+    "chefNote": "Machaca el aguacate al momento, no antes. La lima retrasa la oxidación pero no la evita, y a los veinte minutos la superficie está gris hagas lo que hagas.",
     "servesWith": "Funciona bien al lado de los [[huevos-benedictinos|huevos benedictinos]] en una mesa de brunch compartida.",
     "seoTitle": "Aguacate con huevo escalfado"
   },
@@ -76,5 +80,35 @@
     "huevos-benedictinos",
     "huevos-turcos"
   ],
-  "updated": "2026-09-01"
+  "updated": "2026-09-02",
+  "sources": [
+    {
+      "title": "How to make hollandaise sauce — Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/how-to-cook/how-to-make-hollandaise-sauce"
+    },
+    {
+      "title": "Crab benedict — Marcus Wareing, Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/recipes/crab-benedict-recipe"
+    },
+    {
+      "title": "Foolproof hollandaise — Cook's Illustrated",
+      "url": "https://www.americastestkitchen.com/cooksillustrated/recipes/6407-foolproof-hollandaise-sauce"
+    },
+    {
+      "title": "How to poach an egg — Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/how-to-cook/how-to-poach-an-egg"
+    },
+    {
+      "title": "Çılbır, Turkish poached eggs — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/14698-cilbir-turkish-poached-eggs-with-yogurt-and-spiced-butter"
+    },
+    {
+      "title": "Turkish eggs — Nigella Lawson, At My Table",
+      "url": "https://thehappyfoodie.co.uk/recipes/turkish-eggs/"
+    },
+    {
+      "title": "Smashed avocado and poached eggs on toast — Gordon Ramsay Restaurants",
+      "url": "https://www.gordonramsayrestaurants.com/recipes/smashed-avocado-and-poached-eggs-on-toast/"
+    }
+  ]
 }

@@ -11,7 +11,7 @@
     "subtitle": "Huevos benedictinos, salmón, panceta o espinacas",
     "menu": "Media Mañana",
     "summary": "Muffins, poached eggs and a hollandaise made by hand over water, with three toppings so nobody at the table is left out. The dish the brunch menu was built around.",
-    "intro": "Hollandaise is not difficult, it is just unforgiving of heat. Too hot and the yolks scramble; too cool and it never thickens. Made over barely simmering water in a bowl that does not touch it, whisked constantly, it takes about six minutes and holds for an hour in a warm place. Make it first, not last.",
+    "intro": "I had the butter far too high. Across the published hollandaises the butter runs between about twenty-eight and seventy-five grams per yolk, and I was up at the top of that. Fifty grams a yolk sits near the middle and is still thick enough to sit on a muffin without running off it. The one temperature anybody publishes is sixty to seventy-four degrees for the finished sauce, and the one holding time anybody publishes is thirty minutes over warm water. There is no published holding temperature at all, so do not build a service sheet around one.",
     "yield": "Six",
     "category": "Breakfast",
     "cuisine": "European",
@@ -19,22 +19,23 @@
     "ingredients": [
       "6 English muffins, split",
       "12 very fresh eggs for poaching",
-      "2 tbsp white wine vinegar for the water",
-      "For the hollandaise: 3 egg yolks, 1 tbsp water, 1 tbsp lemon juice, 250 g butter melted and warm, cayenne, salt",
+      "1 tbsp white wine vinegar for the water",
+      "For the hollandaise: 3 egg yolks, 150 g butter, melted and warm, 2 tsp lemon juice, ½ tbsp white wine vinegar, cayenne, salt",
       "300 g smoked salmon",
       "12 slices pancetta or streaky bacon",
       "400 g spinach and a knob of butter",
       "Chives"
     ],
     "steps": [
-      "Set a bowl over a pan of barely simmering water without letting it touch the water. Whisk the yolks, water and lemon juice until pale and doubled, about three minutes; the whisk should leave a trail.",
-      "Take the bowl off the heat and pour the warm melted butter in very slowly, whisking without stopping, until thick and glossy. Season with salt and a small pinch of cayenne. Keep it somewhere warm, covered, not over heat.",
-      "Grill the pancetta until crisp. Wilt the spinach in butter, then squeeze it dry hard; wet spinach ruins the muffin underneath.",
+      "Make the hollandaise first, not last. Set a bowl over a pan of barely simmering water without letting it touch. Whisk the yolks with the vinegar and lemon until pale and doubled, about three minutes; the whisk should leave a trail.",
+      "Add the warm melted butter slowly, whisking without stopping, until thick and glossy. It wants to finish between 71 and 74 °C. Season with salt and a small pinch of cayenne.",
+      "Hold it over the pan of warm water, covered, for up to thirty minutes. Off the direct heat, never on it.",
+      "Grill the pancetta until crisp. Wilt the spinach in butter, then squeeze it hard and dry; wet spinach ruins the muffin underneath.",
       "Toast the muffin halves and butter them.",
-      "Poach the eggs three minutes in barely simmering water with the vinegar, straining the loose white off each egg first.",
+      "Bring a wide pan of water to the boil with the vinegar, take it off the heat and cover it. Slide the eggs in and poach three to four minutes.",
       "Build fast: muffin, topping, drained egg, a generous spoon of hollandaise, chives. Serve immediately, all plates at once."
     ],
-    "chefNote": "If the hollandaise splits, whisk a fresh yolk with a teaspoon of water in a clean warm bowl and add the split sauce to it drop by drop. It comes back every time, and it is quicker than starting over.",
+    "chefNote": "If the sauce splits, take it off the heat and stir in a little room-temperature water, working outward from the middle. If it has gone completely, whisk a fresh yolk with vinegar over heat and add the split sauce to it drop by drop. It comes back, and it is quicker than starting again.",
     "servesWith": "The [[aguacate-huevo-escalfado|avocado and poached egg]], and a jug of something cold.",
     "seoTitle": "Eggs benedict, three ways"
   },
@@ -43,7 +44,7 @@
     "subtitle": "Huevos escalfados con holandesa hecha a mano",
     "menu": "Media Mañana",
     "summary": "Muffins, huevos escalfados y una holandesa montada a mano al baño María, con tres coberturas para que nadie en la mesa se quede fuera. El plato alrededor del que se construyó el menú de brunch.",
-    "intro": "La holandesa no es difícil, simplemente no perdona el calor. Demasiado caliente y las yemas se cuajan; demasiado fría y no espesa nunca. Montada sobre agua que apenas hierve, en un bol que no la toca y batiendo sin parar, salen unos seis minutos y aguanta una hora en un sitio templado. Hazla la primera, no la última.",
+    "intro": "Tenía la mantequilla demasiado alta. En las holandesas publicadas la mantequilla va de unos veintiocho a setenta y cinco gramos por yema, y yo estaba en lo más alto. Cincuenta gramos por yema queda cerca del centro y sigue siendo lo bastante espesa para sostenerse sobre un muffin sin escurrirse. La única temperatura que alguien publica son los sesenta a setenta y cuatro grados de la salsa terminada, y el único tiempo de espera publicado son treinta minutos sobre agua templada. No existe ninguna temperatura de mantenimiento publicada, así que no montes una ficha de servicio sobre una.",
     "yield": "Seis",
     "category": "Desayuno",
     "cuisine": "Europea",
@@ -51,22 +52,23 @@
     "ingredients": [
       "6 muffins ingleses, abiertos",
       "12 huevos muy frescos para escalfar",
-      "2 cucharadas de vinagre de vino blanco para el agua",
-      "Para la holandesa: 3 yemas, 1 cucharada de agua, 1 de zumo de limón, 250 g de mantequilla fundida y templada, cayena y sal",
+      "1 cucharada de vinagre de vino blanco para el agua",
+      "Para la holandesa: 3 yemas, 150 g de mantequilla fundida y templada, 2 cucharaditas de zumo de limón, ½ cucharada de vinagre de vino blanco, cayena y sal",
       "300 g de salmón ahumado",
       "12 lonchas de panceta o bacon",
       "400 g de espinacas y una nuez de mantequilla",
       "Cebollino"
     ],
     "steps": [
-      "Coloca un bol sobre una olla con agua que apenas hierva, sin que llegue a tocarla. Bate las yemas, el agua y el limón hasta que blanqueen y doblen su volumen, unos tres minutos; la varilla debe dejar marca.",
-      "Retira el bol del fuego y añade la mantequilla templada muy despacio, batiendo sin parar, hasta que espese y brille. Sazona con sal y una pizca pequeña de cayena. Guárdala templada y tapada, nunca sobre el fuego.",
+      "Haz la holandesa la primera, no la última. Coloca un bol sobre una olla con agua que apenas hierva, sin que llegue a tocarla. Bate las yemas con el vinagre y el limón hasta que blanqueen y doblen su volumen, unos tres minutos; la varilla debe dejar marca.",
+      "Añade la mantequilla templada muy despacio, batiendo sin parar, hasta que espese y brille. Debe terminar entre 71 y 74 ºC. Sazona con sal y una pizca pequeña de cayena.",
+      "Mantenla sobre la olla de agua templada, tapada, hasta treinta minutos. Fuera del fuego directo, nunca encima.",
       "Tuesta la panceta hasta que esté crujiente. Saltea las espinacas en mantequilla y escúrrelas apretando bien; las espinacas mojadas arruinan el muffin de abajo.",
       "Tuesta las mitades de muffin y úntalas con mantequilla.",
-      "Escalfa los huevos tres minutos en agua que apenas hierva con el vinagre, escurriendo antes la clara más líquida de cada uno.",
+      "Lleva a hervor una olla ancha con agua y el vinagre, retírala del fuego y tápala. Desliza los huevos y escáldalos de tres a cuatro minutos.",
       "Monta rápido: muffin, cobertura, huevo escurrido, una cucharada generosa de holandesa y cebollino. Sirve enseguida y todos los platos a la vez."
     ],
-    "chefNote": "Si la holandesa se corta, bate una yema nueva con una cucharadita de agua en un bol limpio y templado y añade la salsa cortada gota a gota. Se recupera siempre, y es más rápido que empezar de cero.",
+    "chefNote": "Si la salsa se corta, retírala del fuego e incorpora un poco de agua a temperatura ambiente, trabajando desde el centro hacia fuera. Si se ha ido del todo, bate una yema nueva con vinagre al calor y añade la salsa cortada gota a gota. Se recupera, y es más rápido que empezar de cero.",
     "servesWith": "El [[aguacate-huevo-escalfado|aguacate con huevo escalfado]] y una jarra de algo frío.",
     "seoTitle": "Huevos benedictinos"
   },
@@ -74,5 +76,31 @@
     "aguacate-huevo-escalfado",
     "huevos-turcos"
   ],
-  "updated": "2026-09-01"
+  "updated": "2026-09-02",
+  "sources": [
+    {
+      "title": "How to make hollandaise sauce — Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/how-to-cook/how-to-make-hollandaise-sauce"
+    },
+    {
+      "title": "Crab benedict — Marcus Wareing, Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/recipes/crab-benedict-recipe"
+    },
+    {
+      "title": "Foolproof hollandaise — Cook's Illustrated",
+      "url": "https://www.americastestkitchen.com/cooksillustrated/recipes/6407-foolproof-hollandaise-sauce"
+    },
+    {
+      "title": "How to poach an egg — Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/how-to-cook/how-to-poach-an-egg"
+    },
+    {
+      "title": "Çılbır, Turkish poached eggs — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/14698-cilbir-turkish-poached-eggs-with-yogurt-and-spiced-butter"
+    },
+    {
+      "title": "Turkish eggs — Nigella Lawson, At My Table",
+      "url": "https://thehappyfoodie.co.uk/recipes/turkish-eggs/"
+    }
+  ]
 }

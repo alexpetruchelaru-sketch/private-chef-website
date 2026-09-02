@@ -3,7 +3,7 @@
   "order": 25,
   "date": "2026-09-01",
   "prepMinutes": 15,
-  "cookMinutes": 15,
+  "cookMinutes": 20,
   "image": "",
   "imageAlt": "",
   "en": {
@@ -11,7 +11,7 @@
     "subtitle": "Tortitas de suero, mascarpone, sirope de arce",
     "menu": "Media Mañana",
     "summary": "Thick American-style pancakes made with buttermilk and rested batter, served in a stack with cold whipped mascarpone and maple. The thing the children ask for.",
-    "intro": "Two rules produce a tall, light pancake. Stop mixing while the batter still looks wrong, with visible lumps of flour, because gluten worked into it makes them tough. And let the batter rest half an hour so the flour hydrates and the raising agents get going before they hit the heat.",
+    "intro": "I had twice as much raising agent in these as I needed. Both published versions land around a teaspoon of baking powder and half a teaspoon of bicarbonate per three hundred grams of flour, and I was running double both. Too much bicarbonate tastes of itself. The other correction is the rest: fifteen minutes, not thirty.",
     "yield": "Six, about eighteen pancakes",
     "category": "Breakfast",
     "cuisine": "American",
@@ -19,10 +19,10 @@
     "ingredients": [
       "300 g plain flour",
       "2 tbsp caster sugar",
-      "2 tsp baking powder",
-      "1 tsp bicarbonate of soda",
+      "1 tsp baking powder",
+      "Half tsp bicarbonate of soda",
       "1 tsp fine salt",
-      "480 ml buttermilk",
+      "500 ml buttermilk",
       "2 eggs",
       "60 g butter, melted and cooled, plus more for the pan",
       "250 g mascarpone with 150 ml double cream and 1 tbsp icing sugar",
@@ -31,13 +31,15 @@
     "steps": [
       "Whisk the dry ingredients together in a large bowl, breaking up any lumps of bicarbonate.",
       "Whisk the buttermilk, eggs and melted butter in a jug.",
-      "Pour the wet into the dry and fold with a spatula about ten times, no more. It should be lumpy and unpleasant to look at. Rest 30 minutes at room temperature.",
+      "Pour the wet into the dry and fold with a spatula until the batter is still lumpy with a few streaks of flour showing. Stop there. Working it further develops gluten and the pancakes come out tough.",
+      "Rest fifteen minutes at room temperature.",
       "Whip the mascarpone with the cream and icing sugar to soft peaks and keep it cold.",
-      "Heat a heavy pan over a medium-low heat and wipe it with butter. Too hot and they brown before they rise.",
-      "Ladle in rounds and cook until bubbles come up through the surface and the edges look dry, two to three minutes. Turn once and give them a minute more.",
-      "Keep them in a low oven, in a single layer, not stacked, until all are done. Serve in stacks with the mascarpone, maple and berries."
+      "Heat a heavy pan to about 175 °C and then drop it to medium-low, and wipe it with butter. Too hot and they brown before they rise.",
+      "Ladle in rounds and cook two to three minutes, until the edges look set, the underside is golden and bubbles are just beginning to break on top.",
+      "Turn once and give them one to two minutes more.",
+      "Keep them in a low oven, in a single layer and not stacked, until all are done. Serve in stacks with the mascarpone, maple and berries."
     ],
-    "chefNote": "No buttermilk to hand? Stir a tablespoon of lemon juice into 480 ml of whole milk and leave it ten minutes. It is not identical but it is close, and it is far better than using plain milk.",
+    "chefNote": "No buttermilk to hand? Stir a tablespoon of lemon juice into 500 ml of whole milk and leave it ten minutes. It is not identical but it is close, and far better than plain milk.",
     "servesWith": "Crisp pancetta on the side for anyone who wants salt with their sweet, or the [[torrija-de-brunch|torrija]] alongside.",
     "seoTitle": "Buttermilk pancakes"
   },
@@ -46,7 +48,7 @@
     "subtitle": "Tortitas altas con masa reposada",
     "menu": "Media Mañana",
     "summary": "Tortitas gruesas de estilo americano con suero de leche y masa reposada, servidas en torre con mascarpone montado frío y sirope de arce. Lo que piden los niños.",
-    "intro": "Dos reglas dan una tortita alta y esponjosa. Deja de mezclar cuando la masa todavía parezca mal hecha, con grumos de harina a la vista, porque el gluten trabajado las vuelve correosas. Y deja reposar la masa media hora para que la harina se hidrate y los gasificantes arranquen antes de llegar al calor.",
+    "intro": "Llevaban el doble de gasificante del que necesitan. Las dos versiones publicadas se quedan alrededor de una cucharadita de levadura química y media de bicarbonato por cada trescientos gramos de harina, y yo iba al doble de las dos. El exceso de bicarbonato se nota en la boca. La otra corrección es el reposo: quince minutos, no treinta.",
     "yield": "Seis, unas dieciocho tortitas",
     "category": "Desayuno",
     "cuisine": "Americana",
@@ -54,10 +56,10 @@
     "ingredients": [
       "300 g de harina de trigo",
       "2 cucharadas de azúcar",
-      "2 cucharaditas de levadura química",
-      "1 cucharadita de bicarbonato",
+      "1 cucharadita de levadura química",
+      "Media cucharadita de bicarbonato",
       "1 cucharadita de sal fina",
-      "480 ml de suero de leche (buttermilk)",
+      "500 ml de suero de leche (buttermilk)",
       "2 huevos",
       "60 g de mantequilla fundida y templada, y más para la sartén",
       "250 g de mascarpone con 150 ml de nata y 1 cucharada de azúcar glas",
@@ -66,18 +68,34 @@
     "steps": [
       "Mezcla los ingredientes secos en un bol grande, deshaciendo los grumos de bicarbonato.",
       "Bate el suero, los huevos y la mantequilla fundida en una jarra.",
-      "Vierte lo líquido sobre lo seco y mezcla con una espátula unas diez veces, no más. Tiene que quedar grumosa y con mal aspecto. Reposa 30 minutos a temperatura ambiente.",
+      "Vierte lo líquido sobre lo seco y mezcla con una espátula hasta que la masa siga con grumos y se vean algunas vetas de harina. Para ahí. Si sigues, desarrollas gluten y las tortitas salen correosas.",
+      "Reposa quince minutos a temperatura ambiente.",
       "Monta el mascarpone con la nata y el azúcar glas a picos suaves y mantenlo frío.",
-      "Calienta una sartén gruesa a fuego medio-bajo y úntala con mantequilla. Si está muy caliente se doran antes de subir.",
-      "Vierte porciones redondas y cocínalas hasta que suban burbujas por la superficie y los bordes se vean secos, dos o tres minutos. Dales la vuelta una vez y déjalas un minuto más.",
+      "Calienta una sartén gruesa a unos 175 ºC y luego bájala a fuego medio-bajo; úntala con mantequilla. Si está muy caliente se doran antes de subir.",
+      "Vierte porciones redondas y cocínalas de dos a tres minutos, hasta que los bordes se vean cuajados, la base esté dorada y empiecen a romper burbujas por arriba.",
+      "Dales la vuelta una vez y déjalas de uno a dos minutos más.",
       "Guárdalas en el horno a temperatura baja, en una sola capa y sin apilar, hasta terminar todas. Sirve en torres con el mascarpone, el sirope y los frutos rojos."
     ],
-    "chefNote": "¿No tienes suero de leche? Añade una cucharada de zumo de limón a 480 ml de leche entera y espera diez minutos. No es idéntico, pero se acerca mucho y es bastante mejor que usar leche sola.",
+    "chefNote": "¿No tienes suero de leche? Añade una cucharada de zumo de limón a 500 ml de leche entera y espera diez minutos. No es idéntico, pero se acerca mucho y es bastante mejor que la leche sola.",
     "servesWith": "Panceta crujiente al lado para quien quiera sal con su dulce, o la [[torrija-de-brunch|torrija]] al lado.",
     "seoTitle": "Tortitas de suero"
   },
   "related": [
     "torrija-de-brunch"
   ],
-  "updated": "2026-09-01"
+  "updated": "2026-09-02",
+  "sources": [
+    {
+      "title": "Buttermilk pancakes — King Arthur Baking",
+      "url": "https://www.kingarthurbaking.com/recipes/buttermilk-pancakes-recipe"
+    },
+    {
+      "title": "Buttermilk pancakes — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/8412-buttermilk-pancakes"
+    },
+    {
+      "title": "How to make fluffy pancakes — Kye Ameden, King Arthur Baking",
+      "url": "https://www.kingarthurbaking.com/blog/2019/01/21/how-to-make-fluffy-pancakes"
+    }
+  ]
 }

@@ -2,7 +2,7 @@
   "slug": "atun-ponzu-aguacate",
   "order": 4,
   "date": "2026-09-01",
-  "prepMinutes": 20,
+  "prepMinutes": 25,
   "cookMinutes": 5,
   "image": "",
   "imageAlt": "",
@@ -11,7 +11,7 @@
     "subtitle": "Atún, ponzu, aguacate",
     "menu": "Huerta",
     "summary": "Local tuna cut to order and dressed at the last moment in a ponzu made with island citrus, over avocado. The cleanest thing on the menu and the one with the least room for error.",
-    "intro": "There is nowhere to hide in this dish. The fish has to be good and it has to be cut on the night, because tuna dressed early goes grey and weeps. Make the ponzu the day before so the kombu and katsuobushi have time, then do everything else in the four minutes before it goes to the table.",
+    "intro": "The ponzu is worth making properly and it is worth making early: the standard ratio across every published version is four parts soy to one of mirin to three or four of citrus, and it wants a full day in the fridge with the kombu and the bonito. One refinement I took from the reading and would not go back on: hold the citrus juice out of the steep and stir it in after straining. A day of contact costs you exactly the lift the dish is there for.",
     "yield": "Six as a starter",
     "category": "Starter",
     "cuisine": "Canarian",
@@ -19,24 +19,27 @@
     "ingredients": [
       "600 g sashimi-grade tuna loin, in one piece",
       "2 ripe avocados",
-      "For the ponzu: 100 ml light soy sauce",
-      "60 ml lemon juice and 40 ml orange juice, both fresh",
-      "60 ml mirin",
-      "10 g katsuobushi (bonito flakes)",
-      "1 postcard-sized piece of kombu",
+      "For the ponzu: 120 ml light soy sauce",
+      "30 ml mirin",
+      "110 ml fresh citrus juice, lemon and lime in equal parts",
+      "20 ml rice vinegar",
+      "10 g kombu",
+      "5 g katsuobushi (bonito flakes)",
       "1 tbsp toasted sesame oil",
       "2 spring onions, sliced on a steep angle",
       "Toasted sesame seeds and a little fresh chilli"
     ],
     "steps": [
-      "Make the ponzu at least a day ahead: warm the mirin to burn off the alcohol, take it off the heat, then add the soy, the juices, the kombu and the katsuobushi. Cool, refrigerate overnight, then strain and discard the solids.",
-      "Keep the tuna wrapped and very cold until the moment you cut it. Trim off any sinew and the darker bloodline.",
-      "Cut the loin against the grain into slices about 6 mm thick, using one long draw of the knife per slice rather than sawing.",
+      "A day ahead, boil the mirin for 30 seconds to a minute to burn off the alcohol, then let it cool.",
+      "Combine the cooled mirin with the soy, the rice vinegar, the kombu and the katsuobushi. Cover and refrigerate 24 hours.",
+      "Strain and discard the solids, then stir the citrus juice in. Adding it now rather than at the start is the difference between a ponzu that smells of citrus and one that only tastes of it.",
+      "Keep the tuna wrapped and very cold, on ice if you have it, until the moment you cut it. Trim off any sinew and the darker bloodline.",
+      "Cut the loin against the grain into slices 7 to 10 mm thick, using one long draw of the knife per slice, heel to tip, never sawing.",
       "Slice the avocado thinly and lay it down first, seasoned with salt and a squeeze of lemon.",
       "Lay the tuna over, spoon the ponzu on generously, then a few drops of sesame oil.",
-      "Finish with the spring onion, sesame seeds and chilli and take it straight out. It should not sit more than a minute."
+      "Finish with the spring onion, sesame seeds and chilli and take it straight out."
     ],
-    "chefNote": "Dress it in the dish, never in a bowl. Tossed tuna bruises, and once the ponzu has been on it for five minutes the outside has cooked and gone pale.",
+    "chefNote": "Dress it in the dish and send it immediately. Nobody publishes a safe holding time for dressed raw tuna, and the reason is that there is not one: the acid starts turning crudo into ceviche from the moment it lands.",
     "servesWith": "Nothing warm. It is meant to arrive cold against whatever came off the fire before it.",
     "seoTitle": "Tuna, ponzu, avocado"
   },
@@ -45,7 +48,7 @@
     "subtitle": "Atún local con ponzu de cítricos y aguacate",
     "menu": "Huerta",
     "summary": "Atún de la isla cortado en el momento y aliñado al final con un ponzu de cítricos locales, sobre aguacate. Lo más limpio del menú y donde menos margen de error hay.",
-    "intro": "En este plato no hay dónde esconderse. El pescado tiene que ser bueno y hay que cortarlo esa misma noche, porque el atún aliñado con antelación se pone gris y suelta agua. Haz el ponzu el día antes para que el kombu y el katsuobushi tengan tiempo, y lo demás en los cuatro minutos anteriores a servir.",
+    "intro": "El ponzu merece hacerse bien y merece hacerse con antelación: la proporción estándar en todas las versiones publicadas es cuatro partes de soja por una de mirin y tres o cuatro de cítrico, y quiere un día entero en la nevera con el kombu y el bonito. Un detalle que saqué de la lectura y del que ya no vuelvo atrás: deja el zumo de cítrico fuera de la infusión y añádelo después de colar. Un día de contacto te cuesta justo el aroma por el que existe el plato.",
     "yield": "Seis, como entrante",
     "category": "Entrante",
     "cuisine": "Canaria",
@@ -53,29 +56,58 @@
     "ingredients": [
       "600 g de lomo de atún calidad sashimi, en una pieza",
       "2 aguacates maduros",
-      "Para el ponzu: 100 ml de salsa de soja suave",
-      "60 ml de zumo de limón y 40 ml de naranja, recién exprimidos",
-      "60 ml de mirin",
-      "10 g de katsuobushi (virutas de bonito)",
-      "1 trozo de kombu del tamaño de una postal",
+      "Para el ponzu: 120 ml de salsa de soja suave",
+      "30 ml de mirin",
+      "110 ml de zumo de cítricos recién exprimido, limón y lima a partes iguales",
+      "20 ml de vinagre de arroz",
+      "10 g de kombu",
+      "5 g de katsuobushi (virutas de bonito)",
       "1 cucharada de aceite de sésamo tostado",
       "2 cebolletas cortadas al bies",
       "Sésamo tostado y un poco de pimienta fresca"
     ],
     "steps": [
-      "Haz el ponzu con un día de antelación: calienta el mirin para evaporar el alcohol, retíralo del fuego y añade la soja, los zumos, el kombu y el katsuobushi. Enfría, deja en la nevera toda la noche, cuela y descarta los sólidos.",
-      "Mantén el atún envuelto y muy frío hasta el momento de cortarlo. Retira los nervios y la parte oscura de la sangre.",
-      "Corta el lomo a contrafibra en láminas de unos 6 mm, con un solo pase largo del cuchillo por lámina, sin serrar.",
+      "Un día antes, hierve el mirin de 30 segundos a un minuto para evaporar el alcohol y déjalo enfriar.",
+      "Mezcla el mirin frío con la soja, el vinagre de arroz, el kombu y el katsuobushi. Tapa y deja en la nevera 24 horas.",
+      "Cuela y descarta los sólidos, y entonces incorpora el zumo de cítricos. Añadirlo ahora y no al principio es la diferencia entre un ponzu que huele a cítrico y uno que solo sabe.",
+      "Mantén el atún envuelto y muy frío, sobre hielo si puedes, hasta el momento de cortarlo. Retira los nervios y la parte oscura de la sangre.",
+      "Corta el lomo a contrafibra en láminas de 7 a 10 mm, con un solo pase largo del cuchillo por lámina, del talón a la punta, sin serrar.",
       "Lamina el aguacate fino y ponlo debajo, con sal y unas gotas de limón.",
       "Coloca el atún encima, salsea generosamente con el ponzu y añade unas gotas de aceite de sésamo.",
-      "Termina con la cebolleta, el sésamo y la pimienta y sácalo enseguida. No debería esperar más de un minuto."
+      "Termina con la cebolleta, el sésamo y la pimienta y sácalo enseguida."
     ],
-    "chefNote": "Aliña en el plato, nunca en un bol. El atún removido se magulla, y a los cinco minutos con el ponzu encima el exterior se ha cocinado y ha perdido el color.",
+    "chefNote": "Aliña en el plato y sirve al momento. Nadie publica un tiempo de espera seguro para el atún crudo aliñado, y la razón es que no lo hay: el ácido empieza a convertir el crudo en ceviche desde que cae.",
     "servesWith": "Nada caliente. Tiene que llegar frío después de lo que haya salido del fuego antes.",
     "seoTitle": "Atún, ponzu, aguacate"
   },
   "related": [
     "vieja-curada-dashi-de-tomate"
   ],
-  "updated": "2026-09-01"
+  "updated": "2026-09-02",
+  "sources": [
+    {
+      "title": "Homemade ponzu sauce — Just One Cookbook",
+      "url": "https://www.justonecookbook.com/ponzu-sauce/"
+    },
+    {
+      "title": "Ponzu — Sudachi Recipes",
+      "url": "https://sudachirecipes.com/ponzu-sauce/"
+    },
+    {
+      "title": "How to make ponzu — The Kitchn",
+      "url": "https://www.thekitchn.com/"
+    },
+    {
+      "title": "How to slice fish for sashimi — RecipeTin Japan",
+      "url": "https://japan.recipetineats.com/how-to-make-sashimi/"
+    },
+    {
+      "title": "Handling and cutting tuna loin — Browne Trading Company",
+      "url": "https://brownetrading.com/"
+    },
+    {
+      "title": "Why dressed crudo cannot wait — Paris Dining Club",
+      "url": "https://parisdiningclub.com/"
+    }
+  ]
 }

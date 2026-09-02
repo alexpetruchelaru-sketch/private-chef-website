@@ -2,7 +2,7 @@
   "slug": "torrija-de-platano",
   "order": 7,
   "date": "2026-09-01",
-  "prepMinutes": 25,
+  "prepMinutes": 30,
   "cookMinutes": 15,
   "image": "",
   "imageAlt": "",
@@ -10,70 +10,100 @@
     "title": "Torrija de plátano",
     "subtitle": "Plantain custard French toast with honey rum",
     "menu": "Huerta",
-    "summary": "Brioche soaked overnight in a custard made from island plantain, fried in butter, then brûléed so the top cracks under the spoon. The dessert that closes the Huerta menu.",
-    "intro": "A torrija is Spanish French toast, usually milk and cinnamon. This one replaces most of the milk with plantain blitzed into the custard, which does two things: it sweetens without sugar, and it makes the inside set almost like a bread pudding. The overnight soak is not optional.",
+    "summary": "Brioche soaked overnight in a plantain custard, coloured in butter, then brûléed so the top cracks under the spoon. The dessert that closes the Huerta menu.",
+    "intro": "I checked five Spanish torrija recipes to settle the custard and the soak, and the two things they taught me were worth the reading. The first is that the overnight soak I had already been using is right for bread this thick: Camarena gives at least twelve hours refrigerated and Berasategui eight to twelve, while the traditional one-hour soak is written for much thinner slices. The second is that the custard has to be completely cold before the bread goes anywhere near it. The plantain and the honey rum are mine and appear in none of them.",
     "yield": "Six",
     "category": "Dessert",
     "cuisine": "Canarian",
     "keywords": "torrija, plantain dessert, canarian french toast, platano, honey rum, ron miel",
     "ingredients": [
-      "6 thick slices brioche or good white bread, crusts on, cut 3 cm thick",
-      "3 very ripe plantains or bananas, black-skinned",
-      "400 ml whole milk",
-      "150 ml double cream",
-      "3 eggs plus 2 yolks",
+      "6 slices brioche or good white bread, 2 to 3 cm thick, day old",
+      "300 ml whole milk",
+      "300 ml double cream",
+      "3 egg yolks",
       "60 g caster sugar, plus more for the top",
-      "1 strip lemon peel",
-      "Butter for frying",
+      "1 cinnamon stick",
+      "Half a vanilla pod",
+      "1 strip lemon peel and 1 strip orange peel",
+      "3 very ripe plantains, black-skinned",
+      "Butter for the pan",
       "Honey rum to serve"
     ],
     "steps": [
-      "Warm the milk, cream and lemon peel to just below a simmer, then take off the heat and leave 20 minutes to infuse. Remove the peel.",
-      "Blitz two of the plantains into the warm milk until completely smooth.",
-      "Whisk the eggs, yolks and sugar, pour the warm plantain milk over while whisking, then strain.",
-      "Lay the bread in a dish, pour the custard over, and press it down. Cover and refrigerate overnight. It should be saturated and heavy in the morning.",
-      "Lift each slice out carefully and fry in foaming butter, two minutes a side, until deep brown. Handle it like it will fall apart, because it will.",
-      "Slice the last plantain, dust the torrijas and the plantain with sugar, and blowtorch until the sugar goes amber and cracks. Pour the honey rum at the table, while it is still too hot to eat."
+      "Bring the milk and cream to just below a simmer with the cinnamon, vanilla and the two peels. Take it off the heat and leave it 20 minutes to infuse, then strain.",
+      "Blitz two of the plantains into the warm infused milk until completely smooth.",
+      "Whisk the yolks and sugar, pour the warm plantain milk over while whisking, then strain again.",
+      "Cool the custard completely. This matters: warm custard starts cooking the surface of the bread and you get a skin instead of an even soak.",
+      "Lay the bread in a dish, pour the cold custard over, cover, and refrigerate overnight. Twelve hours is the figure the chefs give for bread this thick. It should be saturated and heavy in the morning.",
+      "Lift each slice out carefully and colour it in foaming butter over a medium heat, about five minutes a side, until deep brown. Handle it like it will fall apart, because it will.",
+      "Slice the last plantain. Dust the torrijas and the plantain with sugar and caramelise: a blowtorch is what three of the five use, or the grill at 250 °C turning every four to five minutes.",
+      "Pour the honey rum at the table, while it is still too hot to eat."
     ],
-    "chefNote": "Day-old bread only. Fresh bread turns to soup in the custard and there is no rescuing it.",
-    "servesWith": "Nothing. It does not need cream and it does not need ice cream.",
+    "chefNote": "Day-old bread only, and cold custard only. Those are the two failures the published recipes are unanimous about. Fresh bread turns to soup and there is no rescuing it.",
+    "servesWith": "Nothing. It does not need cream and it does not need ice cream. The lighter [[torrija-de-brunch|brunch version]] is a different dish.",
     "seoTitle": "Torrija de plátano"
   },
   "es": {
     "title": "Torrija de plátano",
     "subtitle": "Torrija con crema de plátano, brûlée y ron miel",
     "menu": "Huerta",
-    "summary": "Brioche empapado toda la noche en una crema de plátano de la isla, frito en mantequilla y quemado para que la superficie cruja bajo la cuchara. El postre que cierra el menú Huerta.",
-    "intro": "Una torrija normal lleva leche y canela. Esta sustituye casi toda la leche por plátano triturado en la crema, y eso hace dos cosas: endulza sin azúcar y deja el interior cuajado, casi como un pudin de pan. El reposo de la noche no es opcional.",
+    "summary": "Brioche empapado toda la noche en una crema de plátano, dorado en mantequilla y quemado para que la superficie cruja bajo la cuchara. El postre que cierra el menú Huerta.",
+    "intro": "Consulté cinco recetas españolas de torrijas para fijar la crema y el remojo, y las dos cosas que aprendí merecían la lectura. La primera es que el remojo de una noche que ya venía usando es el correcto para un pan tan grueso: Camarena da doce horas mínimo en frío y Berasategui de ocho a doce, mientras que el remojo tradicional de una hora está escrito para rebanadas mucho más finas. La segunda es que la crema tiene que estar completamente fría antes de que el pan se acerque. El plátano y el ron miel son míos y no aparecen en ninguna.",
     "yield": "Seis",
     "category": "Postre",
     "cuisine": "Canaria",
     "keywords": "torrija, torrija de plátano, postre canario, plátano de Canarias, ron miel",
     "ingredients": [
-      "6 rebanadas gruesas de brioche o pan de miga, con corteza, de 3 cm",
-      "3 plátanos muy maduros, con la piel negra",
-      "400 ml de leche entera",
-      "150 ml de nata para montar",
-      "3 huevos y 2 yemas",
+      "6 rebanadas de brioche o pan de miga, de 2 a 3 cm, del día anterior",
+      "300 ml de leche entera",
+      "300 ml de nata para montar",
+      "3 yemas de huevo",
       "60 g de azúcar, y más para quemar",
-      "1 tira de piel de limón",
-      "Mantequilla para freír",
+      "1 rama de canela",
+      "Media vaina de vainilla",
+      "1 tira de piel de limón y 1 de naranja",
+      "3 plátanos muy maduros, con la piel negra",
+      "Mantequilla para la sartén",
       "Ron miel para servir"
     ],
     "steps": [
-      "Calienta la leche, la nata y la piel de limón hasta justo antes de hervir, retira del fuego y deja infusionar 20 minutos. Saca la piel.",
-      "Tritura dos de los plátanos con la leche templada hasta que quede completamente liso.",
-      "Bate los huevos, las yemas y el azúcar, vierte encima la leche de plátano templada sin dejar de batir y cuela.",
-      "Coloca el pan en una fuente, vierte la crema por encima y presiónalo. Tapa y deja en la nevera toda la noche. Por la mañana tiene que estar empapado y pesado.",
-      "Levanta cada rebanada con cuidado y fríela en mantequilla espumante, dos minutos por cara, hasta que esté bien dorada. Trátala como si se fuera a romper, porque se va a romper.",
-      "Lamina el último plátano, espolvorea azúcar sobre las torrijas y el plátano y quema con soplete hasta que el azúcar quede ámbar y cruja. Sirve el ron miel en la mesa, cuando todavía quema demasiado para comerlo."
+      "Lleva la leche y la nata hasta justo antes de hervir con la canela, la vainilla y las dos pieles. Retira del fuego, deja infusionar 20 minutos y cuela.",
+      "Tritura dos de los plátanos con la leche infusionada templada hasta que quede completamente liso.",
+      "Bate las yemas con el azúcar, vierte encima la leche de plátano templada sin dejar de batir y vuelve a colar.",
+      "Enfría la crema por completo. Esto importa: la crema templada empieza a cocinar la superficie del pan y te deja una piel en lugar de un remojo uniforme.",
+      "Coloca el pan en una fuente, vierte la crema fría por encima, tapa y deja en la nevera toda la noche. Doce horas es la cifra que dan los cocineros para un pan así de grueso. Por la mañana tiene que estar empapado y pesado.",
+      "Levanta cada rebanada con cuidado y dórala en mantequilla espumante a fuego medio, unos cinco minutos por cara, hasta que esté bien tostada. Trátala como si se fuera a romper, porque se va a romper.",
+      "Lamina el último plátano. Espolvorea azúcar sobre las torrijas y el plátano y caramelízalo: con soplete, que es lo que usan tres de las cinco, o con el grill a 250 ºC girando cada cuatro o cinco minutos.",
+      "Sirve el ron miel en la mesa, cuando todavía quema demasiado para comerlo."
     ],
-    "chefNote": "Solo pan del día anterior. El pan fresco se convierte en sopa dentro de la crema y no hay forma de arreglarlo.",
-    "servesWith": "Nada. No necesita nata y no necesita helado.",
+    "chefNote": "Solo pan del día anterior y solo crema fría. Esos son los dos fallos en los que las recetas publicadas coinciden sin excepción. El pan fresco se convierte en sopa y no hay forma de arreglarlo.",
+    "servesWith": "Nada. No necesita nata y no necesita helado. La [[torrija-de-brunch|versión de brunch]], más ligera, es otro plato.",
     "seoTitle": "Torrija de plátano"
   },
   "related": [
     "torrija-de-brunch"
   ],
-  "updated": "2026-09-01"
+  "updated": "2026-09-02",
+  "sources": [
+    {
+      "title": "Torrijas de Tía Alia — Directo al Paladar",
+      "url": "https://www.directoalpaladar.com/postres/torrijas-de-la-tia-alia-receta-tradicional"
+    },
+    {
+      "title": "Torrijas de leche — Marina Corma, Bon Viveur",
+      "url": "https://bonviveur.com/es/recetas/torrijas-de-leche"
+    },
+    {
+      "title": "Torrijas — María José San Román, Canal Cocina",
+      "url": "https://canalcocina.es/receta/torrijas"
+    },
+    {
+      "title": "Torrijas de Ricard Camarena — Directo al Paladar",
+      "url": "https://www.directoalpaladar.com/postres/torrijas-ricard-camarena-receta"
+    },
+    {
+      "title": "Torrijas — Martín Berasategui, El Español",
+      "url": "https://www.elespanol.com/cocinillas/recetas/postres/"
+    }
+  ]
 }

@@ -3,77 +3,107 @@
   "order": 9,
   "date": "2026-09-01",
   "prepMinutes": 25,
-  "cookMinutes": 20,
+  "cookMinutes": 25,
   "image": "",
   "imageAlt": "",
   "en": {
     "title": "Scallop, cauliflower, miso brown butter, lime",
     "subtitle": "Vieira, coliflor, beurre noisette de miso, lima",
     "menu": "Travesía",
-    "summary": "One large scallop, seared hard on one side only, on a smooth cauliflower purée, with brown butter whisked with white miso and finished with lime. Sweet, nutty, salty, sharp, in that order.",
-    "intro": "The whole dish is built around one contrast: the scallop stays barely cooked in the middle while the outside takes a proper crust. That only happens in a pan hotter than feels sensible, with a scallop that is bone dry. If it hisses gently instead of roaring, take it out and start again.",
+    "summary": "Scallops seared hard, on a sieved cauliflower purée, with brown butter whisked with white miso and finished with lime. Sweet, nutty, salty, sharp, in that order.",
+    "intro": "I had been searing these on one side only and I have stopped. Of five published methods, every single one turns the scallop, and the reason becomes obvious once you use a thermometer: the crust wants a very hot pan and the inside wants to stop at 46 degrees, and you cannot do both from one side. What you can do is sear hard, drop the heat right down, turn, and finish in butter for thirty seconds. Same crust, and a centre that is still translucent.",
     "yield": "Six",
     "category": "Starter",
     "cuisine": "European",
     "keywords": "scallop cauliflower, miso brown butter, seared scallops, beurre noisette miso, scallop starter",
     "ingredients": [
-      "6 large hand-dived scallops, roe off, muscle removed",
+      "6 large dry-packed scallops, roe off, side muscle removed",
       "1 cauliflower, about 800 g",
-      "250 ml whole milk",
-      "60 g butter for the purée, plus 120 g for the sauce",
-      "2 tbsp white miso",
+      "400 g whole milk and 400 g double cream",
+      "160 g butter for the purée",
+      "120 g butter for the sauce",
+      "90 g white miso",
       "1 lime",
-      "1 tbsp grapeseed or other neutral oil",
-      "Salt, a few cauliflower leaves for garnish"
+      "2 tbsp neutral oil",
+      "Salt"
     ],
     "steps": [
-      "Break the cauliflower into small florets, keeping a handful aside. Cook the rest gently in the milk with a little salt until completely soft, about 15 minutes.",
-      "Blend the cooked cauliflower with just enough of the milk to move it, plus 60 g butter, until glossy and completely smooth. Pass it through a sieve. Keep warm.",
-      "Slice the reserved florets very thin on a mandolin and keep them in iced water for crunch.",
-      "Brown the 120 g butter until it foams, then smells of hazelnuts and the solids turn deep gold. Take it off the heat immediately and whisk in the miso off the heat. It will split if it is too hot; a splash of water brings it back.",
-      "Dry the scallops on kitchen paper, then dry them again. Salt one side only.",
-      "Heat the oil in a heavy pan until it is just short of smoking. Lay the scallops in salted side down and do not touch them for 90 seconds to two minutes, until the crust is a solid deep brown. Turn off the heat, flip them, count to 20 and lift them out.",
-      "Purée down, scallop on top crust up, miso butter around, raw cauliflower and a fine grating of lime zest over. Squeeze of lime juice at the last second."
+      "Buy dry-packed scallops. They look rosy rather than bright white, they feel tacky, and they are not sitting in a cloudy pool. Wet-packed ones have been held in phosphate solution and will steam in the pan whatever you do.",
+      "Blot the scallops between two towels on a tray and leave them ten minutes at room temperature, then blot again.",
+      "Break the cauliflower into florets, keeping a handful back. Cook the rest gently in the milk and cream with a little salt until completely soft, about ten minutes.",
+      "Blend with the 160 g of butter and just enough of the cooking liquid to move it, then pass it through a fine sieve. The sieve is what makes it glossy rather than merely smooth. Keep warm.",
+      "Slice the reserved florets very thin and hold them in iced water.",
+      "Brown the 120 g of butter until it foams, smells of hazelnuts and the solids go deep gold. Take it off the heat, and only then stir in the miso. Both published miso butters add it away from the heat.",
+      "Season the scallops only at the moment they go in the pan. Heat a wide pan with the oil until it is just smoking.",
+      "Lay them in flat side down and do not touch them for a minute and a half to two minutes, until the crust is a solid deep brown.",
+      "Drop the heat to low, turn them, spoon the miso butter over and baste for thirty seconds. Pull them at 46 °C, with the centre still translucent.",
+      "Purée down, scallop on top crust up, miso butter around, raw cauliflower and a fine grating of lime zest over. A squeeze of lime juice at the last second."
     ],
-    "chefNote": "Buy dry-packed scallops if you possibly can. The wet ones have been soaked in phosphate solution, and they will steam in the pan instead of colouring, whatever you do.",
+    "chefNote": "The miso to butter ratio here is three parts to four, which is the proportion tested against scallops rather than the much leaner ratio used for compound butters on whole fish. It is a basting butter, not a spread.",
     "servesWith": "It is a one-scallop course. Serve it on its own and follow it with something substantial.",
     "seoTitle": "Scallop, cauliflower, miso butter"
   },
   "es": {
     "title": "Vieira, coliflor, beurre noisette de miso, lima",
-    "subtitle": "Vieira marcada por una cara sobre puré de coliflor",
+    "subtitle": "Vieira marcada y puré de coliflor con miso",
     "menu": "Travesía",
-    "summary": "Una vieira grande, marcada fuerte solo por una cara, sobre puré fino de coliflor, con mantequilla avellana montada con miso blanco y terminada con lima. Dulce, tostado, salado y ácido, en ese orden.",
-    "intro": "Todo el plato se apoya en un contraste: la vieira queda casi cruda por dentro mientras el exterior coge costra de verdad. Eso solo pasa en una sartén más caliente de lo que parece razonable y con la vieira completamente seca. Si susurra en vez de rugir, sácala y empieza otra vez.",
+    "summary": "Vieiras marcadas fuerte, sobre puré de coliflor pasado por colador, con mantequilla avellana montada con miso blanco y terminada con lima. Dulce, tostado, salado y ácido, en ese orden.",
+    "intro": "Las venía marcando solo por una cara y he dejado de hacerlo. De cinco métodos publicados, todos y cada uno le dan la vuelta a la vieira, y la razón se ve clara en cuanto usas termómetro: la costra quiere una sartén muy caliente y el interior quiere pararse en 46 grados, y no puedes hacer las dos cosas desde un solo lado. Lo que sí puedes es marcar fuerte, bajar el fuego del todo, dar la vuelta y terminar en mantequilla treinta segundos. La misma costra, y un centro todavía translúcido.",
     "yield": "Seis",
     "category": "Entrante",
     "cuisine": "Europea",
     "keywords": "vieira coliflor, beurre noisette de miso, vieiras marcadas, entrante de vieira, miso",
     "ingredients": [
-      "6 vieiras grandes, sin coral y sin el músculo lateral",
+      "6 vieiras grandes en seco, sin coral y sin el músculo lateral",
       "1 coliflor de unos 800 g",
-      "250 ml de leche entera",
-      "60 g de mantequilla para el puré y 120 g para la salsa",
-      "2 cucharadas de miso blanco",
+      "400 g de leche entera y 400 g de nata para montar",
+      "160 g de mantequilla para el puré",
+      "120 g de mantequilla para la salsa",
+      "90 g de miso blanco",
       "1 lima",
-      "1 cucharada de aceite de pepita de uva u otro neutro",
-      "Sal y unas hojas de coliflor para terminar"
+      "2 cucharadas de aceite neutro",
+      "Sal"
     ],
     "steps": [
-      "Separa la coliflor en ramilletes pequeños y reserva un puñado. Cocina el resto suave en la leche con un poco de sal hasta que esté completamente blanda, unos 15 minutos.",
-      "Tritura la coliflor cocida con la leche justa para que gire, más 60 g de mantequilla, hasta que quede brillante y muy fina. Pásala por un colador. Mantenla caliente.",
-      "Lamina los ramilletes reservados muy finos con la mandolina y déjalos en agua con hielo para que queden crujientes.",
-      "Dora los 120 g de mantequilla hasta que espume, huela a avellana y los sólidos queden dorado oscuro. Retírala del fuego enseguida y monta el miso fuera del fuego. Si está demasiado caliente se cortará; un chorrito de agua la recupera.",
-      "Seca las vieiras con papel y vuelve a secarlas. Sala solo una cara.",
-      "Calienta el aceite en una sartén gruesa hasta casi humear. Coloca las vieiras con la cara salada hacia abajo y no las toques durante 90 segundos o dos minutos, hasta que la costra sea marrón oscuro y uniforme. Apaga el fuego, dales la vuelta, cuenta hasta 20 y sácalas.",
+      "Compra vieira en seco, sin tratar. Tiene un tono rosado en lugar de blanco brillante, resulta pegajosa al tacto y no está en un charco turbio. Las tratadas con fosfatos se cuecen en la sartén hagas lo que hagas.",
+      "Seca las vieiras entre dos paños sobre una bandeja y déjalas diez minutos a temperatura ambiente; vuelve a secarlas.",
+      "Separa la coliflor en ramilletes y reserva un puñado. Cocina el resto suave en la leche y la nata con un poco de sal hasta que esté completamente blanda, unos diez minutos.",
+      "Tritura con los 160 g de mantequilla y la cocción justa para que gire, y pásalo por un colador fino. El colador es lo que lo deja brillante y no solo liso. Mantenlo caliente.",
+      "Lamina muy fino los ramilletes reservados y mantenlos en agua con hielo.",
+      "Dora los 120 g de mantequilla hasta que espume, huela a avellana y los sólidos queden dorado oscuro. Retírala del fuego, y solo entonces incorpora el miso. Las dos mantequillas de miso publicadas lo añaden fuera del fuego.",
+      "Sala las vieiras justo cuando van a entrar en la sartén. Calienta una sartén ancha con el aceite hasta que esté a punto de humear.",
+      "Colócalas por la cara plana y no las toques durante un minuto y medio o dos, hasta que la costra sea marrón oscuro y uniforme.",
+      "Baja el fuego al mínimo, dales la vuelta, salsea con la mantequilla de miso y baña durante treinta segundos. Retíralas a 46 °C, con el centro todavía translúcido.",
       "Puré debajo, vieira encima con la costra hacia arriba, mantequilla de miso alrededor, coliflor cruda y ralladura fina de lima. Unas gotas de zumo de lima al final."
     ],
-    "chefNote": "Compra vieira seca, sin tratar, si puedes. Las que vienen en salmuera con fosfatos se cuecen en la sartén en lugar de dorarse, hagas lo que hagas.",
+    "chefNote": "La proporción de miso y mantequilla es de tres a cuatro, que es la contrastada con vieiras y no la mucho más suave que se usa en mantequillas compuestas para pescados enteros. Es una mantequilla para salsear, no para untar.",
     "servesWith": "Es un plato de una vieira. Sírvelo solo y ponle detrás algo con más peso.",
     "seoTitle": "Vieira, coliflor y miso"
   },
   "related": [
     "vieja-curada-dashi-de-tomate"
   ],
-  "updated": "2026-09-01"
+  "updated": "2026-09-02",
+  "sources": [
+    {
+      "title": "Pan-Seared Scallops — Cook's Illustrated",
+      "url": "https://www.americastestkitchen.com/cooksillustrated/recipes/4955-pan-seared-scallops"
+    },
+    {
+      "title": "Tips for getting the best sear on scallops — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/how_tos/12903-tips-for-getting-the-best-sear-on-scallops"
+    },
+    {
+      "title": "Miso butter-basted scallops — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/9531-miso-butter-basted-scallops-with-bok-choy-and-chile"
+    },
+    {
+      "title": "Scallops with cauliflower purée — Raymond Blanc",
+      "url": "https://raymondblanc.com/recipes/scallop-recipe-with-cauliflower-puree/"
+    },
+    {
+      "title": "Cauliflower purée — Tony Fleming, Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/recipes/curried-cod-recipe"
+    }
+  ]
 }

@@ -3,43 +3,44 @@
   "order": 5,
   "date": "2026-09-01",
   "prepMinutes": 30,
-  "cookMinutes": 300,
+  "cookMinutes": 210,
   "image": "",
   "imageAlt": "",
   "en": {
     "title": "Canarian black pork belly, apple, carrot",
     "subtitle": "Panceta de cerdo negro canario, manzana, zanahoria",
     "menu": "Huerta",
-    "summary": "Belly from the island's black pig, cooked slowly under its own fat, pressed overnight and then crisped to order. Apple for acidity, carrot cooked in the pork juices for sweetness.",
-    "intro": "Cerdo negro canario is a slower-growing pig with more fat through the meat, and it rewards the long cook the way a supermarket belly does not. This is a two-day dish and the pressing overnight is what gives you a clean square with a crust rather than something that falls apart on the plate.",
+    "summary": "Belly from the island's black pig, cured overnight, braised until a skewer meets nothing, pressed under weight and then crisped to order. Apple for acidity, carrot cooked in the pork juices for sweetness.",
+    "intro": "The technique here is British-kitchen rather than Canarian: I could not find a Spanish source that publishes usable numbers for a pressed belly, so the cure, the braise and the press all come from chefs who have written it down properly. What is Canarian is the pig. Cerdo negro canario grows more slowly and carries more fat through the meat, and it takes the long cook in a way a supermarket belly does not.",
     "yield": "Six",
     "category": "Main",
     "cuisine": "Canarian",
     "keywords": "cerdo negro canario, canarian black pork, slow cooked pork belly, pressed pork belly, gran canaria recipe",
     "ingredients": [
       "1.5 kg pork belly, skin off, ideally cerdo negro canario",
-      "2 tbsp coarse salt",
-      "1 tbsp brown sugar",
-      "1 tsp fennel seeds, crushed",
-      "4 cloves garlic, crushed",
-      "2 bay leaves",
-      "500 ml chicken stock",
+      "50 g coarse sea salt for the cure",
+      "1 tbsp brown sugar and 1 tsp crushed fennel seeds",
+      "4 cloves garlic, crushed, and 2 bay leaves",
+      "About 1 litre chicken stock, enough to submerge",
       "6 medium carrots",
-      "2 firm apples, one for purée and one raw",
+      "3 firm apples, two for purée and one raw",
       "1 tbsp cider vinegar",
       "30 g cold butter",
       "Thyme, salt, pepper"
     ],
     "steps": [
-      "The day before: rub the belly with the salt, sugar, fennel and garlic and leave it uncovered in the fridge for four hours. Rinse and dry it well.",
-      "Put it in a deep tray with the bay and the stock, cover tightly with foil and cook at 140C for four and a half to five hours, until a skewer meets no resistance at all.",
-      "Lift the belly out and keep the tray juices. Lay the meat flat between two trays, put weight on top, and refrigerate overnight. Skim the set fat off the juices in the morning and keep both.",
-      "Cook one apple, peeled and chopped, with the vinegar and a splash of water until collapsing, then blend smooth with a knob of the butter and a pinch of salt.",
-      "Cut the carrots into large pieces and cook them gently in the reserved pork juices with thyme until tender and glazed, about 20 minutes. Add a little of the reserved fat if it looks dry.",
-      "Cut the pressed belly into six neat squares. Fry them fat side down in a dry hot pan, no oil, for four to five minutes until the crust is deep and crisp, then turn briefly and rest for two minutes.",
-      "Plate the purée, the carrots and the pork, then finish with thin matchsticks of the raw apple over the top for sharpness."
+      "The day before, rub the belly with the salt, sugar, fennel and garlic and refrigerate 12 hours. Every chef who cures then rinses it off, so rinse it well and dry it thoroughly.",
+      "Sit it in a deep tray with the bay and pour over enough chicken stock to submerge it completely. Cover tightly.",
+      "Cook at 140 °C for three and a half hours. It is done when a skewer goes through with no resistance at all.",
+      "Let it cool in its own stock for 30 minutes, then lift it out and keep the liquid.",
+      "Lay the meat flat between two trays, put 4 to 5 kg of weight on top, and refrigerate overnight. Skim the set fat off the liquid in the morning and keep both.",
+      "Cook two apples, peeled and chopped, with the vinegar and a splash of water until collapsing, then blend smooth with the butter and a pinch of salt.",
+      "Cut the carrots into large pieces and cook them gently in the reserved pork liquid with thyme until tender and glazed, about 20 minutes. Add a little of the reserved fat if it looks dry.",
+      "Cut the pressed belly into six neat squares. Colour them fat side down in a dry hot pan with no oil, then finish in a 180 °C oven for 15 minutes and probe to 65 °C.",
+      "Rest two minutes. Plate the purée, the carrots and the pork, and finish with thin matchsticks of the raw apple over the top.",
+      "Serve with [[papas-arrugadas|papas arrugadas]] if you want the island on the plate as well."
     ],
-    "chefNote": "Do not skip the overnight press. It is the difference between a slice you can cut with a fork and a pile of pulled pork.",
+    "chefNote": "How long the pan stage takes is the one number none of these chefs publishes, so I will not invent one: go by the crust, not the clock, and let the oven do the heating through. The 65 °C probe is what tells you it is ready, not the colour.",
     "servesWith": "[[papas-arrugadas|Papas arrugadas]], and mojo picón for anyone who wants it.",
     "seoTitle": "Canarian black pork belly"
   },
@@ -47,41 +48,64 @@
     "title": "Panceta de cerdo negro canario, manzana, zanahoria",
     "subtitle": "Panceta cocinada lenta, prensada y marcada al momento",
     "menu": "Huerta",
-    "summary": "Panceta del cerdo negro canario, cocinada despacio en su propia grasa, prensada toda la noche y marcada al momento. Manzana para la acidez y zanahoria cocinada en el jugo del cerdo para el dulzor.",
-    "intro": "El cerdo negro canario crece más despacio y tiene más grasa infiltrada, y por eso aguanta la cocción larga como no lo hace una panceta de supermercado. Es un plato de dos días, y la prensa de la noche es lo que te da un taco limpio con costra en vez de algo que se deshace en el plato.",
+    "summary": "Panceta del cerdo negro canario, curada una noche, guisada hasta que la brocheta no encuentra nada, prensada con peso y marcada al momento. Manzana para la acidez y zanahoria cocinada en el jugo del cerdo para el dulzor.",
+    "intro": "La técnica de aquí es de cocina británica y no canaria: no encontré ninguna fuente española que publique números utilizables para una panceta prensada, así que la curación, el guiso y la prensa vienen de cocineros que sí lo han escrito en serio. Lo canario es el cerdo. El cerdo negro canario crece más despacio y tiene más grasa infiltrada, y aguanta la cocción larga como no lo hace una panceta de supermercado.",
     "yield": "Seis",
     "category": "Principal",
     "cuisine": "Canaria",
     "keywords": "cerdo negro canario, panceta de cerdo negro, panceta cocción lenta, panceta prensada, receta canaria",
     "ingredients": [
       "1,5 kg de panceta de cerdo sin piel, a ser posible cerdo negro canario",
-      "2 cucharadas de sal gruesa",
-      "1 cucharada de azúcar moreno",
-      "1 cucharadita de hinojo en grano, majado",
-      "4 dientes de ajo aplastados",
-      "2 hojas de laurel",
-      "500 ml de caldo de pollo",
+      "50 g de sal marina gruesa para la curación",
+      "1 cucharada de azúcar moreno y 1 cucharadita de hinojo en grano majado",
+      "4 dientes de ajo aplastados y 2 hojas de laurel",
+      "Alrededor de 1 litro de caldo de pollo, el necesario para cubrir",
       "6 zanahorias medianas",
-      "2 manzanas firmes, una para el puré y otra en crudo",
+      "3 manzanas firmes, dos para el puré y una en crudo",
       "1 cucharada de vinagre de sidra",
       "30 g de mantequilla fría",
       "Tomillo, sal y pimienta"
     ],
     "steps": [
-      "El día antes: frota la panceta con la sal, el azúcar, el hinojo y el ajo y déjala destapada en la nevera cuatro horas. Enjuágala y sécala bien.",
-      "Ponla en una bandeja honda con el laurel y el caldo, tápala bien con papel de aluminio y cocínala a 140 ºC entre cuatro horas y media y cinco, hasta que la brocheta entre sin ninguna resistencia.",
-      "Saca la panceta y guarda el jugo de la bandeja. Coloca la carne plana entre dos bandejas, pon peso encima y déjala en la nevera toda la noche. Por la mañana retira la grasa cuajada del jugo y guarda las dos cosas.",
-      "Cocina una manzana pelada y troceada con el vinagre y un poco de agua hasta que se deshaga, y tritúrala con un trozo de mantequilla y una pizca de sal.",
-      "Corta las zanahorias en trozos grandes y cocínalas suave en el jugo del cerdo con tomillo hasta que estén tiernas y glaseadas, unos 20 minutos. Añade un poco de la grasa reservada si ves que se queda seco.",
-      "Corta la panceta prensada en seis tacos limpios. Márcalos por la parte de la grasa en una sartén caliente y seca, sin aceite, cuatro o cinco minutos hasta que la costra esté oscura y crujiente; dales la vuelta un momento y déjalos reposar dos minutos.",
-      "Monta el puré, la zanahoria y el cerdo, y termina con bastones finos de manzana cruda por encima para cortar la grasa."
+      "El día antes, frota la panceta con la sal, el azúcar, el hinojo y el ajo y déjala 12 horas en la nevera. Todos los cocineros que curan enjuagan después, así que enjuágala bien y sécala a fondo.",
+      "Ponla en una bandeja honda con el laurel y cúbrela por completo con caldo de pollo. Tápala bien.",
+      "Cocina a 140 ºC durante tres horas y media. Está lista cuando la brocheta entra sin ninguna resistencia.",
+      "Déjala templar en su propio caldo 30 minutos, sácala y guarda el líquido.",
+      "Coloca la carne plana entre dos bandejas, pon de 4 a 5 kg de peso encima y déjala en la nevera toda la noche. Por la mañana retira la grasa cuajada del líquido y guarda las dos cosas.",
+      "Cocina dos manzanas peladas y troceadas con el vinagre y un poco de agua hasta que se deshagan, y tritúralas con la mantequilla y una pizca de sal.",
+      "Corta las zanahorias en trozos grandes y cocínalas suave en el jugo reservado con tomillo hasta que estén tiernas y glaseadas, unos 20 minutos. Añade algo de la grasa reservada si se queda seco.",
+      "Corta la panceta prensada en seis tacos limpios. Dóralos por la grasa en una sartén caliente y seca, sin aceite, y termínalos en el horno a 180 ºC durante 15 minutos, hasta 65 ºC de temperatura interior.",
+      "Deja reposar dos minutos. Monta el puré, la zanahoria y el cerdo, y termina con bastones finos de manzana cruda por encima.",
+      "Sírvelo con [[papas-arrugadas|papas arrugadas]] si quieres la isla también en el plato."
     ],
-    "chefNote": "No te saltes la prensa de la noche. Es la diferencia entre una porción que cortas con el tenedor y un montón de carne deshilachada.",
+    "chefNote": "Cuánto dura el paso de la sartén es el único número que ninguno de estos cocineros publica, así que no me lo voy a inventar: guíate por la costra y no por el reloj, y deja que el horno haga el calentar por dentro. Lo que te dice que está es el termómetro a 65 ºC, no el color.",
     "servesWith": "[[papas-arrugadas|Papas arrugadas]] y mojo picón para quien lo quiera.",
     "seoTitle": "Panceta de cerdo negro canario"
   },
   "related": [
     "papas-arrugadas"
   ],
-  "updated": "2026-09-01"
+  "updated": "2026-09-02",
+  "sources": [
+    {
+      "title": "Pressed pork belly — Simon Hulstone, Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/chefs/simon-hulstone"
+    },
+    {
+      "title": "Pork belly — Galton Blackiston, Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/chefs/galton-blackiston"
+    },
+    {
+      "title": "Rolled pork belly — Adam Gray / GBC belly collection",
+      "url": "https://www.greatbritishchefs.com/collections/pork-belly-recipes"
+    },
+    {
+      "title": "Slow-cooked pork belly — Nathan Davies, Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/chefs/nathan-davies"
+    },
+    {
+      "title": "Pork belly technique — Andy McLeish, Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/chefs/andy-mcleish"
+    }
+  ]
 }
