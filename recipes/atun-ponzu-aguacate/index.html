@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Karla:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="/styles.css?v=9">
+<link rel="stylesheet" href="/styles.css?v=10">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,15 +33,39 @@
       "inLanguage": "en",
       "name": "Tuna, ponzu, avocado",
       "description": "Local tuna cut to order and dressed at the last moment in a ponzu made with island citrus, over avocado. The cleanest thing on the menu and the one with the least room for error.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://alexchelaru.com/recipes/atun-ponzu-aguacate/"
+      },
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "@id": "https://alexchelaru.com/recipes/",
+        "name": "Canarian recipes"
+      },
       "author": {
         "@type": "Person",
+        "@id": "https://alexchelaru.com/#alex",
         "name": "Alex Chelaru",
-        "@id": "https://alexchelaru.com/#alex"
+        "jobTitle": "Private chef",
+        "url": "https://alexchelaru.com/#chef",
+        "worksFor": {
+          "@type": "Organization",
+          "@id": "https://alexchelaru.com/#business",
+          "name": "Alex Chelaru, Private Chef"
+        }
       },
       "publisher": {
-        "@id": "https://alexchelaru.com/#business"
+        "@type": "Organization",
+        "@id": "https://alexchelaru.com/#business",
+        "name": "Alex Chelaru, Private Chef",
+        "url": "https://alexchelaru.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://alexchelaru.com/icon-512.png"
+        }
       },
       "datePublished": "2026-09-01",
+      "dateModified": "2026-09-01",
       "recipeCategory": "Starter",
       "recipeCuisine": "Canarian",
       "keywords": "tuna ponzu, atun ponzu aguacate, tuna avocado starter, ponzu recipe, canarian tuna",
@@ -144,7 +168,7 @@
       <a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/recipes/">Recipes</a>
     </nav>
     <header class="recipe-head">
-      <p class="eyebrow">Canarian &middot; Starter &middot; From the menu Huerta</p>
+      <p class="eyebrow">Canarian &middot; Starter &middot; From the menu <a href="/#huerta">Huerta</a></p>
       <h1>Tuna, ponzu, avocado</h1>
       <p class="recipe-sub">Atún, ponzu, aguacate</p>
       <p class="recipe-summary">Local tuna cut to order and dressed at the last moment in a ponzu made with island citrus, over avocado. The cleanest thing on the menu and the one with the least room for error.</p>
@@ -187,6 +211,45 @@
     </div>
     <aside class="chef-note"><p class="eyebrow">Chef&rsquo;s note</p><p>Dress it in the dish, never in a bowl. Tossed tuna bruises, and once the ponzu has been on it for five minutes the outside has cooked and gone pale.</p></aside>
     <p class="serves-with"><strong>Serve it with.</strong> Nothing warm. It is meant to arrive cold against whatever came off the fire before it.</p>
+    <section class="rel" aria-labelledby="rel-h">
+      <h2 class="rel-h" id="rel-h">Cook it with</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="/recipes/vieja-curada-dashi-de-tomate/">
+          <b>Cured parrotfish, tomato dashi, cucumber, green mojo</b>
+          <i>Vieja curada, dashi de tomate, pepino, mojo verde</i>
+        </a>
+      </div>
+    </section>
+    <section class="rel" aria-labelledby="relm-h">
+      <h2 class="rel-h" id="relm-h">The rest of this menu: Huerta</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="/recipes/berenjena-a-la-brasa/">
+          <b>Charred aubergine, onion, bread</b>
+          <i>Berenjena a la brasa, cebolla, pan</i>
+        </a>
+        <a class="rel-card" href="/recipes/panceta-de-cerdo-negro-canario/">
+          <b>Canarian black pork belly, apple, carrot</b>
+          <i>Panceta de cerdo negro canario, manzana, zanahoria</i>
+        </a>
+        <a class="rel-card" href="/recipes/cherne-mojo-verde-papa-antigua/">
+          <b>Stone bass, green mojo, heritage potato</b>
+          <i>Cherne, mojo verde, papa antigua</i>
+        </a>
+        <a class="rel-card" href="/recipes/torrija-de-platano/">
+          <b>Torrija de plátano</b>
+          <i>Plantain custard French toast with honey rum</i>
+        </a>
+      </div>
+      <p class="rel-more"><a href="/#huerta">See the full menu</a></p>
+    </section>
+    <aside class="byline">
+      <p class="eyebrow">Written by</p>
+      <p class="byline-name"><a href="/#chef">Alex Chelaru</a></p>
+      <p class="byline-bio">Private chef in Gran Canaria. A farm childhood first, then a decade in Cambridge kitchens including the University Arms. Trained under Lee Clarke, whose restaurants Clarkes and Pr&eacute;vost earned Michelin Guide recognition and three AA rosettes.</p>
+      <p class="byline-dates">
+        <time datetime="2026-09-01">Published 1 September 2026</time>
+      </p>
+    </aside>
     <aside class="recipe-cta">
       <h2>I cook this on the island</h2>
       <p>This is one of the things I make for guests in villas and homes across Gran Canaria. If you would rather eat it than cook it, I bring everything, cook it in your kitchen and clear it away after.</p>
@@ -206,6 +269,6 @@
     </p>
   </div>
 </footer>
-<script src="/app.js?v=9" defer></script>
+<script src="/app.js?v=10" defer></script>
 </body>
 </html>

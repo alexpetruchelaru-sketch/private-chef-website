@@ -10,7 +10,7 @@
     "title": "French toast, caramelised plantain, mascarpone, maple",
     "subtitle": "Torrija, plátano caramelizado, mascarpone, sirope de arce",
     "menu": "Media Mañana",
-    "summary": "The brunch cousin of the Huerta dessert. Same soaked bread, but no plantain in the custard and no blowtorch: the plantain is caramelised in the pan, and whipped mascarpone goes on cold.",
+    "summary": "The brunch cousin of the [[torrija-de-platano|Huerta dessert]]. Same soaked bread, but no plantain in the custard and no blowtorch: the plantain is caramelised in the pan, and whipped mascarpone goes on cold.",
     "intro": "This is deliberately not the dessert version. That one is dense, brûléed and eaten with a spoon at the end of a long dinner. This is lighter, soaked for one hour rather than overnight, and the contrast is between hot bread, hot caramel and cold cream. Serve it the moment it comes out of the pan.",
     "yield": "Six",
     "category": "Breakfast",
@@ -45,7 +45,7 @@
     "title": "Torrija, plátano caramelizado, mascarpone, sirope de arce",
     "subtitle": "La versión de brunch, más ligera y sin quemar",
     "menu": "Media Mañana",
-    "summary": "La prima de brunch del postre del menú Huerta. El mismo pan empapado, pero sin plátano en la crema y sin soplete: el plátano se carameliza en la sartén y el mascarpone montado se pone frío.",
+    "summary": "La prima de brunch del [[torrija-de-platano|postre del menú Huerta]]. El mismo pan empapado, pero sin plátano en la crema y sin soplete: el plátano se carameliza en la sartén y el mascarpone montado se pone frío.",
     "intro": "No es la versión de postre, y es a propósito. Aquella es densa, quemada y se come con cuchara al final de una cena larga. Esta es más ligera, con una hora de remojo en lugar de toda la noche, y el contraste está entre el pan caliente, el caramelo caliente y la crema fría. Sírvela en cuanto salga de la sartén.",
     "yield": "Seis",
     "category": "Desayuno",
@@ -75,5 +75,9 @@
     "chefNote": "La sal del final no es decoración. Sin ella el plato es dulce por tres lados y a los cuatro bocados se hace cuesta arriba.",
     "servesWith": "Cierra un brunch. Sácalo después de los huevos, no a la vez.",
     "seoTitle": "Torrija con plátano caramelizado"
-  }
+  },
+  "related": [
+    "torrija-de-platano"
+  ],
+  "updated": "2026-09-01"
 }

@@ -37,7 +37,7 @@
       "Serve on warmed flatbreads with yoghurt, or straight off the skewer with a bowl of lemon wedges."
     ],
     "chefNote": "Soak wooden skewers for an hour, or better, use flat metal ones. Round skewers let the meat spin every time you try to turn it, and you will end up cooking one side four times.",
-    "servesWith": "Grilled corn, the salad table, and cold beer.",
+    "servesWith": "[[maiz-a-la-brasa|Grilled corn]], the salad table, and cold beer.",
     "seoTitle": "Marinated chicken souvlaki"
   },
   "es": {
@@ -71,7 +71,11 @@
       "Sirve sobre pan plano templado con yogur, o directamente de la brocheta con un bol de gajos de limón."
     ],
     "chefNote": "Remoja las brochetas de madera una hora o, mejor, usa brochetas planas de metal. Las redondas dejan que la carne gire cada vez que intentas darle la vuelta y acabas haciendo la misma cara cuatro veces.",
-    "servesWith": "Maíz a la brasa, la mesa de ensaladas y cerveza fría.",
+    "servesWith": "[[maiz-a-la-brasa|Maíz a la brasa]], la mesa de ensaladas y cerveza fría.",
     "seoTitle": "Souvlaki de pollo"
-  }
+  },
+  "related": [
+    "maiz-a-la-brasa"
+  ],
+  "updated": "2026-09-01"
 }

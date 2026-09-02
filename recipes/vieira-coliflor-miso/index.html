@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Karla:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="/styles.css?v=9">
+<link rel="stylesheet" href="/styles.css?v=10">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,15 +33,39 @@
       "inLanguage": "en",
       "name": "Scallop, cauliflower, miso brown butter, lime",
       "description": "One large scallop, seared hard on one side only, on a smooth cauliflower purée, with brown butter whisked with white miso and finished with lime. Sweet, nutty, salty, sharp, in that order.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://alexchelaru.com/recipes/vieira-coliflor-miso/"
+      },
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "@id": "https://alexchelaru.com/recipes/",
+        "name": "Canarian recipes"
+      },
       "author": {
         "@type": "Person",
+        "@id": "https://alexchelaru.com/#alex",
         "name": "Alex Chelaru",
-        "@id": "https://alexchelaru.com/#alex"
+        "jobTitle": "Private chef",
+        "url": "https://alexchelaru.com/#chef",
+        "worksFor": {
+          "@type": "Organization",
+          "@id": "https://alexchelaru.com/#business",
+          "name": "Alex Chelaru, Private Chef"
+        }
       },
       "publisher": {
-        "@id": "https://alexchelaru.com/#business"
+        "@type": "Organization",
+        "@id": "https://alexchelaru.com/#business",
+        "name": "Alex Chelaru, Private Chef",
+        "url": "https://alexchelaru.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://alexchelaru.com/icon-512.png"
+        }
       },
       "datePublished": "2026-09-01",
+      "dateModified": "2026-09-01",
       "recipeCategory": "Starter",
       "recipeCuisine": "European",
       "keywords": "scallop cauliflower, miso brown butter, seared scallops, beurre noisette miso, scallop starter",
@@ -147,7 +171,7 @@
       <a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/recipes/">Recipes</a>
     </nav>
     <header class="recipe-head">
-      <p class="eyebrow">European &middot; Starter &middot; From the menu Travesía</p>
+      <p class="eyebrow">European &middot; Starter &middot; From the menu <a href="/#travesia">Travesía</a></p>
       <h1>Scallop, cauliflower, miso brown butter, lime</h1>
       <p class="recipe-sub">Vieira, coliflor, beurre noisette de miso, lima</p>
       <p class="recipe-summary">One large scallop, seared hard on one side only, on a smooth cauliflower purée, with brown butter whisked with white miso and finished with lime. Sweet, nutty, salty, sharp, in that order.</p>
@@ -189,6 +213,37 @@
     </div>
     <aside class="chef-note"><p class="eyebrow">Chef&rsquo;s note</p><p>Buy dry-packed scallops if you possibly can. The wet ones have been soaked in phosphate solution, and they will steam in the pan instead of colouring, whatever you do.</p></aside>
     <p class="serves-with"><strong>Serve it with.</strong> It is a one-scallop course. Serve it on its own and follow it with something substantial.</p>
+    <section class="rel" aria-labelledby="rel-h">
+      <h2 class="rel-h" id="rel-h">Cook it with</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="/recipes/vieja-curada-dashi-de-tomate/">
+          <b>Cured parrotfish, tomato dashi, cucumber, green mojo</b>
+          <i>Vieja curada, dashi de tomate, pepino, mojo verde</i>
+        </a>
+      </div>
+    </section>
+    <section class="rel" aria-labelledby="relm-h">
+      <h2 class="rel-h" id="relm-h">The rest of this menu: Travesía</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="/recipes/baifo-miel-de-palma/">
+          <b>Kid goat, palm honey, star anise, heritage potato</b>
+          <i>Baifo, miel de palma, anís estrellado, papa antigua</i>
+        </a>
+        <a class="rel-card" href="/recipes/tarta-de-queso-de-guia/">
+          <b>Flor de Guía cheesecake, fig, honey</b>
+          <i>Queso de Guía, higo, miel</i>
+        </a>
+      </div>
+      <p class="rel-more"><a href="/#travesia">See the full menu</a></p>
+    </section>
+    <aside class="byline">
+      <p class="eyebrow">Written by</p>
+      <p class="byline-name"><a href="/#chef">Alex Chelaru</a></p>
+      <p class="byline-bio">Private chef in Gran Canaria. A farm childhood first, then a decade in Cambridge kitchens including the University Arms. Trained under Lee Clarke, whose restaurants Clarkes and Pr&eacute;vost earned Michelin Guide recognition and three AA rosettes.</p>
+      <p class="byline-dates">
+        <time datetime="2026-09-01">Published 1 September 2026</time>
+      </p>
+    </aside>
     <aside class="recipe-cta">
       <h2>I cook this on the island</h2>
       <p>This is one of the things I make for guests in villas and homes across Gran Canaria. If you would rather eat it than cook it, I bring everything, cook it in your kitchen and clear it away after.</p>
@@ -208,6 +263,6 @@
     </p>
   </div>
 </footer>
-<script src="/app.js?v=9" defer></script>
+<script src="/app.js?v=10" defer></script>
 </body>
 </html>

@@ -35,7 +35,7 @@
       "Build fast: muffin, topping, drained egg, a generous spoon of hollandaise, chives. Serve immediately, all plates at once."
     ],
     "chefNote": "If the hollandaise splits, whisk a fresh yolk with a teaspoon of water in a clean warm bowl and add the split sauce to it drop by drop. It comes back every time, and it is quicker than starting over.",
-    "servesWith": "The avocado and poached egg, and a jug of something cold.",
+    "servesWith": "The [[aguacate-huevo-escalfado|avocado and poached egg]], and a jug of something cold.",
     "seoTitle": "Eggs benedict, three ways"
   },
   "es": {
@@ -67,7 +67,12 @@
       "Monta rápido: muffin, cobertura, huevo escurrido, una cucharada generosa de holandesa y cebollino. Sirve enseguida y todos los platos a la vez."
     ],
     "chefNote": "Si la holandesa se corta, bate una yema nueva con una cucharadita de agua en un bol limpio y templado y añade la salsa cortada gota a gota. Se recupera siempre, y es más rápido que empezar de cero.",
-    "servesWith": "El aguacate con huevo escalfado y una jarra de algo frío.",
+    "servesWith": "El [[aguacate-huevo-escalfado|aguacate con huevo escalfado]] y una jarra de algo frío.",
     "seoTitle": "Huevos benedictinos"
-  }
+  },
+  "related": [
+    "aguacate-huevo-escalfado",
+    "huevos-turcos"
+  ],
+  "updated": "2026-09-01"
 }

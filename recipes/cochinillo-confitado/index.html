@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Karla:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="/styles.css?v=9">
+<link rel="stylesheet" href="/styles.css?v=10">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,15 +33,39 @@
       "inLanguage": "en",
       "name": "Confit suckling pig, heritage potato, apple, thyme",
       "description": "Suckling pig shoulder cooked seven hours in fat at a very low temperature, pressed, then blasted skin side down so the crackling shatters. The centrepiece of the Sobremesa menu.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://alexchelaru.com/recipes/cochinillo-confitado/"
+      },
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "@id": "https://alexchelaru.com/recipes/",
+        "name": "Canarian recipes"
+      },
       "author": {
         "@type": "Person",
+        "@id": "https://alexchelaru.com/#alex",
         "name": "Alex Chelaru",
-        "@id": "https://alexchelaru.com/#alex"
+        "jobTitle": "Private chef",
+        "url": "https://alexchelaru.com/#chef",
+        "worksFor": {
+          "@type": "Organization",
+          "@id": "https://alexchelaru.com/#business",
+          "name": "Alex Chelaru, Private Chef"
+        }
       },
       "publisher": {
-        "@id": "https://alexchelaru.com/#business"
+        "@type": "Organization",
+        "@id": "https://alexchelaru.com/#business",
+        "name": "Alex Chelaru, Private Chef",
+        "url": "https://alexchelaru.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://alexchelaru.com/icon-512.png"
+        }
       },
       "datePublished": "2026-09-01",
+      "dateModified": "2026-09-01",
       "recipeCategory": "Main",
       "recipeCuisine": "Spanish",
       "keywords": "cochinillo confitado, confit suckling pig, crackling, pressed pork, spanish suckling pig recipe",
@@ -155,7 +179,7 @@
       <a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/recipes/">Recipes</a>
     </nav>
     <header class="recipe-head">
-      <p class="eyebrow">Spanish &middot; Main &middot; From the menu Sobremesa</p>
+      <p class="eyebrow">Spanish &middot; Main &middot; From the menu <a href="/#sobremesa">Sobremesa</a></p>
       <h1>Confit suckling pig, heritage potato, apple, thyme</h1>
       <p class="recipe-sub">Cochinillo confitado, papa antigua, manzana, tomillo</p>
       <p class="recipe-summary">Suckling pig shoulder cooked seven hours in fat at a very low temperature, pressed, then blasted skin side down so the crackling shatters. The centrepiece of the Sobremesa menu.</p>
@@ -201,6 +225,41 @@
     </div>
     <aside class="chef-note"><p class="eyebrow">Chef&rsquo;s note</p><p>Dry the skin obsessively before it hits the pan. Any moisture at all and it will steam and go leathery instead of shattering, and that is the whole dish gone.</p></aside>
     <p class="serves-with"><strong>Serve it with.</strong> Something acidic to cut it. A cold, sharp cider, or a red with no oak.</p>
+    <section class="rel" aria-labelledby="rel-h">
+      <h2 class="rel-h" id="rel-h">Cook it with</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="/recipes/papas-arrugadas/">
+          <b>Papas arrugadas</b>
+          <i>Salt-wrinkled Canarian potatoes</i>
+        </a>
+      </div>
+    </section>
+    <section class="rel" aria-labelledby="relm-h">
+      <h2 class="rel-h" id="relm-h">The rest of this menu: Sobremesa</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="/recipes/gamba-focaccia-ajo-negro/">
+          <b>Prawn on focaccia, black garlic, chilli</b>
+          <i>Gamba sobre focaccia, ajo negro, guindilla</i>
+        </a>
+        <a class="rel-card" href="/recipes/tartar-de-ternera-yema-curada/">
+          <b>Beef tartare, cured yolk</b>
+          <i>Tartar de ternera, yema curada</i>
+        </a>
+        <a class="rel-card" href="/recipes/solomillo-wellington/">
+          <b>Beef Wellington, heritage carrot, Madeira, truffle</b>
+          <i>Solomillo Wellington, zanahoria, Madeira, trufa</i>
+        </a>
+      </div>
+      <p class="rel-more"><a href="/#sobremesa">See the full menu</a></p>
+    </section>
+    <aside class="byline">
+      <p class="eyebrow">Written by</p>
+      <p class="byline-name"><a href="/#chef">Alex Chelaru</a></p>
+      <p class="byline-bio">Private chef in Gran Canaria. A farm childhood first, then a decade in Cambridge kitchens including the University Arms. Trained under Lee Clarke, whose restaurants Clarkes and Pr&eacute;vost earned Michelin Guide recognition and three AA rosettes.</p>
+      <p class="byline-dates">
+        <time datetime="2026-09-01">Published 1 September 2026</time>
+      </p>
+    </aside>
     <aside class="recipe-cta">
       <h2>I cook this on the island</h2>
       <p>This is one of the things I make for guests in villas and homes across Gran Canaria. If you would rather eat it than cook it, I bring everything, cook it in your kitchen and clear it away after.</p>
@@ -220,6 +279,6 @@
     </p>
   </div>
 </footer>
-<script src="/app.js?v=9" defer></script>
+<script src="/app.js?v=10" defer></script>
 </body>
 </html>

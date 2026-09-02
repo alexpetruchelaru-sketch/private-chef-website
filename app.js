@@ -80,6 +80,8 @@
       [".recipe-fig", 0, "fig"],
       [".recipe-meta div", 60],
       [".recipe-intro, .recipe-body section, .chef-note, .serves-with, .recipe-cta", 80],
+      [".rel-h, .rel-card", 55],
+      [".byline", 0],
       [".recipe-group-h", 0],
       [".recipe-card", 60, "fig"]
     ];

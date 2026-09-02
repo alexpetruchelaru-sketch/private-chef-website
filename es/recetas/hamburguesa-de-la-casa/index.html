@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Karla:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="/styles.css?v=9">
+<link rel="stylesheet" href="/styles.css?v=10">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,15 +33,39 @@
       "inLanguage": "es",
       "name": "Hamburguesa de la casa",
       "description": "Aguja y costilla picadas gruesas, formadas sin apretar, saladas solo por fuera y hechas a fuego fuerte. Sin huevo, sin pan rallado y sin cebolla en la mezcla.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://alexchelaru.com/es/recetas/hamburguesa-de-la-casa/"
+      },
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "@id": "https://alexchelaru.com/es/recetas/",
+        "name": "Recetas canarias"
+      },
       "author": {
         "@type": "Person",
+        "@id": "https://alexchelaru.com/#alex",
         "name": "Alex Chelaru",
-        "@id": "https://alexchelaru.com/#alex"
+        "jobTitle": "Chef privado",
+        "url": "https://alexchelaru.com/es/#chef",
+        "worksFor": {
+          "@type": "Organization",
+          "@id": "https://alexchelaru.com/#business",
+          "name": "Alex Chelaru, Private Chef"
+        }
       },
       "publisher": {
-        "@id": "https://alexchelaru.com/#business"
+        "@type": "Organization",
+        "@id": "https://alexchelaru.com/#business",
+        "name": "Alex Chelaru, Private Chef",
+        "url": "https://alexchelaru.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://alexchelaru.com/icon-512.png"
+        }
       },
       "datePublished": "2026-09-01",
+      "dateModified": "2026-09-01",
       "recipeCategory": "Principal",
       "recipeCuisine": "Americana",
       "keywords": "hamburguesa casera, receta de hamburguesa, aguja de ternera, hamburguesa a la brasa, barbacoa",
@@ -146,7 +170,7 @@
       <a href="/es/">Inicio</a> <span aria-hidden="true">/</span> <a href="/es/recetas/">Recetas</a>
     </nav>
     <header class="recipe-head">
-      <p class="eyebrow">Americana &middot; Principal &middot; Del men&uacute; Brasa</p>
+      <p class="eyebrow">Americana &middot; Principal &middot; Del men&uacute; <a href="/es/#brasa">Brasa</a></p>
       <h1>Hamburguesa de la casa</h1>
       <p class="recipe-sub">Aguja y costilla picadas gruesas, sin nada más</p>
       <p class="recipe-summary">Aguja y costilla picadas gruesas, formadas sin apretar, saladas solo por fuera y hechas a fuego fuerte. Sin huevo, sin pan rallado y sin cebolla en la mezcla.</p>
@@ -186,7 +210,42 @@
       </section>
     </div>
     <aside class="chef-note"><p class="eyebrow">Nota del chef</p><p>No aplastes nunca una hamburguesa con la espátula. Cada gota de jugo que empujas al fuego es jugo que no está en la hamburguesa, y encima no acelera la cocción.</p></aside>
-    <p class="serves-with"><strong>Acomp&aacute;&ntilde;alo con.</strong> Maíz a la brasa y las salsas de la mesa de ensaladas.</p>
+    <p class="serves-with"><strong>Acomp&aacute;&ntilde;alo con.</strong> <a href="/es/recetas/maiz-a-la-brasa/">Maíz a la brasa</a> y las salsas de la mesa de ensaladas.</p>
+    <section class="rel" aria-labelledby="rel-h">
+      <h2 class="rel-h" id="rel-h">Cocínalo con</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="/es/recetas/maiz-a-la-brasa/">
+          <b>Maíz a la brasa, guindilla, lima</b>
+          <i>Mazorcas tostadas con mantequilla de guindilla y lima</i>
+        </a>
+      </div>
+    </section>
+    <section class="rel" aria-labelledby="relm-h">
+      <h2 class="rel-h" id="relm-h">El resto de este men&uacute;: Brasa</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="/es/recetas/souvlaki-de-pollo/">
+          <b>Souvlaki de pollo, limón, orégano</b>
+          <i>Muslo de pollo marinado y hecho a la brasa</i>
+        </a>
+        <a class="rel-card" href="/es/recetas/kofta-de-cordero-y-ternera/">
+          <b>Kofta de cordero y ternera, comino, menta</b>
+          <i>Kofta trabajada a mano sobre brochetas planas</i>
+        </a>
+        <a class="rel-card" href="/es/recetas/costillar-de-cerdo-gochujang/">
+          <b>Costillar de cerdo, gochujang</b>
+          <i>Costillas lentas y glaseadas a la brasa</i>
+        </a>
+      </div>
+      <p class="rel-more"><a href="/es/#brasa">Ver el men&uacute; completo</a></p>
+    </section>
+    <aside class="byline">
+      <p class="eyebrow">Escrito por</p>
+      <p class="byline-name"><a href="/es/#chef">Alex Chelaru</a></p>
+      <p class="byline-bio">Chef privado en Gran Canaria. Primero una infancia en el campo y despu&eacute;s una d&eacute;cada en las mejores cocinas de Cambridge, entre ellas el University Arms. Formado con Lee Clarke, cuyos restaurantes Clarkes y Pr&eacute;vost obtuvieron reconocimiento de la Gu&iacute;a Michelin y tres rosetas AA.</p>
+      <p class="byline-dates">
+        <time datetime="2026-09-01">Publicado 1 de septiembre de 2026</time>
+      </p>
+    </aside>
     <aside class="recipe-cta">
       <h2>Esto lo cocino en la isla</h2>
       <p>Es uno de los platos que preparo para mis clientes en villas y casas de toda Gran Canaria. Si prefieres comerlo a cocinarlo, llevo todo, lo cocino en tu cocina y lo recojo al terminar.</p>
@@ -206,6 +265,6 @@
     </p>
   </div>
 </footer>
-<script src="/app.js?v=9" defer></script>
+<script src="/app.js?v=10" defer></script>
 </body>
 </html>

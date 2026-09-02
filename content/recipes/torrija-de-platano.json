@@ -4,7 +4,7 @@
   "date": "2026-09-01",
   "prepMinutes": 25,
   "cookMinutes": 15,
-  "image": "/img/recipes/french toast.jpg",
+  "image": "",
   "imageAlt": "",
   "en": {
     "title": "Torrija de plátano",
@@ -71,5 +71,9 @@
     "chefNote": "Solo pan del día anterior. El pan fresco se convierte en sopa dentro de la crema y no hay forma de arreglarlo.",
     "servesWith": "Nada. No necesita nata y no necesita helado.",
     "seoTitle": "Torrija de plátano"
-  }
-
+  },
+  "related": [
+    "torrija-de-brunch"
+  ],
+  "updated": "2026-09-01"
+}

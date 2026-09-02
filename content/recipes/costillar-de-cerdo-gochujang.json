@@ -32,7 +32,7 @@
       "Rest five minutes, cut between the bones, then toss the cut ribs in whatever glaze is left in the pan. Spring onion and sesame over the top."
     ],
     "chefNote": "Cut them after glazing, not before. Cut first and the exposed meat dries out over the coals; cut last and every surface stays sticky.",
-    "servesWith": "Grilled corn, and something sharp and crunchy: pickled cucumber or a raw cabbage salad.",
+    "servesWith": "[[maiz-a-la-brasa|Grilled corn]], and something sharp and crunchy: pickled cucumber or a raw cabbage salad.",
     "seoTitle": "Korean-marinated pork ribs"
   },
   "es": {
@@ -61,7 +61,11 @@
       "Reposa cinco minutos, corta entre los huesos y rebózalas en el glaseado que quede en la bandeja. Cebolleta y sésamo por encima."
     ],
     "chefNote": "Córtalas después de glasear, no antes. Si cortas primero, la carne expuesta se seca sobre las brasas; si cortas al final, todas las caras quedan pegajosas.",
-    "servesWith": "Maíz a la brasa y algo ácido y crujiente: pepino encurtido o ensalada de col cruda.",
+    "servesWith": "[[maiz-a-la-brasa|Maíz a la brasa]] y algo ácido y crujiente: pepino encurtido o ensalada de col cruda.",
     "seoTitle": "Costillar de cerdo con gochujang"
-  }
+  },
+  "related": [
+    "maiz-a-la-brasa"
+  ],
+  "updated": "2026-09-01"
 }

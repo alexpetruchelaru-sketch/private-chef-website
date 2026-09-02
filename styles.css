@@ -802,6 +802,52 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
   .mark-logo { width: 30px; height: 30px; }
 }
 
+/* ---- recipe cross-links and byline ----
+   A recipe that names another recipe should link to it, and every page
+   should say who wrote it and when. Both were missing: twenty-five pages
+   with no links between them read to a search engine as twenty-five
+   unrelated orphans rather than one body of work. */
+.recipe a, .recipe-intro a, .ing a, .method a, .chef-note a, .serves-with a {
+  color: inherit; text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--verde) 55%, transparent);
+  transition: border-color .2s ease, color .2s ease;
+}
+.recipe a:hover, .ing a:hover, .method a:hover, .chef-note a:hover, .serves-with a:hover {
+  color: var(--verde); border-bottom-color: var(--verde);
+}
+.recipe-head .eyebrow a { border-bottom-color: color-mix(in srgb, var(--sea) 50%, transparent); }
+
+.rel { margin-top: 52px; }
+.rel-h {
+  font-family: var(--sans); font-size: 12px; font-weight: 700;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--sea);
+  margin: 0 0 14px; padding-bottom: 10px; border-bottom: 1px solid var(--linen-2);
+}
+.rel-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.rel-card {
+  display: grid; align-content: start; gap: 5px;
+  padding: 16px 18px; border: 1px solid var(--linen-2);
+  text-decoration: none; color: var(--ink);
+  transition: border-color .25s ease, transform .25s ease;
+}
+.rel-card:hover { border-color: var(--verde); transform: translateY(-2px); }
+.rel-card b { font-family: var(--serif); font-weight: 400; font-size: 19px; line-height: 1.25; }
+.rel-card i {
+  font-style: normal; font-size: 11.5px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--sea);
+}
+.rel-more { margin: 14px 0 0; font-size: 14px; }
+.rel-more a { color: var(--verde); }
+
+.byline {
+  margin-top: 52px; padding-top: 22px; border-top: 1px solid var(--linen-2);
+  display: grid; gap: 7px; max-width: 62ch;
+}
+.byline-name { font-family: var(--serif); font-size: 21px; }
+.byline-name a { color: var(--ink); }
+.byline-bio { font-size: 15px; color: var(--sea); line-height: 1.6; }
+.byline-dates { font-size: 13px; color: var(--sea); opacity: .8; }
+
 /* A quiet second door out of each menu: the same courses, written
    out in full. It sits beside the enquiry link, deliberately
    lighter than it, so it never competes with the booking. */

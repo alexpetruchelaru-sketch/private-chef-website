@@ -36,6 +36,20 @@ const slugify = (s) =>
   String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
+/* Cross-references between recipes are written in the JSON as [[slug|text]].
+   They become real links on the page and plain words in the structured data,
+   so Google never sees markup inside a recipeIngredient string. */
+const RE_LINK = /\[\[([a-z0-9-]+)\|([^\]]+)\]\]/g;
+const linkify = (s, base) =>
+  esc(s).replace(RE_LINK, (_, slug, text) => `<a href="${base}/${slug}/">${text}</a>`);
+const plain = (s) => String(s == null ? "" : s).replace(RE_LINK, (_, slug, text) => text);
+
+const prettyDate = (iso, code) => {
+  const d = new Date(iso + "T00:00:00");
+  return isNaN(d) ? "" : d.toLocaleDateString(code === "es" ? "es-ES" : "en-GB",
+    { day: "numeric", month: "long", year: "numeric" });
+};
+
 const isoDuration = (min) => {
   const m = parseInt(min, 10);
   return Number.isFinite(m) && m > 0 ? "PT" + m + "M" : null;
@@ -70,7 +84,13 @@ const L = {
     pageTitle: (t) => t + " | Alex Chelaru, Gran Canaria",
     footLine: "Alex Chelaru, private chef. Gran Canaria, Canary Islands.",
     footLogoAlt: "Alex Chelaru, private chef, Gran Canaria",
-    menuLabel: "From the menu"
+    menuLabel: "From the menu",
+    byLabel: "Written by",
+    bio: "Private chef in Gran Canaria. A farm childhood first, then a decade in Cambridge kitchens including the University Arms. Trained under Lee Clarke, whose restaurants Clarkes and Pr&eacute;vost earned Michelin Guide recognition and three AA rosettes.",
+    published: "Published", updated: "Updated",
+    relatedHead: "Cook it with",
+    menuHead: "The rest of this menu",
+    seeMenu: "See the full menu"
   },
   es: {
     code: "es",
@@ -99,7 +119,13 @@ const L = {
     pageTitle: (t) => t + " | Alex Chelaru, Gran Canaria",
     footLine: "Alex Chelaru, chef privado. Gran Canaria, Islas Canarias.",
     footLogoAlt: "Alex Chelaru, chef privado, Gran Canaria",
-    menuLabel: "Del men&uacute;"
+    menuLabel: "Del men&uacute;",
+    byLabel: "Escrito por",
+    bio: "Chef privado en Gran Canaria. Primero una infancia en el campo y despu&eacute;s una d&eacute;cada en las mejores cocinas de Cambridge, entre ellas el University Arms. Formado con Lee Clarke, cuyos restaurantes Clarkes y Pr&eacute;vost obtuvieron reconocimiento de la Gu&iacute;a Michelin y tres rosetas AA.",
+    published: "Publicado", updated: "Actualizado",
+    relatedHead: "Cocínalo con",
+    menuHead: "El resto de este men&uacute;",
+    seeMenu: "Ver el men&uacute; completo"
   }
 };
 
@@ -128,7 +154,7 @@ ${opts.image ? `<meta property="og:image" content="${esc(SITE + opts.image)}">` 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Karla:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="/styles.css?v=9">
+<link rel="stylesheet" href="/styles.css?v=10">
 <script type="application/ld+json">
 ${JSON.stringify(opts.schema, null, 2)}
 </script>
@@ -162,7 +188,7 @@ function foot(l) {
     </p>
   </div>
 </footer>
-<script src="/app.js?v=9" defer></script>
+<script src="/app.js?v=10" defer></script>
 </body>
 </html>
 `;
@@ -202,6 +228,7 @@ function load() {
       if (!r.en) throw new Error("Recipe " + f + " has no English version.");
 
       r.slug = r.slug || slugify(r.en.title);
+      if (r.updated && r.updated < r.date) r.updated = r.date;
       r.date = r.date || new Date().toISOString().slice(0, 10);
       r.file = f;
       return r;
@@ -228,7 +255,7 @@ function alternatesFor(r) {
 }
 
 /* ---------- one recipe page ---------- */
-function recipePage(r, code) {
+function recipePage(r, code, all) {
   const l = L[code];
   const v = r[code];
   const url = urlFor(code, r.slug);
@@ -245,9 +272,28 @@ function recipePage(r, code) {
         inLanguage: code,
         name: v.title,
         description: v.summary,
-        author: { "@type": "Person", name: "Alex Chelaru", "@id": SITE + "/#alex" },
-        publisher: { "@id": SITE + "/#business" },
+        mainEntityOfPage: { "@type": "WebPage", "@id": url },
+        isPartOf: { "@type": "CollectionPage", "@id": indexUrl(code), name: l.collectionName },
+        /* Both of these used to be bare @id pointers at nodes defined on the
+           home page. Google resolves @id only inside a single page's markup,
+           so on a recipe page they pointed at nothing. Spelled out in full. */
+        author: {
+          "@type": "Person",
+          "@id": SITE + "/#alex",
+          name: "Alex Chelaru",
+          jobTitle: code === "es" ? "Chef privado" : "Private chef",
+          url: code === "es" ? SITE + "/es/#chef" : SITE + "/#chef",
+          worksFor: { "@type": "Organization", "@id": SITE + "/#business", name: "Alex Chelaru, Private Chef" }
+        },
+        publisher: {
+          "@type": "Organization",
+          "@id": SITE + "/#business",
+          name: "Alex Chelaru, Private Chef",
+          url: SITE + "/",
+          logo: { "@type": "ImageObject", url: SITE + "/icon-512.png" }
+        },
         datePublished: r.date,
+        dateModified: r.updated || r.date,
         recipeCategory: category,
         recipeCuisine: cuisine,
         keywords: v.keywords || undefined,
@@ -256,9 +302,9 @@ function recipePage(r, code) {
         cookTime: isoDuration(r.cookMinutes) || undefined,
         totalTime: isoDuration(total) || undefined,
         image: r.image ? [SITE + r.image] : undefined,
-        recipeIngredient: v.ingredients,
+        recipeIngredient: v.ingredients.map(plain),
         recipeInstructions: v.steps.map((s, i) => ({
-          "@type": "HowToStep", position: i + 1, text: s
+          "@type": "HowToStep", position: i + 1, text: plain(s)
         }))
       },
       {
@@ -280,6 +326,56 @@ function recipePage(r, code) {
   ].filter(Boolean).join("\n        ");
 
   const homeHref = code === "es" ? "/es/" : "/";
+  const others = (all || []).filter((x) => x.slug !== r.slug && x[code]);
+  const card = (x) => `<a class="rel-card" href="${l.base}/${esc(x.slug)}/">
+          <b>${esc(x[code].title)}</b>
+          ${x[code].subtitle ? `<i>${esc(x[code].subtitle)}</i>` : ""}
+        </a>`;
+
+  /* Explicit cross-references first: the sauces and sides a dish is actually
+     built on. Then the rest of the menu it belongs to. Twenty-five pages with
+     no links between them is a pile of orphans, not a body of work. */
+  const picked = (r.related || [])
+    .map((slug) => others.find((x) => x.slug === slug))
+    .filter(Boolean);
+
+  const menuName = v.menu;
+  const siblings = menuName
+    ? others.filter((x) => x[code].menu === menuName && picked.indexOf(x) === -1).slice(0, 4)
+    : [];
+
+  const menuAnchor = menuName ? slugify(menuName) : "";
+  const menuHref = code === "es" ? "/es/#" + menuAnchor : "/#" + menuAnchor;
+
+  const related =
+    (picked.length ? `    <section class="rel" aria-labelledby="rel-h">
+      <h2 class="rel-h" id="rel-h">${l.relatedHead}</h2>
+      <div class="rel-grid">
+        ${picked.map(card).join("\n        ")}
+      </div>
+    </section>` : "") +
+    (siblings.length ? `
+    <section class="rel" aria-labelledby="relm-h">
+      <h2 class="rel-h" id="relm-h">${l.menuHead}: ${esc(menuName)}</h2>
+      <div class="rel-grid">
+        ${siblings.map(card).join("\n        ")}
+      </div>
+      <p class="rel-more"><a href="${menuHref}">${l.seeMenu}</a></p>
+    </section>` : "");
+
+  /* A visible name, a real credential and a date. The structured data said who
+     wrote this from the start; the page itself said nothing. */
+  const byline = `    <aside class="byline">
+      <p class="eyebrow">${l.byLabel}</p>
+      <p class="byline-name"><a href="${homeHref}#chef">Alex Chelaru</a></p>
+      <p class="byline-bio">${l.bio}</p>
+      <p class="byline-dates">
+        <time datetime="${esc(r.date)}">${l.published} ${esc(prettyDate(r.date, code))}</time>${
+        r.updated && r.updated !== r.date
+          ? ` &middot; <time datetime="${esc(r.updated)}">${l.updated} ${esc(prettyDate(r.updated, code))}</time>`
+          : ""}
+      </p>
+    </aside>`;
 
   return head(l, {
     /* The h1 stays fully descriptive; the browser title uses the shorter
@@ -298,7 +394,7 @@ function recipePage(r, code) {
       <a href="${homeHref}">${l.home}</a> <span aria-hidden="true">/</span> <a href="${l.base}/">${l.recipes}</a>
     </nav>
     <header class="recipe-head">
-      <p class="eyebrow">${esc(cuisine)} &middot; ${esc(category)}${v.menu ? ` &middot; ${l.menuLabel} ${esc(v.menu)}` : ""}</p>
+      <p class="eyebrow">${esc(cuisine)} &middot; ${esc(category)}${v.menu ? ` &middot; ${l.menuLabel} <a href="${menuHref}">${esc(v.menu)}</a>` : ""}</p>
       <h1>${esc(v.title)}</h1>
       ${v.subtitle ? `<p class="recipe-sub">${esc(v.subtitle)}</p>` : ""}
       <p class="recipe-summary">${esc(v.summary)}</p>
@@ -307,23 +403,25 @@ function recipePage(r, code) {
     <dl class="recipe-meta">
         ${meta}
     </dl>
-    ${v.intro ? `<div class="recipe-intro"><p>${esc(v.intro)}</p></div>` : ""}
+    ${v.intro ? `<div class="recipe-intro"><p>${linkify(v.intro, l.base)}</p></div>` : ""}
     <div class="recipe-body">
       <section aria-labelledby="ing-h">
         <h2 id="ing-h">${l.ingredients}</h2>
         <ul class="ing">
-          ${v.ingredients.map((i) => `<li>${esc(i)}</li>`).join("\n          ")}
+          ${v.ingredients.map((i) => `<li>${linkify(i, l.base)}</li>`).join("\n          ")}
         </ul>
       </section>
       <section aria-labelledby="met-h">
         <h2 id="met-h">${l.method}</h2>
         <ol class="method">
-          ${v.steps.map((s) => `<li>${esc(s)}</li>`).join("\n          ")}
+          ${v.steps.map((s) => `<li>${linkify(s, l.base)}</li>`).join("\n          ")}
         </ol>
       </section>
     </div>
-    ${v.chefNote ? `<aside class="chef-note"><p class="eyebrow">${l.note}</p><p>${esc(v.chefNote)}</p></aside>` : ""}
-    ${v.servesWith ? `<p class="serves-with"><strong>${l.servesWith}</strong> ${esc(v.servesWith)}</p>` : ""}
+    ${v.chefNote ? `<aside class="chef-note"><p class="eyebrow">${l.note}</p><p>${linkify(v.chefNote, l.base)}</p></aside>` : ""}
+    ${v.servesWith ? `<p class="serves-with"><strong>${l.servesWith}</strong> ${linkify(v.servesWith, l.base)}</p>` : ""}
+${related}
+${byline}
     <aside class="recipe-cta">
       <h2>${l.ctaHead}</h2>
       <p>${l.ctaBody}</p>
@@ -449,7 +547,7 @@ for (const code of ["en", "es"]) {
     if (!r[code]) continue;
     const dir = path.join(l.dir, r.slug);
     fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(path.join(dir, "index.html"), recipePage(r, code));
+    fs.writeFileSync(path.join(dir, "index.html"), recipePage(r, code, recipes));
   }
   fs.writeFileSync(path.join(l.dir, "index.html"), indexPage(recipes, code));
 }

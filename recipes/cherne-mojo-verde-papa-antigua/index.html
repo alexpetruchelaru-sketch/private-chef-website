@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Karla:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="/styles.css?v=9">
+<link rel="stylesheet" href="/styles.css?v=10">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,27 +33,51 @@
       "inLanguage": "en",
       "name": "Stone bass, green mojo, heritage potato",
       "description": "The most Canarian plate I cook. Cherne with the skin crisped hard and dry, green mojo underneath, and heritage potatoes crushed rather than mashed. Three elements, no sauce reduction, nothing hiding the fish.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://alexchelaru.com/recipes/cherne-mojo-verde-papa-antigua/"
+      },
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "@id": "https://alexchelaru.com/recipes/",
+        "name": "Canarian recipes"
+      },
       "author": {
         "@type": "Person",
+        "@id": "https://alexchelaru.com/#alex",
         "name": "Alex Chelaru",
-        "@id": "https://alexchelaru.com/#alex"
+        "jobTitle": "Private chef",
+        "url": "https://alexchelaru.com/#chef",
+        "worksFor": {
+          "@type": "Organization",
+          "@id": "https://alexchelaru.com/#business",
+          "name": "Alex Chelaru, Private Chef"
+        }
       },
       "publisher": {
-        "@id": "https://alexchelaru.com/#business"
+        "@type": "Organization",
+        "@id": "https://alexchelaru.com/#business",
+        "name": "Alex Chelaru, Private Chef",
+        "url": "https://alexchelaru.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://alexchelaru.com/icon-512.png"
+        }
       },
       "datePublished": "2026-09-01",
+      "dateModified": "2026-09-02",
       "recipeCategory": "Main",
       "recipeCuisine": "Canarian",
       "keywords": "cherne, stone bass recipe, mojo verde fish, papas antiguas, canarian fish recipe, gran canaria",
       "recipeYield": "Six",
       "prepTime": "PT20M",
-      "cookTime": "PT20M",
-      "totalTime": "PT40M",
+      "cookTime": "PT15M",
+      "totalTime": "PT35M",
       "recipeIngredient": [
-        "6 cherne (stone bass) fillets, about 160 g each, skin on and scaled",
+        "6 cherne (stone bass) fillets, about 160 g each and 2.5 cm thick, skin on and scaled",
         "800 g papas antiguas or small waxy potatoes",
-        "300 ml mojo verde (see the separate recipe)",
-        "4 tbsp olive oil",
+        "300 ml mojo verde",
+        "60 ml olive oil, 30 ml per pan",
         "30 g butter",
         "1 lemon",
         "Coarse salt, flaked salt, white pepper"
@@ -62,7 +86,7 @@
         {
           "@type": "HowToStep",
           "position": 1,
-          "text": "Several hours ahead, set the fillets skin up on a rack in the fridge, uncovered, so the skin dries out. This is the whole secret."
+          "text": "An hour before service, score the skin of each fillet: three or four slashes about a centimetre apart and no more than 3 mm deep, through the skin but not into the flesh. Salt the skin only, then sit the fillets skin up on a rack, uncovered, in the fridge."
         },
         {
           "@type": "HowToStep",
@@ -72,26 +96,36 @@
         {
           "@type": "HowToStep",
           "position": 3,
-          "text": "Score the skin of each fillet twice, lightly, and salt the skin only, right before cooking."
+          "text": "Take the fish out and pat the skin completely dry with kitchen paper. It has been drying for an hour and it still needs this."
         },
         {
           "@type": "HowToStep",
           "position": 4,
-          "text": "Get a heavy pan hot with the olive oil. Lay the fillets in skin side down away from you and press each one flat with a fish slice for the first 20 seconds so it does not curl."
+          "text": "Heat a heavy pan empty for about two minutes, then add 30 ml of oil. Six fillets will not fit in one pan without touching, so use two pans or two batches."
         },
         {
           "@type": "HowToStep",
           "position": 5,
-          "text": "Cook on the skin for about four fifths of the total time, four to five minutes, until you can see the flesh turning opaque up the side. Do not move them."
+          "text": "Lay the fillets in skin side down, away from you, and press each one flat with a fish slice for twenty to thirty seconds. The skin contracts the moment it hits the heat, and pressing is the only thing keeping all of it against the pan."
         },
         {
           "@type": "HowToStep",
           "position": 6,
-          "text": "Add the butter, turn the fish, take the pan off the heat and let the residual heat finish it, 45 seconds. Squeeze a little lemon into the butter and spoon it over the flesh, never the skin."
+          "text": "Leave them alone. Start high, then drop to medium-low and give them six to eight minutes on the skin, until the flesh has turned opaque all the way up the side bar the top 6 mm or so. If the oil smokes at any point, or the sides of the fish start to brown, lower the heat until the oil sizzles without smoking."
         },
         {
           "@type": "HowToStep",
           "position": 7,
+          "text": "Add the butter, turn the fish, and take the pan off the heat: thirty seconds to a minute on the flesh side is enough, and the residual heat does it. Squeeze a little lemon into the butter and spoon it over the flesh, never over the skin."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 8,
+          "text": "Pull the fish at 52 to 55 °C in the centre. Rest it three minutes on a rack, skin up."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 9,
           "text": "Spoon mojo verde onto warm plates, the crushed potato beside it, and the fish on top skin up. Flaked salt on the skin at the last second."
         }
       ]
@@ -146,7 +180,7 @@
       <a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/recipes/">Recipes</a>
     </nav>
     <header class="recipe-head">
-      <p class="eyebrow">Canarian &middot; Main &middot; From the menu Huerta</p>
+      <p class="eyebrow">Canarian &middot; Main &middot; From the menu <a href="/#huerta">Huerta</a></p>
       <h1>Stone bass, green mojo, heritage potato</h1>
       <p class="recipe-sub">Cherne, mojo verde, papa antigua</p>
       <p class="recipe-summary">The most Canarian plate I cook. Cherne with the skin crisped hard and dry, green mojo underneath, and heritage potatoes crushed rather than mashed. Three elements, no sauce reduction, nothing hiding the fish.</p>
@@ -155,18 +189,18 @@
     <dl class="recipe-meta">
         <div><dt>Serves</dt><dd>Six</dd></div>
         <div><dt>Prep</dt><dd>20 min</dd></div>
-        <div><dt>Cook</dt><dd>20 min</dd></div>
+        <div><dt>Cook</dt><dd>15 min</dd></div>
         <div><dt>Cuisine</dt><dd>Canarian</dd></div>
     </dl>
-    <div class="recipe-intro"><p>Cherne is the island's fish and it is firm enough to take a proper sear. Everything here depends on the skin, and the skin depends on it being dry: leave the fillets uncovered in the fridge for a few hours before service and you will get a crust that stays crisp all the way to the table.</p></div>
+    <div class="recipe-intro"><p>Something worth knowing: the Canarian recipes for cherne do not tell you how to sear it. I read five of them and not one gives a time, a pan temperature or an internal temperature. On the island this is an oven fish, a stew fish, a sancocho fish, and the plancha is treated as something you already know. So the numbers below come from the people who have written that technique down properly, on other thick white fish, and the fish itself takes them without complaint.</p></div>
     <div class="recipe-body">
       <section aria-labelledby="ing-h">
         <h2 id="ing-h">Ingredients</h2>
         <ul class="ing">
-          <li>6 cherne (stone bass) fillets, about 160 g each, skin on and scaled</li>
+          <li>6 cherne (stone bass) fillets, about 160 g each and 2.5 cm thick, skin on and scaled</li>
           <li>800 g papas antiguas or small waxy potatoes</li>
-          <li>300 ml mojo verde (see the separate recipe)</li>
-          <li>4 tbsp olive oil</li>
+          <li>300 ml <a href="/recipes/mojo-verde/">mojo verde</a></li>
+          <li>60 ml olive oil, 30 ml per pan</li>
           <li>30 g butter</li>
           <li>1 lemon</li>
           <li>Coarse salt, flaked salt, white pepper</li>
@@ -175,18 +209,63 @@
       <section aria-labelledby="met-h">
         <h2 id="met-h">Method</h2>
         <ol class="method">
-          <li>Several hours ahead, set the fillets skin up on a rack in the fridge, uncovered, so the skin dries out. This is the whole secret.</li>
+          <li>An hour before service, score the skin of each fillet: three or four slashes about a centimetre apart and no more than 3 mm deep, through the skin but not into the flesh. Salt the skin only, then sit the fillets skin up on a rack, uncovered, in the fridge.</li>
           <li>Boil the potatoes in well salted water until tender, drain, and crush them roughly with a fork with a little olive oil and salt. Leave them coarse. Keep warm.</li>
-          <li>Score the skin of each fillet twice, lightly, and salt the skin only, right before cooking.</li>
-          <li>Get a heavy pan hot with the olive oil. Lay the fillets in skin side down away from you and press each one flat with a fish slice for the first 20 seconds so it does not curl.</li>
-          <li>Cook on the skin for about four fifths of the total time, four to five minutes, until you can see the flesh turning opaque up the side. Do not move them.</li>
-          <li>Add the butter, turn the fish, take the pan off the heat and let the residual heat finish it, 45 seconds. Squeeze a little lemon into the butter and spoon it over the flesh, never the skin.</li>
+          <li>Take the fish out and pat the skin completely dry with kitchen paper. It has been drying for an hour and it still needs this.</li>
+          <li>Heat a heavy pan empty for about two minutes, then add 30 ml of oil. Six fillets will not fit in one pan without touching, so use two pans or two batches.</li>
+          <li>Lay the fillets in skin side down, away from you, and press each one flat with a fish slice for twenty to thirty seconds. The skin contracts the moment it hits the heat, and pressing is the only thing keeping all of it against the pan.</li>
+          <li>Leave them alone. Start high, then drop to medium-low and give them six to eight minutes on the skin, until the flesh has turned opaque all the way up the side bar the top 6 mm or so. If the oil smokes at any point, or the sides of the fish start to brown, lower the heat until the oil sizzles without smoking.</li>
+          <li>Add the butter, turn the fish, and take the pan off the heat: thirty seconds to a minute on the flesh side is enough, and the residual heat does it. Squeeze a little lemon into the butter and spoon it over the flesh, never over the skin.</li>
+          <li>Pull the fish at 52 to 55 °C in the centre. Rest it three minutes on a rack, skin up.</li>
           <li>Spoon mojo verde onto warm plates, the crushed potato beside it, and the fish on top skin up. Flaked salt on the skin at the last second.</li>
         </ol>
       </section>
     </div>
-    <aside class="chef-note"><p class="eyebrow">Chef&rsquo;s note</p><p>If cherne is not available, any firm white fish with a good skin works: wreckfish, corvina, or a thick fillet of sea bass. Do not use anything thin, it will overcook before the skin is ready.</p></aside>
-    <p class="serves-with"><strong>Serve it with.</strong> Nothing else. The mojo is the sauce and the potato is the starch, and a third element makes it a mess.</p>
+    <aside class="chef-note"><p class="eyebrow">Chef&rsquo;s note</p><p>The hour on the rack is worth explaining, because only one of the sources I checked specifies it and I want to be straight about that. Salt on the skin draws moisture out; the rack and the open fridge take that moisture away rather than leaving it to fry. Do it to the skin only. Salt the flesh early and you firm it.</p></aside>
+    <p class="serves-with"><strong>Serve it with.</strong> Nothing else. The <a href="/recipes/mojo-verde/">mojo</a> is the sauce and the <a href="/recipes/papas-arrugadas/">potato</a> is the starch; a third element only makes a mess of it.</p>
+    <section class="rel" aria-labelledby="rel-h">
+      <h2 class="rel-h" id="rel-h">Cook it with</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="/recipes/mojo-verde/">
+          <b>Mojo verde</b>
+          <i>Green mojo with coriander and green chilli</i>
+        </a>
+        <a class="rel-card" href="/recipes/papas-arrugadas/">
+          <b>Papas arrugadas</b>
+          <i>Salt-wrinkled Canarian potatoes</i>
+        </a>
+      </div>
+    </section>
+    <section class="rel" aria-labelledby="relm-h">
+      <h2 class="rel-h" id="relm-h">The rest of this menu: Huerta</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="/recipes/berenjena-a-la-brasa/">
+          <b>Charred aubergine, onion, bread</b>
+          <i>Berenjena a la brasa, cebolla, pan</i>
+        </a>
+        <a class="rel-card" href="/recipes/atun-ponzu-aguacate/">
+          <b>Tuna, ponzu, avocado</b>
+          <i>Atún, ponzu, aguacate</i>
+        </a>
+        <a class="rel-card" href="/recipes/panceta-de-cerdo-negro-canario/">
+          <b>Canarian black pork belly, apple, carrot</b>
+          <i>Panceta de cerdo negro canario, manzana, zanahoria</i>
+        </a>
+        <a class="rel-card" href="/recipes/torrija-de-platano/">
+          <b>Torrija de plátano</b>
+          <i>Plantain custard French toast with honey rum</i>
+        </a>
+      </div>
+      <p class="rel-more"><a href="/#huerta">See the full menu</a></p>
+    </section>
+    <aside class="byline">
+      <p class="eyebrow">Written by</p>
+      <p class="byline-name"><a href="/#chef">Alex Chelaru</a></p>
+      <p class="byline-bio">Private chef in Gran Canaria. A farm childhood first, then a decade in Cambridge kitchens including the University Arms. Trained under Lee Clarke, whose restaurants Clarkes and Pr&eacute;vost earned Michelin Guide recognition and three AA rosettes.</p>
+      <p class="byline-dates">
+        <time datetime="2026-09-01">Published 1 September 2026</time> &middot; <time datetime="2026-09-02">Updated 2 September 2026</time>
+      </p>
+    </aside>
     <aside class="recipe-cta">
       <h2>I cook this on the island</h2>
       <p>This is one of the things I make for guests in villas and homes across Gran Canaria. If you would rather eat it than cook it, I bring everything, cook it in your kitchen and clear it away after.</p>
@@ -206,6 +285,6 @@
     </p>
   </div>
 </footer>
-<script src="/app.js?v=9" defer></script>
+<script src="/app.js?v=10" defer></script>
 </body>
 </html>

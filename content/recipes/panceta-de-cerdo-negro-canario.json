@@ -40,7 +40,7 @@
       "Plate the purée, the carrots and the pork, then finish with thin matchsticks of the raw apple over the top for sharpness."
     ],
     "chefNote": "Do not skip the overnight press. It is the difference between a slice you can cut with a fork and a pile of pulled pork.",
-    "servesWith": "Papas arrugadas, and mojo picón for anyone who wants it.",
+    "servesWith": "[[papas-arrugadas|Papas arrugadas]], and mojo picón for anyone who wants it.",
     "seoTitle": "Canarian black pork belly"
   },
   "es": {
@@ -77,7 +77,11 @@
       "Monta el puré, la zanahoria y el cerdo, y termina con bastones finos de manzana cruda por encima para cortar la grasa."
     ],
     "chefNote": "No te saltes la prensa de la noche. Es la diferencia entre una porción que cortas con el tenedor y un montón de carne deshilachada.",
-    "servesWith": "Papas arrugadas y mojo picón para quien lo quiera.",
+    "servesWith": "[[papas-arrugadas|Papas arrugadas]] y mojo picón para quien lo quiera.",
     "seoTitle": "Panceta de cerdo negro canario"
-  }
+  },
+  "related": [
+    "papas-arrugadas"
+  ],
+  "updated": "2026-09-01"
 }

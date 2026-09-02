@@ -10,52 +10,83 @@
     "title": "Papas arrugadas",
     "subtitle": "Salt-wrinkled Canarian potatoes",
     "menu": "The basics",
-    "summary": "Small potatoes boiled in heavily salted water until the water goes and the skins wrinkle and dust over with salt. Three ingredients, one pan, and the most Canarian thing on any table.",
-    "intro": "The traditional version used sea water, which tells you how much salt is involved. The trick people miss is the end: once the water has gone you keep the pan on the heat and shake it, drying the skins until they crackle and turn matt. Stop too early and you have boiled potatoes.",
+    "summary": "Small potatoes boiled in heavily salted water until the water goes and the skins wrinkle and dust over with salt. Three ingredients, one pan, and the most Canarian thing on any table. The salt is not a seasoning here, it is the method.",
+    "intro": "Everyone argues about the salt. Of the five Canarian sources I checked, three give exactly 250 grams to a kilo of potatoes, including the Gobierno de Canarias, and the lowest anyone will defend is 75. The potatoes take up only what they need, so erring high costs you nothing and erring low costs you the crust. The real mistake is somewhere else: too much water. One Tenerife source names it as the reason home cooks never get the island result, and they are right. Less water means a stronger brine and a shorter, more violent dry-down at the end.",
     "yield": "Six as a side",
     "category": "Side",
     "cuisine": "Canarian",
     "keywords": "papas arrugadas, canarian wrinkled potatoes, salt potatoes, papas antiguas, gran canaria recipe",
     "ingredients": [
-      "1 kg small potatoes, papas antiguas if you can get them, unpeeled and roughly equal in size",
-      "150 g coarse sea salt",
-      "Water to barely cover"
+      "1 kg small potatoes, unpeeled, as close to the same size as you can get them",
+      "250 g coarse sea salt",
+      "About 1 to 1.2 litres water, only just enough to cover"
     ],
     "steps": [
-      "Wash the potatoes but do not peel them. The skin is the whole point.",
-      "Put them in a wide pan in a single layer, add water until it just covers, and add all the salt. It will look like far too much. It is not.",
-      "Boil hard for about 20 minutes, until a knife goes through without resistance.",
-      "Pour off almost all the water, leaving a shallow film. Return to a medium heat.",
-      "Shake the pan every 30 seconds until the water is gone and the skins wrinkle and go chalky white with salt, about 5 minutes. Cover with a cloth and leave 5 minutes before serving."
+      "Wash the potatoes well but do not peel them. The skin stays on for the whole dish, so nothing can be left on it.",
+      "Put them in a snug pan in a single layer, add the salt, and add cold water until it only just covers them. It will look like far too much salt. It is not; three of the five recipes I checked use exactly this much.",
+      "Bring to the boil, then drop to a medium heat and cook until a knife or skewer goes in with no resistance. Between 20 and 25 minutes for small potatoes, though the sources run from 15 to 30 depending on size.",
+      "Pour all the water off. Do not leave a film in the bottom.",
+      "Put the pan back on a low to medium heat and shake it in circles. The water left clinging to the potatoes is enough.",
+      "Keep shaking until the skins are visibly wrinkled and a white bloom of salt has appeared on them. This takes anywhere from 3 to 10 minutes and it is the visual cue that tells you, not the clock. Stop as soon as you see it: the longer you shake, the more likely the potatoes are to collapse.",
+      "Take the pan off the heat, cover it with a cloth and leave it two minutes before serving."
     ],
-    "chefNote": "Size matters more than variety. Pick potatoes you could hold three of in one hand, and get them within a few grams of each other, or half will collapse while the rest are still raw.",
-    "servesWith": "Mojo verde on fish nights, mojo picón on meat nights, and both if the table is arguing.",
+    "chefNote": "Get them all within a few grams of each other. Only one of the sources I checked insists on it, but it is the one that matters: uneven potatoes mean half collapse in the shaking while the rest are still firm, and there is no way back from that.",
+    "servesWith": "[[mojo-verde|Mojo verde]] on fish nights, mojo picón on meat nights, and both if the table is arguing.",
     "seoTitle": "Papas arrugadas"
   },
   "es": {
     "title": "Papas arrugadas",
     "subtitle": "Papas arrugadas con sal gruesa",
     "menu": "Los básicos",
-    "summary": "Papas pequeñas cocidas en agua muy salada hasta que el agua desaparece y la piel se arruga y se cubre de sal. Tres ingredientes, una olla, y lo más canario que puede haber en una mesa.",
-    "intro": "La versión tradicional se hacía con agua de mar, lo que te dice la cantidad de sal que lleva. Lo que la gente se salta es el final: cuando el agua se ha ido, sigues con la olla al fuego y la mueves, secando la piel hasta que cruje y queda mate. Si paras antes, tienes papas cocidas y ya está.",
+    "summary": "Papas pequeñas cocidas en agua muy salada hasta que el agua desaparece y la piel se arruga y se cubre de sal. Tres ingredientes, una olla, y lo más canario que puede haber en una mesa. Aquí la sal no es un condimento, es el método.",
+    "intro": "Todo el mundo discute por la sal. De las cinco fuentes canarias que consulté, tres dan exactamente 250 gramos por kilo de papas, incluido el Gobierno de Canarias, y la cifra más baja que alguien defiende es 75. La papa solo coge la que necesita, así que pasarse no cuesta nada y quedarse corto cuesta la costra. El error de verdad está en otro sitio: demasiada agua. Una fuente tinerfeña lo señala como la razón por la que en casa nunca sale como en la isla, y tiene razón. Menos agua es más concentración y un secado final más corto y más bruto.",
     "yield": "Seis, como guarnición",
     "category": "Guarnición",
     "cuisine": "Canaria",
     "keywords": "papas arrugadas, papas arrugadas canarias, papas antiguas, receta canaria, gran canaria",
     "ingredients": [
-      "1 kg de papas pequeñas, papas antiguas si las encuentras, sin pelar y del mismo tamaño",
-      "150 g de sal marina gruesa",
-      "Agua, la justa para cubrir"
+      "1 kg de papas pequeñas, sin pelar, lo más iguales de tamaño que puedas",
+      "250 g de sal marina gruesa",
+      "Entre 1 y 1,2 litros de agua, la justa para cubrir"
     ],
     "steps": [
-      "Lava las papas pero no las peles. La piel es todo el asunto.",
-      "Pónlas en una olla ancha en una sola capa, cubre justo con agua y añade toda la sal. Parecerá muchísima. No lo es.",
-      "Cuece a fuego fuerte unos 20 minutos, hasta que el cuchillo entre sin resistencia.",
-      "Retira casi toda el agua y deja solo una lámina en el fondo. Vuelve al fuego medio.",
-      "Mueve la olla cada 30 segundos hasta que el agua desaparezca y la piel se arrugue y se ponga blanca de sal, unos 5 minutos. Tápala con un paño y espera 5 minutos antes de servir."
+      "Lava bien las papas pero no las peles. La piel se queda durante todo el plato, así que no puede quedar nada en ella.",
+      "Ponlas en una olla justa en una sola capa, añade la sal y cubre con agua fría solo hasta taparlas. Parecerá muchísima sal. No lo es: tres de las cinco recetas que consulté usan exactamente esta cantidad.",
+      "Lleva a hervor, baja a fuego medio y cuece hasta que el cuchillo entre sin resistencia. Entre 20 y 25 minutos para papas pequeñas, aunque las fuentes van de 15 a 30 según el tamaño.",
+      "Escurre toda el agua. No dejes una película en el fondo.",
+      "Devuelve la olla al fuego bajo o medio y muévela en círculos. El agua que queda pegada a las papas es suficiente.",
+      "Sigue moviendo hasta que la piel esté visiblemente arrugada y haya aparecido una flor blanca de sal. Puede llevar de 3 a 10 minutos, y lo que te lo dice es lo que ves, no el reloj. Para en cuanto aparezca: cuanto más muevas, más probable es que las papas se deshagan.",
+      "Retira la olla del fuego, tápala con un paño y espera dos minutos antes de servir."
     ],
-    "chefNote": "Importa más el tamaño que la variedad. Elige papas de las que te caben tres en una mano, y que no se lleven más de unos gramos entre ellas, o la mitad se deshará mientras la otra sigue cruda.",
-    "servesWith": "Mojo verde en las noches de pescado, mojo picón en las de carne, y los dos si la mesa no se pone de acuerdo.",
+    "chefNote": "Que no se lleven más de unos gramos entre ellas. Solo una de las fuentes que consulté insiste en esto, pero es la que importa: con papas desiguales, la mitad se deshace mientras la otra sigue entera, y de ahí no se vuelve.",
+    "servesWith": "[[mojo-verde|Mojo verde]] en las noches de pescado, mojo picón en las de carne, y los dos si la mesa no se pone de acuerdo.",
     "seoTitle": "Papas arrugadas"
-  }
+  },
+  "related": [
+    "mojo-verde",
+    "cherne-mojo-verde-papa-antigua"
+  ],
+  "updated": "2026-09-02",
+  "sources": [
+    {
+      "title": "Papas arrugadas — CanariWiki, Gobierno de Canarias",
+      "url": "https://www3.gobiernodecanarias.org/medusa/wiki/index.php?title=Papas_arrugadas"
+    },
+    {
+      "title": "Cómo hacer papas arrugadas — Directo al Paladar",
+      "url": "https://www.directoalpaladar.com/recetas-vegetarianas/como-hacer-papas-arrugadas-te-queden-casi-como-islas-canarias"
+    },
+    {
+      "title": "Papas arrugadas — Sofía de la Torre, Bon Viveur",
+      "url": "https://bonviveur.com/es/recetas/papas-arrugadas"
+    },
+    {
+      "title": "El truco de los canarios — Mer Bonilla, El Español / Cocinillas",
+      "url": "https://www.elespanol.com/cocinillas/recetas/20241029/sencillo-truco-canarios-hacer-patatas-cocidas-deliciosas-papas-arrugas/1003582691700_30.html"
+    },
+    {
+      "title": "El error que cometen al hacer papas arrugadas — Diario de Avisos",
+      "url": "https://diariodeavisos.elespanol.com/canariasenred/el-error-que-cometen-al-hacer-papas-arrugadas-y-por-que-nunca-quedan-como-en-canarias/"
+    }
+  ]
 }

@@ -27,6 +27,18 @@ content:
       - { name: order, label: Position in the list, type: number,
           description: Lower numbers come first on the recipes page. Leave blank and it goes to the end. }
       - { name: date, label: Date published, type: date, required: true }
+      - { name: updated, label: Date last updated, type: date,
+          description: Change this whenever you correct a recipe. It becomes dateModified in the structured data, which is how Google sees that the page was revised. }
+      - { name: related, label: Cook it with, type: string, list: true,
+          description: "Web addresses of other recipes this one is built on, one per line, e.g. mojo-verde. They appear as links at the bottom of the page." }
+      - name: sources
+        label: Sources cross-referenced
+        type: object
+        list: true
+        description: The published recipes this one was checked against. Not shown on the page; kept so the next revision knows what the numbers came from.
+        fields:
+          - { name: title, label: Title and author, type: string }
+          - { name: url, label: Link, type: string }
       - { name: image, label: Photo, type: image,
           description: The finished dish. Google will not show a recipe as a rich result without one. The same photo is used on both languages. }
       - { name: imageAlt, label: Photo description, type: string,
@@ -39,6 +51,8 @@ content:
         type: object
         fields:
           - { name: title, label: Recipe name, type: string, required: true }
+          - { name: seoTitle, label: Short name for Google, type: string,
+              description: "The short version used in the browser tab and in search results, e.g. 'Stone bass with green mojo'. Keep it under about 32 characters or Google cuts it off. The full name above still appears as the heading on the page." }
           - { name: subtitle, label: One-line subtitle, type: string }
           - { name: menu, label: Which menu it comes from, type: string,
               description: "Huerta, Travesia, Sobremesa, Brasa, Media Manana, or leave blank." }
@@ -62,6 +76,8 @@ content:
         type: object
         fields:
           - { name: title, label: Nombre de la receta, type: string }
+          - { name: seoTitle, label: Nombre corto para Google, type: string,
+              description: "La version corta que aparece en la pestana del navegador y en los resultados de busqueda. Menos de unos 32 caracteres." }
           - { name: subtitle, label: Subtitulo de una linea, type: string }
           - { name: menu, label: De que menu es, type: string }
           - { name: summary, label: Resumen, type: text,

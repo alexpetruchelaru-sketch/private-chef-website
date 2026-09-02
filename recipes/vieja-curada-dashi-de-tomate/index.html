@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Karla:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="/styles.css?v=9">
+<link rel="stylesheet" href="/styles.css?v=10">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,15 +33,39 @@
       "inLanguage": "en",
       "name": "Cured parrotfish, tomato dashi, cucumber, green mojo",
       "description": "Vieja cured briefly in salt and sugar, sliced thin, and served in a clear tomato dashi poured at the table. Cucumber for crunch, a line of green mojo for the island.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://alexchelaru.com/recipes/vieja-curada-dashi-de-tomate/"
+      },
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "@id": "https://alexchelaru.com/recipes/",
+        "name": "Canarian recipes"
+      },
       "author": {
         "@type": "Person",
+        "@id": "https://alexchelaru.com/#alex",
         "name": "Alex Chelaru",
-        "@id": "https://alexchelaru.com/#alex"
+        "jobTitle": "Private chef",
+        "url": "https://alexchelaru.com/#chef",
+        "worksFor": {
+          "@type": "Organization",
+          "@id": "https://alexchelaru.com/#business",
+          "name": "Alex Chelaru, Private Chef"
+        }
       },
       "publisher": {
-        "@id": "https://alexchelaru.com/#business"
+        "@type": "Organization",
+        "@id": "https://alexchelaru.com/#business",
+        "name": "Alex Chelaru, Private Chef",
+        "url": "https://alexchelaru.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://alexchelaru.com/icon-512.png"
+        }
       },
       "datePublished": "2026-09-01",
+      "dateModified": "2026-09-01",
       "recipeCategory": "Starter",
       "recipeCuisine": "Canarian",
       "keywords": "vieja curada, parrotfish recipe, tomato dashi, clear tomato water, cured fish starter, canarian",
@@ -143,7 +167,7 @@
       <a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/recipes/">Recipes</a>
     </nav>
     <header class="recipe-head">
-      <p class="eyebrow">Canarian &middot; Starter &middot; From the menu Travesía</p>
+      <p class="eyebrow">Canarian &middot; Starter &middot; From the menu <a href="/#travesia">Travesía</a></p>
       <h1>Cured parrotfish, tomato dashi, cucumber, green mojo</h1>
       <p class="recipe-sub">Vieja curada, dashi de tomate, pepino, mojo verde</p>
       <p class="recipe-summary">Vieja cured briefly in salt and sugar, sliced thin, and served in a clear tomato dashi poured at the table. Cucumber for crunch, a line of green mojo for the island.</p>
@@ -167,7 +191,7 @@
           <li>5 g katsuobushi</li>
           <li>1 tsp light soy sauce</li>
           <li>1 cucumber</li>
-          <li>2 tbsp mojo verde (see the separate recipe)</li>
+          <li>2 tbsp <a href="/recipes/mojo-verde/">mojo verde</a> (see the separate recipe)</li>
           <li>Olive oil, chives</li>
         </ul>
       </section>
@@ -179,12 +203,47 @@
           <li>Bury the fillets in the salt and sugar mix for 20 minutes only, then rinse well and pat completely dry. Wrap and chill for an hour.</li>
           <li>Peel the cucumber in strips, quarter it, remove the seeds and cut it into small dice. Salt it lightly ten minutes ahead and drain.</li>
           <li>Slice the cured fish thinly against the grain and arrange it in cold, deep bowls.</li>
-          <li>Add the cucumber, a thin line of mojo verde and a few drops of olive oil, then pour the cold tomato dashi at the table so people see it arrive. Chives at the last moment.</li>
+          <li>Add the cucumber, a thin line of <a href="/recipes/mojo-verde/">mojo verde</a> and a few drops of olive oil, then pour the cold tomato dashi at the table so people see it arrive. Chives at the last moment.</li>
         </ol>
       </section>
     </div>
     <aside class="chef-note"><p class="eyebrow">Chef&rsquo;s note</p><p>Twenty minutes of cure and no more. Vieja is a delicate fish and at half an hour it stops being raw and starts being salt fish.</p></aside>
     <p class="serves-with"><strong>Serve it with.</strong> An albillo or any sharp unoaked white, cold enough to hurt.</p>
+    <section class="rel" aria-labelledby="rel-h">
+      <h2 class="rel-h" id="rel-h">Cook it with</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="/recipes/mojo-verde/">
+          <b>Mojo verde</b>
+          <i>Green mojo with coriander and green chilli</i>
+        </a>
+      </div>
+    </section>
+    <section class="rel" aria-labelledby="relm-h">
+      <h2 class="rel-h" id="relm-h">The rest of this menu: Travesía</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="/recipes/vieira-coliflor-miso/">
+          <b>Scallop, cauliflower, miso brown butter, lime</b>
+          <i>Vieira, coliflor, beurre noisette de miso, lima</i>
+        </a>
+        <a class="rel-card" href="/recipes/baifo-miel-de-palma/">
+          <b>Kid goat, palm honey, star anise, heritage potato</b>
+          <i>Baifo, miel de palma, anís estrellado, papa antigua</i>
+        </a>
+        <a class="rel-card" href="/recipes/tarta-de-queso-de-guia/">
+          <b>Flor de Guía cheesecake, fig, honey</b>
+          <i>Queso de Guía, higo, miel</i>
+        </a>
+      </div>
+      <p class="rel-more"><a href="/#travesia">See the full menu</a></p>
+    </section>
+    <aside class="byline">
+      <p class="eyebrow">Written by</p>
+      <p class="byline-name"><a href="/#chef">Alex Chelaru</a></p>
+      <p class="byline-bio">Private chef in Gran Canaria. A farm childhood first, then a decade in Cambridge kitchens including the University Arms. Trained under Lee Clarke, whose restaurants Clarkes and Pr&eacute;vost earned Michelin Guide recognition and three AA rosettes.</p>
+      <p class="byline-dates">
+        <time datetime="2026-09-01">Published 1 September 2026</time>
+      </p>
+    </aside>
     <aside class="recipe-cta">
       <h2>I cook this on the island</h2>
       <p>This is one of the things I make for guests in villas and homes across Gran Canaria. If you would rather eat it than cook it, I bring everything, cook it in your kitchen and clear it away after.</p>
@@ -204,6 +263,6 @@
     </p>
   </div>
 </footer>
-<script src="/app.js?v=9" defer></script>
+<script src="/app.js?v=10" defer></script>
 </body>
 </html>

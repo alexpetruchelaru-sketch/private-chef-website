@@ -38,7 +38,7 @@
       "Keep them in a low oven, in a single layer, not stacked, until all are done. Serve in stacks with the mascarpone, maple and berries."
     ],
     "chefNote": "No buttermilk to hand? Stir a tablespoon of lemon juice into 480 ml of whole milk and leave it ten minutes. It is not identical but it is close, and it is far better than using plain milk.",
-    "servesWith": "Crisp pancetta on the side for anyone who wants salt with their sweet.",
+    "servesWith": "Crisp pancetta on the side for anyone who wants salt with their sweet, or the [[torrija-de-brunch|torrija]] alongside.",
     "seoTitle": "Buttermilk pancakes"
   },
   "es": {
@@ -73,7 +73,11 @@
       "Guárdalas en el horno a temperatura baja, en una sola capa y sin apilar, hasta terminar todas. Sirve en torres con el mascarpone, el sirope y los frutos rojos."
     ],
     "chefNote": "¿No tienes suero de leche? Añade una cucharada de zumo de limón a 480 ml de leche entera y espera diez minutos. No es idéntico, pero se acerca mucho y es bastante mejor que usar leche sola.",
-    "servesWith": "Panceta crujiente al lado para quien quiera sal con su dulce.",
+    "servesWith": "Panceta crujiente al lado para quien quiera sal con su dulce, o la [[torrija-de-brunch|torrija]] al lado.",
     "seoTitle": "Tortitas de suero"
-  }
+  },
+  "related": [
+    "torrija-de-brunch"
+  ],
+  "updated": "2026-09-01"
 }

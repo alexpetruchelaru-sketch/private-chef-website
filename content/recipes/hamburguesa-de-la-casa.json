@@ -35,7 +35,7 @@
       "Rest two minutes, build, and eat standing up."
     ],
     "chefNote": "Never press a burger with a spatula. Every drop of juice you push into the fire is juice that is not in the burger, and it does nothing to speed the cooking.",
-    "servesWith": "Grilled corn, and the sauces off the salad table.",
+    "servesWith": "[[maiz-a-la-brasa|Grilled corn]], and the sauces off the salad table.",
     "seoTitle": "Homemade burger patty"
   },
   "es": {
@@ -67,7 +67,11 @@
       "Reposa dos minutos, monta y cómetela de pie."
     ],
     "chefNote": "No aplastes nunca una hamburguesa con la espátula. Cada gota de jugo que empujas al fuego es jugo que no está en la hamburguesa, y encima no acelera la cocción.",
-    "servesWith": "Maíz a la brasa y las salsas de la mesa de ensaladas.",
+    "servesWith": "[[maiz-a-la-brasa|Maíz a la brasa]] y las salsas de la mesa de ensaladas.",
     "seoTitle": "Hamburguesa de la casa"
-  }
+  },
+  "related": [
+    "maiz-a-la-brasa"
+  ],
+  "updated": "2026-09-01"
 }

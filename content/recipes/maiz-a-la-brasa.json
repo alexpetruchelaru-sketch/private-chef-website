@@ -67,5 +67,10 @@
     "chefNote": "Si cocinas para mucha gente, tuesta el maíz una hora antes y guárdalo envuelto en aluminio en un sitio templado. La mantequilla y el queso, al momento; queda igual de bien y le quita presión a la parrilla.",
     "servesWith": "Todo lo demás del menú Brasa.",
     "seoTitle": "Maíz a la brasa"
-  }
+  },
+  "related": [
+    "souvlaki-de-pollo",
+    "costillar-de-cerdo-gochujang"
+  ],
+  "updated": "2026-09-01"
 }

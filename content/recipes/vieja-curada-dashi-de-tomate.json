@@ -24,7 +24,7 @@
       "5 g katsuobushi",
       "1 tsp light soy sauce",
       "1 cucumber",
-      "2 tbsp mojo verde (see the separate recipe)",
+      "2 tbsp [[mojo-verde|mojo verde]] (see the separate recipe)",
       "Olive oil, chives"
     ],
     "steps": [
@@ -33,7 +33,7 @@
       "Bury the fillets in the salt and sugar mix for 20 minutes only, then rinse well and pat completely dry. Wrap and chill for an hour.",
       "Peel the cucumber in strips, quarter it, remove the seeds and cut it into small dice. Salt it lightly ten minutes ahead and drain.",
       "Slice the cured fish thinly against the grain and arrange it in cold, deep bowls.",
-      "Add the cucumber, a thin line of mojo verde and a few drops of olive oil, then pour the cold tomato dashi at the table so people see it arrive. Chives at the last moment."
+      "Add the cucumber, a thin line of [[mojo-verde|mojo verde]] and a few drops of olive oil, then pour the cold tomato dashi at the table so people see it arrive. Chives at the last moment."
     ],
     "chefNote": "Twenty minutes of cure and no more. Vieja is a delicate fish and at half an hour it stops being raw and starts being salt fish.",
     "servesWith": "An albillo or any sharp unoaked white, cold enough to hurt.",
@@ -57,7 +57,7 @@
       "5 g de katsuobushi",
       "1 cucharadita de salsa de soja suave",
       "1 pepino",
-      "2 cucharadas de mojo verde (ver la receta aparte)",
+      "2 cucharadas de [[mojo-verde|mojo verde]] (ver la receta aparte)",
       "Aceite de oliva y cebollino"
     ],
     "steps": [
@@ -66,10 +66,14 @@
       "Entierra los lomos en la mezcla de sal y azúcar solo 20 minutos, enjuágalos bien y sécalos por completo. Envuélvelos y déjalos una hora en frío.",
       "Pela el pepino a tiras, córtalo en cuartos, quita las pepitas y hazlo en dados pequeños. Sálalo ligeramente diez minutos antes y escúrrelo.",
       "Corta el pescado curado en láminas finas a contrafibra y colócalo en boles hondos y fríos.",
-      "Añade el pepino, una línea fina de mojo verde y unas gotas de aceite, y vierte el dashi frío en la mesa para que lo vean llegar. El cebollino, al final."
+      "Añade el pepino, una línea fina de [[mojo-verde|mojo verde]] y unas gotas de aceite, y vierte el dashi frío en la mesa para que lo vean llegar. El cebollino, al final."
     ],
     "chefNote": "Veinte minutos de curación y ni uno más. La vieja es delicada y a la media hora deja de ser cruda y empieza a ser pescado salado.",
     "servesWith": "Un albillo o cualquier blanco afilado sin madera, muy frío.",
     "seoTitle": "Vieja curada con dashi de tomate"
-  }
+  },
+  "related": [
+    "mojo-verde"
+  ],
+  "updated": "2026-09-01"
 }

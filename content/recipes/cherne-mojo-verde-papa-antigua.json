@@ -3,7 +3,7 @@
   "order": 6,
   "date": "2026-09-01",
   "prepMinutes": 20,
-  "cookMinutes": 20,
+  "cookMinutes": 15,
   "image": "",
   "imageAlt": "",
   "en": {
@@ -11,31 +11,33 @@
     "subtitle": "Cherne, mojo verde, papa antigua",
     "menu": "Huerta",
     "summary": "The most Canarian plate I cook. Cherne with the skin crisped hard and dry, green mojo underneath, and heritage potatoes crushed rather than mashed. Three elements, no sauce reduction, nothing hiding the fish.",
-    "intro": "Cherne is the island's fish and it is firm enough to take a proper sear. Everything here depends on the skin, and the skin depends on it being dry: leave the fillets uncovered in the fridge for a few hours before service and you will get a crust that stays crisp all the way to the table.",
+    "intro": "Something worth knowing: the Canarian recipes for cherne do not tell you how to sear it. I read five of them and not one gives a time, a pan temperature or an internal temperature. On the island this is an oven fish, a stew fish, a sancocho fish, and the plancha is treated as something you already know. So the numbers below come from the people who have written that technique down properly, on other thick white fish, and the fish itself takes them without complaint.",
     "yield": "Six",
     "category": "Main",
     "cuisine": "Canarian",
     "keywords": "cherne, stone bass recipe, mojo verde fish, papas antiguas, canarian fish recipe, gran canaria",
     "ingredients": [
-      "6 cherne (stone bass) fillets, about 160 g each, skin on and scaled",
+      "6 cherne (stone bass) fillets, about 160 g each and 2.5 cm thick, skin on and scaled",
       "800 g papas antiguas or small waxy potatoes",
-      "300 ml mojo verde (see the separate recipe)",
-      "4 tbsp olive oil",
+      "300 ml [[mojo-verde|mojo verde]]",
+      "60 ml olive oil, 30 ml per pan",
       "30 g butter",
       "1 lemon",
       "Coarse salt, flaked salt, white pepper"
     ],
     "steps": [
-      "Several hours ahead, set the fillets skin up on a rack in the fridge, uncovered, so the skin dries out. This is the whole secret.",
+      "An hour before service, score the skin of each fillet: three or four slashes about a centimetre apart and no more than 3 mm deep, through the skin but not into the flesh. Salt the skin only, then sit the fillets skin up on a rack, uncovered, in the fridge.",
       "Boil the potatoes in well salted water until tender, drain, and crush them roughly with a fork with a little olive oil and salt. Leave them coarse. Keep warm.",
-      "Score the skin of each fillet twice, lightly, and salt the skin only, right before cooking.",
-      "Get a heavy pan hot with the olive oil. Lay the fillets in skin side down away from you and press each one flat with a fish slice for the first 20 seconds so it does not curl.",
-      "Cook on the skin for about four fifths of the total time, four to five minutes, until you can see the flesh turning opaque up the side. Do not move them.",
-      "Add the butter, turn the fish, take the pan off the heat and let the residual heat finish it, 45 seconds. Squeeze a little lemon into the butter and spoon it over the flesh, never the skin.",
+      "Take the fish out and pat the skin completely dry with kitchen paper. It has been drying for an hour and it still needs this.",
+      "Heat a heavy pan empty for about two minutes, then add 30 ml of oil. Six fillets will not fit in one pan without touching, so use two pans or two batches.",
+      "Lay the fillets in skin side down, away from you, and press each one flat with a fish slice for twenty to thirty seconds. The skin contracts the moment it hits the heat, and pressing is the only thing keeping all of it against the pan.",
+      "Leave them alone. Start high, then drop to medium-low and give them six to eight minutes on the skin, until the flesh has turned opaque all the way up the side bar the top 6 mm or so. If the oil smokes at any point, or the sides of the fish start to brown, lower the heat until the oil sizzles without smoking.",
+      "Add the butter, turn the fish, and take the pan off the heat: thirty seconds to a minute on the flesh side is enough, and the residual heat does it. Squeeze a little lemon into the butter and spoon it over the flesh, never over the skin.",
+      "Pull the fish at 52 to 55 °C in the centre. Rest it three minutes on a rack, skin up.",
       "Spoon mojo verde onto warm plates, the crushed potato beside it, and the fish on top skin up. Flaked salt on the skin at the last second."
     ],
-    "chefNote": "If cherne is not available, any firm white fish with a good skin works: wreckfish, corvina, or a thick fillet of sea bass. Do not use anything thin, it will overcook before the skin is ready.",
-    "servesWith": "Nothing else. The mojo is the sauce and the potato is the starch, and a third element makes it a mess.",
+    "chefNote": "The hour on the rack is worth explaining, because only one of the sources I checked specifies it and I want to be straight about that. Salt on the skin draws moisture out; the rack and the open fridge take that moisture away rather than leaving it to fry. Do it to the skin only. Salt the flesh early and you firm it.",
+    "servesWith": "Nothing else. The [[mojo-verde|mojo]] is the sauce and the [[papas-arrugadas|potato]] is the starch; a third element only makes a mess of it.",
     "seoTitle": "Stone bass with green mojo"
   },
   "es": {
@@ -43,31 +45,64 @@
     "subtitle": "Cherne con la piel crujiente sobre mojo verde",
     "menu": "Huerta",
     "summary": "El plato más canario que cocino. Cherne con la piel bien crujiente, mojo verde debajo y papas antiguas machacadas, no en puré. Tres elementos, ninguna reducción, nada que tape el pescado.",
-    "intro": "El cherne es el pescado de la isla y tiene la carne firme para aguantar un buen marcado. Aquí todo depende de la piel, y la piel depende de que esté seca: deja los lomos destapados en la nevera unas horas antes del servicio y tendrás una costra que llega crujiente a la mesa.",
+    "intro": "Algo que conviene saber: las recetas canarias de cherne no te dicen cómo marcarlo. Leí cinco y ninguna da un tiempo, una temperatura de sartén ni una temperatura interior. En la isla el cherne es pescado de horno, de guiso, de sancocho, y la plancha se da por sabida. Así que los números de abajo vienen de quien sí ha escrito esa técnica en serio, sobre otros pescados blancos gruesos, y el cherne los acepta sin protestar.",
     "yield": "Seis",
     "category": "Principal",
     "cuisine": "Canaria",
     "keywords": "cherne, receta de cherne, mojo verde con pescado, papas antiguas, pescado canario, gran canaria",
     "ingredients": [
-      "6 lomos de cherne de unos 160 g, con piel y bien escamados",
+      "6 lomos de cherne de unos 160 g y 2,5 cm de grosor, con piel y bien escamados",
       "800 g de papas antiguas o papas pequeñas de carne firme",
-      "300 ml de mojo verde (ver la receta aparte)",
-      "4 cucharadas de aceite de oliva",
+      "300 ml de [[mojo-verde|mojo verde]]",
+      "60 ml de aceite de oliva, 30 ml por sartén",
       "30 g de mantequilla",
       "1 limón",
       "Sal gruesa, sal en escamas y pimienta blanca"
     ],
     "steps": [
-      "Unas horas antes, coloca los lomos con la piel hacia arriba sobre una rejilla en la nevera, destapados, para que la piel se seque. Ese es todo el secreto.",
+      "Una hora antes del servicio, marca la piel de cada lomo: tres o cuatro cortes separados un centímetro y de no más de 3 mm, que atraviesen la piel pero no la carne. Sala solo la piel y coloca los lomos con la piel hacia arriba sobre una rejilla, destapados, en la nevera.",
       "Cuece las papas en agua bien salada hasta que estén tiernas, escúrrelas y machácalas de forma basta con un tenedor, con un poco de aceite y sal. Que queden con trozos. Mantenlas calientes.",
-      "Marca la piel de cada lomo con dos cortes ligeros y sala solo la piel, justo antes de cocinar.",
-      "Calienta bien una sartén gruesa con el aceite. Coloca los lomos con la piel hacia abajo, hacia fuera de ti, y presiona cada uno con una espátula los primeros 20 segundos para que no se curve.",
-      "Cocina sobre la piel unas cuatro quintas partes del tiempo total, cuatro o cinco minutos, hasta ver que la carne se vuelve opaca por el lateral. No los muevas.",
-      "Añade la mantequilla, da la vuelta al pescado, retira la sartén del fuego y deja que el calor residual lo termine, 45 segundos. Exprime un poco de limón en la mantequilla y salsea la carne, nunca la piel.",
+      "Saca el pescado y seca la piel por completo con papel de cocina. Lleva una hora secándose y aun así lo necesita.",
+      "Calienta una sartén gruesa vacía unos dos minutos y añade 30 ml de aceite. Seis lomos no caben en una sartén sin tocarse: usa dos sartenes o dos tandas.",
+      "Coloca los lomos con la piel hacia abajo, hacia fuera de ti, y presiona cada uno con una espátula entre veinte y treinta segundos. La piel se contrae en cuanto toca el calor, y presionar es lo único que la mantiene entera contra la sartén.",
+      "Déjalos en paz. Empieza fuerte, baja a fuego medio-bajo y dales de seis a ocho minutos sobre la piel, hasta que la carne esté opaca por el lateral salvo los últimos 6 mm de arriba. Si el aceite humea o los bordes del pescado empiezan a dorarse, baja el fuego hasta que el aceite chisporrotee sin humear.",
+      "Añade la mantequilla, da la vuelta al pescado y retira la sartén del fuego: de treinta segundos a un minuto por la carne es suficiente y lo termina el calor residual. Exprime un poco de limón en la mantequilla y salsea la carne, nunca la piel.",
+      "Retira el pescado a 52-55 °C en el centro. Déjalo reposar tres minutos sobre una rejilla, con la piel hacia arriba.",
       "Pon el mojo verde en platos calientes, la papa machacada al lado y el pescado encima con la piel hacia arriba. Sal en escamas sobre la piel en el último segundo."
     ],
-    "chefNote": "Si no hay cherne, sirve cualquier pescado blanco firme con buena piel: corvina, mero o un lomo grueso de lubina. No uses nada fino, se pasará antes de que la piel esté lista.",
-    "servesWith": "Nada más. El mojo es la salsa y la papa es el almidón; un tercer elemento solo lo ensucia.",
+    "chefNote": "La hora en la rejilla merece una explicación, porque solo una de las fuentes que consulté la especifica y prefiero decirlo claro. La sal sobre la piel saca humedad; la rejilla y la nevera abierta se la llevan en lugar de dejar que se fría. Hazlo solo en la piel: si salas la carne con antelación, la endureces.",
+    "servesWith": "Nada más. El [[mojo-verde|mojo]] es la salsa y la [[papas-arrugadas|papa]] es el almidón; un tercer elemento solo lo ensucia.",
     "seoTitle": "Cherne con mojo verde"
-  }
+  },
+  "related": [
+    "mojo-verde",
+    "papas-arrugadas"
+  ],
+  "updated": "2026-09-02",
+  "sources": [
+    {
+      "title": "Crispy Pan-Seared Black Sea Bass — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/13970-crispy-pan-seared-black-sea-bass"
+    },
+    {
+      "title": "How to cook fish with crispy skin — Nagi Maehashi, RecipeTin Eats",
+      "url": "https://www.recipetineats.com/how-to-cook-fish-with-crispy-skin/"
+    },
+    {
+      "title": "How to pan-fry cod — Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/how-to-cook/how-to-pan-fry-cod"
+    },
+    {
+      "title": "Crispy-skinned fish — Eric Ripert, Le Bernardin, via Food52",
+      "url": "https://food52.com/recipes/13407-le-bernardin-s-crispy-skinned-fish"
+    },
+    {
+      "title": "The perfect crispy skin finish — Escoffier",
+      "url": "https://www.escoffier.edu/blog/culinary-arts/the-perfect-crispy-skin-finish-for-your-fish-dishes/"
+    },
+    {
+      "title": "Lomo de cherne con mojo verde — Braulio Simancas, Makro",
+      "url": "https://www.makro.es/inspiracion-asesoramiento/recetas/pescados/lomo-de-cherne-con-mojo-verde"
+    }
+  ]
 }

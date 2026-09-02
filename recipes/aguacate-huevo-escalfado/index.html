@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Karla:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="/styles.css?v=9">
+<link rel="stylesheet" href="/styles.css?v=10">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,15 +33,39 @@
       "inLanguage": "en",
       "name": "Avocado, poached egg, seeds, virgin olive oil",
       "description": "Avocado crushed with lime and salt on toasted sourdough, a poached egg on top, and a seed mix toasted with cumin. The plainest thing on the brunch menu and the one that has to be perfect.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://alexchelaru.com/recipes/aguacate-huevo-escalfado/"
+      },
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "@id": "https://alexchelaru.com/recipes/",
+        "name": "Canarian recipes"
+      },
       "author": {
         "@type": "Person",
+        "@id": "https://alexchelaru.com/#alex",
         "name": "Alex Chelaru",
-        "@id": "https://alexchelaru.com/#alex"
+        "jobTitle": "Private chef",
+        "url": "https://alexchelaru.com/#chef",
+        "worksFor": {
+          "@type": "Organization",
+          "@id": "https://alexchelaru.com/#business",
+          "name": "Alex Chelaru, Private Chef"
+        }
       },
       "publisher": {
-        "@id": "https://alexchelaru.com/#business"
+        "@type": "Organization",
+        "@id": "https://alexchelaru.com/#business",
+        "name": "Alex Chelaru, Private Chef",
+        "url": "https://alexchelaru.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://alexchelaru.com/icon-512.png"
+        }
       },
       "datePublished": "2026-09-01",
+      "dateModified": "2026-09-01",
       "recipeCategory": "Breakfast",
       "recipeCuisine": "Modern",
       "keywords": "avocado toast poached egg, smashed avocado recipe, brunch avocado, toasted seeds, avocado egg",
@@ -143,7 +167,7 @@
       <a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/recipes/">Recipes</a>
     </nav>
     <header class="recipe-head">
-      <p class="eyebrow">Modern &middot; Breakfast &middot; From the menu Media Mañana</p>
+      <p class="eyebrow">Modern &middot; Breakfast &middot; From the menu <a href="/#media-manana">Media Mañana</a></p>
       <h1>Avocado, poached egg, seeds, virgin olive oil</h1>
       <p class="recipe-sub">Aguacate, huevo escalfado, semillas, aceite virgen</p>
       <p class="recipe-summary">Avocado crushed with lime and salt on toasted sourdough, a poached egg on top, and a seed mix toasted with cumin. The plainest thing on the brunch menu and the one that has to be perfect.</p>
@@ -184,7 +208,42 @@
       </section>
     </div>
     <aside class="chef-note"><p class="eyebrow">Chef&rsquo;s note</p><p>Crush the avocado to order, not in advance. Lime slows the browning but it does not stop it, and after 20 minutes the surface has gone grey no matter what you do.</p></aside>
-    <p class="serves-with"><strong>Serve it with.</strong> It sits well next to the eggs benedict on a shared brunch table.</p>
+    <p class="serves-with"><strong>Serve it with.</strong> It sits well next to the <a href="/recipes/huevos-benedictinos/">eggs benedict</a> on a shared brunch table.</p>
+    <section class="rel" aria-labelledby="rel-h">
+      <h2 class="rel-h" id="rel-h">Cook it with</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="/recipes/huevos-benedictinos/">
+          <b>Eggs benedict, smoked salmon, pancetta or spinach</b>
+          <i>Huevos benedictinos, salmón, panceta o espinacas</i>
+        </a>
+        <a class="rel-card" href="/recipes/huevos-turcos/">
+          <b>Turkish eggs, warm harissa oil, artisan bread</b>
+          <i>Huevos turcos, aceite de harissa, pan artesano</i>
+        </a>
+      </div>
+    </section>
+    <section class="rel" aria-labelledby="relm-h">
+      <h2 class="rel-h" id="relm-h">The rest of this menu: Media Mañana</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="/recipes/torrija-de-brunch/">
+          <b>French toast, caramelised plantain, mascarpone, maple</b>
+          <i>Torrija, plátano caramelizado, mascarpone, sirope de arce</i>
+        </a>
+        <a class="rel-card" href="/recipes/tortitas-de-suero/">
+          <b>Buttermilk pancakes, whipped mascarpone, maple</b>
+          <i>Tortitas de suero, mascarpone, sirope de arce</i>
+        </a>
+      </div>
+      <p class="rel-more"><a href="/#media-manana">See the full menu</a></p>
+    </section>
+    <aside class="byline">
+      <p class="eyebrow">Written by</p>
+      <p class="byline-name"><a href="/#chef">Alex Chelaru</a></p>
+      <p class="byline-bio">Private chef in Gran Canaria. A farm childhood first, then a decade in Cambridge kitchens including the University Arms. Trained under Lee Clarke, whose restaurants Clarkes and Pr&eacute;vost earned Michelin Guide recognition and three AA rosettes.</p>
+      <p class="byline-dates">
+        <time datetime="2026-09-01">Published 1 September 2026</time>
+      </p>
+    </aside>
     <aside class="recipe-cta">
       <h2>I cook this on the island</h2>
       <p>This is one of the things I make for guests in villas and homes across Gran Canaria. If you would rather eat it than cook it, I bring everything, cook it in your kitchen and clear it away after.</p>
@@ -204,6 +263,6 @@
     </p>
   </div>
 </footer>
-<script src="/app.js?v=9" defer></script>
+<script src="/app.js?v=10" defer></script>
 </body>
 </html>

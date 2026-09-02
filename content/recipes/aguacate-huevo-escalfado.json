@@ -36,7 +36,7 @@
       "Scatter the seeds, pour over a real amount of good olive oil, and finish with herbs. Serve at once."
     ],
     "chefNote": "Crush the avocado to order, not in advance. Lime slows the browning but it does not stop it, and after 20 minutes the surface has gone grey no matter what you do.",
-    "servesWith": "It sits well next to the eggs benedict on a shared brunch table.",
+    "servesWith": "It sits well next to the [[huevos-benedictinos|eggs benedict]] on a shared brunch table.",
     "seoTitle": "Avocado and poached egg"
   },
   "es": {
@@ -69,7 +69,12 @@
       "Esparce las semillas, riega con una cantidad generosa de buen aceite y termina con las hierbas. Sirve al momento."
     ],
     "chefNote": "Machaca el aguacate al momento, no antes. La lima retrasa la oxidación pero no la evita, y a los 20 minutos la superficie está gris hagas lo que hagas.",
-    "servesWith": "Funciona bien al lado de los huevos benedictinos en una mesa de brunch compartida.",
+    "servesWith": "Funciona bien al lado de los [[huevos-benedictinos|huevos benedictinos]] en una mesa de brunch compartida.",
     "seoTitle": "Aguacate con huevo escalfado"
-  }
+  },
+  "related": [
+    "huevos-benedictinos",
+    "huevos-turcos"
+  ],
+  "updated": "2026-09-01"
 }

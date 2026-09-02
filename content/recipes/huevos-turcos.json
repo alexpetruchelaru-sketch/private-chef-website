@@ -75,5 +75,10 @@
     "chefNote": "Templa los platos, no los calientes. Un plato caliente vuelve el yogur granuloso en un minuto y ya no hay marcha atrás.",
     "servesWith": "Café fuerte y nada dulce hasta después.",
     "seoTitle": "Huevos turcos"
-  }
+  },
+  "related": [
+    "huevos-benedictinos",
+    "aguacate-huevo-escalfado"
+  ],
+  "updated": "2026-09-01"
 }
