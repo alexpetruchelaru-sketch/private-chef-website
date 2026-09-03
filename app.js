@@ -64,8 +64,6 @@
     var GROUPS = [
       [".sec-head > *", 70],
       [".strip h2, .strip dl", 90],
-      [".menu-index a", 55],
-      [".menu", 0],
       [".menu-fig", 0, "fig"],
       [".aside > *", 90],
       [".custom > *", 70],
@@ -155,6 +153,145 @@
     window.addEventListener("load", sweep);
     setTimeout(sweep, 600);
     setTimeout(sweep, 2000);
+
+    /* ============================================================
+       The menu drum, and the tilt.
+
+       Two related pieces. The five index cards become a vertical
+       cylinder that turns to follow whichever menu you are reading,
+       and each full menu turns in on a horizontal axis as it passes
+       the middle of the screen.
+
+       Both are built here rather than in the HTML, so with the script
+       off the index is still a plain row of links and the menus are
+       still a plain column. Neither runs under reduced motion, because
+       this whole function returns before it gets here.
+       ============================================================ */
+    (function drum() {
+      var nav = document.querySelector(".menu-index");
+      var menusBox = document.querySelector(".menus");
+      if (!nav || !menusBox) return;
+
+      var faces = Array.prototype.slice.call(nav.querySelectorAll("a"));
+      var articles = Array.prototype.slice.call(menusBox.querySelectorAll(".menu"));
+      var n = faces.length;
+      if (n < 3 || articles.length !== n) return;   /* not the shape we expect: leave it alone */
+
+      /* Three nested boxes, and each one earns its place.
+         nav      sticks, paints the bar and clips it edge to edge
+         bar      sits on the page's own text column and owns the
+                  perspective, so the vanishing point is centred on
+                  the face rather than on the middle of the screen
+         stage    holds the 3D context and does the turning */
+      var bar = document.createElement("div");
+      bar.className = "drum-bar";
+
+      var stage = document.createElement("div");
+      stage.className = "drum-stage";
+      faces.forEach(function (f) { stage.appendChild(f); });
+      bar.appendChild(stage);
+
+      var count = document.createElement("p");
+      count.className = "drum-count";
+      count.setAttribute("aria-hidden", "true");
+      bar.appendChild(count);
+
+      nav.appendChild(bar);
+
+      var STEP = 360 / n;
+
+      /* Radius of a cylinder whose n flat faces are each faceH tall.
+         Half the face height over the tangent of half the step angle. */
+      function layout() {
+        var navEl = document.getElementById("nav");
+        var navH = navEl ? navEl.getBoundingClientRect().height : 64;
+        var faceH = window.innerWidth < 620 ? 52 : 58;
+        var radius = (faceH / 2) / Math.tan(Math.PI / n);
+
+        document.documentElement.style.setProperty("--navh", Math.round(navH) + "px");
+        document.documentElement.style.setProperty("--face-h", faceH + "px");
+        nav.style.setProperty("--face-h", faceH + "px");
+
+        faces.forEach(function (f, i) {
+          f.style.transform = "rotateX(" + (i * STEP) + "deg) translateZ(" + radius.toFixed(1) + "px)";
+        });
+      }
+
+      nav.setAttribute("data-drum", "true");
+      menusBox.classList.add("tilting");
+      layout();
+
+      /* When a face is focused by keyboard, bring it to the front and
+         hold it there briefly, so tabbing through does not leave the
+         reader looking at the back of the cylinder. */
+      var held = -1, holdUntil = 0;
+      faces.forEach(function (f, i) {
+        f.addEventListener("focus", function () { held = i; holdUntil = Date.now() + 4000; frame(); });
+        f.addEventListener("blur", function () { holdUntil = Date.now() + 400; });
+      });
+
+      var current = -1;
+      var raf = 0;
+
+      function frame() {
+        raf = 0;
+        var vh = window.innerHeight;
+        var mid = vh / 2;
+
+        /* A continuous position through the menus, 0 at the first and
+           n-1 at the last, taken from where each article sits against
+           the middle of the screen rather than from raw scroll. That
+           way the drum tracks what you are actually reading. */
+        var pos = 0;
+        var first = articles[0].getBoundingClientRect();
+        var last = articles[n - 1].getBoundingClientRect();
+        if (first.top > mid) {
+          pos = 0;
+        } else if (last.top < mid) {
+          pos = n - 1;
+        } else {
+          for (var i = 0; i < n - 1; i++) {
+            var a = articles[i].getBoundingClientRect();
+            var b = articles[i + 1].getBoundingClientRect();
+            if (a.top <= mid && b.top > mid) {
+              var span = b.top - a.top;
+              pos = i + (span > 0 ? (mid - a.top) / span : 0);
+              break;
+            }
+          }
+        }
+
+        if (Date.now() < holdUntil && held >= 0) pos = held;
+
+        stage.style.transform = "rotateX(" + (-pos * STEP).toFixed(2) + "deg)";
+
+        var idx = Math.round(pos) % n;
+        if (idx !== current) {
+          current = idx;
+          faces.forEach(function (f, i) {
+            if (i === idx) f.setAttribute("aria-current", "true");
+            else f.removeAttribute("aria-current");
+          });
+          count.textContent = String(idx + 1).padStart(2, "0") + " / " + String(n).padStart(2, "0");
+        }
+
+        /* the tilt: each menu turns in as it comes up and away as it goes */
+        var MAX = 5;
+        articles.forEach(function (el) {
+          var r = el.getBoundingClientRect();
+          if (r.bottom < -200 || r.top > vh + 200) { el.style.transform = ""; return; }
+          var centre = r.top + r.height / 2;
+          var d = (centre - mid) / vh;              /* roughly -1 .. 1 */
+          d = Math.max(-1.2, Math.min(1.2, d));
+          el.style.transform = "rotateX(" + (-d * MAX).toFixed(2) + "deg)";
+        });
+      }
+
+      function onFrame() { if (!raf) raf = requestAnimationFrame(frame); }
+      window.addEventListener("scroll", onFrame, { passive: true });
+      window.addEventListener("resize", function () { layout(); onFrame(); }, { passive: true });
+      frame();
+    })();
 
     /* ---- desktop pointer touches ---- */
     var fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;

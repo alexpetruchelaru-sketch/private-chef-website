@@ -802,6 +802,107 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
   .mark-logo { width: 30px; height: 30px; }
 }
 
+/* ============================================================
+   The menu drum.
+
+   The five index cards become one slim rotating strip that sticks
+   under the nav and turns to whichever menu you are reading, and
+   each full menu turns in on a horizontal axis as it passes.
+
+   Deliberately one face tall. An earlier version showed the whole
+   cylinder and it floated over the menu headings and the photographs,
+   which is no good on a page whose entire argument is that you can
+   read the menus. Slim strip, solid ground, content scrolls under it.
+
+   Everything is gated behind [data-drum] and .tilting, both added by
+   the script, so with JavaScript off the index is the plain row of
+   cards it has always been and the menus do not move.
+   ============================================================ */
+.menu-index[data-drum] {
+  display: block;
+  position: sticky;
+  top: var(--navh, 64px);
+  z-index: 20;
+  height: var(--face-h, 56px);
+  /* Full bleed. Two reasons: a sticky bar that runs edge to edge reads as a
+     bar rather than a floating box, and the front face is scaled up a couple
+     of per cent by the perspective, so it needs somewhere to grow into that
+     is not the clip boundary. The padding puts the text back on the page's
+     own left margin. */
+  margin: -18px calc(50% - 50vw) 40px;
+  padding-inline: calc(50vw - 50%);
+  overflow: hidden;
+  /* overflow alone does not clip a preserve-3d descendant reliably, and the
+     faces above and below the front one were spilling out over the page.
+     clip-path does clip them, in every engine. The perspective lives on the
+     bar inside, not here, so the vanishing point sits on the text column
+     rather than in the middle of the screen. */
+  clip-path: inset(0);
+  background: var(--bone);
+  border-block: 1px solid var(--linen-2);
+}
+.menu-index[data-drum] .drum-bar {
+  position: relative;
+  height: 100%;
+  perspective: 620px;
+  perspective-origin: 50% 50%;
+}
+.menu-index[data-drum] .drum-stage {
+  position: absolute; inset: 0;
+  transform-style: preserve-3d;
+  transition: transform .45s cubic-bezier(.22,.68,.32,1);
+  will-change: transform;
+}
+.menu-index[data-drum] a {
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: var(--face-h, 56px);
+  display: flex; align-items: baseline; gap: 14px;
+  padding: 0 2px;
+  border: 0;
+  background: none;
+  backface-visibility: hidden;
+  transition: color .3s ease, opacity .3s ease;
+}
+.menu-index[data-drum] a:hover { background: none; transform-style: preserve-3d; }
+.menu-index[data-drum] a b { font-size: 21px; line-height: 1; }
+.menu-index[data-drum] a span { font-size: 10.5px; }
+.menu-index[data-drum] a[aria-current="true"] b { color: var(--verde); }
+
+.drum-count {
+  position: absolute;
+  right: 0; top: 50%; transform: translateY(-50%);
+  z-index: 2;
+  font-size: 11px; letter-spacing: .18em;
+  color: var(--sea); font-variant-numeric: tabular-nums;
+  pointer-events: none;
+  background: var(--bone); padding-left: 14px;
+}
+
+@media (max-width: 620px) {
+  .menu-index[data-drum] { margin-bottom: 30px; }
+  .menu-index[data-drum] a { flex-direction: column; align-items: flex-start; gap: 1px; justify-content: center; }
+  .menu-index[data-drum] a b { font-size: 18px; }
+  .drum-count { font-size: 10px; }
+}
+
+/* the strip sits over whatever you jump to, so give the anchors a landing */
+.menu { scroll-margin-top: calc(var(--navh, 64px) + var(--face-h, 56px) + 20px); }
+
+/* Each menu turns in on a horizontal axis as it passes the middle.
+   The perspective is deliberately long. A rotated panel pushes its near
+   edge toward the reader, and perspective scales that edge up in width
+   as well as height, so a short perspective and a steep angle made the
+   menus wider than their own column. 2600 and five degrees keeps the
+   growth inside the gutter at every width. */
+.menus.tilting { perspective: 2600px; perspective-origin: 50% 50%; }
+.menus.tilting .menu { will-change: transform; }
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-index[data-drum] .drum-stage,
+  .menus.tilting .menu { transition: none !important; transform: none !important; }
+}
+
 /* ---- recipe cross-links and byline ----
    A recipe that names another recipe should link to it, and every page
    should say who wrote it and when. Both were missing: twenty-five pages
