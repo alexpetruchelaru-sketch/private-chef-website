@@ -23,7 +23,12 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  /* the nav is fixed, so an anchor jump has to stop short of it or the
+     heading it was aiming at ends up underneath the bar */
+  scroll-padding-top: calc(var(--navh, 68px) + 18px);
+}
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body {
@@ -803,111 +808,91 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
 }
 
 /* ============================================================
-   The menu cylinder.
+   The menu rail.
 
-   The five menus become the faces of a drum turning on a
-   horizontal axis. Scrolling turns it: a little resistance at the
-   start of each turn, then it moves, then it locks into place
-   before the next one begins. The menus either side sit behind
-   the front one, blurred back.
+   The five menus stack in one place, centred in the screen below
+   the nav. Scrolling moves through them: the one you are leaving
+   drifts up and fades, the next rises into its place. No rotation
+   and no snapping — the position is smoothed every frame so the
+   movement keeps going for a moment after the wheel stops, which
+   is what makes it feel fluid rather than stepped.
 
-   Every rule is gated behind .cyl, which only JavaScript adds, and
-   only when a whole menu actually fits one face. With the script
-   off, with reduced motion on, or on a screen too short to hold a
-   menu, this file does nothing and the menus are the plain column
+   Everything is gated behind .rail, which only JavaScript adds and
+   only when a whole menu fits the centred area. Script off, reduced
+   motion on, or a screen too short: the menus are the plain column
    they have always been.
    ============================================================ */
-.sec.cyl .menus { display: block; gap: 0; }
+.sec.rail .menus { display: block; gap: 0; }
 
-.cyl-track { position: relative; }
+.rail-track { position: relative; }
 
-.cyl-pin {
+.rail-pin {
   position: sticky;
   top: var(--navh, 64px);
   height: var(--pin-h, 80vh);
-  z-index: 1;                 /* below the fixed nav, which sits at 50 */
-  /* A face turned seventy degrees away reaches far above and below the box
-     it belongs to, and would paint over the nav and the heading. The clip
-     has to live on an element with no 3D of its own, or the faces escape
-     it: hence the view inside, which is where the perspective goes. */
+  z-index: 1;
   overflow: hidden;
-  clip-path: inset(0);
-}
-.cyl-view {
-  position: absolute; inset: 0;
-  perspective: 2400px;
-  perspective-origin: 50% 50%;
 }
 
-.cyl-drum {
-  position: absolute; inset: 0;
-  transform-style: preserve-3d;
-  will-change: transform;
-}
+.rail-stage { position: absolute; inset: 0; }
 
-.sec.cyl .menu {
+.sec.rail .menu {
   position: absolute;
   left: 0; right: 0;
   top: 50%;
-  height: var(--face-h, 70vh);
-  margin-top: calc(var(--face-h, 70vh) / -2);
   margin: 0;
+  transform: translate3d(0, -50%, 0);
+  /* the browser is told up front what will change, so it can give each
+     face its own layer and never repaint the text while it moves */
+  will-change: transform, opacity, filter;
   backface-visibility: hidden;
-  /* the drum turns; the blur and the dimming are set per frame in script */
-  will-change: filter, opacity;
 }
 
-/* A face has to fit its own height, so in cylinder mode the menu is
+/* A face has to fit the centred area, so in rail mode the menu is
    compressed: the per-course sentences give way to the dish names and
    their English, and on a wide screen the courses run in two columns.
    The sentences are still in the page for anyone reading it without
-   the cylinder. */
-.sec.cyl .course-note { display: none; }
-.sec.cyl .menu-blurb {
-  font-size: 15.5px; line-height: 1.5;
-  max-width: 62ch; margin-top: 12px;
-}
-.sec.cyl .courses { margin-top: 18px; }
-.sec.cyl .course { break-inside: avoid; }
-.sec.cyl .menu { padding-top: 22px; }
-.sec.cyl .menu-title h3 { font-size: clamp(26px, 3vw, 36px); }
-.sec.cyl .course-es { font-size: 17.5px; line-height: 1.25; }
-.sec.cyl .course-en { font-size: 12.5px; }
-.sec.cyl .course-role { font-size: 10px; }
-.sec.cyl .menu-foot { margin-top: 18px; }
+   the rail. */
+.sec.rail .course-note { display: none; }
+.sec.rail .menu-blurb { font-size: 15.5px; line-height: 1.5; max-width: 62ch; margin-top: 12px; }
+.sec.rail .courses { margin-top: 18px; }
+.sec.rail .course { break-inside: avoid; }
+.sec.rail .menu { padding-top: 22px; }
+.sec.rail .menu-title h3 { font-size: clamp(26px, 3vw, 36px); }
+.sec.rail .course-es { font-size: 17.5px; line-height: 1.25; }
+.sec.rail .course-en { font-size: 12.5px; }
+.sec.rail .course-role { font-size: 10px; }
+.sec.rail .menu-foot { margin-top: 18px; }
 
 @media (min-width: 700px) {
   /* multi-column has no effect on a grid container, so the list goes back
      to being a block first. Two columns is what buys the height. */
-  .sec.cyl .courses { display: block; columns: 2; column-gap: 44px; }
-  .sec.cyl .course { margin-bottom: 14px; }
-  .sec.cyl .menu-fig { align-self: start; }
+  .sec.rail .courses { display: block; columns: 2; column-gap: 44px; }
+  .sec.rail .course { margin-bottom: 14px; }
+  .sec.rail .menu-fig { align-self: start; }
 }
 
 /* On a narrow screen the photograph is the whole problem: at full width and
-   three by four it is taller than the courses it sits above. In cylinder mode
-   it becomes a letterbox strip, which is enough to say what the food looks
-   like without taking the face. */
+   three by four it is taller than the courses it sits above. In rail mode it
+   becomes a letterbox strip. */
 @media (max-width: 899px) {
-  .sec.cyl .menu-fig img { aspect-ratio: 16 / 7; max-height: 150px; }
-  .sec.cyl .menu-fig figcaption { display: none; }
-  .sec.cyl .menu { gap: 16px; }
-  .sec.cyl .courses { margin-top: 14px; }
-  .sec.cyl .course { padding-left: 14px; }
-  .sec.cyl .menu-blurb { font-size: 14.5px; }
+  .sec.rail .menu-fig img { aspect-ratio: 16 / 7; max-height: 150px; }
+  .sec.rail .menu-fig figcaption { display: none; }
+  .sec.rail .menu { gap: 16px; }
+  .sec.rail .courses { margin-top: 14px; }
+  .sec.rail .course { padding-left: 14px; }
+  .sec.rail .menu-blurb { font-size: 14.5px; }
 }
 
 /* On a short screen the blurb and a tall photograph are what push a menu
-   past the face. Both give way before the courses do, because the courses
-   are the thing anyone came to read. */
+   past the face. Both give way before the courses do. */
 @media (max-height: 840px) and (min-width: 700px) {
-  .sec.cyl .menu-blurb { display: none; }
-  .sec.cyl .menu-fig img { aspect-ratio: 4 / 3; }
-  .sec.cyl .menu-title h3 { font-size: 30px; }
+  .sec.rail .menu-blurb { display: none; }
+  .sec.rail .menu-fig img { aspect-ratio: 4 / 3; }
+  .sec.rail .menu-title h3 { font-size: 30px; }
 }
 
-/* the faces behind read as depth, not as clutter */
-.cyl-hint {
+.rail-hint {
   position: absolute; right: 0; bottom: 4px;
   font-size: 10.5px; letter-spacing: .18em; text-transform: uppercase;
   color: var(--sea); font-variant-numeric: tabular-nums;
@@ -915,8 +900,7 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .cyl-drum { transform: none !important; }
-  .sec.cyl .menu { filter: none !important; opacity: 1 !important; }
+  .sec.rail .menu { transform: translate3d(0, -50%, 0) !important; opacity: 1 !important; filter: none !important; }
 }
 
 /* ---- recipe cross-links and byline ----

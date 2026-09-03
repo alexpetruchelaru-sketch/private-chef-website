@@ -157,68 +157,67 @@
     setTimeout(sweep, 2000);
 
     /* ============================================================
-       The menu cylinder.
+       The menu rail.
 
-       The five menus are the faces of a drum on a horizontal axis.
-       Scroll turns it, with a dead zone at the start of each turn so
-       it takes a moment to break away, and a locked zone at the end
-       so it settles before the next one starts. The faces either side
-       stay visible behind the front one, blurred and dimmed.
+       The five menus occupy one place, centred below the nav, and
+       scrolling moves through them: the one you are leaving drifts
+       up and fades out, the next rises into its place.
 
-       This only switches on when a whole menu genuinely fits one face.
-       If it does not, the section is left as the plain column it is,
-       because the menus are the point of the page and a cylinder that
-       crops them would be worse than no cylinder.
+       Two things make it feel fluid rather than stepped. The position
+       is smoothed every frame toward where the scroll actually is, so
+       the movement carries on for a moment after the wheel stops and
+       never starts abruptly. And the curve across each step is a
+       smootherstep, which is flat in both its first and second
+       derivative at each end, so there is no visible kick as one menu
+       hands over to the next.
+
+       It only runs when a whole menu fits the centred area. If it does
+       not, the section stays the plain column it is, because the menus
+       are the point of the page.
        ============================================================ */
-    (function cylinder() {
+    (function menuRail() {
       var box = document.querySelector(".menus");
       if (!box) return;
       var section = box.closest("section");
       if (!section) return;
+
       var faces = Array.prototype.slice.call(box.querySelectorAll(".menu"));
       var n = faces.length;
-      if (n < 3) return;
+      if (n < 2) return;
 
-      var STEP = 360 / n;
-      var PACE = 1.15;      /* screens of scroll per menu */
-      var REST = 0.30;      /* the first third of a turn does nothing: resistance */
-      var LOCK = 0.20;      /* the last fifth is already home: snapped */
+      var PACE = 1.0;     /* screens of scroll per menu */
+      var LEAD = 0.10;    /* a short flat moment at the start of each step */
+      var HOLD = 0.10;    /* and at the end, so each menu settles briefly */
+      var LIFT = 70;      /* how far a menu travels as it hands over, px */
+      var TAU  = 105;     /* smoothing time constant, ms. Lower is tighter */
 
       var track = document.createElement("div");
-      track.className = "cyl-track";
+      track.className = "rail-track";
       var pin = document.createElement("div");
-      pin.className = "cyl-pin";
-      var view = document.createElement("div");
-      view.className = "cyl-view";
-      var drum = document.createElement("div");
-      drum.className = "cyl-drum";
+      pin.className = "rail-pin";
+      var stage = document.createElement("div");
+      stage.className = "rail-stage";
       var hint = document.createElement("p");
-      hint.className = "cyl-hint";
+      hint.className = "rail-hint";
       hint.setAttribute("aria-hidden", "true");
 
-      var on = false, radius = 0, pinH = 0, raf = 0;
+      var on = false, pinH = 0, current = 0, target = 0, running = false, last = 0, shown = -1;
 
       function navH() {
         var el = document.getElementById("nav");
         return el ? el.getBoundingClientRect().height : 64;
       }
 
-      /* Whether a whole menu fits a face is measured on the real thing, in
-         the real geometry, which means attaching first and undoing it if the
-         answer is no. Measuring before attaching gave the wrong number,
-         because a detached face is as wide as the window rather than as wide
-         as the column it will actually live in. */
-
       function attach() {
         if (on) return;
+        stage.appendChild(document.createDocumentFragment());
         track.appendChild(pin);
-        view.appendChild(drum);
-        pin.appendChild(view);
+        pin.appendChild(stage);
         pin.appendChild(hint);
         box.parentNode.insertBefore(track, box);
-        faces.forEach(function (f) { drum.appendChild(f); });
-        section.classList.add("cyl");
-        track.appendChild(box);      /* keep the original box in the tree */
+        faces.forEach(function (f) { stage.appendChild(f); });
+        section.classList.add("rail");
+        track.appendChild(box);
         on = true;
       }
 
@@ -226,115 +225,183 @@
         if (!on) return;
         faces.forEach(function (f) {
           f.style.transform = "";
-          f.style.filter = "";
           f.style.opacity = "";
+          f.style.filter = "";
+          f.style.pointerEvents = "";
           box.appendChild(f);
         });
-        section.classList.remove("cyl");
+        section.classList.remove("rail");
         section.style.removeProperty("--pin-h");
-        if (track.parentNode) track.parentNode.insertBefore(box, track);
-        if (track.parentNode) track.parentNode.removeChild(track);
+        if (track.parentNode) {
+          track.parentNode.insertBefore(box, track);
+          track.parentNode.removeChild(track);
+        }
         on = false;
       }
 
       function layout() {
         var h = Math.round(window.innerHeight - navH() - 24);
+        /* the anchor offset needs this whether the rail runs or not */
+        document.documentElement.style.setProperty("--navh", Math.round(navH()) + "px");
         if (h < 420) { detach(); return; }
 
         attach();
-        /* The face is deliberately shorter than the pin. The gap top and
-           bottom is where the menus either side show through, turned away
-           and blurred back, which is the whole point of it being a drum
-           rather than a slideshow. */
-        var faceH = Math.round(h * 0.9);
         section.style.setProperty("--pin-h", h + "px");
-        section.style.setProperty("--face-h", faceH + "px");
 
         var tallest = 0;
         faces.forEach(function (f) {
-          var prev = f.style.height;
-          f.style.height = "auto";
           tallest = Math.max(tallest, f.scrollHeight);
-          f.style.height = prev;
         });
-        /* A little headroom, so a size that only just fits does not flip
-           the cylinder on and off as the window is nudged, or as a font
-           finishes loading and reflows the courses by a few pixels. */
-        if (tallest > faceH - 20) { detach(); return; }
+        /* headroom, so a size that only just fits does not flip the rail on
+           and off as the window is nudged or a font finishes loading */
+        if (tallest > h - 20) { detach(); return; }
 
         pinH = h;
-        radius = (faceH / 2) / Math.tan(Math.PI / n);
-        document.documentElement.style.setProperty("--navh", Math.round(navH()) + "px");
         track.style.height = Math.round(pinH + (n - 1) * window.innerHeight * PACE) + "px";
-        faces.forEach(function (f, i) {
-          f.dataset.face = String(i);
-          f.style.transform = "rotateX(" + (i * STEP) + "deg) translateZ(" + radius.toFixed(1) + "px)";
-        });
       }
 
-      /* resistance, then movement, then a settle */
+      /* Flat at both ends, and smooth into and out of the movement.
+         The old version held still for a third of the step and then
+         moved, which is what read as rigid. */
       function shape(t) {
-        var span = 1 - REST - LOCK;
-        var u = (t - REST) / span;
+        var span = 1 - LEAD - HOLD;
+        var u = (t - LEAD) / span;
         if (u <= 0) return 0;
         if (u >= 1) return 1;
-        return u * u * (3 - 2 * u);
+        return u * u * u * (u * (u * 6 - 15) + 10);
       }
 
-      function frame() {
-        raf = 0;
-        if (!on) return;
+      function measure() {
         var r = track.getBoundingClientRect();
         var travel = track.offsetHeight - pinH;
         var stickAt = navH() + 24;
         var scrolled = Math.min(Math.max(stickAt - r.top, 0), travel);
+        var raw = travel > 0 ? (scrolled / travel) * (n - 1) : 0;
+        var i = Math.min(Math.floor(raw), n - 2);
+        target = raw >= n - 1 ? n - 1 : i + shape(raw - i);
 
-        /* Before the pin sticks, and after it lets go, the drum is just a
-           slab of blurred menu drifting through the page. Fade it in over
-           the last part of its approach and out again at the end, so the
-           only time it is solid is the time it is actually pinned. */
+        /* fade the whole rail in as it arrives and out as it leaves, so a
+           half-visible menu never drifts through the page on its own */
         var lead = Math.min(Math.max((stickAt + 420 - r.top) / 420, 0), 1);
         var tail = Math.min(Math.max((r.bottom - stickAt - pinH + 420) / 420, 0), 1);
         pin.style.opacity = Math.min(lead, tail).toFixed(3);
-        var raw = travel > 0 ? (scrolled / travel) * (n - 1) : 0;
-
-        var i = Math.min(Math.floor(raw), n - 2);
-        var pos = n === 1 ? 0 : i + shape(raw - i);
-        if (raw >= n - 1) pos = n - 1;
-
-        /* Pull the whole drum back by its own radius so the face at the
-           front lands exactly on the picture plane: scale 1, no crop, and
-           the faces behind fall away and shrink on their own. Rotating a
-           drum that sits at the origin instead blows the front face up by
-           a quarter and pushes its heading and its right column outside
-           the clip. */
-        drum.style.transform =
-          "translateZ(" + (-radius).toFixed(1) + "px) rotateX(" + (-pos * STEP).toFixed(2) + "deg)";
-
-        faces.forEach(function (f, k) {
-          var a = (k - pos) * STEP;
-          while (a > 180) a -= 360;
-          while (a < -180) a += 360;
-          var d = Math.abs(a) / STEP;                    /* 0 at the front */
-          var blur = Math.min(d, 1.6) * 4.5;
-          f.style.filter = d < 0.04 ? "none" : "blur(" + blur.toFixed(1) + "px)";
-          f.style.opacity = (1 - Math.min(d, 1) * 0.62).toFixed(3);
-        });
-
-        var idx = Math.round(pos);
-        hint.textContent = String(idx + 1).padStart(2, "0") + " / " + String(n).padStart(2, "0");
       }
 
-      function onFrame() { if (!raf) raf = requestAnimationFrame(frame); }
+      function render(pos) {
+        for (var k = 0; k < n; k++) {
+          var d = k - pos;                 /* negative above, positive below */
+          var a = Math.abs(d);
+          var f = faces[k];
+          if (a >= 1.9) {
+            if (f.style.opacity !== "0") { f.style.opacity = "0"; f.style.pointerEvents = "none"; }
+            continue;
+          }
+          var fade = a >= 1 ? 0 : 1 - a * a;              /* soft, not linear */
+          f.style.opacity = fade.toFixed(3);
+          f.style.transform =
+            "translate3d(0," + (-50 + d * -LIFT / 10).toFixed(2) + "%,0) translateY(" +
+            (d * LIFT).toFixed(1) + "px) scale(" + (1 - a * 0.035).toFixed(4) + ")";
+          f.style.filter = a < 0.04 ? "none" : "blur(" + Math.min(a * 5, 5).toFixed(1) + "px)";
+          f.style.pointerEvents = a < 0.5 ? "auto" : "none";
+        }
+        var idx = Math.round(pos);
+        if (idx !== shown) {
+          shown = idx;
+          hint.textContent = String(idx + 1).padStart(2, "0") + " / " + String(n).padStart(2, "0");
+        }
+      }
 
-      /* Keyboard: focusing anything inside a face that is turned away is
-         disorientating, so bring that face to the front instead.
+      /* Exponential smoothing toward the scroll position, in real time so
+         it behaves the same at 60 and at 120 frames a second. */
+      function tick(now) {
+        var dt = last ? Math.min(now - last, 64) : 16;
+        last = now;
+        var d = target - current;
+        if (Math.abs(d) < 0.0004) {
+          current = target;
+          render(current);
+          running = false;
+          last = 0;
+          return;
+        }
+        current += d * (1 - Math.exp(-dt / TAU));
+        render(current);
+        requestAnimationFrame(tick);
+      }
 
-         Only when the focus actually came from the keyboard. Scripts move
-         focus too: the lightbox hands it back to the photograph it was
-         opened from when it closes, and treating that as navigation threw
-         the reader to the top of that menu instead of leaving them where
-         they were. */
+      function kick() {
+        if (running) return;
+        running = true;
+        requestAnimationFrame(tick);
+      }
+
+      function onScroll() {
+        if (!on) return;
+        measure();
+        kick();
+      }
+
+      /* Where the page has to be scrolled to for menu k to be the one in
+         front. Every menu now sits in the same place on the screen, so a
+         plain #brasa jump would land on the first one; the rail has to
+         translate the name into a scroll position itself. */
+      function yFor(k) {
+        var travel = track.offsetHeight - pinH;
+        return Math.round(window.scrollY + track.getBoundingClientRect().top
+          - navH() - 24 + (travel * k) / (n - 1));
+      }
+
+      function jump(k, smooth) {
+        window.scrollTo({ top: yFor(k), behavior: smooth ? "smooth" : "auto" });
+        onScroll();
+      }
+
+      function indexOfHash(hash) {
+        if (!hash || hash.length < 2) return -1;
+        var el;
+        try { el = document.getElementById(decodeURIComponent(hash.slice(1))); }
+        catch (err) { el = null; }
+        return el ? faces.indexOf(el) : -1;
+      }
+
+      /* the five cards above the rail, the nav, and every "back to this
+         menu" link on a recipe page */
+      document.addEventListener("click", function (e) {
+        if (!on) return;
+        var a = e.target.closest && e.target.closest('a[href*="#"]');
+        if (!a) return;
+        /* only a jump within this page — a link to /recipes/x/#note is a
+           navigation, not a rail move */
+        if (a.host !== window.location.host || a.pathname !== window.location.pathname) return;
+        var k = indexOfHash(a.hash);
+        if (k < 0) return;
+        e.preventDefault();
+        if (window.history && history.replaceState) history.replaceState(null, "", a.hash);
+        jump(k, true);
+      });
+
+      /* arriving from another page on /#brasa. Run it once the images are
+         in too, because the track is a different height by then. */
+      var landed = false;
+      function landOnHash() {
+        if (landed || !on) return;
+        var k = indexOfHash(window.location.hash);
+        if (k < 1) { landed = true; return; }
+        landed = true;
+        jump(k, false);
+        current = target;
+        render(current);
+      }
+
+      window.addEventListener("hashchange", function () {
+        var k = indexOfHash(window.location.hash);
+        if (on && k >= 0) jump(k, true);
+      });
+
+      /* Keyboard: only when the focus genuinely came from tabbing. Scripts
+         move focus too — the lightbox hands it back to the photograph it was
+         opened from — and treating that as navigation threw the reader up
+         the page. */
       var tabbing = false;
       document.addEventListener("keydown", function (e) {
         if (e.key === "Tab") tabbing = true;
@@ -345,20 +412,27 @@
         if (!on || !tabbing) return;
         tabbing = false;
         var f = e.target.closest && e.target.closest(".menu");
-        if (!f || !f.dataset.face) return;
-        var k = parseInt(f.dataset.face, 10);
-        var travel = track.offsetHeight - pinH;
-        var y = window.scrollY + track.getBoundingClientRect().top
-              - navH() - 24 + (travel * k) / (n - 1);
-        window.scrollTo({ top: Math.round(y), behavior: "auto" });
-        onFrame();
+        if (!f) return;
+        var k = faces.indexOf(f);
+        if (k < 0) return;
+        jump(k, false);
       });
 
       layout();
-      frame();
-      window.addEventListener("scroll", onFrame, { passive: true });
-      window.addEventListener("resize", function () { layout(); onFrame(); }, { passive: true });
-      window.addEventListener("load", function () { layout(); onFrame(); });
+      measure();
+      current = target;
+      render(current);
+
+      window.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("resize", function () {
+        layout();
+        if (on) { measure(); current = target; render(current); }
+      }, { passive: true });
+      window.addEventListener("load", function () {
+        layout();
+        if (on) { measure(); current = target; render(current); }
+        landOnHash();
+      });
     })();
 
     /* ---- desktop pointer touches ---- */
