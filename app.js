@@ -98,7 +98,7 @@
         show(e.target);
         io.unobserve(e.target);
       });
-    }, { threshold: 0.01, rootMargin: "0px 0px -8% 0px" }) : null;
+    }, { threshold: 0.01, rootMargin: "0px 0px -2% 0px" }) : null;
 
     /* Backstop. The observer is the normal path, but a stubborn element, a
        browser without IntersectionObserver, or a section taller than the
@@ -188,8 +188,22 @@
       var PACE = 1.0;     /* screens of scroll per menu */
       var LEAD = 0.10;    /* a short flat moment at the start of each step */
       var HOLD = 0.10;    /* and at the end, so each menu settles briefly */
-      var LIFT = 70;      /* how far a menu travels as it hands over, px */
-      var TAU  = 105;     /* smoothing time constant, ms. Lower is tighter */
+      var TAU  = 125;     /* smoothing time constant, ms. Lower is tighter */
+      var BLUR = 4;       /* most blur a menu turning away gets, px */
+
+      /* Drum geometry. Each menu is a panel on the outside of a horizontal
+         drum lying across the screen, and scrolling turns the drum toward
+         you. STEP is the angle between one panel and the next; RADIUS is
+         the drum's radius as a fraction of the pinned height.
+
+         A true drum, where the panels meet edge to edge, works out at
+         radius = half the panel height / tan(STEP / 2) — which for a panel
+         as tall as the screen throws the neighbours entirely out of frame.
+         This drum is deliberately tighter than that, so the panel above and
+         the one below still show a foreshortened, blurred sliver at the top
+         and bottom edges: you can see there is more menu coming. */
+      var STEP = 58;      /* degrees between panels */
+      var RADIUS = 0.52;  /* × the pinned height */
 
       var track = document.createElement("div");
       track.className = "rail-track";
@@ -201,7 +215,8 @@
       hint.className = "rail-hint";
       hint.setAttribute("aria-hidden", "true");
 
-      var on = false, pinH = 0, current = 0, target = 0, running = false, last = 0, shown = -1;
+      var on = false, pinH = 0, radius = 380, current = 0, target = 0,
+          running = false, last = 0, shown = -1;
 
       function navH() {
         var el = document.getElementById("nav");
@@ -215,7 +230,16 @@
         pin.appendChild(stage);
         pin.appendChild(hint);
         box.parentNode.insertBefore(track, box);
-        faces.forEach(function (f) { stage.appendChild(f); });
+        faces.forEach(function (f) {
+          stage.appendChild(f);
+          /* Start every panel hidden and marked live. render() only writes
+             the hidden state on a panel that was live, so without this the
+             three panels that are already out of shot on the first frame
+             would never be written at all and would sit stacked on top of
+             the one in front. */
+          f.style.opacity = "0";
+          f.setAttribute("data-live", "");
+        });
         section.classList.add("rail");
         track.appendChild(box);
         on = true;
@@ -257,6 +281,11 @@
         if (tallest > h - 20) { detach(); return; }
 
         pinH = h;
+        radius = Math.round(h * RADIUS);
+        /* the drum has to be deep enough that a panel turned away is pushed
+           back rather than magnified, but not so deep the perspective reads
+           as a fisheye. Roughly three radii is the usual comfortable figure. */
+        stage.style.perspective = Math.round(Math.max(radius * 3.6, 1300)) + "px";
         track.style.height = Math.round(pinH + (n - 1) * window.innerHeight * PACE) + "px";
       }
 
@@ -280,29 +309,65 @@
         var i = Math.min(Math.floor(raw), n - 2);
         target = raw >= n - 1 ? n - 1 : i + shape(raw - i);
 
-        /* fade the whole rail in as it arrives and out as it leaves, so a
-           half-visible menu never drifts through the page on its own */
-        var lead = Math.min(Math.max((stickAt + 420 - r.top) / 420, 0), 1);
-        var tail = Math.min(Math.max((r.bottom - stickAt - pinH + 420) / 420, 0), 1);
-        pin.style.opacity = Math.min(lead, tail).toFixed(3);
+        /* Fade the whole rail in as it arrives and out as it leaves, so a
+           half-visible menu never drifts through the page on its own. Over
+           560px rather than a snap, and eased at both ends of that distance,
+           so the section arrives the way the rest of the page does. */
+        var FADE = 560;
+        var lead = Math.min(Math.max((stickAt + FADE - r.top) / FADE, 0), 1);
+        var tail = Math.min(Math.max((r.bottom - stickAt - pinH + FADE) / FADE, 0), 1);
+        var edge = Math.min(lead, tail);
+        pin.style.opacity = (edge * edge * (3 - 2 * edge)).toFixed(3);
       }
 
+      /* Transform and opacity are handled by the compositor and cost almost
+         nothing to change every frame. A blur radius does not: each new value
+         repaints the layer. So the radius is rounded to a quarter of a pixel
+         and only written when it has actually moved, and a face too faint to
+         read drops the filter altogether. Two large blurred cards repainting
+         sixty times a second is the one thing here that will drop frames on
+         an ordinary laptop, and it is invisible if you simply do less of it. */
       function render(pos) {
         for (var k = 0; k < n; k++) {
           var d = k - pos;                 /* negative above, positive below */
           var a = Math.abs(d);
           var f = faces[k];
-          if (a >= 1.9) {
-            if (f.style.opacity !== "0") { f.style.opacity = "0"; f.style.pointerEvents = "none"; }
+          /* opacity reaches zero at 1.07 steps out, so there is nothing to
+             draw past that and no panel ever turns far enough to go edge-on */
+          if (a >= 1.1) {
+            if (f.hasAttribute("data-live")) {
+              f.style.opacity = "0";
+              f.style.pointerEvents = "none";
+              f.style.filter = "none";
+              f.removeAttribute("data-live");
+            }
             continue;
           }
-          var fade = a >= 1 ? 0 : 1 - a * a;              /* soft, not linear */
-          f.style.opacity = fade.toFixed(3);
+          if (!f.hasAttribute("data-live")) f.setAttribute("data-live", "");
+
+          /* The standard drum: push the panel out to the rim, turn it to its
+             own angle, then pull the whole drum back by the radius so the
+             panel at angle zero lands flat on the screen at full size. The
+             sign is negative because a positive rotateX tips the top of an
+             element away from you, and the menu you are leaving has to go
+             up and over — so the one behind you (d negative) needs a
+             positive angle. */
+          var deg = -d * STEP;
           f.style.transform =
-            "translate3d(0," + (-50 + d * -LIFT / 10).toFixed(2) + "%,0) translateY(" +
-            (d * LIFT).toFixed(1) + "px) scale(" + (1 - a * 0.035).toFixed(4) + ")";
-          f.style.filter = a < 0.04 ? "none" : "blur(" + Math.min(a * 5, 5).toFixed(1) + "px)";
-          f.style.pointerEvents = a < 0.5 ? "auto" : "none";
+            "translate3d(0,-50%,0) translateZ(" + (-radius).toFixed(1) + "px) rotateX(" +
+            deg.toFixed(2) + "deg) translateZ(" + radius.toFixed(1) + "px)";
+
+          /* Not quite zero at one step away, so the next menu is always a
+             faint blurred presence at the edge rather than nothing at all. */
+          var fade = Math.max(0, Math.min(1, 1 - a * a * 0.88));
+          f.style.opacity = fade.toFixed(3);
+
+          var want = fade < 0.03
+            ? "none"
+            : "blur(" + (Math.round(Math.min(a * BLUR, BLUR) * 4) / 4).toFixed(2) + "px)";
+          if (f.style.filter !== want) f.style.filter = want;
+
+          f.style.pointerEvents = a < 0.4 ? "auto" : "none";
         }
         var idx = Math.round(pos);
         if (idx !== shown) {
