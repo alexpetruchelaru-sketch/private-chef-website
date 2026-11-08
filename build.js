@@ -154,7 +154,7 @@ ${opts.image ? `<meta property="og:image" content="${esc(SITE + opts.image)}">` 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Karla:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="/styles.css?v=20">
+<link rel="stylesheet" href="/styles.css?v=21">
 <script type="application/ld+json">
 ${JSON.stringify(opts.schema, null, 2)}
 </script>
