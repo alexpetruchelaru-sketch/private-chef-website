@@ -5,7 +5,7 @@
 <script>document.documentElement.classList.add("js");</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Chef Privado en Gran Canaria | Cocinero a Domicilio | Alex Chelaru</title>
-<meta name="description" content="Chef privado en Gran Canaria para cenas en villas, celebraciones, barbacoas y brunch. Cinco menús publicados al completo, cocinados en tu propia cocina con producto canario.">
+<meta name="description" content="Chef privado en Gran Canaria para cenas en villas, celebraciones, barbacoas y brunch. Cinco menús completos, cocinados en tu cocina con producto canario.">
 <link rel="canonical" href="https://alexchelaru.com/es/">
 <link rel="alternate" hreflang="en" href="https://alexchelaru.com/">
 <link rel="alternate" hreflang="es" href="https://alexchelaru.com/es/">
@@ -32,7 +32,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="/img/private-chef-gran-canaria-villa-terrace-dinner.webp?v=3" fetchpriority="high">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Karla:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="/styles.css?v=21">
+<link rel="stylesheet" href="/styles.css?v=22">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -549,7 +549,7 @@
 <nav class="nav" id="nav" aria-label="Primary">
   <a class="mark" href="#top"><span class="mark-logo" aria-hidden="true"></span><span class="mark-name">Alex Chelaru <small>Gran Canaria</small></span></a>
   <div class="navright">
-    <div class="navlinks">
+    <div class="navlinks" id="navlinks">
       <a class="navlink" href="#menus">Los menús</a>
       <a class="navlink" href="#chef">El chef</a>
       <a class="navlink" href="#evening">La velada</a>
@@ -557,6 +557,7 @@
       <a class="navlink" href="/es/recetas/">Recetas</a>
       <a class="navlink" href="#faq">FAQ</a>
     </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navlinks"><span class="nav-toggle-bars" aria-hidden="true"></span>Menú</button>
     <a class="lang-switch" href="/" hreflang="en" lang="en" aria-label="View this page in English"><span class="lbl-full">English</span><span class="lbl-short" aria-hidden="true">EN</span></a>
     <a class="cta-date cta-nav" href="#enquire" aria-label="Consultar una fecha"><span class="lbl-full">Consultar una fecha</span><span class="lbl-short" aria-hidden="true">Fechas</span>
       <svg width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true"><path d="M0 5h13M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg>
@@ -578,10 +579,10 @@
     <div class="hero-veil"></div>
     <div class="hero-inner wrap">
       <p class="eyebrow rise">Chef privado, Gran Canaria</p>
-      <h1 class="rise d1">Técnica europea, sabor asiático, <em>Canarian</em> canarios.</h1>
+      <h1 class="rise d1">Técnica europea, sabor asiático, ingredientes <em>canarios</em>.</h1>
       <p class="hero-sub rise d2">Cocinado en tu cocina, servido en tu mesa y todo recogido antes de irme. Cinco menús, escritos al completo más abajo.</p>
       <div class="hero-cta rise d3">
-        <a class="cta-date" href="#enquire">Check a date
+        <a class="cta-date" href="#enquire">Consultar una fecha
           <svg width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true"><path d="M0 5h13M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg>
         </a>
         <a class="cta-read" href="#menus">Ver los menús</a>
@@ -626,7 +627,7 @@
       <article class="menu" id="huerta" aria-labelledby="h-huerta">
         <figure class="menu-fig">
           <img src="/img/huerta-menu-canarian-black-pork-belly-private-chef.webp?v=3" width="1050" height="1400" loading="lazy" decoding="async"
-               alt="Plato de verdura glaseada con puré verde, emplatado en gres moteado sobre mesa de madera">
+               alt="Panceta de cerdo negro glaseada sobre puré de guisantes, con zanahoria asada y amaranto, en gres moteado">
           <figcaption>De un servicio reciente</figcaption>
         </figure>
         <div>
@@ -661,7 +662,7 @@
             </li>
           </ol>
           <div class="menu-foot">
-            <a class="cta-menu" href="#enquire"><i>[</i><span>Consulta about Huerta</span><i>]</i></a>
+            <a class="cta-menu" href="#enquire" data-menu="Huerta"><i>[</i><span>Consultar el menú Huerta</span><i>]</i></a>
             <a class="menu-recipes" href="/es/recetas/">Cada plato de aquí, escrito como receta</a>
             <p class="course-en">La huerta. Guiado por lo que el mercado diera esa mañana.</p>
           </div>
@@ -706,7 +707,7 @@
             </li>
           </ol>
           <div class="menu-foot">
-            <a class="cta-menu" href="#enquire"><i>[</i><span>Enquire about Travesía</span><i>]</i></a>
+            <a class="cta-menu" href="#enquire" data-menu="Travesia"><i>[</i><span>Consultar el menú Travesía</span><i>]</i></a>
             <a class="menu-recipes" href="/es/recetas/">Cada plato de aquí, escrito como receta</a>
             <p class="course-en">La travesía. Método europeo, sazón asiática, producto de la isla.</p>
           </div>
@@ -751,7 +752,7 @@
             </li>
           </ol>
           <div class="menu-foot">
-            <a class="cta-menu" href="#enquire"><i>[</i><span>Enquire about Sobremesa</span><i>]</i></a>
+            <a class="cta-menu" href="#enquire" data-menu="Sobremesa"><i>[</i><span>Consultar el menú Sobremesa</span><i>]</i></a>
             <a class="menu-recipes" href="/es/recetas/">Cada plato de aquí, escrito como receta</a>
             <p class="course-en">La hora después de retirar los platos, cuando nadie tiene intención de levantarse.</p>
           </div>
@@ -806,7 +807,7 @@
             </li>
           </ol>
           <div class="menu-foot">
-            <a class="cta-menu" href="#enquire"><i>[</i><span>Enquire about Brasa</span><i>]</i></a>
+            <a class="cta-menu" href="#enquire" data-menu="Brasa"><i>[</i><span>Consultar el menú Brasa</span><i>]</i></a>
             <a class="menu-recipes" href="/es/recetas/">Cada plato de aquí, escrito como receta</a>
             <p class="course-en">La brasa. Una tarde larga más que un servicio.</p>
           </div>
@@ -856,7 +857,7 @@
             </li>
           </ol>
           <div class="menu-foot">
-            <a class="cta-menu" href="#enquire"><i>[</i><span>Enquire about Media Mañana</span><i>]</i></a>
+            <a class="cta-menu" href="#enquire" data-menu="Media Manana"><i>[</i><span>Consultar el menú Media Mañana</span><i>]</i></a>
             <a class="menu-recipes" href="/es/recetas/">Cada plato de aquí, escrito como receta</a>
             <p class="course-en">Media mañana. Tarde, sin prisa, y nadie mirando el reloj.</p>
           </div>
@@ -962,7 +963,7 @@
       <p>
         Nada es demasiado pequeño ni demasiado grande. Escribo cada menú para la mesa que lo reservó, y eso incluye a las mesas que quieren algo que no está escrito en esta página.
       </p>
-      <a class="cta-menu" href="#enquire"><i>[</i><span>Cuéntame qué tienes en mente</span><i>]</i></a>
+      <a class="cta-menu" href="#enquire" data-menu="Something custom"><i>[</i><span>Cuéntame qué tienes en mente</span><i>]</i></a>
     </div>
 
     <dl class="facts">
@@ -1037,6 +1038,7 @@
       <div class="enq-grid">
 
         <form class="form" id="enquiry" novalidate>
+          <div class="hp" aria-hidden="true"><label for="f-website">Website</label><input id="f-website" name="website" tabindex="-1" autocomplete="off"></div>
           <div class="row">
             <div class="field" id="f-name-w">
               <label for="f-name">Tu nombre</label>
@@ -1052,7 +1054,7 @@
           <div class="row">
             <div class="field" id="f-date-w">
               <label for="f-date">Fecha de la cena</label>
-              <input id="f-date" name="date" type="date">
+              <input id="f-date" name="date" type="date" aria-describedby="date-hint">
               <p class="hint" id="date-hint"></p>
               <p class="err" id="e-date"></p>
             </div>
@@ -1082,7 +1084,7 @@
           </div>
           <div class="field">
             <label for="f-notes">Alergias, necesidades alimentarias, la ocasión</label>
-            <textarea id="f-notes" name="notes" placeholder="One vegetarian, one guest avoids shellfish, it is my wife’s birthday…"></textarea>
+            <textarea id="f-notes" name="notes" placeholder="Un vegetariano, un invitado no come marisco, es el cumpleaños de mi mujer…"></textarea>
           </div>
           <p class="formnote">Los comensales vegetarianos tienen sus propios tres platos, no las guarniciones. Dime que odias el cilantro y no lo verás nunca.</p>
           <div>
@@ -1127,6 +1129,11 @@
   </div>
 </footer>
 
-<script src="/app.js?v=20" defer></script>
+<nav class="mbar" aria-label="Reservar">
+  <a class="mbar-date" href="#enquire">Consultar una fecha</a>
+  <a class="mbar-wa" href="https://wa.me/34641275731" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 15L2 22l5.2-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.4 0-.5.1-.7l.4-.5.2-.4v-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A3 3 0 0 0 7 9.9a5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4 7.6 7.6 0 0 0 1.5.5 3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.2-.2-.4-.3Z"/></svg> WhatsApp</a>
+</nav>
+
+<script src="/app.js?v=21" defer></script>
 </body>
 </html>

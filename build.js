@@ -55,6 +55,20 @@ const isoDuration = (min) => {
   return Number.isFinite(m) && m > 0 ? "PT" + m + "M" : null;
 };
 
+/* Whole sentences up to about 155 characters; a single long sentence is cut
+   at a word boundary. The full summary still appears on the page. */
+const metaDescription = (s, max = 155) => {
+  s = String(s).replace(/\s+/g, " ").trim();
+  if (s.length <= max + 5) return s;
+  let out = "";
+  for (const part of s.match(/[^.!?]+[.!?]+(\s|$)/g) || []) {
+    if ((out + part).trim().length > max) break;
+    out += part;
+  }
+  if (out.trim()) return out.trim();
+  return s.slice(0, max - 1).replace(/\s+\S*$/, "") + "\u2026";
+};
+
 /* ---------- the two languages ---------- */
 const L = {
   en: {
@@ -67,6 +81,7 @@ const L = {
     switchLabel: "Ver esta receta en espa&ntilde;ol",
     switchFull: "Espa&ntilde;ol", switchShort: "ES",
     ctaFull: "Check a date", ctaShort: "Dates", ctaAria: "Check a date",
+    menuToggle: "Menu", mbarLabel: "Book",
     home: "Home", recipes: "Recipes",
     ingredients: "Ingredients", method: "Method",
     serves: "Serves", prep: "Prep", cook: "Cook", cuisineLabel: "Cuisine", minutes: "min",
@@ -81,7 +96,7 @@ const L = {
     indexEyebrow: "Recipes",
     collectionName: "Canarian recipes",
     collectionDesc: "Canarian recipes written by Alex Chelaru, private chef in Gran Canaria.",
-    pageTitle: (t) => t + " | Alex Chelaru, Gran Canaria",
+    pageTitle: (t) => t + " recipe | Alex Chelaru",
     footLine: "Alex Chelaru, private chef. Gran Canaria, Canary Islands.",
     footLogoAlt: "Alex Chelaru, private chef, Gran Canaria",
     menuLabel: "From the menu",
@@ -102,6 +117,7 @@ const L = {
     switchLabel: "View this recipe in English",
     switchFull: "English", switchShort: "EN",
     ctaFull: "Consultar una fecha", ctaShort: "Fechas", ctaAria: "Consultar una fecha",
+    menuToggle: "Men&uacute;", mbarLabel: "Reservar",
     home: "Inicio", recipes: "Recetas",
     ingredients: "Ingredientes", method: "Elaboraci&oacute;n",
     serves: "Para", prep: "Preparaci&oacute;n", cook: "Cocci&oacute;n", cuisineLabel: "Cocina", minutes: "min",
@@ -116,7 +132,7 @@ const L = {
     indexEyebrow: "Recetas",
     collectionName: "Recetas canarias",
     collectionDesc: "Recetas canarias escritas por Alex Chelaru, chef privado en Gran Canaria.",
-    pageTitle: (t) => t + " | Alex Chelaru, Gran Canaria",
+    pageTitle: (t) => "Receta de " + t.charAt(0).toLowerCase() + t.slice(1) + " | Alex Chelaru",
     footLine: "Alex Chelaru, chef privado. Gran Canaria, Islas Canarias.",
     footLogoAlt: "Alex Chelaru, chef privado, Gran Canaria",
     menuLabel: "Del men&uacute;",
@@ -154,7 +170,7 @@ ${opts.image ? `<meta property="og:image" content="${esc(SITE + opts.image)}">` 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Karla:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="/styles.css?v=21">
+<link rel="stylesheet" href="/styles.css?v=22">
 <script type="application/ld+json">
 ${JSON.stringify(opts.schema, null, 2)}
 </script>
@@ -164,9 +180,10 @@ ${JSON.stringify(opts.schema, null, 2)}
 <nav class="nav" id="nav" data-solid="true" aria-label="Primary">
   <a class="mark" href="${l.code === "es" ? "/es/" : "/"}"><span class="mark-logo" aria-hidden="true"></span><span class="mark-name">Alex Chelaru <small>Gran Canaria</small></span></a>
   <div class="navright">
-    <div class="navlinks">
+    <div class="navlinks" id="navlinks">
       ${l.nav.map(([href, label]) => `<a class="navlink" href="${href}">${label}</a>`).join("\n      ")}
     </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navlinks"><span class="nav-toggle-bars" aria-hidden="true"></span>${l.menuToggle}</button>
     <a class="lang-switch" href="${esc(opts.switchHref)}" hreflang="${l.other}" lang="${l.other}" aria-label="${l.switchLabel}"><span class="lbl-full">${l.switchFull}</span><span class="lbl-short" aria-hidden="true">${l.switchShort}</span></a>
     <a class="cta-date cta-nav" href="${l.code === "es" ? "/es/#enquire" : "/#enquire"}" aria-label="${l.ctaAria}"><span class="lbl-full">${l.ctaFull}</span><span class="lbl-short" aria-hidden="true">${l.ctaShort}</span>
       <svg width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true"><path d="M0 5h13M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg>
@@ -188,7 +205,11 @@ function foot(l) {
     </p>
   </div>
 </footer>
-<script src="/app.js?v=20" defer></script>
+<nav class="mbar" aria-label="${l.mbarLabel}">
+  <a class="mbar-date" href="${l.code === "es" ? "/es/#enquire" : "/#enquire"}">${l.ctaFull}</a>
+  <a class="mbar-wa" href="https://wa.me/34641275731" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 15L2 22l5.2-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.4 0-.5.1-.7l.4-.5.2-.4v-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A3 3 0 0 0 7 9.9a5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4 7.6 7.6 0 0 0 1.5.5 3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.2-.2-.4-.3Z"/></svg> WhatsApp</a>
+</nav>
+<script src="/app.js?v=21" defer></script>
 </body>
 </html>
 `;
@@ -381,7 +402,7 @@ function recipePage(r, code, all) {
     /* The h1 stays fully descriptive; the browser title uses the shorter
        seoTitle where one is set, so Google does not cut it off mid-dish. */
     title: l.pageTitle(v.seoTitle || v.title),
-    description: v.summary,
+    description: metaDescription(plain(v.summary)),
     url,
     image: r.image,
     ogType: "article",
@@ -511,7 +532,7 @@ function sitemap(recipes) {
       en: urlFor("en", r.slug),
       es: r.es ? urlFor("es", r.slug) : null,
       pri: "0.7",
-      lastmod: r.date
+      lastmod: r.updated || r.date
     }))
   ];
 

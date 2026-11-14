@@ -1081,3 +1081,63 @@ html.lb-open body { position: fixed; left: 0; right: 0; width: 100%; }
   .gal figure:hover img, .menu:hover .menu-fig img { transform: none; }
   .lb, .lb-stage img { animation: none; }
 }
+
+/* ============================================================
+   Phones and tablets: a menu button for the section links, and a
+   booking bar fixed to the bottom of the screen (date or WhatsApp),
+   so the enquiry is one tap away from anywhere on a long page.
+   ============================================================ */
+.nav-toggle { display: none; }
+.mbar, .hp { display: none; }
+@media (max-width: 1023px) {
+  .nav-toggle {
+    display: inline-flex; align-items: center; gap: 9px;
+    font: 700 11.5px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase;
+    color: var(--bone); background: none; cursor: pointer;
+    padding: 9px 12px; border: 1px solid color-mix(in srgb, var(--linen) 34%, transparent);
+    transition: color .3s ease, border-color .25s ease;
+  }
+  .nav-toggle-bars, .nav-toggle-bars::before {
+    display: block; width: 14px; height: 1.5px; background: currentColor; position: relative;
+    transition: transform .25s ease;
+  }
+  .nav-toggle-bars::before { content: ""; position: absolute; top: 5px; left: 0; }
+  .nav-toggle-bars { top: -2.5px; }
+  .nav[data-solid="true"] .nav-toggle { color: var(--ink); border-color: var(--linen-2); }
+  .nav[data-open] .nav-toggle-bars { transform: translateY(2.5px) rotate(45deg); }
+  .nav[data-open] .nav-toggle-bars::before { transform: translateY(-5px) rotate(-90deg); }
+  .nav[data-open] .navlinks {
+    display: flex; flex-direction: column; align-items: stretch; gap: 0;
+    position: absolute; top: 100%; left: 0; right: 0;
+    max-height: calc(100vh - 60px); overflow-y: auto;
+    padding: 4px var(--gut) 18px;
+    background: var(--bone); border-bottom: 1px solid var(--linen-2);
+  }
+  .nav[data-open] .navlink {
+    color: var(--ink); opacity: 1; font-size: 17px; padding: 15px 0;
+    border-bottom: 1px solid var(--linen-2);
+  }
+  .nav[data-open] .navlink::after { display: none; }
+}
+@media (max-width: 759px) {
+  /* The bottom bar carries the booking button, so the top bar can drop it. */
+  .cta-nav { display: none; }
+  .mbar {
+    display: grid; grid-template-columns: 1fr 1fr;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 45;
+    padding-bottom: env(safe-area-inset-bottom);
+    background: var(--ink);
+  }
+  .mbar a {
+    display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 54px;
+    font: 600 13px/1 var(--sans); letter-spacing: .06em; text-transform: uppercase;
+    color: var(--bone); text-decoration: none;
+  }
+  .mbar-date { background: var(--verde); }
+  body { padding-bottom: calc(54px + env(safe-area-inset-bottom)); }
+  /* Out of the way while someone is typing into the form. */
+  body:has(.form :focus) .mbar { display: none; }
+}
+@media (max-width: 380px) {
+  .nav-toggle { padding: 8px 10px; font-size: 11px; gap: 7px; }
+}

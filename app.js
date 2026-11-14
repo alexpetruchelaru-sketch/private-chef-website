@@ -16,7 +16,8 @@
   function onFrame() {
     raf = 0;
     var y = window.scrollY;
-    if (nav) nav.setAttribute("data-solid", y > window.innerHeight * 0.82 ? "true" : "false");
+    if (nav) nav.setAttribute("data-solid",
+      y > window.innerHeight * 0.82 || nav.hasAttribute("data-open") ? "true" : "false");
     if (heroMedia && !reduced && y < window.innerHeight * 1.3) {
       heroMedia.style.transform =
         "translate3d(0," + (y * 0.28).toFixed(1) + "px,0) scale(" + (1 + y * 0.00007).toFixed(4) + ")";
@@ -26,6 +27,27 @@
   onFrame();
   window.addEventListener("scroll", onScroll, { passive: true });
   window.addEventListener("resize", onScroll, { passive: true });
+
+  /* ---------- the menu button below desktop width ---------- */
+  var navToggle = nav && nav.querySelector(".nav-toggle");
+  if (navToggle) {
+    var setNavOpen = function (open) {
+      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      if (open) nav.setAttribute("data-open", "");
+      else nav.removeAttribute("data-open");
+      onFrame();
+    };
+    navToggle.addEventListener("click", function () { setNavOpen(!nav.hasAttribute("data-open")); });
+    nav.querySelector(".navlinks").addEventListener("click", function (ev) {
+      if (ev.target.closest("a")) setNavOpen(false);
+    });
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape" && nav.hasAttribute("data-open")) { setNavOpen(false); navToggle.focus(); }
+    });
+    document.addEventListener("click", function (ev) {
+      if (nav.hasAttribute("data-open") && !nav.contains(ev.target)) setNavOpen(false);
+    });
+  }
 
 
   /* ============================================================
@@ -700,32 +722,66 @@
   var form = document.getElementById("enquiry");
   if (!form) return;
 
-  /* Five clear days before the earliest bookable date. The fish, the heritage
-     potatoes and the island cheeses come from suppliers, not a supermarket, so
-     the window has to be real. Recomputed on every load, so it always moves
-     with today's date rather than being fixed at build time. */
+  /* The note goes to the Alba Zas Worker, which emails it to Admin@albazas.com
+     (Cloudflare Pages cannot send mail itself). If that ever fails, the guest
+     is offered WhatsApp and email with everything already filled in. */
+  var ENDPOINT = "https://albazas.com/api/chef-enquiry";
+  var es = (document.documentElement.lang || "en").slice(0, 2) === "es";
+  var T = es ? {
+    lead: "Con cinco días puedo conseguir todo como es debido. Si es antes, pregunta igualmente: muchas veces puedo.",
+    short: "Es poco margen, pero mándala: te digo el mismo día qué puedo conseguir y qué platos cambiarían.",
+    past: "Esa fecha ya ha pasado.",
+    noDate: "Dime una fecha, aunque sea aproximada.",
+    noName: "Pon tu nombre para saber a quién respondo.",
+    noEmail: "Necesito un email para responderte.",
+    badEmail: "Ese email no parece completo. Revísalo, por favor.",
+    noGuests: "¿Cuántos seréis a la mesa?",
+    sending: "Enviando…",
+    sent: "Recibido. Respondo a todas las consultas el mismo día, con el precio completo. No hay nada reservado hasta que digas que sí.",
+    failed: "No se ha podido enviar. Mándamela por WhatsApp, o escríbeme a ",
+    hello: "Hola Alex, ",
+    subject: "Consulta para una cena"
+  } : {
+    lead: "Five days lets me source everything properly. Inside that, ask anyway: I often can.",
+    short: "That is short notice, but send it: I will tell you the same day what I can source and which courses would change.",
+    past: "That date has already passed.",
+    noDate: "Give me a date, even an approximate one.",
+    noName: "Please add your name so I know who I am writing back to.",
+    noEmail: "I need an email address to reply to.",
+    badEmail: "That address does not look complete. Please check it.",
+    noGuests: "How many will be at the table?",
+    sending: "Sending…",
+    sent: "Received. I reply to every enquiry the same day, with a full price. Nothing is booked until you say yes.",
+    failed: "It did not send. Please use WhatsApp instead, or write to ",
+    hello: "Hola Alex, ",
+    subject: "Dinner enquiry"
+  };
+
+  /* Any date can be asked for. Inside five days the hint changes to say what
+     short notice means, instead of refusing: late bookings are welcome. */
   var LEAD_DAYS = 5;
   var dateField = document.getElementById("f-date");
-  var earliest = null;
+  var hint = document.getElementById("date-hint");
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+  var soon = new Date(today); soon.setDate(soon.getDate() + LEAD_DAYS);
+  function isoDay(d) {
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  }
+  function chosenDay() { return dateField && dateField.value ? new Date(dateField.value + "T00:00:00") : null; }
+  function updateHint() {
+    var d = chosenDay();
+    if (hint) hint.textContent = d && d >= today && d < soon ? T.short : T.lead;
+  }
   if (dateField) {
-    var d = new Date();
-    d.setHours(0, 0, 0, 0);
-    d.setDate(d.getDate() + LEAD_DAYS);
-    earliest = d;
-    var iso = d.getFullYear() + "-" +
-              String(d.getMonth() + 1).padStart(2, "0") + "-" +
-              String(d.getDate()).padStart(2, "0");
-    dateField.min = iso;
-    var hint = document.getElementById("date-hint");
-    if (hint) {
-      hint.textContent = "Earliest date I can cook is " +
-        d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }) +
-        ". I need five days to source properly.";
-    }
+    dateField.min = isoDay(today);
+    dateField.addEventListener("input", updateHint);
+    dateField.addEventListener("change", updateHint);
+    updateHint();
   }
 
   var status = document.getElementById("status");
   var waSame = document.getElementById("waSame");
+  var button = form.querySelector('button[type="submit"]');
 
   function val(id) { var el = document.getElementById(id); return el ? el.value.trim() : ""; }
 
@@ -741,31 +797,22 @@
 
   function validate() {
     var problems = [];
-    var name = val("f-name");
     var email = val("f-email");
-    var date = val("f-date");
-    var guests = val("f-guests");
+    var day = chosenDay();
 
-    setError("name", name ? "" : "Please add your name so I know who I am writing back to.");
-    if (!name) problems.push("name");
+    setError("name", val("f-name") ? "" : T.noName);
+    if (!val("f-name")) problems.push("name");
 
-    if (!email) { setError("email", "I need an email address to reply to."); problems.push("email"); }
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setError("email", "That address does not look complete. Please check it."); problems.push("email"); }
+    if (!email) { setError("email", T.noEmail); problems.push("email"); }
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setError("email", T.badEmail); problems.push("email"); }
     else setError("email", "");
 
-    if (!date) {
-      setError("date", "Give me a date, even an approximate one.");
-      problems.push("date");
-    } else if (earliest && new Date(date + "T00:00:00") < earliest) {
-      setError("date", "I need five days to shop and prepare. The earliest I can cook is " +
-        earliest.toLocaleDateString("en-GB", { day: "numeric", month: "long" }) + ".");
-      problems.push("date");
-    } else {
-      setError("date", "");
-    }
+    if (!day) { setError("date", T.noDate); problems.push("date"); }
+    else if (day < today) { setError("date", T.past); problems.push("date"); }
+    else setError("date", "");
 
-    setError("guests", guests ? "" : "How many will be at the table?");
-    if (!guests) problems.push("guests");
+    setError("guests", val("f-guests") ? "" : T.noGuests);
+    if (!val("f-guests")) problems.push("guests");
 
     if (problems.length) {
       var first = document.getElementById("f-" + problems[0]);
@@ -790,25 +837,59 @@
   }
 
   /* Keep the WhatsApp shortcut carrying whatever has been typed so far. */
-  function refreshWa() {
-    if (!waSame) return;
-    waSame.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("Hola Alex, " + body());
-  }
+  function waHref() { return "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(T.hello + body()); }
+  function refreshWa() { if (waSame) waSame.href = waHref(); }
   form.addEventListener("input", refreshWa);
   refreshWa();
 
+  /* The menu buttons ("Enquire about Huerta") pre-select that menu. */
+  var menuField = document.getElementById("f-menu");
+  Array.prototype.forEach.call(document.querySelectorAll('a[href="#enquire"][data-menu]'), function (a) {
+    a.addEventListener("click", function () { if (menuField) { menuField.value = a.getAttribute("data-menu"); refreshWa(); } });
+  });
+
+  function showFailure() {
+    if (!status) return;
+    var mail = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(T.subject + ", " + val("f-date")) +
+      "&body=" + encodeURIComponent(body());
+    status.textContent = T.failed;
+    var a = document.createElement("a");
+    a.href = mail; a.textContent = EMAIL;
+    var w = document.createElement("a");
+    w.href = waHref(); w.target = "_blank"; w.rel = "noopener"; w.textContent = "WhatsApp";
+    status.appendChild(a);
+    status.appendChild(document.createTextNode(". "));
+    status.appendChild(w);
+  }
+
+  var sending = false;
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    if (!validate()) {
-      if (status) status.textContent = "";
-      return;
-    }
-    var subject = "Dinner enquiry, " + (val("f-date") || "date to confirm") + ", " + val("f-guests") + " guests";
-    window.location.href =
-      "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body());
-    if (status) {
-      status.textContent =
-        "Your email app should have opened with everything filled in. If nothing happened, use WhatsApp instead or write to " + EMAIL + ".";
-    }
+    if (sending) return;
+    if (!validate()) { if (status) status.textContent = ""; return; }
+    sending = true;
+    if (button) button.disabled = true;
+    if (status) status.textContent = T.sending;
+
+    fetch(ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        name: val("f-name"), email: val("f-email"), date: val("f-date"), guests: val("f-guests"),
+        where: val("f-where"), menu: val("f-menu"), notes: val("f-notes"),
+        website: val("f-website"), lang: es ? "es" : "en", page: location.pathname
+      })
+    }).then(function (res) {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      if (status) status.textContent = T.sent;
+      form.reset();
+      updateHint();
+      refreshWa();
+    }).catch(function () {
+      showFailure();
+    }).then(function () {
+      sending = false;
+      if (button) button.disabled = false;
+    });
   });
 })();
