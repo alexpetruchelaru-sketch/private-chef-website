@@ -1,0 +1,10 @@
+# Files in this repository that are not part of the website (see wrangler.jsonc).
+.git
+.claude
+.pages.yml
+.assetsignore
+wrangler.jsonc
+build.js
+content
+COPY-DRAFTS.md
+alexchelaru.com-audit

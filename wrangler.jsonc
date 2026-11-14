@@ -1,0 +1,16 @@
+{
+  // alexchelaru.com is a Cloudflare Worker that only serves the static files in this
+  // repository (no Worker code). Cloudflare's GitHub build deploys it on every push to main.
+  // Must match the Worker name in the Cloudflare dashboard.
+  "name": "private-chef-website",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./",
+    // Unknown addresses get /404.html with a real 404 status, instead of an empty response.
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "alexchelaru.com", "custom_domain": true }
+  ],
+  "workers_dev": true
+}
