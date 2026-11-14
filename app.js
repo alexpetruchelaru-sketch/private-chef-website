@@ -86,9 +86,6 @@
     var GROUPS = [
       [".sec-head > *", 70],
       [".strip h2, .strip dl", 90],
-      [".menu-index a", 55],
-      [".menu", 0],
-      [".menu-fig", 0, "fig"],
       [".aside > *", 90],
       [".custom > *", 70],
       [".chef-body > p, .lineage", 80],
@@ -178,349 +175,6 @@
     setTimeout(sweep, 600);
     setTimeout(sweep, 2000);
 
-    /* ============================================================
-       The menu rail.
-
-       The five menus occupy one place, centred below the nav, and
-       scrolling moves through them: the one you are leaving drifts
-       up and fades out, the next rises into its place.
-
-       Two things make it feel fluid rather than stepped. The position
-       is smoothed every frame toward where the scroll actually is, so
-       the movement carries on for a moment after the wheel stops and
-       never starts abruptly. And the curve across each step is a
-       smootherstep, which is flat in both its first and second
-       derivative at each end, so there is no visible kick as one menu
-       hands over to the next.
-
-       It only runs when a whole menu fits the centred area. If it does
-       not, the section stays the plain column it is, because the menus
-       are the point of the page.
-       ============================================================ */
-    (function menuRail() {
-      var box = document.querySelector(".menus");
-      if (!box) return;
-      var section = box.closest("section");
-      if (!section) return;
-
-      var faces = Array.prototype.slice.call(box.querySelectorAll(".menu"));
-      var n = faces.length;
-      if (n < 2) return;
-
-      var PACE = 1.0;     /* screens of scroll per menu */
-      var LEAD = 0.10;    /* a short flat moment at the start of each step */
-      var HOLD = 0.10;    /* and at the end, so each menu settles briefly */
-      var TAU  = 125;     /* smoothing time constant, ms. Lower is tighter */
-      var BLUR = 4;       /* most blur a menu turning away gets, px */
-
-      /* Drum geometry. Each menu is a panel on the outside of a horizontal
-         drum lying across the screen, and scrolling turns the drum toward
-         you. STEP is the angle between one panel and the next; RADIUS is
-         the drum's radius as a fraction of the pinned height.
-
-         A true drum, where the panels meet edge to edge, works out at
-         radius = half the panel height / tan(STEP / 2) — which for a panel
-         as tall as the screen throws the neighbours entirely out of frame.
-         This drum is deliberately tighter than that, so the panel above and
-         the one below still show a foreshortened, blurred sliver at the top
-         and bottom edges: you can see there is more menu coming. */
-      var STEP = 58;      /* degrees between panels */
-      var RADIUS = 0.52;  /* × the pinned height */
-
-      var track = document.createElement("div");
-      track.className = "rail-track";
-      var pin = document.createElement("div");
-      pin.className = "rail-pin";
-      var stage = document.createElement("div");
-      stage.className = "rail-stage";
-      var hint = document.createElement("p");
-      hint.className = "rail-hint";
-      hint.setAttribute("aria-hidden", "true");
-
-      var on = false, pinH = 0, radius = 380, current = 0, target = 0,
-          running = false, last = 0, shown = -1;
-
-      function navH() {
-        var el = document.getElementById("nav");
-        return el ? el.getBoundingClientRect().height : 64;
-      }
-
-      function attach() {
-        if (on) return;
-        stage.appendChild(document.createDocumentFragment());
-        track.appendChild(pin);
-        pin.appendChild(stage);
-        pin.appendChild(hint);
-        box.parentNode.insertBefore(track, box);
-        faces.forEach(function (f) {
-          stage.appendChild(f);
-          /* Start every panel hidden and marked live. render() only writes
-             the hidden state on a panel that was live, so without this the
-             three panels that are already out of shot on the first frame
-             would never be written at all and would sit stacked on top of
-             the one in front. */
-          f.style.opacity = "0";
-          f.setAttribute("data-live", "");
-        });
-        section.classList.add("rail");
-        track.appendChild(box);
-        on = true;
-      }
-
-      function detach() {
-        if (!on) return;
-        faces.forEach(function (f) {
-          f.style.transform = "";
-          f.style.opacity = "";
-          f.style.filter = "";
-          f.style.pointerEvents = "";
-          box.appendChild(f);
-        });
-        section.classList.remove("rail");
-        section.style.removeProperty("--pin-h");
-        if (track.parentNode) {
-          track.parentNode.insertBefore(box, track);
-          track.parentNode.removeChild(track);
-        }
-        on = false;
-      }
-
-      function layout() {
-        var h = Math.round(window.innerHeight - navH() - 24);
-        /* the anchor offset needs this whether the rail runs or not */
-        document.documentElement.style.setProperty("--navh", Math.round(navH()) + "px");
-        if (h < 420) { detach(); return; }
-
-        attach();
-        section.style.setProperty("--pin-h", h + "px");
-
-        var tallest = 0;
-        faces.forEach(function (f) {
-          tallest = Math.max(tallest, f.scrollHeight);
-        });
-        /* headroom, so a size that only just fits does not flip the rail on
-           and off as the window is nudged or a font finishes loading */
-        if (tallest > h - 20) { detach(); return; }
-
-        pinH = h;
-        radius = Math.round(h * RADIUS);
-        /* the drum has to be deep enough that a panel turned away is pushed
-           back rather than magnified, but not so deep the perspective reads
-           as a fisheye. Roughly three radii is the usual comfortable figure. */
-        stage.style.perspective = Math.round(Math.max(radius * 3.6, 1300)) + "px";
-        track.style.height = Math.round(pinH + (n - 1) * window.innerHeight * PACE) + "px";
-      }
-
-      /* Flat at both ends, and smooth into and out of the movement.
-         The old version held still for a third of the step and then
-         moved, which is what read as rigid. */
-      function shape(t) {
-        var span = 1 - LEAD - HOLD;
-        var u = (t - LEAD) / span;
-        if (u <= 0) return 0;
-        if (u >= 1) return 1;
-        return u * u * u * (u * (u * 6 - 15) + 10);
-      }
-
-      function measure() {
-        var r = track.getBoundingClientRect();
-        var travel = track.offsetHeight - pinH;
-        var stickAt = navH() + 24;
-        var scrolled = Math.min(Math.max(stickAt - r.top, 0), travel);
-        var raw = travel > 0 ? (scrolled / travel) * (n - 1) : 0;
-        var i = Math.min(Math.floor(raw), n - 2);
-        target = raw >= n - 1 ? n - 1 : i + shape(raw - i);
-
-        /* Fade the whole rail in as it arrives and out as it leaves, so a
-           half-visible menu never drifts through the page on its own. Over
-           560px rather than a snap, and eased at both ends of that distance,
-           so the section arrives the way the rest of the page does. */
-        var FADE = 560;
-        var lead = Math.min(Math.max((stickAt + FADE - r.top) / FADE, 0), 1);
-        var tail = Math.min(Math.max((r.bottom - stickAt - pinH + FADE) / FADE, 0), 1);
-        var edge = Math.min(lead, tail);
-        pin.style.opacity = (edge * edge * (3 - 2 * edge)).toFixed(3);
-      }
-
-      /* Transform and opacity are handled by the compositor and cost almost
-         nothing to change every frame. A blur radius does not: each new value
-         repaints the layer. So the radius is rounded to a quarter of a pixel
-         and only written when it has actually moved, and a face too faint to
-         read drops the filter altogether. Two large blurred cards repainting
-         sixty times a second is the one thing here that will drop frames on
-         an ordinary laptop, and it is invisible if you simply do less of it. */
-      function render(pos) {
-        for (var k = 0; k < n; k++) {
-          var d = k - pos;                 /* negative above, positive below */
-          var a = Math.abs(d);
-          var f = faces[k];
-          /* opacity reaches zero at 1.07 steps out, so there is nothing to
-             draw past that and no panel ever turns far enough to go edge-on */
-          if (a >= 1.1) {
-            if (f.hasAttribute("data-live")) {
-              f.style.opacity = "0";
-              f.style.pointerEvents = "none";
-              f.style.filter = "none";
-              f.removeAttribute("data-live");
-            }
-            continue;
-          }
-          if (!f.hasAttribute("data-live")) f.setAttribute("data-live", "");
-
-          /* The standard drum: push the panel out to the rim, turn it to its
-             own angle, then pull the whole drum back by the radius so the
-             panel at angle zero lands flat on the screen at full size. The
-             sign is negative because a positive rotateX tips the top of an
-             element away from you, and the menu you are leaving has to go
-             up and over — so the one behind you (d negative) needs a
-             positive angle. */
-          var deg = -d * STEP;
-          f.style.transform =
-            "translate3d(0,-50%,0) translateZ(" + (-radius).toFixed(1) + "px) rotateX(" +
-            deg.toFixed(2) + "deg) translateZ(" + radius.toFixed(1) + "px)";
-
-          /* Not quite zero at one step away, so the next menu is always a
-             faint blurred presence at the edge rather than nothing at all. */
-          var fade = Math.max(0, Math.min(1, 1 - a * a * 0.88));
-          f.style.opacity = fade.toFixed(3);
-
-          var want = fade < 0.03
-            ? "none"
-            : "blur(" + (Math.round(Math.min(a * BLUR, BLUR) * 4) / 4).toFixed(2) + "px)";
-          if (f.style.filter !== want) f.style.filter = want;
-
-          f.style.pointerEvents = a < 0.4 ? "auto" : "none";
-        }
-        var idx = Math.round(pos);
-        if (idx !== shown) {
-          shown = idx;
-          hint.textContent = String(idx + 1).padStart(2, "0") + " / " + String(n).padStart(2, "0");
-        }
-      }
-
-      /* Exponential smoothing toward the scroll position, in real time so
-         it behaves the same at 60 and at 120 frames a second. */
-      function tick(now) {
-        var dt = last ? Math.min(now - last, 64) : 16;
-        last = now;
-        var d = target - current;
-        if (Math.abs(d) < 0.0004) {
-          current = target;
-          render(current);
-          running = false;
-          last = 0;
-          return;
-        }
-        current += d * (1 - Math.exp(-dt / TAU));
-        render(current);
-        requestAnimationFrame(tick);
-      }
-
-      function kick() {
-        if (running) return;
-        running = true;
-        requestAnimationFrame(tick);
-      }
-
-      function onScroll() {
-        if (!on) return;
-        measure();
-        kick();
-      }
-
-      /* Where the page has to be scrolled to for menu k to be the one in
-         front. Every menu now sits in the same place on the screen, so a
-         plain #brasa jump would land on the first one; the rail has to
-         translate the name into a scroll position itself. */
-      function yFor(k) {
-        var travel = track.offsetHeight - pinH;
-        return Math.round(window.scrollY + track.getBoundingClientRect().top
-          - navH() - 24 + (travel * k) / (n - 1));
-      }
-
-      function jump(k, smooth) {
-        window.scrollTo({ top: yFor(k), behavior: smooth ? "smooth" : "auto" });
-        onScroll();
-      }
-
-      function indexOfHash(hash) {
-        if (!hash || hash.length < 2) return -1;
-        var el;
-        try { el = document.getElementById(decodeURIComponent(hash.slice(1))); }
-        catch (err) { el = null; }
-        return el ? faces.indexOf(el) : -1;
-      }
-
-      /* the five cards above the rail, the nav, and every "back to this
-         menu" link on a recipe page */
-      document.addEventListener("click", function (e) {
-        if (!on) return;
-        var a = e.target.closest && e.target.closest('a[href*="#"]');
-        if (!a) return;
-        /* only a jump within this page — a link to /recipes/x/#note is a
-           navigation, not a rail move */
-        if (a.host !== window.location.host || a.pathname !== window.location.pathname) return;
-        var k = indexOfHash(a.hash);
-        if (k < 0) return;
-        e.preventDefault();
-        if (window.history && history.replaceState) history.replaceState(null, "", a.hash);
-        jump(k, true);
-      });
-
-      /* arriving from another page on /#brasa. Run it once the images are
-         in too, because the track is a different height by then. */
-      var landed = false;
-      function landOnHash() {
-        if (landed || !on) return;
-        var k = indexOfHash(window.location.hash);
-        if (k < 1) { landed = true; return; }
-        landed = true;
-        jump(k, false);
-        current = target;
-        render(current);
-      }
-
-      window.addEventListener("hashchange", function () {
-        var k = indexOfHash(window.location.hash);
-        if (on && k >= 0) jump(k, true);
-      });
-
-      /* Keyboard: only when the focus genuinely came from tabbing. Scripts
-         move focus too — the lightbox hands it back to the photograph it was
-         opened from — and treating that as navigation threw the reader up
-         the page. */
-      var tabbing = false;
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Tab") tabbing = true;
-      }, true);
-      document.addEventListener("pointerdown", function () { tabbing = false; }, true);
-
-      document.addEventListener("focusin", function (e) {
-        if (!on || !tabbing) return;
-        tabbing = false;
-        var f = e.target.closest && e.target.closest(".menu");
-        if (!f) return;
-        var k = faces.indexOf(f);
-        if (k < 0) return;
-        jump(k, false);
-      });
-
-      layout();
-      measure();
-      current = target;
-      render(current);
-
-      window.addEventListener("scroll", onScroll, { passive: true });
-      window.addEventListener("resize", function () {
-        layout();
-        if (on) { measure(); current = target; render(current); }
-      }, { passive: true });
-      window.addEventListener("load", function () {
-        layout();
-        if (on) { measure(); current = target; render(current); }
-        landOnHash();
-      });
-    })();
 
     /* ---- desktop pointer touches ---- */
     var fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
@@ -557,6 +211,335 @@
         fig.style.setProperty("--px", "0px");
         fig.style.setProperty("--py", "0px");
       });
+    });
+  })();
+
+  /* ============================================================
+     The menus as a book.
+
+     Each menu is a spread: on the left, the photograph edge to edge
+     with the menu's name and introduction over it; on the right, the
+     courses on paper. The section is pinned while you scroll through
+     it, and scrolling turns the pages, right to left around the spine:
+     the right page lifts and falls away to reveal the next menu's
+     courses, then the next photograph comes down onto the left.
+
+     Scroll position is the only state. One function turns the
+     section's scroll into { spread, turn 0..1 } every frame, and the
+     drawn position eases toward it, so reload, the scrollbar, Home and
+     End and anchor links all land on the right page, and the turn
+     carries on for a moment after the wheel stops instead of halting.
+
+     Phones, or a screen too short for a spread: the menus become a
+     horizontal swipe, one page at a time, tilting like a page as it
+     goes. Reduced motion: no turning, the pages cross-fade.
+     No script: the plain column the markup describes.
+     ============================================================ */
+  (function menuBook() {
+    var section = document.getElementById("menus");
+    var box = section && section.querySelector(".menus");
+    var index = section && section.querySelector(".menu-index");
+    if (!box || !index) return;
+    var pages = Array.prototype.slice.call(box.querySelectorAll(":scope > .menu"));
+    var n = pages.length;
+    if (n < 2) return;
+    var links = Array.prototype.slice.call(index.querySelectorAll("a"));
+
+    /* Scroll budget, in screens: DWELL resting on a spread, TURN crossing
+       to the next. The last spread has no turn after it. */
+    var DWELL = 0.7, TURN = 0.8, CYC = DWELL + TURN;
+    var SPAN = n * DWELL + (n - 1) * TURN;
+
+    function clamp01(x) { return x < 0 ? 0 : x > 1 ? 1 : x; }
+    function smoother(x) { x = clamp01(x); return x * x * x * (x * (x * 6 - 15) + 10); }
+
+    /* ---- one-off restructure: left page and right page per menu ---- */
+    pages.forEach(function (art, k) {
+      var fig = art.querySelector(".menu-fig");
+      var body = fig && fig.nextElementSibling;
+      if (!fig || !body) return;
+      var left = document.createElement("div");
+      left.className = "pg pg-l";
+      var head = document.createElement("div");
+      head.className = "pg-head";
+      Array.prototype.slice.call(body.querySelectorAll(":scope > .menu-title, :scope > .menu-meta, :scope > .menu-blurb"))
+        .forEach(function (el) { head.appendChild(el); });
+      left.appendChild(fig);
+      left.appendChild(head);
+      var right = document.createElement("div");
+      right.className = "pg pg-r";
+      var inner = document.createElement("div");
+      inner.className = "pg-in";
+      while (body.firstChild) inner.appendChild(body.firstChild);
+      right.appendChild(inner);
+      [left, right].forEach(function (pg) {
+        var shade = document.createElement("i");
+        shade.className = "pg-shade";
+        shade.setAttribute("aria-hidden", "true");
+        pg.appendChild(shade);
+      });
+      art.removeChild(body);
+      art.appendChild(left);
+      art.appendChild(right);
+      Array.prototype.forEach.call(art.querySelectorAll(".course"), function (c, j) { c.style.setProperty("--k", j); });
+      art.style.setProperty("--k", k);
+    });
+
+    /* track (tall, scrolls) > pin (sticky, one screen) > index + menus */
+    var track = document.createElement("div");
+    track.className = "book-track";
+    var pin = document.createElement("div");
+    pin.className = "book-pin";
+    var spine = document.createElement("i");
+    spine.className = "book-spine";
+    spine.setAttribute("aria-hidden", "true");
+    box.parentNode.insertBefore(track, box);
+    track.appendChild(pin);
+    pin.appendChild(index);
+    pin.appendChild(box);
+    pin.appendChild(spine);
+
+    var mode = "";        // "book" or "swipe"
+    var navH = 64;
+    var shown = -1;       // live page, for the index and for inert
+
+    function setLive(k) {
+      if (k === shown) return;
+      shown = k;
+      links.forEach(function (a, j) {
+        if (j === k) a.setAttribute("aria-current", "step");
+        else a.removeAttribute("aria-current");
+      });
+      /* on a narrow screen the row of names scrolls: keep the live one in view */
+      if (mode === "swipe" && links[k] && index.scrollWidth > index.clientWidth) {
+        index.scrollTo({ left: links[k].offsetLeft - (index.clientWidth - links[k].offsetWidth) / 2, behavior: reduced ? "instant" : "smooth" });
+      }
+      pages.forEach(function (p, j) {
+        if (mode === "book" && j !== k) p.setAttribute("inert", "");
+        else p.removeAttribute("inert");
+      });
+    }
+
+    /* ============ book mode ============ */
+    var target = 0, current = 0, raf = 0, unit = 1;
+
+    function bookFits() {
+      if (window.innerWidth < 1000 || window.innerHeight < 620) return false;
+      var avail = window.innerHeight - navH - 120;
+      var worst = 1;
+      pages.forEach(function (p) {
+        var inner = p.querySelector(".pg-in");
+        inner.style.setProperty("--fit", 1);
+        /* a long menu sets its courses in two columns before it shrinks */
+        p.removeAttribute("data-dense");
+        if (inner.scrollHeight > avail) p.setAttribute("data-dense", "");
+        var h = inner.scrollHeight;
+        var s = h > avail ? avail / h : 1;
+        inner.style.setProperty("--fit", s.toFixed(3));
+        if (s < worst) worst = s;
+      });
+      return worst >= 0.74;
+    }
+
+    function measure() {
+      var r = track.getBoundingClientRect();
+      var travel = track.offsetHeight - pin.offsetHeight;
+      var p = travel > 0 ? clamp01(-r.top / travel) : 0;
+      target = p * SPAN;
+      return r;
+    }
+
+    /* Draw position u (in screens along the book). */
+    function render(u) {
+      var i = Math.min(n - 1, Math.floor(u / CYC));
+      var local = u - i * CYC;
+      var f = i >= n - 1 ? 0 : clamp01((local - DWELL) / TURN);
+      var t = smoother(f);
+      var next = Math.min(n - 1, i + 1);
+
+      for (var k = 0; k < n; k++) {
+        var pg = pages[k];
+        var L = pg.children[0], R = pg.children[1];
+        var vis = k === i || (k === next && f > 0);
+        pg.style.visibility = vis ? "visible" : "hidden";
+        if (!vis) { L.style.visibility = R.style.visibility = ""; continue; }
+        if (reduced) {
+          /* cross-fade instead of turning */
+          var o = k === i ? 1 - clamp01((f - 0.3) / 0.4) : clamp01((f - 0.3) / 0.4);
+          pg.style.zIndex = k === i ? 2 : 3;
+          pg.style.opacity = o.toFixed(3);
+          L.style.transform = R.style.transform = "";
+          L.style.visibility = R.style.visibility = "";
+          pg.style.setProperty("--a", o.toFixed(3));
+          continue;
+        }
+        pg.style.opacity = "";
+        /* each menu is one layer: the leaving one is on top while its page
+           lifts, the arriving one while its photograph comes down */
+        pg.style.zIndex = (k === i) === (t < 0.5) ? 3 : 2;
+        if (k === i) {
+          /* leaving: right page lifts from flat to edge-on over the first half */
+          var lift = clamp01(t * 2);
+          R.style.transform = lift ? "rotateY(" + (-90 * lift).toFixed(2) + "deg)" : "";
+          R.style.zIndex = 4;
+          R.style.visibility = lift >= 1 ? "hidden" : "visible";
+          R.style.setProperty("--shade", (lift * 0.55).toFixed(3));
+          L.style.transform = "";
+          L.style.zIndex = 1;
+          L.style.visibility = "visible";
+          /* the arriving page casts its shadow on this photograph */
+          L.style.setProperty("--shade", (clamp01(t * 2 - 1) * 0.45).toFixed(3));
+          pg.style.setProperty("--a", (1 - clamp01(t * 1.6)).toFixed(3));
+        } else {
+          /* arriving: courses lie underneath, photograph comes down over the second half */
+          var fall = clamp01(t * 2 - 1);
+          L.style.transform = fall < 1 ? "rotateY(" + (90 * (1 - fall)).toFixed(2) + "deg)" : "";
+          L.style.zIndex = 4;
+          L.style.visibility = fall > 0 ? "visible" : "hidden";
+          L.style.setProperty("--shade", ((1 - fall) * 0.55).toFixed(3));
+          R.style.transform = "";
+          R.style.zIndex = 1;
+          R.style.visibility = "visible";
+          /* shadow of the lifting page on the courses beneath */
+          R.style.setProperty("--shade", ((1 - clamp01(t * 2)) * 0.4).toFixed(3));
+          pg.style.setProperty("--a", clamp01(t * 1.25 - 0.1).toFixed(3));
+        }
+      }
+      setLive(f < 0.5 ? i : next);
+    }
+
+    function frame() {
+      raf = 0;
+      var d = target - current;
+      current = Math.abs(d) < 0.0008 ? target : current + d * 0.14;
+      render(current);
+      if (current !== target) raf = requestAnimationFrame(frame);
+    }
+
+    function onBookScroll() {
+      var r = measure();
+      /* off screen there is nothing to animate: land exactly */
+      if (r.bottom < 0 || r.top > window.innerHeight) { current = target; render(current); return; }
+      if (!raf) raf = requestAnimationFrame(frame);
+    }
+
+    function yForBook(k) {
+      var travel = track.offsetHeight - pin.offsetHeight;
+      var top = window.scrollY + track.getBoundingClientRect().top;
+      return Math.round(top + (k * CYC + DWELL * 0.5) / SPAN * travel);
+    }
+
+    /* ============ swipe mode ============ */
+    var sraf = 0;
+    function swipeFrame() {
+      sraf = 0;
+      var w = box.clientWidth || 1;
+      var pos = box.scrollLeft / w;
+      var a = Math.floor(pos), b = Math.min(n - 1, a + 1);
+      var h = Math.max(pages[a].offsetHeight, pages[b].offsetHeight);
+      if (pos - a < 0.02) h = pages[a].offsetHeight;
+      box.style.height = h + "px";
+      pages.forEach(function (p, k) {
+        var d = k - pos;
+        if (Math.abs(d) > 1.2 || reduced) { p.style.transform = ""; p.style.opacity = ""; return; }
+        p.style.transformOrigin = d > 0 ? "left center" : "right center";
+        p.style.transform = "perspective(1600px) rotateY(" + (d * -16).toFixed(2) + "deg)";
+        p.style.opacity = (1 - Math.min(1, Math.abs(d)) * 0.55).toFixed(3);
+      });
+      setLive(Math.round(pos));
+    }
+    function onSwipe() { if (!sraf) sraf = requestAnimationFrame(swipeFrame); }
+
+    /* ============ switching ============ */
+    function clearStyles() {
+      pages.forEach(function (p) {
+        p.removeAttribute("style");
+        p.removeAttribute("inert");
+        Array.prototype.forEach.call(p.children, function (c) {
+          if (c.classList.contains("pg")) { c.style.transform = c.style.zIndex = c.style.visibility = ""; c.style.removeProperty("--shade"); }
+        });
+      });
+      box.style.height = "";
+      shown = -1;
+    }
+
+    function layout() {
+      navH = nav ? nav.offsetHeight : 64;
+      section.style.setProperty("--nav-h", navH + "px");
+      var want;
+      section.classList.add("book");          // measure the right page as a book page
+      section.classList.remove("swipe");
+      want = bookFits() ? "book" : "swipe";
+      if (want === "swipe") { section.classList.remove("book"); section.classList.add("swipe"); }
+      if (want !== mode) { clearStyles(); mode = want; }
+      if (mode === "book") {
+        track.style.height = "calc(100vh + " + (SPAN * 100).toFixed(1) + "vh)";
+        measure(); current = target; render(current);
+      } else {
+        track.style.height = "";
+        swipeFrame();
+      }
+    }
+
+    function go(k, smooth) {
+      if (mode === "book") {
+        window.scrollTo({ top: yForBook(k), behavior: "instant" });   // the turn animates itself
+        onBookScroll();
+      } else {
+        /* bring the names and the new page's photograph to the top of the screen */
+        box.scrollTo({ left: k * box.clientWidth, behavior: smooth && !reduced ? "smooth" : "instant" });
+        window.scrollTo({ top: Math.round(window.scrollY + index.getBoundingClientRect().top - navH - 12), behavior: smooth && !reduced ? "smooth" : "instant" });
+      }
+    }
+
+    function indexOfHash(hash) {
+      if (!hash || hash.length < 2) return -1;
+      var el;
+      try { el = document.getElementById(decodeURIComponent(hash.slice(1))); } catch (err) { el = null; }
+      return el ? pages.indexOf(el) : -1;
+    }
+
+    /* the index, and any same-page link to a menu (#brasa) */
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest('a[href*="#"]');
+      if (!a || a.host !== location.host || a.pathname !== location.pathname) return;
+      var k = indexOfHash(a.hash);
+      if (k < 0) return;
+      e.preventDefault();
+      if (history.replaceState) history.replaceState(null, "", a.hash);
+      go(k, true);
+    });
+    window.addEventListener("hashchange", function () {
+      var k = indexOfHash(location.hash);
+      if (k >= 0) go(k, true);
+    });
+
+    /* keyboard: left and right turn the pages while the book is on screen */
+    document.addEventListener("keydown", function (e) {
+      if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+      if (e.target.closest && e.target.closest("input, textarea, select, .lb")) return;
+      var r = section.getBoundingClientRect();
+      if (r.top > window.innerHeight * 0.5 || r.bottom < window.innerHeight * 0.5) return;
+      var k = Math.max(0, Math.min(n - 1, (shown < 0 ? 0 : shown) + (e.key === "ArrowRight" ? 1 : -1)));
+      e.preventDefault();
+      go(k, true);
+    });
+
+    window.addEventListener("scroll", function () { if (mode === "book") onBookScroll(); }, { passive: true });
+    box.addEventListener("scroll", function () { if (mode === "swipe") onSwipe(); }, { passive: true });
+    var rto = 0;
+    window.addEventListener("resize", function () { clearTimeout(rto); rto = setTimeout(layout, 120); }, { passive: true });
+    window.addEventListener("pageshow", layout);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+    Array.prototype.forEach.call(box.querySelectorAll("img"), function (img) {
+      if (!img.complete) img.addEventListener("load", function () { if (mode === "swipe") onSwipe(); }, { once: true });
+    });
+
+    layout();
+    window.addEventListener("load", function () {
+      layout();
+      var k = indexOfHash(location.hash);
+      if (k >= 0) go(k, false);
     });
   })();
 

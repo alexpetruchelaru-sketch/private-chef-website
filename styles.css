@@ -817,129 +817,163 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
 }
 
 /* ============================================================
-   The menu rail.
+   The menus as a book (see menuBook in app.js).
 
-   The five menus stack in one place, centred in the screen below
-   the nav. Scrolling moves through them: the one you are leaving
-   drifts up and fades, the next rises into its place. No rotation
-   and no snapping — the position is smoothed every frame so the
-   movement keeps going for a moment after the wheel stops, which
-   is what makes it feel fluid rather than stepped.
-
-   Everything is gated behind .rail, which only JavaScript adds and
-   only when a whole menu fits the centred area. Script off, reduced
-   motion on, or a screen too short: the menus are the plain column
-   they have always been.
+   .book  — a pinned, edge-to-edge spread: photograph and the menu's
+            name on the left page, the courses on paper on the right.
+            Scrolling turns the pages around the spine.
+   .swipe — phones and short screens: one page at a time, swiped
+            sideways, tilting like a page as it goes.
+   Neither class without script: the menus stay the plain column.
    ============================================================ */
-.sec.rail .menus { display: block; gap: 0; }
+.sec.book .sec-head, .sec.swipe .sec-head { margin-inline: auto; text-align: center; }
 
-.rail-track { position: relative; }
+/* ---- shared page furniture ---- */
+.sec.book .pg, .sec.swipe .pg { position: relative; }
+.pg-shade {
+  position: absolute; inset: 0; pointer-events: none; z-index: 2;
+  background: #0c0f10; opacity: var(--shade, 0);
+}
+.pg-l { overflow: hidden; background: var(--ink); color: var(--bone); }
+.sec .pg-l .menu-fig { margin: 0; position: absolute; inset: 0; width: auto; max-width: none; float: none; }
+.sec .pg-l .menu-fig img, .sec .menu:hover .pg-l .menu-fig img {
+  width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; display: block;
+  transform: scale(calc(1.06 - var(--a, 1) * 0.06));
+  transition: none;
+}
+.pg-l .menu-fig figcaption {
+  position: absolute; top: calc(var(--nav-h, 64px) + 18px); left: clamp(20px, 3.4vw, 52px); margin: 0;
+  font-size: 10.5px; letter-spacing: .18em; text-transform: uppercase; color: color-mix(in srgb, var(--bone) 80%, transparent);
+}
+.pg-l::after {
+  /* the gradient that carries the name and introduction */
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(to top, rgba(12,15,16,.88) 0%, rgba(12,15,16,.62) 34%, rgba(12,15,16,.12) 62%, rgba(12,15,16,0) 78%);
+}
+.pg-head { position: relative; z-index: 1; }
+.pg-head .menu-title h3 { color: var(--bone); font-size: clamp(40px, 4.6vw, 68px); font-weight: 400; letter-spacing: -.01em; }
+.pg-head .menu-meta { color: color-mix(in srgb, var(--bone) 78%, transparent); }
+.pg-head .menu-blurb { color: color-mix(in srgb, var(--bone) 92%, transparent); font-size: 16.5px; line-height: 1.6; max-width: 48ch; }
 
-.rail-pin {
-  position: sticky;
-  top: var(--navh, 64px);
-  height: var(--pin-h, 80vh);
-  z-index: 1;
-  /* A menu rotated away on the drum projects well past the top and bottom
-     of this box and would otherwise paint over the header and the section
-     below. overflow: hidden does not reliably clip a child in a 3D
-     rendering context; clip-path does, in every browser that matters. */
-  clip-path: inset(0);
+/* paper, with the curve of the gutter on the spine side */
+.pg-r {
+  background:
+    linear-gradient(to right, rgba(32,38,42,.16), rgba(32,38,42,.05) 3.5%, rgba(32,38,42,0) 9%),
+    var(--bone);
+}
+.pg-r .courses { margin-top: 0; gap: 18px; }
+.pg-r .course { border-left-color: var(--linen-2); }
+
+/* things arrive in order as a page is uncovered: --a is the page's arrival, --k a course's place */
+.sec.book .pg-head > *, .sec.book .pg-in .course, .sec.book .pg-in .menu-foot {
+  opacity: clamp(0, calc(var(--a, 1) * 1.7 - var(--k, 0) * 0.13), 1);
+  transform: translate3d(0, calc((1 - var(--a, 1)) * 14px), 0);
+}
+.sec.book .pg-head > :nth-child(2) { --k: 1; }
+.sec.book .pg-head > :nth-child(3) { --k: 2; }
+.sec.book .pg-in .menu-foot { --k: 5; }
+
+/* ---- book ---- */
+.sec.book .aside, .sec.swipe .aside { margin-top: clamp(56px, 8vw, 110px); }
+.sec.book .book-track { position: relative; margin-inline: calc(50% - 50vw); }
+.sec.book .book-pin {
+  position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden;
+  background: var(--ink);
+}
+.sec.book .menus { position: absolute; inset: 0; display: block; perspective: 3200px; perspective-origin: 50% 50%; }
+.sec.book .menu {
+  position: absolute; inset: 0; display: block; margin: 0; padding: 0; border: 0;
+  transform-style: preserve-3d; visibility: hidden;
+}
+.sec.book .pg { position: absolute; top: 0; bottom: 0; width: 50%; backface-visibility: hidden; will-change: transform; }
+.sec.book .pg-l { left: 0; transform-origin: 100% 50%; display: flex; align-items: flex-end; }
+.sec.book .pg-r { left: 50%; transform-origin: 0% 50%; display: flex; align-items: center; justify-content: center; }
+.sec.book .pg-head { padding: 0 clamp(28px, 4vw, 64px) clamp(108px, 14vh, 140px); max-width: 640px; }
+.sec.book .pg-in {
+  width: min(560px, 100% - 2 * clamp(28px, 4vw, 64px));
+  transform: scale(var(--fit, 1)); transform-origin: 50% 50%;
+  margin-top: calc(var(--nav-h, 64px) - 40px);
+}
+.sec.book .pg-in .menu-foot { margin-top: 22px; }
+.sec.book .menu[data-dense] .pg-in { width: min(680px, 100% - 2 * clamp(28px, 3vw, 48px)); }
+.sec.book .menu[data-dense] .courses { display: block; columns: 2; column-gap: 36px; }
+.sec.book .menu[data-dense] .course { break-inside: avoid; margin-bottom: 16px; }
+.sec.book .course-note { font-size: 14.5px; line-height: 1.5; }
+.sec.book .course-es { font-size: 18.5px; }
+
+/* the gutter: a soft fold down the middle */
+.book-spine { display: none; }
+.sec.book .book-spine {
+  display: block; position: absolute; top: 0; bottom: 0; left: 50%; width: 60px; margin-left: -30px; z-index: 6;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.18) 48%, rgba(255,255,255,.06) 52%, rgba(0,0,0,0));
 }
 
-/* The perspective has to live on its own element. Put it on the same box
-   that does the clipping and the clip is applied in the flattened space,
-   which cuts the drum in the wrong plane. */
-.rail-stage {
-  position: absolute;
-  inset: 0;
-  perspective: 1700px;
-  perspective-origin: 50% 50%;
+/* the five menus, centred over the spine */
+.sec.book .menu-index {
+  position: absolute; left: 50%; bottom: clamp(18px, 3.2vh, 32px); z-index: 7;
+  transform: translateX(-50%);
+  display: flex; gap: 2px; margin: 0; padding: 6px;
+  background: color-mix(in srgb, var(--bone) 90%, transparent);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border: 1px solid color-mix(in srgb, var(--linen-2) 80%, transparent);
+  box-shadow: 0 10px 30px rgba(12,15,16,.18);
 }
 
-.sec.rail .menu {
-  position: absolute;
-  left: 0; right: 0;
-  top: 50%;
-  margin: 0;
-  /* the script replaces this with the full drum transform */
-  transform: translate3d(0, -50%, 0);
-  transform-origin: 50% 50%;
-  backface-visibility: hidden;
+/* ---- index rows, both modes ---- */
+.sec.book .menu-index a, .sec.swipe .menu-index a {
+  position: relative; border: 0; background: none; padding: 9px 16px 10px; flex: 0 0 auto;
+  display: grid; justify-items: center; gap: 2px; text-align: center;
+  opacity: .62; transform: none;
+  transition: opacity .3s ease, background-color .3s ease;
 }
-/* will-change is promised to the browser per face, by the script, and only
-   for the two that are actually moving. Declaring it on all five here would
-   hold five full-page compositor layers in video memory for the whole visit,
-   which is what makes this kind of thing stutter on an ordinary laptop. */
-.sec.rail .menu[data-live] { will-change: transform, opacity, filter; }
-
-/* The menus are also reveal-on-scroll elements, and a reveal carries a
-   transition on opacity and transform lasting about a second. In the rail
-   the script writes both of those every single frame, so that transition
-   was quietly interpolating each value the script had just set: the rail
-   asked for a position and the browser spent the next second easing toward
-   it, while the next frame asked for somewhere else again. Everything
-   arrived late and nothing arrived where it was aimed. That lag is the
-   rigid feeling. A scroll-driven animation has to own its own values. */
-.sec.rail .menu,
-.sec.rail .menu.reveal,
-.sec.rail .menu.reveal.in,
-.sec.rail .menu.reveal-fig,
-.sec.rail .menu.reveal-fig.in { transition: none; }
-
-/* A face has to fit the centred area, so in rail mode the menu is
-   compressed: the per-course sentences give way to the dish names and
-   their English, and on a wide screen the courses run in two columns.
-   The sentences are still in the page for anyone reading it without
-   the rail. */
-.sec.rail .course-note { display: none; }
-.sec.rail .menu-blurb { font-size: 15.5px; line-height: 1.5; max-width: 62ch; margin-top: 12px; }
-.sec.rail .courses { margin-top: 18px; }
-.sec.rail .course { break-inside: avoid; }
-.sec.rail .menu { padding-top: 22px; }
-.sec.rail .menu-title h3 { font-size: clamp(26px, 3vw, 36px); }
-.sec.rail .course-es { font-size: 17.5px; line-height: 1.25; }
-.sec.rail .course-en { font-size: 12.5px; }
-.sec.rail .course-role { font-size: 10px; }
-.sec.rail .menu-foot { margin-top: 18px; }
-
-@media (min-width: 700px) {
-  /* multi-column has no effect on a grid container, so the list goes back
-     to being a block first. Two columns is what buys the height. */
-  .sec.rail .courses { display: block; columns: 2; column-gap: 44px; }
-  .sec.rail .course { margin-bottom: 14px; }
-  .sec.rail .menu-fig { align-self: start; }
+.sec.book .menu-index a:hover, .sec.swipe .menu-index a:hover { opacity: 1; background: color-mix(in srgb, var(--linen) 60%, transparent); transform: none; }
+.sec.book .menu-index a[aria-current], .sec.swipe .menu-index a[aria-current] { opacity: 1; }
+.sec.book .menu-index a::after, .sec.swipe .menu-index a::after {
+  content: ""; position: absolute; left: 16px; right: 16px; bottom: 4px; height: 1px; background: var(--verde);
+  transform: scaleX(0); transition: transform .45s cubic-bezier(.2,.7,.3,1);
 }
+.sec.book .menu-index a[aria-current]::after, .sec.swipe .menu-index a[aria-current]::after { transform: scaleX(1); }
+.sec.book .menu-index b, .sec.swipe .menu-index b { font-size: 18px; }
+.sec.book .menu-index span, .sec.swipe .menu-index span { font-size: 9.5px; }
+.sec.book .menu-index a:focus-visible, .sec.swipe .menu-index a:focus-visible { outline: 1px solid var(--verde); outline-offset: 3px; opacity: 1; }
 
-/* On a narrow screen the photograph is the whole problem: at full width and
-   three by four it is taller than the courses it sits above. In rail mode it
-   becomes a letterbox strip. */
-@media (max-width: 899px) {
-  .sec.rail .menu-fig img { aspect-ratio: 16 / 7; max-height: 150px; }
-  .sec.rail .menu-fig figcaption { display: none; }
-  .sec.rail .menu { gap: 16px; }
-  .sec.rail .courses { margin-top: 14px; }
-  .sec.rail .course { padding-left: 14px; }
-  .sec.rail .menu-blurb { font-size: 14.5px; }
+/* ---- swipe ---- */
+.sec.swipe .book-track { margin-inline: calc(50% - 50vw); }
+.sec.swipe .menu-index {
+  position: relative; justify-content: center; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
+  margin: 0 0 18px; padding: 0 var(--gut); gap: 0;
 }
-
-/* On a short screen the blurb and a tall photograph are what push a menu
-   past the face. Both give way before the courses do. */
-@media (max-height: 840px) and (min-width: 700px) {
-  .sec.rail .menu-blurb { display: none; }
-  .sec.rail .menu-fig img { aspect-ratio: 4 / 3; }
-  .sec.rail .menu-title h3 { font-size: 30px; }
+.sec.swipe .menu-index::-webkit-scrollbar { display: none; }
+@media (max-width: 560px) {
+  .sec.swipe .menu-index { justify-content: flex-start; }
+  .sec.swipe .menu-index a { padding: 8px 11px 9px; }
+  .sec.swipe .menu-index span { display: none; }
 }
-
-.rail-hint {
-  position: absolute; right: 0; bottom: 4px;
-  font-size: 10.5px; letter-spacing: .18em; text-transform: uppercase;
-  color: var(--sea); font-variant-numeric: tabular-nums;
-  pointer-events: none; opacity: .7;
+.sec.swipe .menus {
+  display: flex; gap: 0; overflow-x: auto; overflow-y: hidden;
+  scroll-snap-type: x mandatory; overscroll-behavior-x: contain; scrollbar-width: none;
+  align-items: flex-start; transition: height .45s cubic-bezier(.2,.7,.3,1);
+  -webkit-overflow-scrolling: touch;
 }
+.sec.swipe .menus::-webkit-scrollbar { display: none; }
+.sec.swipe .menu {
+  flex: 0 0 100%; scroll-snap-align: center; scroll-snap-stop: always;
+  display: block; margin: 0; padding: 0; border: 0;
+}
+.sec.swipe .pg-l { min-height: min(118vw, 74vh); display: flex; align-items: flex-end; }
+.sec.swipe .pg-head { padding: 0 var(--gut) 26px; }
+.sec.swipe .pg-head .menu-title h3 { font-size: clamp(36px, 10vw, 52px); }
+.sec.swipe .pg-head .menu-blurb { font-size: 15.5px; }
+.sec.swipe .pg-r { padding: 30px var(--gut) 38px; background: var(--bone); }
+.sec.swipe .pg-in { max-width: 620px; margin: 0 auto; }
+.sec.swipe .pg-shade { display: none; }
+.sec.swipe .pg-l::after { background: linear-gradient(to top, rgba(12,15,16,.9) 0%, rgba(12,15,16,.78) 48%, rgba(12,15,16,.25) 78%, rgba(12,15,16,.05) 100%); }
 
 @media (prefers-reduced-motion: reduce) {
-  .sec.rail .menu { transform: translate3d(0, -50%, 0) !important; opacity: 1 !important; filter: none !important; }
+  .sec.book .pg-head > *, .sec.book .pg-in .course, .sec.book .pg-in .menu-foot { transform: none; }
+  .pg-l .menu-fig img { transform: none; }
+  .sec.swipe .menus { transition: none; }
 }
 
 /* ---- recipe cross-links and byline ----
