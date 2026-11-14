@@ -247,7 +247,7 @@
 
     /* Scroll budget, in screens: DWELL resting on a spread, TURN crossing
        to the next. The last spread has no turn after it. */
-    var DWELL = 0.7, TURN = 0.8, CYC = DWELL + TURN;
+    var DWELL = 0.5, TURN = 0.6, CYC = DWELL + TURN;
     var SPAN = n * DWELL + (n - 1) * TURN;
 
     function clamp01(x) { return x < 0 ? 0 : x > 1 ? 1 : x; }
@@ -411,7 +411,7 @@
     function frame() {
       raf = 0;
       var d = target - current;
-      current = Math.abs(d) < 0.0008 ? target : current + d * 0.14;
+      current = Math.abs(d) < 0.0008 ? target : current + d * 0.18;
       render(current);
       if (current !== target) raf = requestAnimationFrame(frame);
     }
