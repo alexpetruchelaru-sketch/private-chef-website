@@ -728,9 +728,8 @@
   var ENDPOINT = "https://albazas.com/api/chef-enquiry";
   var es = (document.documentElement.lang || "en").slice(0, 2) === "es";
   var T = es ? {
-    lead: "Con cinco días puedo conseguir todo como es debido. Si es antes, pregunta igualmente: muchas veces puedo.",
-    short: "Es poco margen, pero mándala: te digo el mismo día qué puedo conseguir y qué platos cambiarían.",
-    past: "Esa fecha ya ha pasado.",
+    lead: function (d) { return "La primera fecha en la que puedo cocinar es el " + d.toLocaleDateString("es-ES", { weekday: "long", day: "numeric", month: "long" }) + ". Necesito cinco días para conseguir el producto."; },
+    tooSoon: function (d) { return "Necesito cinco días para conseguir el producto, porque algunos tardan en llegar. La primera fecha posible es el " + d.toLocaleDateString("es-ES", { day: "numeric", month: "long" }) + "."; },
     noDate: "Dime una fecha, aunque sea aproximada.",
     noName: "Pon tu nombre para saber a quién respondo.",
     noEmail: "Necesito un email para responderte.",
@@ -742,9 +741,8 @@
     hello: "Hola Alex, ",
     subject: "Consulta para una cena"
   } : {
-    lead: "Five days lets me source everything properly. Inside that, ask anyway: I often can.",
-    short: "That is short notice, but send it: I will tell you the same day what I can source and which courses would change.",
-    past: "That date has already passed.",
+    lead: function (d) { return "Earliest date I can cook is " + d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }) + ". I need five days to source properly."; },
+    tooSoon: function (d) { return "I need five days to source the ingredients, as some take time to arrive. The earliest I can cook is " + d.toLocaleDateString("en-GB", { day: "numeric", month: "long" }) + "."; },
     noDate: "Give me a date, even an approximate one.",
     noName: "Please add your name so I know who I am writing back to.",
     noEmail: "I need an email address to reply to.",
@@ -757,27 +755,21 @@
     subject: "Dinner enquiry"
   };
 
-  /* Any date can be asked for. Inside five days the hint changes to say what
-     short notice means, instead of refusing: late bookings are welcome. */
+  /* Five clear days before the earliest bookable date. The fish, the heritage
+     potatoes, the island cheeses and the kid goat come from specific suppliers,
+     and some take days to arrive, so the window is firm. Recomputed on every
+     load, so it always moves with today's date. */
   var LEAD_DAYS = 5;
   var dateField = document.getElementById("f-date");
   var hint = document.getElementById("date-hint");
-  var today = new Date(); today.setHours(0, 0, 0, 0);
-  var soon = new Date(today); soon.setDate(soon.getDate() + LEAD_DAYS);
+  var earliest = new Date(); earliest.setHours(0, 0, 0, 0);
+  earliest.setDate(earliest.getDate() + LEAD_DAYS);
   function isoDay(d) {
     return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
   }
   function chosenDay() { return dateField && dateField.value ? new Date(dateField.value + "T00:00:00") : null; }
-  function updateHint() {
-    var d = chosenDay();
-    if (hint) hint.textContent = d && d >= today && d < soon ? T.short : T.lead;
-  }
-  if (dateField) {
-    dateField.min = isoDay(today);
-    dateField.addEventListener("input", updateHint);
-    dateField.addEventListener("change", updateHint);
-    updateHint();
-  }
+  if (dateField) dateField.min = isoDay(earliest);
+  if (hint) hint.textContent = T.lead(earliest);
 
   var status = document.getElementById("status");
   var waSame = document.getElementById("waSame");
@@ -808,7 +800,7 @@
     else setError("email", "");
 
     if (!day) { setError("date", T.noDate); problems.push("date"); }
-    else if (day < today) { setError("date", T.past); problems.push("date"); }
+    else if (day < earliest) { setError("date", T.tooSoon(earliest)); problems.push("date"); }
     else setError("date", "");
 
     setError("guests", val("f-guests") ? "" : T.noGuests);
@@ -883,7 +875,6 @@
       if (!res.ok) throw new Error("HTTP " + res.status);
       if (status) status.textContent = T.sent;
       form.reset();
-      updateHint();
       refreshWa();
     }).catch(function () {
       showFailure();
